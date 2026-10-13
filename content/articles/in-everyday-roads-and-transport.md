@@ -1,28 +1,78 @@
 ---
-id: in-everyday-roads-and-transport
-route: /in/everyday/roads-and-transport
-country: IN
-language: en
-hub: everyday
-title: Who should fix this road or bus service?
-summary: A useful transport complaint identifies the asset or service and the authority
-  responsible for it.
-status: ready
-publish: true
-research_checked_at: '2026-10-13'
-version: 2.0.0
-human_reviewed: false
-source_ref_ids:
-- c-local-functions
-- c-municipality
-- egram-records
+id: "in-everyday-roads-and-transport"
+route: "/in/everyday/roads-and-transport"
+country: "IN"
+language: "en"
+hub: "everyday"
+title: "Who should fix this road or bus service?"
+summary: "A useful transport complaint identifies the asset or service and the authority responsible for it."
+kind: "explainer"
+reader_task: "Write a five-sentence report giving the exact location or route, observed failure, dates, evidence and the specific action requested."
 related_ids:
-- in-local-find-responsible-authority
-- in-action-write-a-complaint
-- in-evidence-observe-and-verify
+  - "in-local-find-responsible-authority"
+  - "in-action-write-a-complaint"
+  - "in-evidence-observe-and-verify"
+quiz: null
+launch_order: 10
+status: "ready"
+publish: true
+research_checked_at: "2026-10-13"
+human_reviewed: false
+review_method: "Assistant retrieval, source comparison and numerical checks; not independent human review"
+jurisdiction: "India; local administrative responsibility must be checked for the actual location"
+legal_scope: "General civic education, not individual legal advice"
+version: "2.0.0"
+source_ref_ids:
+  - "c-local-functions"
+  - "c-municipality"
+  - "egram-records"
+sources:
+  - number: 1
+    ref_id: "c-local-functions"
+    document_id: "constitution"
+    title: "Constitution of India, official English compilation"
+    publisher: "Legislative Department, Ministry of Law and Justice"
+    url: "https://www.legislative.gov.in/static/uploads/2025/07/c9fe9c9b6840524844316f74bb1c556c.pdf#page=381"
+    locator: "Twelfth Schedule, entries 4–6: roads, water and sanitation"
+    version: "As on 1 May 2026"
+    published_at: null
+    reference_period: null
+    checked_at: "2026-10-13"
+    limitations:
+      - "This compilation has a stated cutoff. No assertion that every post-cutoff notification or judgment was exhaustively checked. Article explanations concern the provisions cited, not personalised legal advice."
+    kind: "official_primary"
+  - number: 2
+    ref_id: "c-municipality"
+    document_id: "constitution"
+    title: "Constitution of India, official English compilation"
+    publisher: "Legislative Department, Ministry of Law and Justice"
+    url: "https://www.legislative.gov.in/static/uploads/2025/07/c9fe9c9b6840524844316f74bb1c556c.pdf#page=162"
+    locator: "Article 243W: state legislation and municipal powers"
+    version: "As on 1 May 2026"
+    published_at: null
+    reference_period: null
+    checked_at: "2026-10-13"
+    limitations:
+      - "This compilation has a stated cutoff. No assertion that every post-cutoff notification or judgment was exhaustively checked. Article explanations concern the provisions cited, not personalised legal advice."
+    kind: "official_primary"
+  - number: 3
+    ref_id: "egram-records"
+    document_id: "egramswaraj"
+    title: "eGramSwaraj overview"
+    publisher: "Ministry of Panchayati Raj"
+    url: "https://panchayat.gov.in/en/e-gramswaraj/"
+    locator: "Panchayat Profile, Planning and Progress Reporting modules; record availability is not proof of delivery"
+    version: null
+    published_at: null
+    reference_period: null
+    checked_at: "2026-10-13"
+    limitations: []
+    kind: "official_primary"
+maintenance:
+  trigger: "Change to a cited provision, source correction or substantiated reader correction"
+  suggested_recheck_days: 365
+  automation_created: false
 ---
-
-# Who should fix this road or bus service?
 
 “This road is bad” describes a problem, but it may not identify the office that can fix it. “Buses never come” also needs a route, stop, direction and time period before an operator can investigate it.
 
@@ -51,24 +101,3 @@ Ask for the record that could test the next claim: inspection findings, the rele
 ## Track the result, not only the ticket
 
 Keep complaint registration, agency response and observed repair as separate events. A message marked “closed” is a procedural status; inspect the stated reason and check whether the problem described in your complaint has actually changed.
-
-## Try this
-
-Write a five-sentence report giving the exact location or route, observed failure, dates, evidence and the specific action requested.
-
-## Keep reading
-
-- [Who is actually responsible for this local problem?](/in/local/find-responsible-authority)
-- [How do I write a useful public-service complaint?](/in/action/write-a-complaint)
-- [When should I trust what I see myself?](/in/evidence/observe-and-verify)
-
-## Sources and scope
-
-1. [Constitution of India, official English compilation](https://www.legislative.gov.in/static/uploads/2025/07/c9fe9c9b6840524844316f74bb1c556c.pdf#page=381). Legislative Department, Ministry of Law and Justice. **Locator:** Twelfth Schedule, entries 4–6: roads, water and sanitation. **Edition:** As on 1 May 2026. **Limits:** This compilation has a stated cutoff. No assertion that every post-cutoff notification or judgment was exhaustively checked. Article explanations concern the provisions cited, not personalised legal advice.
-
-2. [Constitution of India, official English compilation](https://www.legislative.gov.in/static/uploads/2025/07/c9fe9c9b6840524844316f74bb1c556c.pdf#page=162). Legislative Department, Ministry of Law and Justice. **Locator:** Article 243W: state legislation and municipal powers. **Edition:** As on 1 May 2026. **Limits:** This compilation has a stated cutoff. No assertion that every post-cutoff notification or judgment was exhaustively checked. Article explanations concern the provisions cited, not personalised legal advice.
-
-3. [eGramSwaraj overview](https://panchayat.gov.in/en/e-gramswaraj/). Ministry of Panchayati Raj. **Locator:** Panchayat Profile, Planning and Progress Reporting modules; record availability is not proof of delivery.
-
-
-Research checked: 2026-10-13. This date is not a claim of continuous monitoring.

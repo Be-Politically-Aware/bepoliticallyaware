@@ -1,28 +1,78 @@
 ---
-id: in-action-ask-a-representative
-route: /in/action/ask-a-representative
-country: IN
-language: en
-hub: action
-title: How can I ask an MP, MLA or councillor a question that needs an answer?
-summary: Ask about a specific responsibility or recorded action, with evidence that
-  makes a vague answer visible.
-status: ready
-publish: true
-research_checked_at: '2026-10-13'
-version: 2.0.0
-human_reviewed: false
-source_ref_ids:
-- ls-questions
-- ls-scrutiny
-- rti-no-new-answer
+id: "in-action-ask-a-representative"
+route: "/in/action/ask-a-representative"
+country: "IN"
+language: "en"
+hub: "action"
+title: "How can I ask an MP, MLA or councillor a question that needs an answer?"
+summary: "Ask about a specific responsibility or recorded action, with evidence that makes a vague answer visible."
+kind: "explainer"
+reader_task: "Write one question based on a specific commitment or record. Identify what a complete answer would need to contain before sending it."
 related_ids:
-- in-parliament-mp-role
-- in-states-mla-and-mlc
-- in-action-rti-basics
+  - "in-parliament-mp-role"
+  - "in-states-mla-and-mlc"
+  - "in-action-rti-basics"
+quiz: null
+launch_order: 23
+status: "ready"
+publish: true
+research_checked_at: "2026-10-13"
+human_reviewed: false
+review_method: "Assistant retrieval, source comparison and numerical checks; not independent human review"
+jurisdiction: "India; local administrative responsibility must be checked for the actual location"
+legal_scope: "General civic education, not individual legal advice"
+version: "2.0.0"
+source_ref_ids:
+  - "ls-questions"
+  - "ls-scrutiny"
+  - "rti-no-new-answer"
+sources:
+  - number: 1
+    ref_id: "ls-questions"
+    document_id: "ls-questions"
+    title: "Questions in Lok Sabha"
+    publisher: "Lok Sabha Secretariat"
+    url: "https://sansad.in/ls/questions/questions"
+    locator: "General information and starred/unstarred question categories"
+    version: null
+    published_at: null
+    reference_period: null
+    checked_at: "2026-10-13"
+    limitations: []
+    kind: "official_primary"
+  - number: 2
+    ref_id: "ls-scrutiny"
+    document_id: "ls-faq"
+    title: "Lok Sabha frequently asked questions"
+    publisher: "Lok Sabha Secretariat"
+    url: "https://sansad.in/ls/faq"
+    locator: "Questions on parliamentary committees, parliamentary motions, calling attention and no-confidence motions; use procedural descriptions only"
+    version: null
+    published_at: null
+    reference_period: null
+    checked_at: "2026-10-13"
+    limitations:
+      - "Some office-holder and historical House details on this FAQ are stale. No current names, salaries or membership totals are taken from it."
+    kind: "official_primary"
+  - number: 3
+    ref_id: "rti-no-new-answer"
+    document_id: "rti-guide"
+    title: "A Guide for the Information Seekers under the RTI Act 2005"
+    publisher: "Department of Personnel and Training; official copy hosted by AIIMS Bhubaneswar"
+    url: "https://aiimsbhubaneswar.nic.in/wp-content/uploads/2025/05/31-1.pdf#page=5"
+    locator: "PDF page 5, printed page 2, paragraphs 2–4: existing information; no duty to create an answer to a hypothetical"
+    version: "DoPT memorandum dated 8 November 2007"
+    published_at: "2007-11-08"
+    reference_period: null
+    checked_at: "2026-10-13"
+    limitations:
+      - "Historical guide. The 2025 URL folder is not the publication date. Used only for existing-information versus creating answers distinction, not current fees, exemptions or deadlines."
+    kind: "official_primary"
+maintenance:
+  trigger: "Material change to the official portal scope or applicable procedure"
+  suggested_recheck_days: 90
+  automation_created: false
 ---
-
-# How can I ask an MP, MLA or councillor a question that needs an answer?
 
 A representative can be asked to explain a position, account for a public commitment or describe action taken with the responsible authority. You do not need to begin with praise, party loyalty or an accusation.
 
@@ -55,24 +105,3 @@ A response may also identify a genuine limit: another authority controls the dec
 Save the original question, channel, date and full reply. Distinguish “no response received by this date” from “refused to answer”. Do not edit out a material explanation when sharing the exchange.
 
 Choose a safe and practical channel. Public confrontation is not a requirement for accountability, and no template guarantees a reply. Repeated harassment, exposure of private contact details or threats do not improve the evidence.
-
-## Try this
-
-Write one question based on a specific commitment or record. Identify what a complete answer would need to contain before sending it.
-
-## Keep reading
-
-- [What can an MP actually do?](/in/parliament/mp-role)
-- [What do MLAs and MLCs do?](/in/states/mla-and-mlc)
-- [What can I ask for through RTI?](/in/action/rti-basics)
-
-## Sources and scope
-
-1. [Questions in Lok Sabha](https://sansad.in/ls/questions/questions). Lok Sabha Secretariat. **Locator:** General information and starred/unstarred question categories.
-
-2. [Lok Sabha frequently asked questions](https://sansad.in/ls/faq). Lok Sabha Secretariat. **Locator:** Questions on parliamentary committees, parliamentary motions, calling attention and no-confidence motions; use procedural descriptions only. **Limits:** Some office-holder and historical House details on this FAQ are stale. No current names, salaries or membership totals are taken from it.
-
-3. [A Guide for the Information Seekers under the RTI Act 2005](https://aiimsbhubaneswar.nic.in/wp-content/uploads/2025/05/31-1.pdf#page=5). Department of Personnel and Training; official copy hosted by AIIMS Bhubaneswar. **Locator:** PDF page 5, printed page 2, paragraphs 2–4: existing information; no duty to create an answer to a hypothetical. **Edition:** DoPT memorandum dated 8 November 2007. **Published:** 2007-11-08. **Limits:** Historical guide. The 2025 URL folder is not the publication date. Used only for existing-information versus creating answers distinction, not current fees, exemptions or deadlines.
-
-
-Research checked: 2026-10-13. This date is not a claim of continuous monitoring.

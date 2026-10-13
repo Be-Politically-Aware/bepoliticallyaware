@@ -1,28 +1,78 @@
 ---
-id: in-parties-opposition-role
-route: /in/parties/opposition-role
-country: IN
-language: en
-hub: parties
-title: What is the opposition supposed to do?
-summary: Opposition is part of the system of scrutiny and political alternatives,
-  not an interruption to it.
-status: ready
-publish: true
-research_checked_at: '2026-10-13'
-version: 2.0.0
-human_reviewed: false
-source_ref_ids:
-- ls-questions
-- ls-scrutiny
-- c-executive
+id: "in-parties-opposition-role"
+route: "/in/parties/opposition-role"
+country: "IN"
+language: "en"
+hub: "parties"
+title: "What is the opposition supposed to do?"
+summary: "Opposition is part of the system of scrutiny and political alternatives, not an interruption to it."
+kind: "explainer"
+reader_task: "Choose a government claim and an opposition criticism about the same issue. Write down the strongest evidence offered by each and the question neither has answered."
 related_ids:
-- in-start-politics-without-party-loyalty
-- in-start-reasonable-disagreement
-- in-evidence-check-before-sharing
+  - "in-start-politics-without-party-loyalty"
+  - "in-start-reasonable-disagreement"
+  - "in-evidence-check-before-sharing"
+quiz: null
+launch_order: 8
+status: "ready"
+publish: true
+research_checked_at: "2026-10-13"
+human_reviewed: false
+review_method: "Assistant retrieval, source comparison and numerical checks; not independent human review"
+jurisdiction: "India; local administrative responsibility must be checked for the actual location"
+legal_scope: "General civic education, not individual legal advice"
+version: "2.0.0"
+source_ref_ids:
+  - "ls-questions"
+  - "ls-scrutiny"
+  - "c-executive"
+sources:
+  - number: 1
+    ref_id: "ls-questions"
+    document_id: "ls-questions"
+    title: "Questions in Lok Sabha"
+    publisher: "Lok Sabha Secretariat"
+    url: "https://sansad.in/ls/questions/questions"
+    locator: "General information and starred/unstarred question categories"
+    version: null
+    published_at: null
+    reference_period: null
+    checked_at: "2026-10-13"
+    limitations: []
+    kind: "official_primary"
+  - number: 2
+    ref_id: "ls-scrutiny"
+    document_id: "ls-faq"
+    title: "Lok Sabha frequently asked questions"
+    publisher: "Lok Sabha Secretariat"
+    url: "https://sansad.in/ls/faq"
+    locator: "Questions on parliamentary committees, parliamentary motions, calling attention and no-confidence motions; use procedural descriptions only"
+    version: null
+    published_at: null
+    reference_period: null
+    checked_at: "2026-10-13"
+    limitations:
+      - "Some office-holder and historical House details on this FAQ are stale. No current names, salaries or membership totals are taken from it."
+    kind: "official_primary"
+  - number: 3
+    ref_id: "c-executive"
+    document_id: "constitution"
+    title: "Constitution of India, official English compilation"
+    publisher: "Legislative Department, Ministry of Law and Justice"
+    url: "https://www.legislative.gov.in/static/uploads/2025/07/c9fe9c9b6840524844316f74bb1c556c.pdf#page=65"
+    locator: "Articles 74 and 75, especially Article 75(3): Union Council of Ministers"
+    version: "As on 1 May 2026"
+    published_at: null
+    reference_period: null
+    checked_at: "2026-10-13"
+    limitations:
+      - "This compilation has a stated cutoff. No assertion that every post-cutoff notification or judgment was exhaustively checked. Article explanations concern the provisions cited, not personalised legal advice."
+    kind: "official_primary"
+maintenance:
+  trigger: "Change to a cited provision, source correction or substantiated reader correction"
+  suggested_recheck_days: 365
+  automation_created: false
 ---
-
-# What is the opposition supposed to do?
 
 In ordinary political usage, the opposition consists of parties and legislators outside the governing side who challenge, scrutinise or propose alternatives to it. That broad description is different from the formally recognised office of Leader of the Opposition.
 
@@ -51,24 +101,3 @@ As an editorial principle, this site should evaluate the gap itself. It should n
 Look for the response, amended proposal, committee finding or published correction. An exchange may expose an unresolved problem even when it produces no immediate policy change. Equally, loud criticism is not evidence that the critic's explanation is correct.
 
 A useful question for any opposition party is: “What precisely should the government change, and what evidence supports your alternative?” A useful question for a government is: “What evidence answers that criticism?”
-
-## Try this
-
-Choose a government claim and an opposition criticism about the same issue. Write down the strongest evidence offered by each and the question neither has answered.
-
-## Keep reading
-
-- [Can I care about politics without supporting a party?](/in/start/politics-without-party-loyalty)
-- [How can people disagree without abandoning evidence?](/in/start/reasonable-disagreement)
-- [How do I check a political claim before sharing it?](/in/evidence/check-before-sharing)
-
-## Sources and scope
-
-1. [Questions in Lok Sabha](https://sansad.in/ls/questions/questions). Lok Sabha Secretariat. **Locator:** General information and starred/unstarred question categories.
-
-2. [Lok Sabha frequently asked questions](https://sansad.in/ls/faq). Lok Sabha Secretariat. **Locator:** Questions on parliamentary committees, parliamentary motions, calling attention and no-confidence motions; use procedural descriptions only. **Limits:** Some office-holder and historical House details on this FAQ are stale. No current names, salaries or membership totals are taken from it.
-
-3. [Constitution of India, official English compilation](https://www.legislative.gov.in/static/uploads/2025/07/c9fe9c9b6840524844316f74bb1c556c.pdf#page=65). Legislative Department, Ministry of Law and Justice. **Locator:** Articles 74 and 75, especially Article 75(3): Union Council of Ministers. **Edition:** As on 1 May 2026. **Limits:** This compilation has a stated cutoff. No assertion that every post-cutoff notification or judgment was exhaustively checked. Article explanations concern the provisions cited, not personalised legal advice.
-
-
-Research checked: 2026-10-13. This date is not a claim of continuous monitoring.

@@ -1021,7 +1021,11 @@ kbd {
     --paper: #fff;
     --ink: #192825;
     --muted: #586561;
+    --line: #d8dfd9;
+    --line-strong: #a8b6ae;
+    --soft: #f0f4ef;
     --accent: #185d4d;
+    --mark: #fbe7b5;
     color-scheme: light;
   }
   .site-header,

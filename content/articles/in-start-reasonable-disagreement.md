@@ -1,26 +1,48 @@
 ---
-id: in-start-reasonable-disagreement
-route: /in/start/reasonable-disagreement
-country: IN
-language: en
-hub: start
-title: How can people disagree without abandoning evidence?
-summary: Disagreement about facts, uncertainty and values should not be treated as
-  one undifferentiated argument.
-status: ready
-publish: true
-research_checked_at: '2026-10-13'
-version: 2.0.0
-human_reviewed: false
-source_ref_ids:
-- budget-table
+id: "in-start-reasonable-disagreement"
+route: "/in/start/reasonable-disagreement"
+country: "IN"
+language: "en"
+hub: "start"
+title: "How can people disagree without abandoning evidence?"
+summary: "Disagreement about facts, uncertainty and values should not be treated as one undifferentiated argument."
+kind: "explainer"
+reader_task: "Split one policy dispute into three fields: factual claims, predictions and value judgments. Identify the evidence that could resolve one factual disagreement."
 related_ids:
-- in-start-politics-without-party-loyalty
-- in-evidence-check-before-sharing
-- in-elections-compare-candidates
+  - "in-start-politics-without-party-loyalty"
+  - "in-evidence-check-before-sharing"
+  - "in-elections-compare-candidates"
+quiz: null
+launch_order: null
+status: "ready"
+publish: true
+research_checked_at: "2026-10-13"
+human_reviewed: false
+review_method: "Assistant retrieval, source comparison and numerical checks; not independent human review"
+jurisdiction: "India; local administrative responsibility must be checked for the actual location"
+legal_scope: "General civic education, not individual legal advice"
+version: "2.0.0"
+source_ref_ids:
+  - "budget-table"
+sources:
+  - number: 1
+    ref_id: "budget-table"
+    document_id: "budget-glance"
+    title: "Budget at a Glance 2026–2027"
+    publisher: "Ministry of Finance"
+    url: "https://www.indiabudget.gov.in/doc/Budget_at_Glance/bag1.pdf#page=3"
+    locator: "PDF page 3, printed page 1: rows 9, 10 and 13; amounts in ₹ crore"
+    version: "Union Budget 2026–27"
+    published_at: null
+    reference_period: "2024–25 actuals; 2025–26 BE and RE; 2026–27 BE"
+    checked_at: "2026-10-13"
+    limitations: []
+    kind: "official_primary"
+maintenance:
+  trigger: "Change to a cited provision, source correction or substantiated reader correction"
+  suggested_recheck_days: 365
+  automation_created: false
 ---
-
-# How can people disagree without abandoning evidence?
 
 Two people can agree on a number and disagree about what should be done. They can also claim to disagree about values while relying on incompatible factual assumptions.
 
@@ -57,20 +79,3 @@ The same standard applies when one side is your own. A documented correction is 
 Sometimes agreement is unnecessary. You can establish which claims are supported, identify a genuine trade-off and leave the remaining judgment visible.
 
 A useful closing sentence is: “We agree on these records, disagree about this consequence, and would need this evidence to test it.” That gives the conversation somewhere to go besides repeating labels.
-
-## Try this
-
-Split one policy dispute into three fields: factual claims, predictions and value judgments. Identify the evidence that could resolve one factual disagreement.
-
-## Keep reading
-
-- [Can I care about politics without supporting a party?](/in/start/politics-without-party-loyalty)
-- [How do I check a political claim before sharing it?](/in/evidence/check-before-sharing)
-- [How can I compare candidates without a popularity contest?](/in/elections/compare-candidates)
-
-## Sources and scope
-
-1. [Budget at a Glance 2026–2027](https://www.indiabudget.gov.in/doc/Budget_at_Glance/bag1.pdf#page=3). Ministry of Finance. **Locator:** PDF page 3, printed page 1: rows 9, 10 and 13; amounts in ₹ crore. **Edition:** Union Budget 2026–27. **Reference period:** 2024–25 actuals; 2025–26 BE and RE; 2026–27 BE.
-
-
-Research checked: 2026-10-13. This date is not a claim of continuous monitoring.

@@ -7,7 +7,7 @@ export const GET = (() => {
       route: a.route,
       title: a.title,
       summary: a.summary,
-      text: plainText(a.body_markdown),
+      text: plainText(a.entry.rendered!.html),
       hub: a.hub,
     })),
   );

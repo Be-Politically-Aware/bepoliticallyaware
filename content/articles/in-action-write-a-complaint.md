@@ -1,27 +1,62 @@
 ---
-id: in-action-write-a-complaint
-route: /in/action/write-a-complaint
-country: IN
-language: en
-hub: action
-title: How do I write a useful public-service complaint?
-summary: Give an office a problem it can identify, evidence it can examine and an
-  action you can track.
-status: ready
-publish: true
-research_checked_at: '2026-10-13'
-version: 2.0.0
-human_reviewed: false
-source_ref_ids:
-- cpgrams-scope
-- cpgrams-track
+id: "in-action-write-a-complaint"
+route: "/in/action/write-a-complaint"
+country: "IN"
+language: "en"
+hub: "action"
+title: "How do I write a useful public-service complaint?"
+summary: "Give an office a problem it can identify, evidence it can examine and an action you can track."
+kind: "explainer"
+reader_task: "Draft a complaint in under 200 words. Check that another person can identify the location, dates, evidence and action requested without asking you to explain it again."
 related_ids:
-- in-local-find-responsible-authority
-- in-action-choose-a-route
-- in-action-rti-basics
+  - "in-local-find-responsible-authority"
+  - "in-action-choose-a-route"
+  - "in-action-rti-basics"
+quiz: null
+launch_order: 20
+status: "ready"
+publish: true
+research_checked_at: "2026-10-13"
+human_reviewed: false
+review_method: "Assistant retrieval, source comparison and numerical checks; not independent human review"
+jurisdiction: "India; local administrative responsibility must be checked for the actual location"
+legal_scope: "General civic education, not individual legal advice"
+version: "2.0.0"
+source_ref_ids:
+  - "cpgrams-scope"
+  - "cpgrams-track"
+sources:
+  - number: 1
+    ref_id: "cpgrams-scope"
+    document_id: "cpgrams"
+    title: "Centralised Public Grievance Redress and Monitoring System"
+    publisher: "Department of Administrative Reforms and Public Grievances"
+    url: "https://pgportal.gov.in/"
+    locator: "About CPGRAMS and issues not taken up: service grievances versus RTI and court/sub judice matters"
+    version: null
+    published_at: null
+    reference_period: null
+    checked_at: "2026-10-13"
+    limitations: []
+    kind: "official_primary"
+  - number: 2
+    ref_id: "cpgrams-track"
+    document_id: "cpgrams"
+    title: "Centralised Public Grievance Redress and Monitoring System"
+    publisher: "Department of Administrative Reforms and Public Grievances"
+    url: "https://pgportal.gov.in/"
+    locator: "About CPGRAMS: registration ID, tracking and feedback-linked appeal facility; not a promise of outcome"
+    version: null
+    published_at: null
+    reference_period: null
+    checked_at: "2026-10-13"
+    limitations: []
+    kind: "official_primary"
+maintenance:
+  trigger: "Material change to the official portal scope or applicable procedure"
+  suggested_recheck_days: 90
+  automation_created: false
 ---
-
-# How do I write a useful public-service complaint?
 
 A useful complaint is specific enough for another person to investigate without guessing what you mean. Its strength comes from the facts and requested action, not the number of people copied into it.
 
@@ -60,22 +95,3 @@ Keep four events separate: submission, acknowledgement, response and observed ou
 A useful follow-up says: “The response refers to [X], but my complaint concerns [Y]. Please address [specific unanswered point].” Repeating the entire complaint in more aggressive language may leave the same factual ambiguity unresolved.
 
 Never treat this template as a substitute for an urgent safety response or a legal appeal with its own requirements.
-
-## Try this
-
-Draft a complaint in under 200 words. Check that another person can identify the location, dates, evidence and action requested without asking you to explain it again.
-
-## Keep reading
-
-- [Who is actually responsible for this local problem?](/in/local/find-responsible-authority)
-- [Complaint, RTI, police report or court: which route fits?](/in/action/choose-a-route)
-- [What can I ask for through RTI?](/in/action/rti-basics)
-
-## Sources and scope
-
-1. [Centralised Public Grievance Redress and Monitoring System](https://pgportal.gov.in/). Department of Administrative Reforms and Public Grievances. **Locator:** About CPGRAMS and issues not taken up: service grievances versus RTI and court/sub judice matters.
-
-2. [Centralised Public Grievance Redress and Monitoring System](https://pgportal.gov.in/). Department of Administrative Reforms and Public Grievances. **Locator:** About CPGRAMS: registration ID, tracking and feedback-linked appeal facility; not a promise of outcome.
-
-
-Research checked: 2026-10-13. This date is not a claim of continuous monitoring.

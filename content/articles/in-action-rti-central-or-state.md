@@ -1,28 +1,76 @@
 ---
-id: in-action-rti-central-or-state
-route: /in/action/rti-central-or-state
-country: IN
-language: en
-hub: action
-title: Which RTI route applies to this authority?
-summary: Choose the RTI route according to the public authority concerned, not the
-  applicant’s address.
-status: ready
-publish: true
-research_checked_at: '2026-10-13'
-version: 2.0.0
-human_reviewed: false
-source_ref_ids:
-- rti-scope
-- lgd-directory
-- rti-tracking
+id: "in-action-rti-central-or-state"
+route: "/in/action/rti-central-or-state"
+country: "IN"
+language: "en"
+hub: "action"
+title: "Which RTI route applies to this authority?"
+summary: "Choose the RTI route according to the public authority concerned, not the applicant’s address."
+kind: "explainer"
+reader_task: "Before submitting anything, record the public authority’s exact name and the official page that establishes its RTI route."
 related_ids:
-- in-action-rti-basics
-- in-local-find-responsible-authority
-- in-action-write-a-complaint
+  - "in-action-rti-basics"
+  - "in-local-find-responsible-authority"
+  - "in-action-write-a-complaint"
+quiz: null
+launch_order: 22
+status: "ready"
+publish: true
+research_checked_at: "2026-10-13"
+human_reviewed: false
+review_method: "Assistant retrieval, source comparison and numerical checks; not independent human review"
+jurisdiction: "India; local administrative responsibility must be checked for the actual location"
+legal_scope: "General civic education, not individual legal advice"
+version: "2.0.0"
+source_ref_ids:
+  - "rti-scope"
+  - "lgd-directory"
+  - "rti-tracking"
+sources:
+  - number: 1
+    ref_id: "rti-scope"
+    document_id: "rti-online"
+    title: "RTI Online, Central Government portal"
+    publisher: "Department of Personnel and Training"
+    url: "https://rtionline.gov.in/"
+    locator: "Notice and introduction: Central public authorities; State authorities including Government of NCT Delhi excluded"
+    version: null
+    published_at: null
+    reference_period: null
+    checked_at: "2026-10-13"
+    limitations: []
+    kind: "official_primary"
+  - number: 2
+    ref_id: "lgd-directory"
+    document_id: "lgd"
+    title: "Local Government Directory overview"
+    publisher: "Ministry of Panchayati Raj"
+    url: "https://panchayat.gov.in/en/lgd/"
+    locator: "Overview of rural/urban local bodies, administrative units and LGD codes"
+    version: null
+    published_at: null
+    reference_period: null
+    checked_at: "2026-10-13"
+    limitations: []
+    kind: "official_primary"
+  - number: 3
+    ref_id: "rti-tracking"
+    document_id: "rti-faq"
+    title: "RTI Online frequently asked questions"
+    publisher: "Department of Personnel and Training"
+    url: "https://rtionline.gov.in/faq.php?pageid=c9f0f895fb98ab9159f51fd0297e236d"
+    locator: "FAQs on registration number, routing to nodal officer/CPIO and status tracking"
+    version: null
+    published_at: null
+    reference_period: null
+    checked_at: "2026-10-13"
+    limitations: []
+    kind: "official_primary"
+maintenance:
+  trigger: "Material change to the official portal scope or applicable procedure"
+  suggested_recheck_days: 90
+  automation_created: false
 ---
-
-# Which RTI route applies to this authority?
 
 The Central RTI Online portal is not a single filing destination for every public authority in India. Its current notice says that requests concerning state authorities, including authorities under the Government of NCT Delhi, should not be filed there. It warns that such requests will be returned without a fee refund. [1](https://rtionline.gov.in/)
 
@@ -51,24 +99,3 @@ Likewise, do not assume a sponsored search result or a third-party “RTI servic
 Keep the authority name, official instructions used, date, request text and registration or receipt reference. When using the Central portal, its FAQ explains how an acknowledgement and routing to the nodal officer or CPIO work. Those details describe that portal, not every state's process. [3](https://rtionline.gov.in/faq.php?pageid=c9f0f895fb98ab9159f51fd0297e236d)
 
 A routing error does not establish that an authority deliberately withheld information. First determine whether the request reached the correct body and what the actual reply says.
-
-## Try this
-
-Before submitting anything, record the public authority’s exact name and the official page that establishes its RTI route.
-
-## Keep reading
-
-- [What can I ask for through RTI?](/in/action/rti-basics)
-- [Who is actually responsible for this local problem?](/in/local/find-responsible-authority)
-- [How do I write a useful public-service complaint?](/in/action/write-a-complaint)
-
-## Sources and scope
-
-1. [RTI Online, Central Government portal](https://rtionline.gov.in/). Department of Personnel and Training. **Locator:** Notice and introduction: Central public authorities; State authorities including Government of NCT Delhi excluded.
-
-2. [Local Government Directory overview](https://panchayat.gov.in/en/lgd/). Ministry of Panchayati Raj. **Locator:** Overview of rural/urban local bodies, administrative units and LGD codes.
-
-3. [RTI Online frequently asked questions](https://rtionline.gov.in/faq.php?pageid=c9f0f895fb98ab9159f51fd0297e236d). Department of Personnel and Training. **Locator:** FAQs on registration number, routing to nodal officer/CPIO and status tracking.
-
-
-Research checked: 2026-10-13. This date is not a claim of continuous monitoring.

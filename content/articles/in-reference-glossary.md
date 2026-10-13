@@ -1,51 +1,433 @@
 ---
-id: in-reference-glossary
-route: /in/reference/glossary
-country: IN
-language: en
-hub: reference
-title: Political terms in plain English
-summary: Short definitions with links to explanations, examples and the relevant sources.
-status: ready
-publish: true
-research_checked_at: '2026-10-13'
-version: 2.0.0
-human_reviewed: false
-source_ref_ids:
-- c-state
-- c-executive
-- c-parliament
-- fptp
-- c-rs-election
-- c-state-houses
-- c-council-bills
-- c-state-executive
-- eci-roll
-- affidavit-provenance
-- rs-bills
-- c-bills
-- c-money-bill
-- c-panchayat
-- c-municipality
-- budget-docs
-- budget-table
-- budget-deficit
-- c-cag
-- rti-records
-- rti-no-new-answer
-- rti-tracking
-- cpgrams-scope
-- bnss-report
-- bnss-charge
-- bnss-bail
-- plfs-definitions
+id: "in-reference-glossary"
+route: "/in/reference/glossary"
+country: "IN"
+language: "en"
+hub: "reference"
+title: "Political terms in plain English"
+summary: "Short definitions with links to explanations, examples and the relevant sources."
+kind: "glossary"
+reader_task: "Choose three terms from a headline. Explain the distinction between them without using the terms as synonyms."
 related_ids:
-- in-start-country-state-government-party
-- in-crime-case-status-terms
-- in-evidence-percentages-and-denominators
+  - "in-start-country-state-government-party"
+  - "in-crime-case-status-terms"
+  - "in-evidence-percentages-and-denominators"
+quiz: null
+launch_order: 31
+status: "ready"
+publish: true
+research_checked_at: "2026-10-13"
+human_reviewed: false
+review_method: "Assistant retrieval, source comparison and numerical checks; not independent human review"
+jurisdiction: "India; local administrative responsibility must be checked for the actual location"
+legal_scope: "General civic education, not individual legal advice"
+version: "2.0.0"
+source_ref_ids:
+  - "c-state"
+  - "c-executive"
+  - "c-parliament"
+  - "fptp"
+  - "c-rs-election"
+  - "c-state-houses"
+  - "c-council-bills"
+  - "c-state-executive"
+  - "eci-roll"
+  - "affidavit-provenance"
+  - "rs-bills"
+  - "c-bills"
+  - "c-money-bill"
+  - "c-panchayat"
+  - "c-municipality"
+  - "budget-docs"
+  - "budget-table"
+  - "budget-deficit"
+  - "c-cag"
+  - "rti-records"
+  - "rti-no-new-answer"
+  - "rti-tracking"
+  - "cpgrams-scope"
+  - "bnss-report"
+  - "bnss-charge"
+  - "bnss-bail"
+  - "plfs-definitions"
+sources:
+  - number: 1
+    ref_id: "c-state"
+    document_id: "constitution"
+    title: "Constitution of India, official English compilation"
+    publisher: "Legislative Department, Ministry of Law and Justice"
+    url: "https://www.legislative.gov.in/static/uploads/2025/07/c9fe9c9b6840524844316f74bb1c556c.pdf#page=37"
+    locator: "Article 12: definition of State for Part III"
+    version: "As on 1 May 2026"
+    published_at: null
+    reference_period: null
+    checked_at: "2026-10-13"
+    limitations:
+      - "This compilation has a stated cutoff. No assertion that every post-cutoff notification or judgment was exhaustively checked. Article explanations concern the provisions cited, not personalised legal advice."
+    kind: "official_primary"
+  - number: 2
+    ref_id: "c-executive"
+    document_id: "constitution"
+    title: "Constitution of India, official English compilation"
+    publisher: "Legislative Department, Ministry of Law and Justice"
+    url: "https://www.legislative.gov.in/static/uploads/2025/07/c9fe9c9b6840524844316f74bb1c556c.pdf#page=65"
+    locator: "Articles 74 and 75, especially Article 75(3): Union Council of Ministers"
+    version: "As on 1 May 2026"
+    published_at: null
+    reference_period: null
+    checked_at: "2026-10-13"
+    limitations:
+      - "This compilation has a stated cutoff. No assertion that every post-cutoff notification or judgment was exhaustively checked. Article explanations concern the provisions cited, not personalised legal advice."
+    kind: "official_primary"
+  - number: 3
+    ref_id: "c-parliament"
+    document_id: "constitution"
+    title: "Constitution of India, official English compilation"
+    publisher: "Legislative Department, Ministry of Law and Justice"
+    url: "https://www.legislative.gov.in/static/uploads/2025/07/c9fe9c9b6840524844316f74bb1c556c.pdf#page=67"
+    locator: "Articles 79 and 80: Parliament and composition of the Council of States"
+    version: "As on 1 May 2026"
+    published_at: null
+    reference_period: null
+    checked_at: "2026-10-13"
+    limitations:
+      - "This compilation has a stated cutoff. No assertion that every post-cutoff notification or judgment was exhaustively checked. Article explanations concern the provisions cited, not personalised legal advice."
+    kind: "official_primary"
+  - number: 4
+    ref_id: "fptp"
+    document_id: "ncert-elections"
+    title: "Indian Constitution at Work, chapter 3: Election and Representation"
+    publisher: "NCERT"
+    url: "https://ncert.nic.in/textbook/pdf/keps203.pdf#page=6"
+    locator: "PDF pages 6–7, printed pages 56–57: First Past the Post"
+    version: "Reprint 2026–27"
+    published_at: null
+    reference_period: null
+    checked_at: "2026-10-13"
+    limitations:
+      - "Historical illustrations and proposals for electoral reform are not current law. No figures from historic examples used as live results."
+    kind: "official_primary"
+  - number: 5
+    ref_id: "c-rs-election"
+    document_id: "constitution"
+    title: "Constitution of India, official English compilation"
+    publisher: "Legislative Department, Ministry of Law and Justice"
+    url: "https://www.legislative.gov.in/static/uploads/2025/07/c9fe9c9b6840524844316f74bb1c556c.pdf#page=68"
+    locator: "Article 80(4): elected state representatives in Rajya Sabha"
+    version: "As on 1 May 2026"
+    published_at: null
+    reference_period: null
+    checked_at: "2026-10-13"
+    limitations:
+      - "This compilation has a stated cutoff. No assertion that every post-cutoff notification or judgment was exhaustively checked. Article explanations concern the provisions cited, not personalised legal advice."
+    kind: "official_primary"
+  - number: 6
+    ref_id: "c-state-houses"
+    document_id: "constitution"
+    title: "Constitution of India, official English compilation"
+    publisher: "Legislative Department, Ministry of Law and Justice"
+    url: "https://www.legislative.gov.in/static/uploads/2025/07/c9fe9c9b6840524844316f74bb1c556c.pdf#page=106"
+    locator: "Articles 168–171: state legislatures and Legislative Councils"
+    version: "As on 1 May 2026"
+    published_at: null
+    reference_period: null
+    checked_at: "2026-10-13"
+    limitations:
+      - "This compilation has a stated cutoff. No assertion that every post-cutoff notification or judgment was exhaustively checked. Article explanations concern the provisions cited, not personalised legal advice."
+    kind: "official_primary"
+  - number: 7
+    ref_id: "c-council-bills"
+    document_id: "constitution"
+    title: "Constitution of India, official English compilation"
+    publisher: "Legislative Department, Ministry of Law and Justice"
+    url: "https://www.legislative.gov.in/static/uploads/2025/07/c9fe9c9b6840524844316f74bb1c556c.pdf#page=119"
+    locator: "Articles 197–198: Legislative Council powers on ordinary Bills and Money Bills"
+    version: "As on 1 May 2026"
+    published_at: null
+    reference_period: null
+    checked_at: "2026-10-13"
+    limitations:
+      - "This compilation has a stated cutoff. No assertion that every post-cutoff notification or judgment was exhaustively checked. Article explanations concern the provisions cited, not personalised legal advice."
+    kind: "official_primary"
+  - number: 8
+    ref_id: "c-state-executive"
+    document_id: "constitution"
+    title: "Constitution of India, official English compilation"
+    publisher: "Legislative Department, Ministry of Law and Justice"
+    url: "https://www.legislative.gov.in/static/uploads/2025/07/c9fe9c9b6840524844316f74bb1c556c.pdf#page=104"
+    locator: "Article 164(2): Council of Ministers collectively responsible to Legislative Assembly"
+    version: "As on 1 May 2026"
+    published_at: null
+    reference_period: null
+    checked_at: "2026-10-13"
+    limitations:
+      - "This compilation has a stated cutoff. No assertion that every post-cutoff notification or judgment was exhaustively checked. Article explanations concern the provisions cited, not personalised legal advice."
+    kind: "official_primary"
+  - number: 9
+    ref_id: "eci-roll"
+    document_id: "eci-roll-notice"
+    title: "Electors on the voter list and identification at polling"
+    publisher: "Election Commission of India, published by PIB"
+    url: "https://www.pib.gov.in/PressReleasePage.aspx?PRID=2177191"
+    locator: "Paragraphs 1 and 4: name on electoral roll required; identity document is not a substitute for registration"
+    version: null
+    published_at: "2025-10-10"
+    reference_period: null
+    checked_at: "2026-10-13"
+    limitations:
+      - "The notice concerns specified 2025 elections. Its election-specific alternative ID list is not reproduced as a universal current list."
+    kind: "official_primary"
+  - number: 10
+    ref_id: "affidavit-provenance"
+    document_id: "myneta"
+    title: "MyNeta affidavit repository and data provenance"
+    publisher: "Association for Democratic Reforms"
+    url: "https://myneta.info/"
+    locator: "Repository provenance/disclaimer: candidate affidavits are the source; original affidavit takes precedence over extraction"
+    version: null
+    published_at: null
+    reference_period: null
+    checked_at: "2026-10-13"
+    limitations:
+      - "Independent non-government repository, not a court finding. Individual 2026 affidavits have not been checked for this package."
+    kind: "independent_primary_analysis"
+  - number: 11
+    ref_id: "rs-bills"
+    document_id: "rs-legislation"
+    title: "Introduction to legislation"
+    publisher: "Rajya Sabha Secretariat"
+    url: "https://sansad.in/rs/legislation/introduction"
+    locator: "Introduction: Bills and enactment; read with constitutional exceptions"
+    version: null
+    published_at: null
+    reference_period: null
+    checked_at: "2026-10-13"
+    limitations: []
+    kind: "official_primary"
+  - number: 12
+    ref_id: "c-bills"
+    document_id: "constitution"
+    title: "Constitution of India, official English compilation"
+    publisher: "Legislative Department, Ministry of Law and Justice"
+    url: "https://www.legislative.gov.in/static/uploads/2025/07/c9fe9c9b6840524844316f74bb1c556c.pdf#page=79"
+    locator: "Articles 107–111: legislative procedure; Money Bill exceptions; assent"
+    version: "As on 1 May 2026"
+    published_at: null
+    reference_period: null
+    checked_at: "2026-10-13"
+    limitations:
+      - "This compilation has a stated cutoff. No assertion that every post-cutoff notification or judgment was exhaustively checked. Article explanations concern the provisions cited, not personalised legal advice."
+    kind: "official_primary"
+  - number: 13
+    ref_id: "c-money-bill"
+    document_id: "constitution"
+    title: "Constitution of India, official English compilation"
+    publisher: "Legislative Department, Ministry of Law and Justice"
+    url: "https://www.legislative.gov.in/static/uploads/2025/07/c9fe9c9b6840524844316f74bb1c556c.pdf#page=80"
+    locator: "Articles 109 and 110: Money Bill procedure and definition"
+    version: "As on 1 May 2026"
+    published_at: null
+    reference_period: null
+    checked_at: "2026-10-13"
+    limitations:
+      - "This compilation has a stated cutoff. No assertion that every post-cutoff notification or judgment was exhaustively checked. Article explanations concern the provisions cited, not personalised legal advice."
+    kind: "official_primary"
+  - number: 14
+    ref_id: "c-panchayat"
+    document_id: "constitution"
+    title: "Constitution of India, official English compilation"
+    publisher: "Legislative Department, Ministry of Law and Justice"
+    url: "https://www.legislative.gov.in/static/uploads/2025/07/c9fe9c9b6840524844316f74bb1c556c.pdf#page=154"
+    locator: "Article 243G: state legislation and powers devolved to panchayats"
+    version: "As on 1 May 2026"
+    published_at: null
+    reference_period: null
+    checked_at: "2026-10-13"
+    limitations:
+      - "This compilation has a stated cutoff. No assertion that every post-cutoff notification or judgment was exhaustively checked. Article explanations concern the provisions cited, not personalised legal advice."
+    kind: "official_primary"
+  - number: 15
+    ref_id: "c-municipality"
+    document_id: "constitution"
+    title: "Constitution of India, official English compilation"
+    publisher: "Legislative Department, Ministry of Law and Justice"
+    url: "https://www.legislative.gov.in/static/uploads/2025/07/c9fe9c9b6840524844316f74bb1c556c.pdf#page=162"
+    locator: "Article 243W: state legislation and municipal powers"
+    version: "As on 1 May 2026"
+    published_at: null
+    reference_period: null
+    checked_at: "2026-10-13"
+    limitations:
+      - "This compilation has a stated cutoff. No assertion that every post-cutoff notification or judgment was exhaustively checked. Article explanations concern the provisions cited, not personalised legal advice."
+    kind: "official_primary"
+  - number: 16
+    ref_id: "budget-docs"
+    document_id: "budget-key"
+    title: "Key to Budget Documents 2026–2027"
+    publisher: "Ministry of Finance"
+    url: "https://www.indiabudget.gov.in/doc/Key_to_Budget_Document_2026.pdf#page=2"
+    locator: "PDF pages 2–5: document list, Annual Financial Statement, Demands for Grants and Finance Bill"
+    version: "Union Budget 2026–27"
+    published_at: "2026-02"
+    reference_period: null
+    checked_at: "2026-10-13"
+    limitations: []
+    kind: "official_primary"
+  - number: 17
+    ref_id: "budget-table"
+    document_id: "budget-glance"
+    title: "Budget at a Glance 2026–2027"
+    publisher: "Ministry of Finance"
+    url: "https://www.indiabudget.gov.in/doc/Budget_at_Glance/bag1.pdf#page=3"
+    locator: "PDF page 3, printed page 1: rows 9, 10 and 13; amounts in ₹ crore"
+    version: "Union Budget 2026–27"
+    published_at: null
+    reference_period: "2024–25 actuals; 2025–26 BE and RE; 2026–27 BE"
+    checked_at: "2026-10-13"
+    limitations: []
+    kind: "official_primary"
+  - number: 18
+    ref_id: "budget-deficit"
+    document_id: "budget-glance"
+    title: "Budget at a Glance 2026–2027"
+    publisher: "Ministry of Finance"
+    url: "https://www.indiabudget.gov.in/doc/Budget_at_Glance/bag1.pdf#page=3"
+    locator: "PDF page 3, printed page 1: receipts, borrowings and fiscal deficit rows"
+    version: "Union Budget 2026–27"
+    published_at: null
+    reference_period: "2024–25 actuals; 2025–26 BE and RE; 2026–27 BE"
+    checked_at: "2026-10-13"
+    limitations: []
+    kind: "official_primary"
+  - number: 19
+    ref_id: "c-cag"
+    document_id: "constitution"
+    title: "Constitution of India, official English compilation"
+    publisher: "Legislative Department, Ministry of Law and Justice"
+    url: "https://www.legislative.gov.in/static/uploads/2025/07/c9fe9c9b6840524844316f74bb1c556c.pdf#page=99"
+    locator: "Articles 148–151, especially 149 and 151: CAG and audit reports"
+    version: "As on 1 May 2026"
+    published_at: null
+    reference_period: null
+    checked_at: "2026-10-13"
+    limitations:
+      - "This compilation has a stated cutoff. No assertion that every post-cutoff notification or judgment was exhaustively checked. Article explanations concern the provisions cited, not personalised legal advice."
+    kind: "official_primary"
+  - number: 20
+    ref_id: "rti-records"
+    document_id: "rti-act"
+    title: "Right to Information Act 2005, CIC-hosted compilation"
+    publisher: "Central Information Commission"
+    url: "https://cic.gov.in/sites/default/files/RTI-Act_English.pdf#page=7"
+    locator: "Sections 2(f), 2(j), 3 and 4: existing records, access and proactive disclosure"
+    version: "As modified up to 1 February 2011"
+    published_at: null
+    reference_period: null
+    checked_at: "2026-10-13"
+    limitations:
+      - "Not a current consolidated Act. Do not use this copy for present territorial extent, amended exemptions, service conditions, deadlines or case-specific rights. Current procedural references use the live portal."
+    kind: "official_primary"
+  - number: 21
+    ref_id: "rti-no-new-answer"
+    document_id: "rti-guide"
+    title: "A Guide for the Information Seekers under the RTI Act 2005"
+    publisher: "Department of Personnel and Training; official copy hosted by AIIMS Bhubaneswar"
+    url: "https://aiimsbhubaneswar.nic.in/wp-content/uploads/2025/05/31-1.pdf#page=5"
+    locator: "PDF page 5, printed page 2, paragraphs 2–4: existing information; no duty to create an answer to a hypothetical"
+    version: "DoPT memorandum dated 8 November 2007"
+    published_at: "2007-11-08"
+    reference_period: null
+    checked_at: "2026-10-13"
+    limitations:
+      - "Historical guide. The 2025 URL folder is not the publication date. Used only for existing-information versus creating answers distinction, not current fees, exemptions or deadlines."
+    kind: "official_primary"
+  - number: 22
+    ref_id: "rti-tracking"
+    document_id: "rti-faq"
+    title: "RTI Online frequently asked questions"
+    publisher: "Department of Personnel and Training"
+    url: "https://rtionline.gov.in/faq.php?pageid=c9f0f895fb98ab9159f51fd0297e236d"
+    locator: "FAQs on registration number, routing to nodal officer/CPIO and status tracking"
+    version: null
+    published_at: null
+    reference_period: null
+    checked_at: "2026-10-13"
+    limitations: []
+    kind: "official_primary"
+  - number: 23
+    ref_id: "cpgrams-scope"
+    document_id: "cpgrams"
+    title: "Centralised Public Grievance Redress and Monitoring System"
+    publisher: "Department of Administrative Reforms and Public Grievances"
+    url: "https://pgportal.gov.in/"
+    locator: "About CPGRAMS and issues not taken up: service grievances versus RTI and court/sub judice matters"
+    version: null
+    published_at: null
+    reference_period: null
+    checked_at: "2026-10-13"
+    limitations: []
+    kind: "official_primary"
+  - number: 24
+    ref_id: "bnss-report"
+    document_id: "bnss"
+    title: "Bharatiya Nagarik Suraksha Sanhita 2023, original gazette text"
+    publisher: "Ministry of Home Affairs / Gazette of India"
+    url: "https://www.mha.gov.in/sites/default/files/2024-04/250884_2_english_01042024.pdf#page=62"
+    locator: "Section 193: police report on completion of investigation"
+    version: "Act 46 of 2023, original enactment"
+    published_at: "2023-12-25"
+    reference_period: null
+    checked_at: "2026-10-13"
+    limitations:
+      - "Original enacted text, not a guaranteed current consolidation. Used for general legal vocabulary, not eligibility, deadline or advice for a specific proceeding. Older proceedings may continue under the former code under the savings provision."
+    kind: "official_primary"
+  - number: 25
+    ref_id: "bnss-charge"
+    document_id: "bnss"
+    title: "Bharatiya Nagarik Suraksha Sanhita 2023, original gazette text"
+    publisher: "Ministry of Home Affairs / Gazette of India"
+    url: "https://www.mha.gov.in/sites/default/files/2024-04/250884_2_english_01042024.pdf#page=82"
+    locator: "Sections 250–251: discharge and framing of charge; general sessions-trial illustration"
+    version: "Act 46 of 2023, original enactment"
+    published_at: "2023-12-25"
+    reference_period: null
+    checked_at: "2026-10-13"
+    limitations:
+      - "Original enacted text, not a guaranteed current consolidation. Used for general legal vocabulary, not eligibility, deadline or advice for a specific proceeding. Older proceedings may continue under the former code under the savings provision."
+    kind: "official_primary"
+  - number: 26
+    ref_id: "bnss-bail"
+    document_id: "bnss"
+    title: "Bharatiya Nagarik Suraksha Sanhita 2023, original gazette text"
+    publisher: "Ministry of Home Affairs / Gazette of India"
+    url: "https://www.mha.gov.in/sites/default/files/2024-04/250884_2_english_01042024.pdf#page=2"
+    locator: "Section 2(1)(b): bail definition"
+    version: "Act 46 of 2023, original enactment"
+    published_at: "2023-12-25"
+    reference_period: null
+    checked_at: "2026-10-13"
+    limitations:
+      - "Original enacted text, not a guaranteed current consolidation. Used for general legal vocabulary, not eligibility, deadline or advice for a specific proceeding. Older proceedings may continue under the former code under the savings provision."
+    kind: "official_primary"
+  - number: 27
+    ref_id: "plfs-definitions"
+    document_id: "plfs-release"
+    title: "Periodic Labour Force Survey Annual Report 2025: release and methods note"
+    publisher: "Ministry of Statistics and Programme Implementation, published by PIB"
+    url: "https://www.pib.gov.in/PressReleasePage.aspx?PRID=2246009&lang=1&reg=3"
+    locator: "Endnote D: definitions of LFPR, WPR, UR, usual status and current weekly status"
+    version: null
+    published_at: "2026-03-27"
+    reference_period: "January–December 2025"
+    checked_at: "2026-10-13"
+    limitations:
+      - "This release, not the full underlying report, is the inspected numerical source. Annual usual-status estimates are not current-month unemployment or a job-quality measure."
+    kind: "official_primary"
+maintenance:
+  trigger: "Change to a cited provision, source correction or substantiated reader correction"
+  suggested_recheck_days: 365
+  automation_created: false
 ---
-
-# Political terms in plain English
 
 A term is useful when it helps you understand a real question. These short definitions are entry points, not a replacement for the full article or the relevant legal text. Follow the linked explanation when the distinction matters.
 
@@ -324,72 +706,3 @@ A conclusion drawn from evidence rather than a fact directly stated or observed.
 A relationship or incentive that may affect a judgment. Document the relationship; do not treat its existence as automatic proof that every statement is false. 
 
 [Read the explanation](/in/media/assess-a-news-report).
-
-## Try this
-
-Choose three terms from a headline. Explain the distinction between them without using the terms as synonyms.
-
-## Keep reading
-
-- [Country, State, government and party: what is the difference?](/in/start/country-state-government-party)
-- [Accused, charged or convicted: what do these words mean?](/in/crime/case-status-terms)
-- [Percent of what, and compared with when?](/in/evidence/percentages-and-denominators)
-
-## Sources and scope
-
-1. [Constitution of India, official English compilation](https://www.legislative.gov.in/static/uploads/2025/07/c9fe9c9b6840524844316f74bb1c556c.pdf#page=37). Legislative Department, Ministry of Law and Justice. **Locator:** Article 12: definition of State for Part III. **Edition:** As on 1 May 2026. **Limits:** This compilation has a stated cutoff. No assertion that every post-cutoff notification or judgment was exhaustively checked. Article explanations concern the provisions cited, not personalised legal advice.
-
-2. [Constitution of India, official English compilation](https://www.legislative.gov.in/static/uploads/2025/07/c9fe9c9b6840524844316f74bb1c556c.pdf#page=65). Legislative Department, Ministry of Law and Justice. **Locator:** Articles 74 and 75, especially Article 75(3): Union Council of Ministers. **Edition:** As on 1 May 2026. **Limits:** This compilation has a stated cutoff. No assertion that every post-cutoff notification or judgment was exhaustively checked. Article explanations concern the provisions cited, not personalised legal advice.
-
-3. [Constitution of India, official English compilation](https://www.legislative.gov.in/static/uploads/2025/07/c9fe9c9b6840524844316f74bb1c556c.pdf#page=67). Legislative Department, Ministry of Law and Justice. **Locator:** Articles 79 and 80: Parliament and composition of the Council of States. **Edition:** As on 1 May 2026. **Limits:** This compilation has a stated cutoff. No assertion that every post-cutoff notification or judgment was exhaustively checked. Article explanations concern the provisions cited, not personalised legal advice.
-
-4. [Indian Constitution at Work, chapter 3: Election and Representation](https://ncert.nic.in/textbook/pdf/keps203.pdf#page=6). NCERT. **Locator:** PDF pages 6–7, printed pages 56–57: First Past the Post. **Edition:** Reprint 2026–27. **Limits:** Historical illustrations and proposals for electoral reform are not current law. No figures from historic examples used as live results.
-
-5. [Constitution of India, official English compilation](https://www.legislative.gov.in/static/uploads/2025/07/c9fe9c9b6840524844316f74bb1c556c.pdf#page=68). Legislative Department, Ministry of Law and Justice. **Locator:** Article 80(4): elected state representatives in Rajya Sabha. **Edition:** As on 1 May 2026. **Limits:** This compilation has a stated cutoff. No assertion that every post-cutoff notification or judgment was exhaustively checked. Article explanations concern the provisions cited, not personalised legal advice.
-
-6. [Constitution of India, official English compilation](https://www.legislative.gov.in/static/uploads/2025/07/c9fe9c9b6840524844316f74bb1c556c.pdf#page=106). Legislative Department, Ministry of Law and Justice. **Locator:** Articles 168–171: state legislatures and Legislative Councils. **Edition:** As on 1 May 2026. **Limits:** This compilation has a stated cutoff. No assertion that every post-cutoff notification or judgment was exhaustively checked. Article explanations concern the provisions cited, not personalised legal advice.
-
-7. [Constitution of India, official English compilation](https://www.legislative.gov.in/static/uploads/2025/07/c9fe9c9b6840524844316f74bb1c556c.pdf#page=119). Legislative Department, Ministry of Law and Justice. **Locator:** Articles 197–198: Legislative Council powers on ordinary Bills and Money Bills. **Edition:** As on 1 May 2026. **Limits:** This compilation has a stated cutoff. No assertion that every post-cutoff notification or judgment was exhaustively checked. Article explanations concern the provisions cited, not personalised legal advice.
-
-8. [Constitution of India, official English compilation](https://www.legislative.gov.in/static/uploads/2025/07/c9fe9c9b6840524844316f74bb1c556c.pdf#page=104). Legislative Department, Ministry of Law and Justice. **Locator:** Article 164(2): Council of Ministers collectively responsible to Legislative Assembly. **Edition:** As on 1 May 2026. **Limits:** This compilation has a stated cutoff. No assertion that every post-cutoff notification or judgment was exhaustively checked. Article explanations concern the provisions cited, not personalised legal advice.
-
-9. [Electors on the voter list and identification at polling](https://www.pib.gov.in/PressReleasePage.aspx?PRID=2177191). Election Commission of India, published by PIB. **Locator:** Paragraphs 1 and 4: name on electoral roll required; identity document is not a substitute for registration. **Published:** 2025-10-10. **Limits:** The notice concerns specified 2025 elections. Its election-specific alternative ID list is not reproduced as a universal current list.
-
-10. [MyNeta affidavit repository and data provenance](https://myneta.info/). Association for Democratic Reforms. **Locator:** Repository provenance/disclaimer: candidate affidavits are the source; original affidavit takes precedence over extraction. **Limits:** Independent non-government repository, not a court finding. Individual 2026 affidavits have not been checked for this package.
-
-11. [Introduction to legislation](https://sansad.in/rs/legislation/introduction). Rajya Sabha Secretariat. **Locator:** Introduction: Bills and enactment; read with constitutional exceptions.
-
-12. [Constitution of India, official English compilation](https://www.legislative.gov.in/static/uploads/2025/07/c9fe9c9b6840524844316f74bb1c556c.pdf#page=79). Legislative Department, Ministry of Law and Justice. **Locator:** Articles 107–111: legislative procedure; Money Bill exceptions; assent. **Edition:** As on 1 May 2026. **Limits:** This compilation has a stated cutoff. No assertion that every post-cutoff notification or judgment was exhaustively checked. Article explanations concern the provisions cited, not personalised legal advice.
-
-13. [Constitution of India, official English compilation](https://www.legislative.gov.in/static/uploads/2025/07/c9fe9c9b6840524844316f74bb1c556c.pdf#page=80). Legislative Department, Ministry of Law and Justice. **Locator:** Articles 109 and 110: Money Bill procedure and definition. **Edition:** As on 1 May 2026. **Limits:** This compilation has a stated cutoff. No assertion that every post-cutoff notification or judgment was exhaustively checked. Article explanations concern the provisions cited, not personalised legal advice.
-
-14. [Constitution of India, official English compilation](https://www.legislative.gov.in/static/uploads/2025/07/c9fe9c9b6840524844316f74bb1c556c.pdf#page=154). Legislative Department, Ministry of Law and Justice. **Locator:** Article 243G: state legislation and powers devolved to panchayats. **Edition:** As on 1 May 2026. **Limits:** This compilation has a stated cutoff. No assertion that every post-cutoff notification or judgment was exhaustively checked. Article explanations concern the provisions cited, not personalised legal advice.
-
-15. [Constitution of India, official English compilation](https://www.legislative.gov.in/static/uploads/2025/07/c9fe9c9b6840524844316f74bb1c556c.pdf#page=162). Legislative Department, Ministry of Law and Justice. **Locator:** Article 243W: state legislation and municipal powers. **Edition:** As on 1 May 2026. **Limits:** This compilation has a stated cutoff. No assertion that every post-cutoff notification or judgment was exhaustively checked. Article explanations concern the provisions cited, not personalised legal advice.
-
-16. [Key to Budget Documents 2026–2027](https://www.indiabudget.gov.in/doc/Key_to_Budget_Document_2026.pdf#page=2). Ministry of Finance. **Locator:** PDF pages 2–5: document list, Annual Financial Statement, Demands for Grants and Finance Bill. **Edition:** Union Budget 2026–27. **Published:** 2026-02.
-
-17. [Budget at a Glance 2026–2027](https://www.indiabudget.gov.in/doc/Budget_at_Glance/bag1.pdf#page=3). Ministry of Finance. **Locator:** PDF page 3, printed page 1: rows 9, 10 and 13; amounts in ₹ crore. **Edition:** Union Budget 2026–27. **Reference period:** 2024–25 actuals; 2025–26 BE and RE; 2026–27 BE.
-
-18. [Budget at a Glance 2026–2027](https://www.indiabudget.gov.in/doc/Budget_at_Glance/bag1.pdf#page=3). Ministry of Finance. **Locator:** PDF page 3, printed page 1: receipts, borrowings and fiscal deficit rows. **Edition:** Union Budget 2026–27. **Reference period:** 2024–25 actuals; 2025–26 BE and RE; 2026–27 BE.
-
-19. [Constitution of India, official English compilation](https://www.legislative.gov.in/static/uploads/2025/07/c9fe9c9b6840524844316f74bb1c556c.pdf#page=99). Legislative Department, Ministry of Law and Justice. **Locator:** Articles 148–151, especially 149 and 151: CAG and audit reports. **Edition:** As on 1 May 2026. **Limits:** This compilation has a stated cutoff. No assertion that every post-cutoff notification or judgment was exhaustively checked. Article explanations concern the provisions cited, not personalised legal advice.
-
-20. [Right to Information Act 2005, CIC-hosted compilation](https://cic.gov.in/sites/default/files/RTI-Act_English.pdf#page=7). Central Information Commission. **Locator:** Sections 2(f), 2(j), 3 and 4: existing records, access and proactive disclosure. **Edition:** As modified up to 1 February 2011. **Limits:** Not a current consolidated Act. Do not use this copy for present territorial extent, amended exemptions, service conditions, deadlines or case-specific rights. Current procedural references use the live portal.
-
-21. [A Guide for the Information Seekers under the RTI Act 2005](https://aiimsbhubaneswar.nic.in/wp-content/uploads/2025/05/31-1.pdf#page=5). Department of Personnel and Training; official copy hosted by AIIMS Bhubaneswar. **Locator:** PDF page 5, printed page 2, paragraphs 2–4: existing information; no duty to create an answer to a hypothetical. **Edition:** DoPT memorandum dated 8 November 2007. **Published:** 2007-11-08. **Limits:** Historical guide. The 2025 URL folder is not the publication date. Used only for existing-information versus creating answers distinction, not current fees, exemptions or deadlines.
-
-22. [RTI Online frequently asked questions](https://rtionline.gov.in/faq.php?pageid=c9f0f895fb98ab9159f51fd0297e236d). Department of Personnel and Training. **Locator:** FAQs on registration number, routing to nodal officer/CPIO and status tracking.
-
-23. [Centralised Public Grievance Redress and Monitoring System](https://pgportal.gov.in/). Department of Administrative Reforms and Public Grievances. **Locator:** About CPGRAMS and issues not taken up: service grievances versus RTI and court/sub judice matters.
-
-24. [Bharatiya Nagarik Suraksha Sanhita 2023, original gazette text](https://www.mha.gov.in/sites/default/files/2024-04/250884_2_english_01042024.pdf#page=62). Ministry of Home Affairs / Gazette of India. **Locator:** Section 193: police report on completion of investigation. **Edition:** Act 46 of 2023, original enactment. **Published:** 2023-12-25. **Limits:** Original enacted text, not a guaranteed current consolidation. Used for general legal vocabulary, not eligibility, deadline or advice for a specific proceeding. Older proceedings may continue under the former code under the savings provision.
-
-25. [Bharatiya Nagarik Suraksha Sanhita 2023, original gazette text](https://www.mha.gov.in/sites/default/files/2024-04/250884_2_english_01042024.pdf#page=82). Ministry of Home Affairs / Gazette of India. **Locator:** Sections 250–251: discharge and framing of charge; general sessions-trial illustration. **Edition:** Act 46 of 2023, original enactment. **Published:** 2023-12-25. **Limits:** Original enacted text, not a guaranteed current consolidation. Used for general legal vocabulary, not eligibility, deadline or advice for a specific proceeding. Older proceedings may continue under the former code under the savings provision.
-
-26. [Bharatiya Nagarik Suraksha Sanhita 2023, original gazette text](https://www.mha.gov.in/sites/default/files/2024-04/250884_2_english_01042024.pdf#page=2). Ministry of Home Affairs / Gazette of India. **Locator:** Section 2(1)(b): bail definition. **Edition:** Act 46 of 2023, original enactment. **Published:** 2023-12-25. **Limits:** Original enacted text, not a guaranteed current consolidation. Used for general legal vocabulary, not eligibility, deadline or advice for a specific proceeding. Older proceedings may continue under the former code under the savings provision.
-
-27. [Periodic Labour Force Survey Annual Report 2025: release and methods note](https://www.pib.gov.in/PressReleasePage.aspx?PRID=2246009&lang=1&reg=3). Ministry of Statistics and Programme Implementation, published by PIB. **Locator:** Endnote D: definitions of LFPR, WPR, UR, usual status and current weekly status. **Published:** 2026-03-27. **Reference period:** January–December 2025. **Limits:** This release, not the full underlying report, is the inspected numerical source. Annual usual-status estimates are not current-month unemployment or a job-quality measure.
-
-
-Research checked: 2026-10-13. This date is not a claim of continuous monitoring.

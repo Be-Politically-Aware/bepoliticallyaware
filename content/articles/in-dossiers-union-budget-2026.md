@@ -1,26 +1,48 @@
 ---
-id: in-dossiers-union-budget-2026
-route: /in/dossiers/union-budget-2026
-country: IN
-language: en
-hub: dossiers
-title: What does the 2026–27 Union Budget actually say about spending?
-summary: A worked example using the official 2026–27 Budget at a Glance table, with
-  the inputs and arithmetic visible.
-status: ready
-publish: true
-research_checked_at: '2026-10-13'
-version: 2.0.0
-human_reviewed: false
-source_ref_ids:
-- budget-table
+id: "in-dossiers-union-budget-2026"
+route: "/in/dossiers/union-budget-2026"
+country: "IN"
+language: "en"
+hub: "dossiers"
+title: "What does the 2026–27 Union Budget actually say about spending?"
+summary: "A worked example using the official 2026–27 Budget at a Glance table, with the inputs and arithmetic visible."
+kind: "evidence-card"
+reader_task: "Recalculate the 7.70% comparison, then explain in one sentence why it is not a measure of improvement in public services."
 related_ids:
-- in-money-read-a-budget
-- in-money-estimates-revised-actuals
-- in-evidence-percentages-and-denominators
+  - "in-money-read-a-budget"
+  - "in-money-estimates-revised-actuals"
+  - "in-evidence-percentages-and-denominators"
+quiz: null
+launch_order: null
+status: "ready"
+publish: true
+research_checked_at: "2026-10-13"
+human_reviewed: false
+review_method: "Assistant retrieval, source comparison and numerical checks; not independent human review"
+jurisdiction: "India; local administrative responsibility must be checked for the actual location"
+legal_scope: "General civic education, not individual legal advice"
+version: "2.0.0"
+source_ref_ids:
+  - "budget-table"
+sources:
+  - number: 1
+    ref_id: "budget-table"
+    document_id: "budget-glance"
+    title: "Budget at a Glance 2026–2027"
+    publisher: "Ministry of Finance"
+    url: "https://www.indiabudget.gov.in/doc/Budget_at_Glance/bag1.pdf#page=3"
+    locator: "PDF page 3, printed page 1: rows 9, 10 and 13; amounts in ₹ crore"
+    version: "Union Budget 2026–27"
+    published_at: null
+    reference_period: "2024–25 actuals; 2025–26 BE and RE; 2026–27 BE"
+    checked_at: "2026-10-13"
+    limitations: []
+    kind: "official_primary"
+maintenance:
+  trigger: "New source edition or revision; retain historical reference period"
+  suggested_recheck_days: 180
+  automation_created: false
 ---
-
-# What does the 2026–27 Union Budget actually say about spending?
 
 The Union Budget at a Glance provides a useful exercise in reading financial claims. The table used here is PDF page 3, printed page 1. All amounts below are in **₹ crore**. These are the figures in that budget document, not a live expenditure dashboard. [1](https://www.indiabudget.gov.in/doc/Budget_at_Glance/bag1.pdf#page=3)
 
@@ -57,20 +79,3 @@ The previous year's original Budget Estimate and Revised Estimate are different 
 Nor is this calculation adjusted for inflation, population or the composition of expenditure. Those would be separate analyses requiring additional inputs.
 
 The downloadable data card accompanying this article includes integer inputs, row labels, units and calculation checks. It does not claim that a budget estimate is a completed service outcome.
-
-## Try this
-
-Recalculate the 7.70% comparison, then explain in one sentence why it is not a measure of improvement in public services.
-
-## Keep reading
-
-- [How do I read a budget without being an economist?](/in/money/read-a-budget)
-- [Announced, allocated or actually spent: which number is this?](/in/money/estimates-revised-actuals)
-- [Percent of what, and compared with when?](/in/evidence/percentages-and-denominators)
-
-## Sources and scope
-
-1. [Budget at a Glance 2026–2027](https://www.indiabudget.gov.in/doc/Budget_at_Glance/bag1.pdf#page=3). Ministry of Finance. **Locator:** PDF page 3, printed page 1: rows 9, 10 and 13; amounts in ₹ crore. **Edition:** Union Budget 2026–27. **Reference period:** 2024–25 actuals; 2025–26 BE and RE; 2026–27 BE.
-
-
-Research checked: 2026-10-13. This date is not a claim of continuous monitoring.

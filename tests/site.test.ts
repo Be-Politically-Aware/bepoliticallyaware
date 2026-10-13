@@ -1,12 +1,40 @@
 import { describe, expect, test } from "bun:test";
-import { existsSync, readFileSync } from "node:fs";
+import { existsSync, readdirSync, readFileSync } from "node:fs";
 import { join } from "node:path";
 import { load } from "cheerio";
-import { articles, sections, paths, glossary } from "../src/lib/content";
+import { parseFrontmatter } from "astro/markdown";
+import { createSatteriMarkdownProcessor } from "@astrojs/markdown-satteri";
+import { articleSchema } from "../src/lib/article-schema";
+import navigation from "../content/navigation.json";
+import glossary from "../content/glossary.json";
 import backlog from "../roadmap/backlog.json";
-import { renderMarkdown } from "../src/lib/markdown";
+import {
+  readingMarkdownPlugins,
+  rejectContributorHtml,
+} from "../src/lib/markdown";
 import { evidence, evidenceTable } from "../src/lib/evidence";
 import { createSearch, type SearchEntry } from "../src/lib/search";
+
+const articles = readdirSync("content/articles")
+  .filter((file) => file.endsWith(".md"))
+  .map((file) =>
+    articleSchema.parse(
+      parseFrontmatter(readFileSync(join("content/articles", file), "utf8"))
+        .frontmatter,
+    ),
+  )
+  .filter((article) => article.status === "ready" && article.publish);
+const sections = [...navigation.primary, ...navigation.hubs];
+const paths = navigation.reading_paths.map((path) => ({
+  ...path,
+  route: `/in/paths/${path.id}`,
+}));
+const processor = await createSatteriMarkdownProcessor({
+  syntaxHighlight: false,
+  features: { smartPunctuation: false, rawHtml: false },
+  mdastPlugins: [rejectContributorHtml],
+  hastPlugins: [readingMarkdownPlugins],
+});
 
 const fileFor = (route: string) =>
   join("dist", route, route.includes(".") ? "" : "index.html");
@@ -189,8 +217,8 @@ describe("built reading website", () => {
     expect(isolated("MP").map((result) => result.route)).toEqual(["/a"]);
   });
 
-  test("Markdown tables classify individual cells before sanitization", () => {
-    const { html } = renderMarkdown(`## Mixed evidence
+  test("Markdown tables classify individual cells before sanitization", async () => {
+    const { code: html } = await processor.render(`## Mixed evidence
 
 | 2024 | Label | Value |
 | :--- | :---: | ---: |
@@ -217,43 +245,33 @@ describe("built reading website", () => {
     expect($("td strong").text()).toBe("Readable");
   });
 
-  test("evidence replacement retains only num cell classes through sanitization", () => {
-    const card = {
-      ...evidence[0],
-      columns: ["2024", "Label", "Value"],
-      rows: [
-        ["123", "Text", "3.1%"],
-        ["Narrative", "-2", "2026–27 BE"],
-      ],
-    };
-    const replacement = evidenceTable(card)
-      .replaceAll('class="num"', 'class="num arbitrary"')
-      .replace("<td>", '<td class="arbitrary" onclick="alert(1)">');
-    const $ = load(
-      renderMarkdown("| A | B |\n| --- | --- |\n| x | y |", replacement).html,
+  test("native collection frontmatter selects the source-linked evidence table", async () => {
+    const card = evidence.find(
+      (card) => card.articleId === "in-dossiers-union-budget-2026",
+    )!;
+    const { code } = await processor.render(
+      "| A | B |\n| --- | --- |\n| x | y |",
+      { frontmatter: { id: card.articleId } },
     );
+    const $ = load(code);
+    const expected = load(evidenceTable(card));
     expect($("table").length).toBe(1);
-    expect($("thead th.num").text()).toBe("2024");
-    expect($('tbody th[scope="row"].num').text()).toBe("123");
-    expect(
-      $("tbody td.num")
-        .map((_, el) => $(el).text())
-        .get(),
-    ).toEqual(["3.1%", "-2"]);
-    expect($('thead th[scope="col"]').length).toBe(3);
-    expect($('tbody th[scope="row"]').length).toBe(2);
-    expect($(".arbitrary,[onclick]").length).toBe(0);
+    expect($("table").text()).toBe(expected("table").text());
+    expect($("tbody td.num").length).toBe(12);
+    expect($('thead th[scope="col"]').length).toBe(5);
+    expect($('tbody th[scope="row"]').length).toBe(3);
     expect($("caption").text()).toBe(card.data.title);
     expect($(".table-scroll").attr("aria-label")).toBe(card.data.title);
   });
 
-  test("untrusted Markdown cannot execute HTML or unsafe links", () => {
-    const { html } = renderMarkdown(
-      "## Safe heading\n\n<script>alert(1)</script>\n\n<img src=x onerror=alert(1)>\n\n[bad](javascript:alert%281%29)\n\n[good](/in/start)\n\n**Readable text**",
+  test("untrusted Markdown cannot execute HTML or unsafe links", async () => {
+    const { code: html } = await processor.render(
+      "## Safe heading\n\n<script>alert(1)</script>\n\n<img src=x onerror=alert(1)>\n\n![image](https://example.com/tracker.png)\n\n[bad](javascript:alert%281%29)\n\n[external](//example.com)\n\n[good](/in/start)\n\n**Readable text**",
     );
     const $ = load(html);
     expect($("script,img,iframe,style").length).toBe(0);
     expect($('a[href^="javascript:"]').length).toBe(0);
+    expect($('a[href^="//"]').length).toBe(0);
     expect($('a[href="/in/start"]').text()).toBe("good");
     expect($("strong").text()).toBe("Readable text");
   });

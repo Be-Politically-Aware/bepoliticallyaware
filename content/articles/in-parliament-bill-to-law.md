@@ -1,30 +1,108 @@
 ---
-id: in-parliament-bill-to-law
-route: /in/parliament/bill-to-law
-country: IN
-language: en
-hub: parliament
-title: How does a Bill become an enforceable law?
-summary: Proposal, passage, assent and commencement are distinct stages. A headline
-  may describe only one.
-status: ready
-publish: true
-research_checked_at: '2026-10-13'
-version: 2.0.0
-human_reviewed: false
-source_ref_ids:
-- rs-bills
-- c-bills
-- ls-scrutiny
-- c-money-bill
-- bnss-commencement
+id: "in-parliament-bill-to-law"
+route: "/in/parliament/bill-to-law"
+country: "IN"
+language: "en"
+hub: "parliament"
+title: "How does a Bill become an enforceable law?"
+summary: "Proposal, passage, assent and commencement are distinct stages. A headline may describe only one."
+kind: "explainer"
+reader_task: "For one legislative story, locate the document and identify the stages confirmed by the record. Mark assent or commencement unknown where not established."
 related_ids:
-- in-parliament-lok-sabha-rajya-sabha
-- in-money-read-a-budget
-- in-reference-glossary
+  - "in-parliament-lok-sabha-rajya-sabha"
+  - "in-money-read-a-budget"
+  - "in-reference-glossary"
+quiz: null
+launch_order: null
+status: "ready"
+publish: true
+research_checked_at: "2026-10-13"
+human_reviewed: false
+review_method: "Assistant retrieval, source comparison and numerical checks; not independent human review"
+jurisdiction: "India; local administrative responsibility must be checked for the actual location"
+legal_scope: "General civic education, not individual legal advice"
+version: "2.0.0"
+source_ref_ids:
+  - "rs-bills"
+  - "c-bills"
+  - "ls-scrutiny"
+  - "c-money-bill"
+  - "bnss-commencement"
+sources:
+  - number: 1
+    ref_id: "rs-bills"
+    document_id: "rs-legislation"
+    title: "Introduction to legislation"
+    publisher: "Rajya Sabha Secretariat"
+    url: "https://sansad.in/rs/legislation/introduction"
+    locator: "Introduction: Bills and enactment; read with constitutional exceptions"
+    version: null
+    published_at: null
+    reference_period: null
+    checked_at: "2026-10-13"
+    limitations: []
+    kind: "official_primary"
+  - number: 2
+    ref_id: "c-bills"
+    document_id: "constitution"
+    title: "Constitution of India, official English compilation"
+    publisher: "Legislative Department, Ministry of Law and Justice"
+    url: "https://www.legislative.gov.in/static/uploads/2025/07/c9fe9c9b6840524844316f74bb1c556c.pdf#page=79"
+    locator: "Articles 107–111: legislative procedure; Money Bill exceptions; assent"
+    version: "As on 1 May 2026"
+    published_at: null
+    reference_period: null
+    checked_at: "2026-10-13"
+    limitations:
+      - "This compilation has a stated cutoff. No assertion that every post-cutoff notification or judgment was exhaustively checked. Article explanations concern the provisions cited, not personalised legal advice."
+    kind: "official_primary"
+  - number: 3
+    ref_id: "ls-scrutiny"
+    document_id: "ls-faq"
+    title: "Lok Sabha frequently asked questions"
+    publisher: "Lok Sabha Secretariat"
+    url: "https://sansad.in/ls/faq"
+    locator: "Questions on parliamentary committees, parliamentary motions, calling attention and no-confidence motions; use procedural descriptions only"
+    version: null
+    published_at: null
+    reference_period: null
+    checked_at: "2026-10-13"
+    limitations:
+      - "Some office-holder and historical House details on this FAQ are stale. No current names, salaries or membership totals are taken from it."
+    kind: "official_primary"
+  - number: 4
+    ref_id: "c-money-bill"
+    document_id: "constitution"
+    title: "Constitution of India, official English compilation"
+    publisher: "Legislative Department, Ministry of Law and Justice"
+    url: "https://www.legislative.gov.in/static/uploads/2025/07/c9fe9c9b6840524844316f74bb1c556c.pdf#page=80"
+    locator: "Articles 109 and 110: Money Bill procedure and definition"
+    version: "As on 1 May 2026"
+    published_at: null
+    reference_period: null
+    checked_at: "2026-10-13"
+    limitations:
+      - "This compilation has a stated cutoff. No assertion that every post-cutoff notification or judgment was exhaustively checked. Article explanations concern the provisions cited, not personalised legal advice."
+    kind: "official_primary"
+  - number: 5
+    ref_id: "bnss-commencement"
+    document_id: "bnss"
+    title: "Bharatiya Nagarik Suraksha Sanhita 2023, original gazette text"
+    publisher: "Ministry of Home Affairs / Gazette of India"
+    url: "https://www.mha.gov.in/sites/default/files/2024-04/250884_2_english_01042024.pdf#page=2"
+    locator: "Section 1(3): an example of commencement by notification, distinct from assent"
+    version: "Act 46 of 2023, original enactment"
+    published_at: "2023-12-25"
+    reference_period: null
+    checked_at: "2026-10-13"
+    limitations:
+      - "Original enacted text, not a guaranteed current consolidation. Used for general legal vocabulary, not eligibility, deadline or advice for a specific proceeding. Older proceedings may continue under the former code under the savings provision."
+    kind: "official_primary"
+maintenance:
+  trigger: "Change to a cited provision, source correction or substantiated reader correction"
+  suggested_recheck_days: 365
+  automation_created: false
 ---
-
-# How does a Bill become an enforceable law?
 
 A Bill is a legislative proposal. An Act is an enacted law. To understand what changed, identify the exact text and the stage it has reached rather than relying on a headline saying a law was “approved”.
 
@@ -55,28 +133,3 @@ For an actual current-law claim, retrieve the relevant notification, later amend
 “New rules apply from today” could be wrong even if the underlying Act has received assent. Ask which provision creates the rule, which commencement instrument applies and whether the announcement is reporting an effective rule or a future proposal.
 
 The safe summary is exact: “The Bill passed this House on this date” or “this provision commenced under this notification”. Precision makes it harder to present an incomplete stage as a finished change in the law.
-
-## Try this
-
-For one legislative story, locate the document and identify the stages confirmed by the record. Mark assent or commencement unknown where not established.
-
-## Keep reading
-
-- [Lok Sabha and Rajya Sabha: why two Houses?](/in/parliament/lok-sabha-rajya-sabha)
-- [How do I read a budget without being an economist?](/in/money/read-a-budget)
-- [Political terms in plain English](/in/reference/glossary)
-
-## Sources and scope
-
-1. [Introduction to legislation](https://sansad.in/rs/legislation/introduction). Rajya Sabha Secretariat. **Locator:** Introduction: Bills and enactment; read with constitutional exceptions.
-
-2. [Constitution of India, official English compilation](https://www.legislative.gov.in/static/uploads/2025/07/c9fe9c9b6840524844316f74bb1c556c.pdf#page=79). Legislative Department, Ministry of Law and Justice. **Locator:** Articles 107–111: legislative procedure; Money Bill exceptions; assent. **Edition:** As on 1 May 2026. **Limits:** This compilation has a stated cutoff. No assertion that every post-cutoff notification or judgment was exhaustively checked. Article explanations concern the provisions cited, not personalised legal advice.
-
-3. [Lok Sabha frequently asked questions](https://sansad.in/ls/faq). Lok Sabha Secretariat. **Locator:** Questions on parliamentary committees, parliamentary motions, calling attention and no-confidence motions; use procedural descriptions only. **Limits:** Some office-holder and historical House details on this FAQ are stale. No current names, salaries or membership totals are taken from it.
-
-4. [Constitution of India, official English compilation](https://www.legislative.gov.in/static/uploads/2025/07/c9fe9c9b6840524844316f74bb1c556c.pdf#page=80). Legislative Department, Ministry of Law and Justice. **Locator:** Articles 109 and 110: Money Bill procedure and definition. **Edition:** As on 1 May 2026. **Limits:** This compilation has a stated cutoff. No assertion that every post-cutoff notification or judgment was exhaustively checked. Article explanations concern the provisions cited, not personalised legal advice.
-
-5. [Bharatiya Nagarik Suraksha Sanhita 2023, original gazette text](https://www.mha.gov.in/sites/default/files/2024-04/250884_2_english_01042024.pdf#page=2). Ministry of Home Affairs / Gazette of India. **Locator:** Section 1(3): an example of commencement by notification, distinct from assent. **Edition:** Act 46 of 2023, original enactment. **Published:** 2023-12-25. **Limits:** Original enacted text, not a guaranteed current consolidation. Used for general legal vocabulary, not eligibility, deadline or advice for a specific proceeding. Older proceedings may continue under the former code under the savings provision.
-
-
-Research checked: 2026-10-13. This date is not a claim of continuous monitoring.

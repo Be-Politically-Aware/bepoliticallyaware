@@ -1,18 +1,13 @@
 [
   {
     "path": "AGENTS.md",
-    "bytes": 4791,
-    "sha256": "d72f63c9f6fdb4302a04a61f6ae910efce41feee41a2841ddf617470ca0d15b9"
-  },
-  {
-    "path": "BUILD_PROMPT.md",
-    "bytes": 1270,
-    "sha256": "d1f042922bc2b84f42cf137e15abe47616600609acd1b051f3edb3d35fe35deb"
+    "bytes": 7419,
+    "sha256": "2a210036d7a78b5628b4f613c4aa626ab8eabda4c9d5879baa79101028107c08"
   },
   {
     "path": "README.md",
-    "bytes": 5020,
-    "sha256": "31e80fdb223e79ee8d3ad64da34f6c57921f37ef7eb86f1eac25c45af8e9a7ed"
+    "bytes": 10369,
+    "sha256": "f13a907f776a4bff91452464c0d9a4c3095f35172d02bf1b2700b835a43ea2c7"
   },
   {
     "path": "RESEARCH_NOTES.md",
@@ -21,218 +16,208 @@
   },
   {
     "path": "checks/validation.json",
-    "bytes": 498,
-    "sha256": "a0cbf84111a6105ab7c3f27002a746bc0fd37959088238bf9de122bd5bb27ef2"
-  },
-  {
-    "path": "content/article-index.json",
-    "bytes": 24745,
-    "sha256": "46af55e09f2d1d889c02ed1c36818c0a02b834ea06d8fdbe5270d296ee5ce39c"
+    "bytes": 504,
+    "sha256": "72f9147239d982cf47ed6ce4771a139f24e3dc25a324a5895a028e753e76b419"
   },
   {
     "path": "content/articles/in-action-ask-a-representative.md",
-    "bytes": 4843,
-    "sha256": "21bd6240aa42218eb2edeafa52c865be489aa20eea84018128ba88ffc3d00d7e"
+    "bytes": 5703,
+    "sha256": "2558ad04db000b9cc658cf720d5f5aaa68ecf75f0652478361a9fe4fcaff740c"
   },
   {
     "path": "content/articles/in-action-choose-a-route.md",
-    "bytes": 5639,
-    "sha256": "2abd1cd85988b631f0d6402ef2f2c91425ce81cf2ee5043e24beba819483bd33"
+    "bytes": 6688,
+    "sha256": "c5d92bc14b2196c8cc024b0e8bc7bde8212cdccdd5f8adb7ccfdce4916304a5c"
   },
   {
     "path": "content/articles/in-action-rti-basics.md",
-    "bytes": 5689,
-    "sha256": "e6d449882c0bc6189d0eb83060d6a2cda9598f78507c0ba22b56c0dec599218b"
+    "bytes": 6710,
+    "sha256": "2569a651ddc37562c07270962e0077bab234a8d31bd468540f3c3f5d9e733096"
   },
   {
     "path": "content/articles/in-action-rti-central-or-state.md",
-    "bytes": 4308,
-    "sha256": "1ec9fb8a72b5ef8b345c2cdb4dbf92871ba8a91423f7de1b732e5287fc331629"
+    "bytes": 5162,
+    "sha256": "df834574eee64f7949c1567922bea7830599c4a3fe504f6955dec3a72fd78044"
   },
   {
     "path": "content/articles/in-action-write-a-complaint.md",
-    "bytes": 4316,
-    "sha256": "6bf3d7e1ac2c3a038f551bfd1366b4ceefb7882e7696f4a66794ab6ac19e4eb4"
+    "bytes": 4912,
+    "sha256": "4cce5cc51093e0433146c64275e0a748199fdd1aec4732b8920110e4b3b82a58"
   },
   {
     "path": "content/articles/in-crime-case-status-terms.md",
-    "bytes": 8287,
-    "sha256": "0f1b353d420a9aa3b2559e0ecbdcff05b5d94c329c1624b2e055d27ee4149b09"
+    "bytes": 9619,
+    "sha256": "54f6eb99a7f12bd756a2040407a2de2da3f59970a3231b057aa58347fcef2120"
   },
   {
     "path": "content/articles/in-crime-crime-statistics.md",
-    "bytes": 5082,
-    "sha256": "b02eb2f22166905d2ba4338abe620aba17042d5b5e8b24d0b5460472ea19ed70"
+    "bytes": 5583,
+    "sha256": "05e2e243c9c4c21f4ea16f1f08305a9b57175c0975ab5c3c157e54e33e013fe3"
   },
   {
     "path": "content/articles/in-dossiers-road-deaths-2024.md",
-    "bytes": 5101,
-    "sha256": "12e0ffa27f9c61a8ea9227c29c6bb3fa70aed7436bb07ea9c1e25f83f505df5f"
+    "bytes": 5629,
+    "sha256": "184778783f37e4865af52664d29fb53d76d6855d35a211aebde0401d8925d068"
   },
   {
     "path": "content/articles/in-dossiers-union-budget-2026.md",
-    "bytes": 3877,
-    "sha256": "32129bc1b06a8a04b5c18c1c6e68ca9222aad60dffc5c0dc7e8c55129efc1ea5"
+    "bytes": 4143,
+    "sha256": "0a21be9a91b9902f1aa1f713f3f4277b72736b007cafb8a3b655015418acfc34"
   },
   {
     "path": "content/articles/in-elections-candidate-affidavits.md",
-    "bytes": 6337,
-    "sha256": "d6d0a152a760e14731beb2c052fd1715b9a9116313712d7d846cd5de74758baf"
+    "bytes": 7313,
+    "sha256": "4b7a2363d001bf1176aa6f8c1a58ab7c1e2b12b6d539bc3a5f2ae2c62afbdb57"
   },
   {
     "path": "content/articles/in-elections-compare-candidates.md",
-    "bytes": 6432,
-    "sha256": "a0bf357856cc0f2b936567ada3e836aa33af0f4320419daae0a9aa61b2fa3a40"
+    "bytes": 7712,
+    "sha256": "241993b77efeb6956d87ae585f8f5cfaed900eb3093317d02346cd66921409a4"
   },
   {
     "path": "content/articles/in-elections-how-seats-are-won.md",
-    "bytes": 4510,
-    "sha256": "75700bf3f74b95c900889dd88ba540b9478a608cfae9c5b6a96587b6be025bad"
+    "bytes": 5075,
+    "sha256": "c7d0481571e20a63b9b74987302833e775ef95b4ae44723712390b4f17910063"
   },
   {
     "path": "content/articles/in-elections-voter-registration.md",
-    "bytes": 4190,
-    "sha256": "c848abe70bb71564a3d49503610c1c64ca3db9f5103363c171ac54b43a3e7723"
+    "bytes": 4511,
+    "sha256": "e6abc8be88ab9db1e6108dff0089024be054459a291d68e955163601ed62c83a"
   },
   {
     "path": "content/articles/in-everyday-jobs-and-wages.md",
-    "bytes": 5545,
-    "sha256": "f4032d77a431c6a166f7f81afed00e194d7a5a8403542522e2adeb658cc7cbf0"
+    "bytes": 6255,
+    "sha256": "3dce0488daaeff56639d118fc243a37dbd5a5bb14da32bfb9587e45a70b62e6e"
   },
   {
     "path": "content/articles/in-everyday-roads-and-transport.md",
-    "bytes": 5091,
-    "sha256": "f78835308f814882c947b76cb29d337155e3b5a6ae2923aa306a5d7445a5265d"
+    "bytes": 5925,
+    "sha256": "dc6d1b59e9592b02b25757092696b03677b06c510d0624a8664683e51ab93d8b"
   },
   {
     "path": "content/articles/in-everyday-water-and-sanitation.md",
-    "bytes": 6012,
-    "sha256": "97e4ea9be9579d33ec3ec40a176c564be0dbaf16cb88f2edde46080c68fcdc01"
+    "bytes": 7074,
+    "sha256": "90ccb480ac70692e5b4153b6e9dca49af7a4a2b39063f8f135b26bd1494a326b"
   },
   {
     "path": "content/articles/in-evidence-check-before-sharing.md",
-    "bytes": 3922,
-    "sha256": "f154cfcc3118ba481f5165cae915359e34566941dd6bd987678ce1b1b0679697"
+    "bytes": 4616,
+    "sha256": "b014f73fba949009b502bdbe1433659e588b0c65db00c381b27433198d56ab1b"
   },
   {
     "path": "content/articles/in-evidence-observe-and-verify.md",
-    "bytes": 4315,
-    "sha256": "378efc31294e0a9be71edcb9ef98f650c488956402f26c133f12b2b0a97bb6f4"
+    "bytes": 4626,
+    "sha256": "20f2f3729122be28272171078430aa09b2851f52b6fd69d59eac0fac85dbdd7e"
   },
   {
     "path": "content/articles/in-evidence-percentages-and-denominators.md",
-    "bytes": 4086,
-    "sha256": "7538bd0579f0cbee75cb6b748303fa0d3242ed4f84e32e0cfe49c4ac4b501912"
+    "bytes": 4725,
+    "sha256": "cbbc74705b1e02a99a63859f840521acd7a2890c8d62cbc9ea5f919455b1d2d5"
   },
   {
     "path": "content/articles/in-evidence-question-official-data.md",
-    "bytes": 5660,
-    "sha256": "5bccca4385cb0c027698d13734bd61e9fee4f02eb425985f1db9c54f22da475e"
+    "bytes": 6392,
+    "sha256": "445e4539d99feca7431b9c92a564d289247284c83cef011edfefef86bb77088e"
   },
   {
     "path": "content/articles/in-local-find-responsible-authority.md",
-    "bytes": 5153,
-    "sha256": "111b55979c933336e5eb2a84b8c57a93ca43137e67adc083f8b63a9ca1c56caa"
+    "bytes": 5959,
+    "sha256": "918156972599d4b193ad2d2ac032a0b1854b5830f2cb5eb084d18674341d4944"
   },
   {
     "path": "content/articles/in-media-assess-a-news-report.md",
-    "bytes": 4117,
-    "sha256": "f9331916ba58ed53704a019b29d7466e40a257570fd835bbf96f866cb69a296f"
+    "bytes": 4467,
+    "sha256": "2b9286205218504c6a261f4f0d9619aa9066564353f3090325e947f51639481a"
   },
   {
     "path": "content/articles/in-media-whatsapp-forward.md",
-    "bytes": 3816,
-    "sha256": "4461e4a50459f93bce43ea7e5b98310e651d4fbb9584c13a3bde311d4b404734"
+    "bytes": 4131,
+    "sha256": "f5fa458a06790c162bdfe6acbd336d2871c3892c2b06485afd3333ef857ea176"
   },
   {
     "path": "content/articles/in-money-audits-and-cag.md",
-    "bytes": 4288,
-    "sha256": "eb067e536d75be34f92c489a3b175f6494bf786ff1a9361ae83b9ce2319fa40f"
+    "bytes": 4598,
+    "sha256": "492938900765d9af4d47ac57ad85ea0c2dc5f45ff996ce9282538d035dff3cc3"
   },
   {
     "path": "content/articles/in-money-estimates-revised-actuals.md",
-    "bytes": 4436,
-    "sha256": "675f1947ff74658d00b5a5072ebbcb654185637ea627389a4cd25d1b3004f057"
+    "bytes": 4931,
+    "sha256": "0a12c70aef8624938dd7ef82963abda6505de8726de170f16f2e58c890e84f93"
   },
   {
     "path": "content/articles/in-money-read-a-budget.md",
-    "bytes": 5019,
-    "sha256": "5f67b6ee1233cde7b660923b80e6b42807d97c3723eb02644bc834f37a8616d6"
+    "bytes": 5947,
+    "sha256": "f961b44e08d8f329b3744a1d94fd8df034fcafbc8ff50c2fed448b05bd18f4a4"
   },
   {
     "path": "content/articles/in-parliament-bill-to-law.md",
-    "bytes": 6556,
-    "sha256": "d4b055f45d239dac56e0a440424e6e052be5cb488d08a535c7d407b2fe709252"
+    "bytes": 7860,
+    "sha256": "a4d3e791812711279e96edffd6b4aeec9168d3875ae3f5447187b4f34d226bb6"
   },
   {
     "path": "content/articles/in-parliament-lok-sabha-rajya-sabha.md",
-    "bytes": 8271,
-    "sha256": "65ab426128cacdc8db36dde71fcdb3ba282ce0b854161d7c25befb637ed363cb"
+    "bytes": 10290,
+    "sha256": "305f4213c471ffd6f45765bcd8fbcff2d00f102b959d6955298e76255fd73103"
   },
   {
     "path": "content/articles/in-parliament-mp-role.md",
-    "bytes": 5221,
-    "sha256": "e7dc1448e17654f5cfad65378f26fd31ee4eaa9c2ee81f68368e6cc96c6b648a"
+    "bytes": 6309,
+    "sha256": "d3d5f58609872220d78e8b0ce2c0d459b807b1289a0782199fb1300e9fe9c146"
   },
   {
     "path": "content/articles/in-parties-opposition-role.md",
-    "bytes": 5018,
-    "sha256": "0acb11e09f2390be9d93ff697546aee40071145fa9952f1be38dcd4ebb504931"
+    "bytes": 5826,
+    "sha256": "d5bfa957ebd8380b7805b5040a5e863625059c1c3f684a704b50e205a66a3384"
   },
   {
     "path": "content/articles/in-reference-corrections.md",
-    "bytes": 3579,
-    "sha256": "8e64a0b61a5330209d5c102bf6c8c2605537bb85dc7a926cfc01610944203d05"
+    "bytes": 3721,
+    "sha256": "d973db081411381d428956d2de601db9a20ee4bdcaafb4d50295fdb4f3a2fa72"
   },
   {
     "path": "content/articles/in-reference-glossary.md",
-    "bytes": 27344,
-    "sha256": "371639ce4be45183ea8449c461113386b8db3e1efc16af9178645d913573f73a"
+    "bytes": 33626,
+    "sha256": "4089397bf35b5364249f6d1c4ad6ed3ed6db907998a0cbef03355d466ae0f722"
   },
   {
     "path": "content/articles/in-reference-how-we-know.md",
-    "bytes": 5090,
-    "sha256": "0fff9af18fb43ff3f5244ac156a8c29c236b73ee044dff37ca61afbc58aadbc2"
+    "bytes": 5677,
+    "sha256": "37bb2d82e1e8208e9bb1c3eeedb9cdca7709c05c2686210284cef926a8836bde"
   },
   {
     "path": "content/articles/in-start-country-state-government-party.md",
-    "bytes": 6453,
-    "sha256": "c7f5a8efb73d2aad380dd1e5d356c387c30eb4553e97432bfb4f33d0f435a6d0"
+    "bytes": 7700,
+    "sha256": "c347e1887bb4ca9e69c217cf254d81310f2ff4206c59f01e569bff19ec198fdf"
   },
   {
     "path": "content/articles/in-start-first-half-hour.md",
-    "bytes": 4525,
-    "sha256": "49fa1f7214d7c04094f9ebef9d37dcfe5a59fc9b04bf25050d9e270683f7d4a3"
+    "bytes": 5144,
+    "sha256": "309b895b01211a910f4f8855b65bf6837ae26cd7c413823e06ecbed0cc9737b1"
   },
   {
     "path": "content/articles/in-start-politics-without-party-loyalty.md",
-    "bytes": 3801,
-    "sha256": "273018901c3392d7566f7f55b0d40a1c9488ed23368bf18af73463151ccc72dd"
+    "bytes": 4105,
+    "sha256": "4dea8114c9bc8cbdde1fe3a269201dd90eb945d865703ade416f5677387fc61d"
   },
   {
     "path": "content/articles/in-start-reasonable-disagreement.md",
-    "bytes": 3914,
-    "sha256": "2fa9623ec45f6db9f9b0582f4dea0131903bdcdae86c7ac9c75d3cc3eb9c8095"
+    "bytes": 4187,
+    "sha256": "2ace46b7e7e183ba6acb7b905c083f93a9288aaf7e8ad658d67466245d7533cd"
   },
   {
     "path": "content/articles/in-start-why-care.md",
-    "bytes": 5063,
-    "sha256": "5f29986d3c7060dcdf5588b8ded10adaad2f2298eb1a0c27bd0e495c2baa3642"
+    "bytes": 5816,
+    "sha256": "d99c38152adb07e1aeddc1e0c7571c1dbcb8bab6afadc57f328d83c5890a10af"
   },
   {
     "path": "content/articles/in-states-mla-and-mlc.md",
-    "bytes": 5654,
-    "sha256": "b1b81671ab913ec7e78e7cdbbd41fa606926b0a6b69ec379916e554a7cc1d9de"
+    "bytes": 6461,
+    "sha256": "4e58a744e1520261ef8ca16d9df0b4f521fa859c92e003c3d319658514e91948"
   },
   {
     "path": "content/articles/in-states-union-state-local-powers.md",
-    "bytes": 6510,
-    "sha256": "473c11562afaf3094c0e34119ae6aaef5b5ed9ae1d7cd22da468b87d68bd4425"
-  },
-  {
-    "path": "content/articles.json",
-    "bytes": 328626,
-    "sha256": "b1c6bdfc9519f3a12d11d32c7c2e52c1d7bf61c5043991ca6d9ea0ff0d0f5a2c"
+    "bytes": 7826,
+    "sha256": "0187cb4c618886f6b3f3f989f93bc9cbdfdf14aeda8a36e67d66e33b4400b3d3"
   },
   {
     "path": "content/data/adr-2024-winning-candidate-disclosures.json",
@@ -291,18 +276,8 @@
   },
   {
     "path": "implementation/BUILD_SPEC.md",
-    "bytes": 6294,
-    "sha256": "d7bb4273821ec2dc5a04777fdcbedfad72318d81423a97e30aaf3b004dc3235f"
-  },
-  {
-    "path": "implementation/content-types.ts",
-    "bytes": 1702,
-    "sha256": "760386fe197c63a4ce68fc45444b5e264d1a4597f47c37129a7189a5ba3a4f71"
-  },
-  {
-    "path": "preview.html",
-    "bytes": 276573,
-    "sha256": "d3cb67ea3069db95bd1e35a17a87d6f6724a467c49093a6b4e2c2500f0cc0bed"
+    "bytes": 6393,
+    "sha256": "57743b0cd83d3affc66f90d26ae4bb92c4c03bf8f777b140dd4a662af247e3ee"
   },
   {
     "path": "roadmap/backlog.json",
@@ -315,13 +290,23 @@
     "sha256": "c13de88149ef8aaa058210add44d4d0a4446a706462d4fb0a9aeb2a42113a14c"
   },
   {
-    "path": "scripts/export_markdown.py",
-    "bytes": 2706,
-    "sha256": "07721af79c9083af7b26068013da2d4fe08a226cd86884028a01c76a8ac33c99"
+    "path": "scripts/validate_content.ts",
+    "bytes": 9613,
+    "sha256": "537de0900580996adc5abc54532c7c23a5ffd373ff6c3a513c1bd6bbad689b20"
   },
   {
-    "path": "scripts/validate_content.py",
-    "bytes": 7925,
-    "sha256": "ab9c44b19abb64eebb363c748a88a2f98902c338a84f329ccfe1f1314a9eb55c"
+    "path": "src/content.config.ts",
+    "bytes": 315,
+    "sha256": "a49642579a530659c6717183c87ffede73e76ec5242105b3d7a7c29ec083c7d2"
+  },
+  {
+    "path": "src/lib/article-schema.ts",
+    "bytes": 1741,
+    "sha256": "94f4781fd2eacf073c1bf4580d446b91d5506b72791f42b08e83e9fff6f09381"
+  },
+  {
+    "path": "tests/content-tools.test.ts",
+    "bytes": 3443,
+    "sha256": "ac2ac756e7291239849d52d0937cb0655b5043b82eaf535042833e7f7f1d5861"
   }
 ]

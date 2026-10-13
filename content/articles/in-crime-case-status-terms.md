@@ -1,31 +1,124 @@
 ---
-id: in-crime-case-status-terms
-route: /in/crime/case-status-terms
-country: IN
-language: en
-hub: crime
-title: 'Accused, charged or convicted: what do these words mean?'
-summary: An allegation, an investigation and a judgment are different events. Always
-  identify the proceeding and date.
-status: ready
-publish: true
-research_checked_at: '2026-10-13'
-version: 2.0.0
-human_reviewed: false
-source_ref_ids:
-- bnss-saving
-- bnss-fir
-- bnss-report
-- bnss-charge
-- bnss-bail
-- bnss-judgment
+id: "in-crime-case-status-terms"
+route: "/in/crime/case-status-terms"
+country: "IN"
+language: "en"
+hub: "crime"
+title: "Accused, charged or convicted: what do these words mean?"
+summary: "An allegation, an investigation and a judgment are different events. Always identify the proceeding and date."
+kind: "explainer"
+reader_task: "For a legal headline, identify the exact procedural event, the court or investigating authority and the dated record supporting it. Replace vague “criminal” labels with the established status."
 related_ids:
-- in-elections-candidate-affidavits
-- in-crime-crime-statistics
-- in-media-assess-a-news-report
+  - "in-elections-candidate-affidavits"
+  - "in-crime-crime-statistics"
+  - "in-media-assess-a-news-report"
+quiz: null
+launch_order: 30
+status: "ready"
+publish: true
+research_checked_at: "2026-10-13"
+human_reviewed: false
+review_method: "Assistant retrieval, source comparison and numerical checks; not independent human review"
+jurisdiction: "India; local administrative responsibility must be checked for the actual location"
+legal_scope: "General civic education, not individual legal advice"
+version: "2.0.0"
+source_ref_ids:
+  - "bnss-saving"
+  - "bnss-fir"
+  - "bnss-report"
+  - "bnss-charge"
+  - "bnss-bail"
+  - "bnss-judgment"
+sources:
+  - number: 1
+    ref_id: "bnss-saving"
+    document_id: "bnss"
+    title: "Bharatiya Nagarik Suraksha Sanhita 2023, original gazette text"
+    publisher: "Ministry of Home Affairs / Gazette of India"
+    url: "https://www.mha.gov.in/sites/default/files/2024-04/250884_2_english_01042024.pdf#page=156"
+    locator: "Section 531: repeal and savings for pending proceedings"
+    version: "Act 46 of 2023, original enactment"
+    published_at: "2023-12-25"
+    reference_period: null
+    checked_at: "2026-10-13"
+    limitations:
+      - "Original enacted text, not a guaranteed current consolidation. Used for general legal vocabulary, not eligibility, deadline or advice for a specific proceeding. Older proceedings may continue under the former code under the savings provision."
+    kind: "official_primary"
+  - number: 2
+    ref_id: "bnss-fir"
+    document_id: "bnss"
+    title: "Bharatiya Nagarik Suraksha Sanhita 2023, original gazette text"
+    publisher: "Ministry of Home Affairs / Gazette of India"
+    url: "https://www.mha.gov.in/sites/default/files/2024-04/250884_2_english_01042024.pdf#page=52"
+    locator: "Section 173: information relating to cognizable offences; introductory terminology only"
+    version: "Act 46 of 2023, original enactment"
+    published_at: "2023-12-25"
+    reference_period: null
+    checked_at: "2026-10-13"
+    limitations:
+      - "Original enacted text, not a guaranteed current consolidation. Used for general legal vocabulary, not eligibility, deadline or advice for a specific proceeding. Older proceedings may continue under the former code under the savings provision."
+    kind: "official_primary"
+  - number: 3
+    ref_id: "bnss-report"
+    document_id: "bnss"
+    title: "Bharatiya Nagarik Suraksha Sanhita 2023, original gazette text"
+    publisher: "Ministry of Home Affairs / Gazette of India"
+    url: "https://www.mha.gov.in/sites/default/files/2024-04/250884_2_english_01042024.pdf#page=62"
+    locator: "Section 193: police report on completion of investigation"
+    version: "Act 46 of 2023, original enactment"
+    published_at: "2023-12-25"
+    reference_period: null
+    checked_at: "2026-10-13"
+    limitations:
+      - "Original enacted text, not a guaranteed current consolidation. Used for general legal vocabulary, not eligibility, deadline or advice for a specific proceeding. Older proceedings may continue under the former code under the savings provision."
+    kind: "official_primary"
+  - number: 4
+    ref_id: "bnss-charge"
+    document_id: "bnss"
+    title: "Bharatiya Nagarik Suraksha Sanhita 2023, original gazette text"
+    publisher: "Ministry of Home Affairs / Gazette of India"
+    url: "https://www.mha.gov.in/sites/default/files/2024-04/250884_2_english_01042024.pdf#page=82"
+    locator: "Sections 250–251: discharge and framing of charge; general sessions-trial illustration"
+    version: "Act 46 of 2023, original enactment"
+    published_at: "2023-12-25"
+    reference_period: null
+    checked_at: "2026-10-13"
+    limitations:
+      - "Original enacted text, not a guaranteed current consolidation. Used for general legal vocabulary, not eligibility, deadline or advice for a specific proceeding. Older proceedings may continue under the former code under the savings provision."
+    kind: "official_primary"
+  - number: 5
+    ref_id: "bnss-bail"
+    document_id: "bnss"
+    title: "Bharatiya Nagarik Suraksha Sanhita 2023, original gazette text"
+    publisher: "Ministry of Home Affairs / Gazette of India"
+    url: "https://www.mha.gov.in/sites/default/files/2024-04/250884_2_english_01042024.pdf#page=2"
+    locator: "Section 2(1)(b): bail definition"
+    version: "Act 46 of 2023, original enactment"
+    published_at: "2023-12-25"
+    reference_period: null
+    checked_at: "2026-10-13"
+    limitations:
+      - "Original enacted text, not a guaranteed current consolidation. Used for general legal vocabulary, not eligibility, deadline or advice for a specific proceeding. Older proceedings may continue under the former code under the savings provision."
+    kind: "official_primary"
+  - number: 6
+    ref_id: "bnss-judgment"
+    document_id: "bnss"
+    title: "Bharatiya Nagarik Suraksha Sanhita 2023, original gazette text"
+    publisher: "Ministry of Home Affairs / Gazette of India"
+    url: "https://www.mha.gov.in/sites/default/files/2024-04/250884_2_english_01042024.pdf#page=83"
+    locator: "Sections 255 and 258: acquittal and judgment of acquittal or conviction"
+    version: "Act 46 of 2023, original enactment"
+    published_at: "2023-12-25"
+    reference_period: null
+    checked_at: "2026-10-13"
+    limitations:
+      - "Original enacted text, not a guaranteed current consolidation. Used for general legal vocabulary, not eligibility, deadline or advice for a specific proceeding. Older proceedings may continue under the former code under the savings provision."
+    kind: "official_primary"
+maintenance:
+  trigger: "Change to a cited provision, source correction or substantiated reader correction"
+  suggested_recheck_days: 365
+  automation_created: false
 ---
-
-# Accused, charged or convicted: what do these words mean?
 
 A person being accused, arrested, charged or convicted does not describe the same legal status. A responsible account names the event that actually occurred and links the relevant record.
 
@@ -56,30 +149,3 @@ An **appeal** challenges a decision; filing it does not tell you its outcome. If
 Record the court, case number, relevant charge or proceeding, order date and current status date. Separate multiple proceedings involving the same person. Include a material later acquittal, reversal or correction where an earlier allegation was reported.
 
 A historic election affidavit is not a substitute for this timeline. Nor does party membership establish political motive. Where the documents do not establish motive or current status, say so rather than filling in the gap.
-
-## Try this
-
-For a legal headline, identify the exact procedural event, the court or investigating authority and the dated record supporting it. Replace vague “criminal” labels with the established status.
-
-## Keep reading
-
-- [How do I read a candidate's affidavit?](/in/elections/candidate-affidavits)
-- [Why do crime figures need careful interpretation?](/in/crime/crime-statistics)
-- [What makes a news report worth relying on?](/in/media/assess-a-news-report)
-
-## Sources and scope
-
-1. [Bharatiya Nagarik Suraksha Sanhita 2023, original gazette text](https://www.mha.gov.in/sites/default/files/2024-04/250884_2_english_01042024.pdf#page=156). Ministry of Home Affairs / Gazette of India. **Locator:** Section 531: repeal and savings for pending proceedings. **Edition:** Act 46 of 2023, original enactment. **Published:** 2023-12-25. **Limits:** Original enacted text, not a guaranteed current consolidation. Used for general legal vocabulary, not eligibility, deadline or advice for a specific proceeding. Older proceedings may continue under the former code under the savings provision.
-
-2. [Bharatiya Nagarik Suraksha Sanhita 2023, original gazette text](https://www.mha.gov.in/sites/default/files/2024-04/250884_2_english_01042024.pdf#page=52). Ministry of Home Affairs / Gazette of India. **Locator:** Section 173: information relating to cognizable offences; introductory terminology only. **Edition:** Act 46 of 2023, original enactment. **Published:** 2023-12-25. **Limits:** Original enacted text, not a guaranteed current consolidation. Used for general legal vocabulary, not eligibility, deadline or advice for a specific proceeding. Older proceedings may continue under the former code under the savings provision.
-
-3. [Bharatiya Nagarik Suraksha Sanhita 2023, original gazette text](https://www.mha.gov.in/sites/default/files/2024-04/250884_2_english_01042024.pdf#page=62). Ministry of Home Affairs / Gazette of India. **Locator:** Section 193: police report on completion of investigation. **Edition:** Act 46 of 2023, original enactment. **Published:** 2023-12-25. **Limits:** Original enacted text, not a guaranteed current consolidation. Used for general legal vocabulary, not eligibility, deadline or advice for a specific proceeding. Older proceedings may continue under the former code under the savings provision.
-
-4. [Bharatiya Nagarik Suraksha Sanhita 2023, original gazette text](https://www.mha.gov.in/sites/default/files/2024-04/250884_2_english_01042024.pdf#page=82). Ministry of Home Affairs / Gazette of India. **Locator:** Sections 250–251: discharge and framing of charge; general sessions-trial illustration. **Edition:** Act 46 of 2023, original enactment. **Published:** 2023-12-25. **Limits:** Original enacted text, not a guaranteed current consolidation. Used for general legal vocabulary, not eligibility, deadline or advice for a specific proceeding. Older proceedings may continue under the former code under the savings provision.
-
-5. [Bharatiya Nagarik Suraksha Sanhita 2023, original gazette text](https://www.mha.gov.in/sites/default/files/2024-04/250884_2_english_01042024.pdf#page=2). Ministry of Home Affairs / Gazette of India. **Locator:** Section 2(1)(b): bail definition. **Edition:** Act 46 of 2023, original enactment. **Published:** 2023-12-25. **Limits:** Original enacted text, not a guaranteed current consolidation. Used for general legal vocabulary, not eligibility, deadline or advice for a specific proceeding. Older proceedings may continue under the former code under the savings provision.
-
-6. [Bharatiya Nagarik Suraksha Sanhita 2023, original gazette text](https://www.mha.gov.in/sites/default/files/2024-04/250884_2_english_01042024.pdf#page=83). Ministry of Home Affairs / Gazette of India. **Locator:** Sections 255 and 258: acquittal and judgment of acquittal or conviction. **Edition:** Act 46 of 2023, original enactment. **Published:** 2023-12-25. **Limits:** Original enacted text, not a guaranteed current consolidation. Used for general legal vocabulary, not eligibility, deadline or advice for a specific proceeding. Older proceedings may continue under the former code under the savings provision.
-
-
-Research checked: 2026-10-13. This date is not a claim of continuous monitoring.

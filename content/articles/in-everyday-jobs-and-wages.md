@@ -1,28 +1,79 @@
 ---
-id: in-everyday-jobs-and-wages
-route: /in/everyday/jobs-and-wages
-country: IN
-language: en
-hub: everyday
-title: What do jobs numbers say about finding decent work?
-summary: Employment, unemployment, participation and decent work answer different
-  questions.
-status: ready
-publish: true
-research_checked_at: '2026-10-13'
-version: 2.0.0
-human_reviewed: false
-source_ref_ids:
-- plfs-definitions
-- plfs-figures
-- plfs-comparability
+id: "in-everyday-jobs-and-wages"
+route: "/in/everyday/jobs-and-wages"
+country: "IN"
+language: "en"
+hub: "everyday"
+title: "What do jobs numbers say about finding decent work?"
+summary: "Employment, unemployment, participation and decent work answer different questions."
+kind: "explainer"
+reader_task: "Find one labour-market headline and identify its age group, denominator, reference period and activity-status measure before judging what it says about jobs."
 related_ids:
-- in-evidence-percentages-and-denominators
-- in-evidence-question-official-data
-- in-evidence-observe-and-verify
+  - "in-evidence-percentages-and-denominators"
+  - "in-evidence-question-official-data"
+  - "in-evidence-observe-and-verify"
+quiz: null
+launch_order: null
+status: "ready"
+publish: true
+research_checked_at: "2026-10-13"
+human_reviewed: false
+review_method: "Assistant retrieval, source comparison and numerical checks; not independent human review"
+jurisdiction: "India; local administrative responsibility must be checked for the actual location"
+legal_scope: "General civic education, not individual legal advice"
+version: "2.0.0"
+source_ref_ids:
+  - "plfs-definitions"
+  - "plfs-figures"
+  - "plfs-comparability"
+sources:
+  - number: 1
+    ref_id: "plfs-definitions"
+    document_id: "plfs-release"
+    title: "Periodic Labour Force Survey Annual Report 2025: release and methods note"
+    publisher: "Ministry of Statistics and Programme Implementation, published by PIB"
+    url: "https://www.pib.gov.in/PressReleasePage.aspx?PRID=2246009&lang=1&reg=3"
+    locator: "Endnote D: definitions of LFPR, WPR, UR, usual status and current weekly status"
+    version: null
+    published_at: "2026-03-27"
+    reference_period: "January–December 2025"
+    checked_at: "2026-10-13"
+    limitations:
+      - "This release, not the full underlying report, is the inspected numerical source. Annual usual-status estimates are not current-month unemployment or a job-quality measure."
+    kind: "official_primary"
+  - number: 2
+    ref_id: "plfs-figures"
+    document_id: "plfs-release"
+    title: "Periodic Labour Force Survey Annual Report 2025: release and methods note"
+    publisher: "Ministry of Statistics and Programme Implementation, published by PIB"
+    url: "https://www.pib.gov.in/PressReleasePage.aspx?PRID=2246009&lang=1&reg=3"
+    locator: "Key findings: persons aged 15+, usual status (principal plus subsidiary), LFPR 59.3%, WPR 57.4%, UR 3.1%"
+    version: null
+    published_at: "2026-03-27"
+    reference_period: "January–December 2025"
+    checked_at: "2026-10-13"
+    limitations:
+      - "This release, not the full underlying report, is the inspected numerical source. Annual usual-status estimates are not current-month unemployment or a job-quality measure."
+    kind: "official_primary"
+  - number: 3
+    ref_id: "plfs-comparability"
+    document_id: "plfs-release"
+    title: "Periodic Labour Force Survey Annual Report 2025: release and methods note"
+    publisher: "Ministry of Statistics and Programme Implementation, published by PIB"
+    url: "https://www.pib.gov.in/PressReleasePage.aspx?PRID=2246009&lang=1&reg=3"
+    locator: "Endnote A and E: January 2025 sampling redesign, calendar-year cycle and comparability warning"
+    version: null
+    published_at: "2026-03-27"
+    reference_period: "January–December 2025"
+    checked_at: "2026-10-13"
+    limitations:
+      - "This release, not the full underlying report, is the inspected numerical source. Annual usual-status estimates are not current-month unemployment or a job-quality measure."
+    kind: "official_primary"
+maintenance:
+  trigger: "New source edition or revision; retain historical reference period"
+  suggested_recheck_days: 180
+  automation_created: false
 ---
-
-# What do jobs numbers say about finding decent work?
 
 “Unemployment is low” does not by itself tell you whether people earn enough, have stable hours or can find the work they want. Start with the statistic's definition and population.
 
@@ -53,24 +104,3 @@ To evaluate the experience of working people, look for suitable evidence on earn
 Likewise, your difficult job search does not by itself measure the national unemployment rate, while a national rate does not refute your experience. Your age group, location and kind of work may require a more relevant comparison.
 
 A useful headline names the measure. A useful conversation then asks what the measure leaves out.
-
-## Try this
-
-Find one labour-market headline and identify its age group, denominator, reference period and activity-status measure before judging what it says about jobs.
-
-## Keep reading
-
-- [Percent of what, and compared with when?](/in/evidence/percentages-and-denominators)
-- [How can I question official data responsibly?](/in/evidence/question-official-data)
-- [When should I trust what I see myself?](/in/evidence/observe-and-verify)
-
-## Sources and scope
-
-1. [Periodic Labour Force Survey Annual Report 2025: release and methods note](https://www.pib.gov.in/PressReleasePage.aspx?PRID=2246009&lang=1&reg=3). Ministry of Statistics and Programme Implementation, published by PIB. **Locator:** Endnote D: definitions of LFPR, WPR, UR, usual status and current weekly status. **Published:** 2026-03-27. **Reference period:** January–December 2025. **Limits:** This release, not the full underlying report, is the inspected numerical source. Annual usual-status estimates are not current-month unemployment or a job-quality measure.
-
-2. [Periodic Labour Force Survey Annual Report 2025: release and methods note](https://www.pib.gov.in/PressReleasePage.aspx?PRID=2246009&lang=1&reg=3). Ministry of Statistics and Programme Implementation, published by PIB. **Locator:** Key findings: persons aged 15+, usual status (principal plus subsidiary), LFPR 59.3%, WPR 57.4%, UR 3.1%. **Published:** 2026-03-27. **Reference period:** January–December 2025. **Limits:** This release, not the full underlying report, is the inspected numerical source. Annual usual-status estimates are not current-month unemployment or a job-quality measure.
-
-3. [Periodic Labour Force Survey Annual Report 2025: release and methods note](https://www.pib.gov.in/PressReleasePage.aspx?PRID=2246009&lang=1&reg=3). Ministry of Statistics and Programme Implementation, published by PIB. **Locator:** Endnote A and E: January 2025 sampling redesign, calendar-year cycle and comparability warning. **Published:** 2026-03-27. **Reference period:** January–December 2025. **Limits:** This release, not the full underlying report, is the inspected numerical source. Annual usual-status estimates are not current-month unemployment or a job-quality measure.
-
-
-Research checked: 2026-10-13. This date is not a claim of continuous monitoring.

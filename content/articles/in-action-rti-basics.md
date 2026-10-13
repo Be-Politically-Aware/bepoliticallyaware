@@ -1,29 +1,92 @@
 ---
-id: in-action-rti-basics
-route: /in/action/rti-basics
-country: IN
-language: en
-hub: action
-title: What can I ask for through RTI?
-summary: Ask for information that exists in the authority’s records, rather than a
-  new essay explaining why things are wrong.
-status: ready
-publish: true
-research_checked_at: '2026-10-13'
-version: 2.0.0
-human_reviewed: false
-source_ref_ids:
-- rti-records
-- rti-no-new-answer
-- rti-scope
-- rti-tracking
+id: "in-action-rti-basics"
+route: "/in/action/rti-basics"
+country: "IN"
+language: "en"
+hub: "action"
+title: "What can I ask for through RTI?"
+summary: "Ask for information that exists in the authority’s records, rather than a new essay explaining why things are wrong."
+kind: "explainer"
+reader_task: "Rewrite one broad concern as a request for two identifiable existing records, with a project or location and a relevant date range."
 related_ids:
-- in-action-rti-central-or-state
-- in-action-choose-a-route
-- in-action-ask-a-representative
+  - "in-action-rti-central-or-state"
+  - "in-action-choose-a-route"
+  - "in-action-ask-a-representative"
+quiz: null
+launch_order: 21
+status: "ready"
+publish: true
+research_checked_at: "2026-10-13"
+human_reviewed: false
+review_method: "Assistant retrieval, source comparison and numerical checks; not independent human review"
+jurisdiction: "India; local administrative responsibility must be checked for the actual location"
+legal_scope: "General civic education, not individual legal advice"
+version: "2.0.0"
+source_ref_ids:
+  - "rti-records"
+  - "rti-no-new-answer"
+  - "rti-scope"
+  - "rti-tracking"
+sources:
+  - number: 1
+    ref_id: "rti-records"
+    document_id: "rti-act"
+    title: "Right to Information Act 2005, CIC-hosted compilation"
+    publisher: "Central Information Commission"
+    url: "https://cic.gov.in/sites/default/files/RTI-Act_English.pdf#page=7"
+    locator: "Sections 2(f), 2(j), 3 and 4: existing records, access and proactive disclosure"
+    version: "As modified up to 1 February 2011"
+    published_at: null
+    reference_period: null
+    checked_at: "2026-10-13"
+    limitations:
+      - "Not a current consolidated Act. Do not use this copy for present territorial extent, amended exemptions, service conditions, deadlines or case-specific rights. Current procedural references use the live portal."
+    kind: "official_primary"
+  - number: 2
+    ref_id: "rti-no-new-answer"
+    document_id: "rti-guide"
+    title: "A Guide for the Information Seekers under the RTI Act 2005"
+    publisher: "Department of Personnel and Training; official copy hosted by AIIMS Bhubaneswar"
+    url: "https://aiimsbhubaneswar.nic.in/wp-content/uploads/2025/05/31-1.pdf#page=5"
+    locator: "PDF page 5, printed page 2, paragraphs 2–4: existing information; no duty to create an answer to a hypothetical"
+    version: "DoPT memorandum dated 8 November 2007"
+    published_at: "2007-11-08"
+    reference_period: null
+    checked_at: "2026-10-13"
+    limitations:
+      - "Historical guide. The 2025 URL folder is not the publication date. Used only for existing-information versus creating answers distinction, not current fees, exemptions or deadlines."
+    kind: "official_primary"
+  - number: 3
+    ref_id: "rti-scope"
+    document_id: "rti-online"
+    title: "RTI Online, Central Government portal"
+    publisher: "Department of Personnel and Training"
+    url: "https://rtionline.gov.in/"
+    locator: "Notice and introduction: Central public authorities; State authorities including Government of NCT Delhi excluded"
+    version: null
+    published_at: null
+    reference_period: null
+    checked_at: "2026-10-13"
+    limitations: []
+    kind: "official_primary"
+  - number: 4
+    ref_id: "rti-tracking"
+    document_id: "rti-faq"
+    title: "RTI Online frequently asked questions"
+    publisher: "Department of Personnel and Training"
+    url: "https://rtionline.gov.in/faq.php?pageid=c9f0f895fb98ab9159f51fd0297e236d"
+    locator: "FAQs on registration number, routing to nodal officer/CPIO and status tracking"
+    version: null
+    published_at: null
+    reference_period: null
+    checked_at: "2026-10-13"
+    limitations: []
+    kind: "official_primary"
+maintenance:
+  trigger: "Material change to the official portal scope or applicable procedure"
+  suggested_recheck_days: 90
+  automation_created: false
 ---
-
-# What can I ask for through RTI?
 
 RTI stands for Right to Information. Its basic purpose is access to information held by public authorities, subject to the applicable law. The Act's definitions include documents and other recorded material, and forms of access such as inspection or copies. [1](https://cic.gov.in/sites/default/files/RTI-Act_English.pdf#page=7)
 
@@ -60,26 +123,3 @@ The Central RTI Online portal serves the authorities within its published scope 
 Save the submitted request and acknowledgement. The portal's FAQs explain registration-number and status-tracking arrangements. Follow the current route's instructions for later steps rather than treating a generic template as an appeal guide. [4](https://rtionline.gov.in/faq.php?pageid=c9f0f895fb98ab9159f51fd0297e236d)
 
 Getting a record does not guarantee a service will be fixed. It gives you evidence with which to ask the next, better-supported question.
-
-## Try this
-
-Rewrite one broad concern as a request for two identifiable existing records, with a project or location and a relevant date range.
-
-## Keep reading
-
-- [Which RTI route applies to this authority?](/in/action/rti-central-or-state)
-- [Complaint, RTI, police report or court: which route fits?](/in/action/choose-a-route)
-- [How can I ask an MP, MLA or councillor a question that needs an answer?](/in/action/ask-a-representative)
-
-## Sources and scope
-
-1. [Right to Information Act 2005, CIC-hosted compilation](https://cic.gov.in/sites/default/files/RTI-Act_English.pdf#page=7). Central Information Commission. **Locator:** Sections 2(f), 2(j), 3 and 4: existing records, access and proactive disclosure. **Edition:** As modified up to 1 February 2011. **Limits:** Not a current consolidated Act. Do not use this copy for present territorial extent, amended exemptions, service conditions, deadlines or case-specific rights. Current procedural references use the live portal.
-
-2. [A Guide for the Information Seekers under the RTI Act 2005](https://aiimsbhubaneswar.nic.in/wp-content/uploads/2025/05/31-1.pdf#page=5). Department of Personnel and Training; official copy hosted by AIIMS Bhubaneswar. **Locator:** PDF page 5, printed page 2, paragraphs 2–4: existing information; no duty to create an answer to a hypothetical. **Edition:** DoPT memorandum dated 8 November 2007. **Published:** 2007-11-08. **Limits:** Historical guide. The 2025 URL folder is not the publication date. Used only for existing-information versus creating answers distinction, not current fees, exemptions or deadlines.
-
-3. [RTI Online, Central Government portal](https://rtionline.gov.in/). Department of Personnel and Training. **Locator:** Notice and introduction: Central public authorities; State authorities including Government of NCT Delhi excluded.
-
-4. [RTI Online frequently asked questions](https://rtionline.gov.in/faq.php?pageid=c9f0f895fb98ab9159f51fd0297e236d). Department of Personnel and Training. **Locator:** FAQs on registration number, routing to nodal officer/CPIO and status tracking.
-
-
-Research checked: 2026-10-13. This date is not a claim of continuous monitoring.

@@ -2,7 +2,7 @@ import budget from "../../content/data/union-budget-2026-27-expenditure.json";
 import plfs from "../../content/data/plfs-2025-annual-usual-status.json";
 import road from "../../content/data/road-deaths-2024-parliament-answer.json";
 import adr from "../../content/data/adr-2024-winning-candidate-disclosures.json";
-import { escapeHtml, isNumericTableCell } from "./markdown";
+import { escapeHtml, isNumericTableCell } from "./tables";
 
 const integer = (value: number) =>
   new Intl.NumberFormat("en-IN", { maximumFractionDigits: 0 }).format(value);

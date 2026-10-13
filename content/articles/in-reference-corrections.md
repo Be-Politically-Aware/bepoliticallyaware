@@ -1,25 +1,34 @@
 ---
-id: in-reference-corrections
-route: /in/reference/corrections
-country: IN
-language: en
-hub: reference
-title: How can readers challenge or correct this site?
-summary: A correction should identify the exact claim, the evidence and what needs
-  to change.
-status: ready
-publish: true
-research_checked_at: '2026-10-13'
-version: 2.0.0
-human_reviewed: false
-source_ref_ids: []
+id: "in-reference-corrections"
+route: "/in/reference/corrections"
+country: "IN"
+language: "en"
+hub: "reference"
+title: "How can readers challenge or correct this site?"
+summary: "A correction should identify the exact claim, the evidence and what needs to change."
+kind: "editorial-method"
+reader_task: "Prepare a correction request containing the exact claim and original evidence. Do not replace one unsupported assertion with another."
 related_ids:
-- in-reference-how-we-know
-- in-evidence-check-before-sharing
-- in-media-assess-a-news-report
+  - "in-reference-how-we-know"
+  - "in-evidence-check-before-sharing"
+  - "in-media-assess-a-news-report"
+quiz: null
+launch_order: null
+status: "ready"
+publish: true
+research_checked_at: "2026-10-13"
+human_reviewed: false
+review_method: "Assistant retrieval, source comparison and numerical checks; not independent human review"
+jurisdiction: "India; local administrative responsibility must be checked for the actual location"
+legal_scope: "General civic education, not individual legal advice"
+version: "2.0.0"
+source_ref_ids: []
+sources: []
+maintenance:
+  trigger: "Change to a cited provision, source correction or substantiated reader correction"
+  suggested_recheck_days: 365
+  automation_created: false
 ---
-
-# How can readers challenge or correct this site?
 
 A source-linked website should be open to a source-linked correction. Finding an error is a reason to improve the record, not to defend a sentence because it has already been published.
 
@@ -60,14 +69,3 @@ Preserve the earlier article version and the reason for the change in the site's
 A new report does not necessarily make a correctly dated historical figure false. The correction may instead be to label the reference period more clearly, add a newer edition or remove an unsupported claim that the old figure was “current”.
 
 This content edition includes article versions and source references so a correction can be traced. The website's chosen submission channel and actual response history must be configured by its maintainer; this page does not promise that an unbuilt reporting system is already operating.
-
-## Try this
-
-Prepare a correction request containing the exact claim and original evidence. Do not replace one unsupported assertion with another.
-
-## Keep reading
-
-- [How does this website decide what is true?](/in/reference/how-we-know)
-- [How do I check a political claim before sharing it?](/in/evidence/check-before-sharing)
-- [What makes a news report worth relying on?](/in/media/assess-a-news-report)
-Research checked: 2026-10-13. This date is not a claim of continuous monitoring.

@@ -1,25 +1,48 @@
 ---
-id: in-start-politics-without-party-loyalty
-route: /in/start/politics-without-party-loyalty
-country: IN
-language: en
-hub: start
-title: Can I care about politics without supporting a party?
-summary: You can assess an issue without letting a party decide which evidence counts.
-status: ready
-publish: true
-research_checked_at: '2026-10-13'
-version: 2.0.0
-human_reviewed: false
-source_ref_ids:
-- budget-docs
+id: "in-start-politics-without-party-loyalty"
+route: "/in/start/politics-without-party-loyalty"
+country: "IN"
+language: "en"
+hub: "start"
+title: "Can I care about politics without supporting a party?"
+summary: "You can assess an issue without letting a party decide which evidence counts."
+kind: "explainer"
+reader_task: "Write one evidentiary standard you expect from a party you oppose, then use it on a claim from a party you support."
 related_ids:
-- in-start-reasonable-disagreement
-- in-elections-compare-candidates
-- in-parties-opposition-role
+  - "in-start-reasonable-disagreement"
+  - "in-elections-compare-candidates"
+  - "in-parties-opposition-role"
+quiz: null
+launch_order: null
+status: "ready"
+publish: true
+research_checked_at: "2026-10-13"
+human_reviewed: false
+review_method: "Assistant retrieval, source comparison and numerical checks; not independent human review"
+jurisdiction: "India; local administrative responsibility must be checked for the actual location"
+legal_scope: "General civic education, not individual legal advice"
+version: "2.0.0"
+source_ref_ids:
+  - "budget-docs"
+sources:
+  - number: 1
+    ref_id: "budget-docs"
+    document_id: "budget-key"
+    title: "Key to Budget Documents 2026–2027"
+    publisher: "Ministry of Finance"
+    url: "https://www.indiabudget.gov.in/doc/Key_to_Budget_Document_2026.pdf#page=2"
+    locator: "PDF pages 2–5: document list, Annual Financial Statement, Demands for Grants and Finance Bill"
+    version: "Union Budget 2026–27"
+    published_at: "2026-02"
+    reference_period: null
+    checked_at: "2026-10-13"
+    limitations: []
+    kind: "official_primary"
+maintenance:
+  trigger: "Change to a cited provision, source correction or substantiated reader correction"
+  suggested_recheck_days: 365
+  automation_created: false
 ---
-
-# Can I care about politics without supporting a party?
 
 You do not need to support a political party to ask whether a public decision is justified. You also do not need to oppose everything a party does because you disagree with it on another issue.
 
@@ -50,20 +73,3 @@ Write down what would change your assessment: a completed audit, a revised polic
 A change of mind is useful when it follows a corrected premise. There is no need to defend an old claim simply because people associate you with the side that made it.
 
 Political awareness can begin as a practice of asking better questions, with no membership, public argument or declaration of loyalty required.
-
-## Try this
-
-Write one evidentiary standard you expect from a party you oppose, then use it on a claim from a party you support.
-
-## Keep reading
-
-- [How can people disagree without abandoning evidence?](/in/start/reasonable-disagreement)
-- [How can I compare candidates without a popularity contest?](/in/elections/compare-candidates)
-- [What is the opposition supposed to do?](/in/parties/opposition-role)
-
-## Sources and scope
-
-1. [Key to Budget Documents 2026–2027](https://www.indiabudget.gov.in/doc/Key_to_Budget_Document_2026.pdf#page=2). Ministry of Finance. **Locator:** PDF pages 2–5: document list, Annual Financial Statement, Demands for Grants and Finance Bill. **Edition:** Union Budget 2026–27. **Published:** 2026-02.
-
-
-Research checked: 2026-10-13. This date is not a claim of continuous monitoring.

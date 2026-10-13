@@ -1,29 +1,92 @@
 ---
-id: in-action-choose-a-route
-route: /in/action/choose-a-route
-country: IN
-language: en
-hub: action
-title: 'Complaint, RTI, police report or court: which route fits?'
-summary: First decide whether you need action, an existing record, an investigation
-  or a legal remedy.
-status: ready
-publish: true
-research_checked_at: '2026-10-13'
-version: 2.0.0
-human_reviewed: false
-source_ref_ids:
-- cpgrams-scope
-- rti-records
-- rti-no-new-answer
-- rti-scope
+id: "in-action-choose-a-route"
+route: "/in/action/choose-a-route"
+country: "IN"
+language: "en"
+hub: "action"
+title: "Complaint, RTI, police report or court: which route fits?"
+summary: "First decide whether you need action, an existing record, an investigation or a legal remedy."
+kind: "explainer"
+reader_task: "Write your desired outcome in one sentence, identify the responsible authority and label the request: service action, existing records, investigation or legal remedy."
 related_ids:
-- in-action-write-a-complaint
-- in-action-rti-basics
-- in-action-rti-central-or-state
+  - "in-action-write-a-complaint"
+  - "in-action-rti-basics"
+  - "in-action-rti-central-or-state"
+quiz: null
+launch_order: 19
+status: "ready"
+publish: true
+research_checked_at: "2026-10-13"
+human_reviewed: false
+review_method: "Assistant retrieval, source comparison and numerical checks; not independent human review"
+jurisdiction: "India; local administrative responsibility must be checked for the actual location"
+legal_scope: "General civic education, not individual legal advice"
+version: "2.0.0"
+source_ref_ids:
+  - "cpgrams-scope"
+  - "rti-records"
+  - "rti-no-new-answer"
+  - "rti-scope"
+sources:
+  - number: 1
+    ref_id: "cpgrams-scope"
+    document_id: "cpgrams"
+    title: "Centralised Public Grievance Redress and Monitoring System"
+    publisher: "Department of Administrative Reforms and Public Grievances"
+    url: "https://pgportal.gov.in/"
+    locator: "About CPGRAMS and issues not taken up: service grievances versus RTI and court/sub judice matters"
+    version: null
+    published_at: null
+    reference_period: null
+    checked_at: "2026-10-13"
+    limitations: []
+    kind: "official_primary"
+  - number: 2
+    ref_id: "rti-records"
+    document_id: "rti-act"
+    title: "Right to Information Act 2005, CIC-hosted compilation"
+    publisher: "Central Information Commission"
+    url: "https://cic.gov.in/sites/default/files/RTI-Act_English.pdf#page=7"
+    locator: "Sections 2(f), 2(j), 3 and 4: existing records, access and proactive disclosure"
+    version: "As modified up to 1 February 2011"
+    published_at: null
+    reference_period: null
+    checked_at: "2026-10-13"
+    limitations:
+      - "Not a current consolidated Act. Do not use this copy for present territorial extent, amended exemptions, service conditions, deadlines or case-specific rights. Current procedural references use the live portal."
+    kind: "official_primary"
+  - number: 3
+    ref_id: "rti-no-new-answer"
+    document_id: "rti-guide"
+    title: "A Guide for the Information Seekers under the RTI Act 2005"
+    publisher: "Department of Personnel and Training; official copy hosted by AIIMS Bhubaneswar"
+    url: "https://aiimsbhubaneswar.nic.in/wp-content/uploads/2025/05/31-1.pdf#page=5"
+    locator: "PDF page 5, printed page 2, paragraphs 2–4: existing information; no duty to create an answer to a hypothetical"
+    version: "DoPT memorandum dated 8 November 2007"
+    published_at: "2007-11-08"
+    reference_period: null
+    checked_at: "2026-10-13"
+    limitations:
+      - "Historical guide. The 2025 URL folder is not the publication date. Used only for existing-information versus creating answers distinction, not current fees, exemptions or deadlines."
+    kind: "official_primary"
+  - number: 4
+    ref_id: "rti-scope"
+    document_id: "rti-online"
+    title: "RTI Online, Central Government portal"
+    publisher: "Department of Personnel and Training"
+    url: "https://rtionline.gov.in/"
+    locator: "Notice and introduction: Central public authorities; State authorities including Government of NCT Delhi excluded"
+    version: null
+    published_at: null
+    reference_period: null
+    checked_at: "2026-10-13"
+    limitations: []
+    kind: "official_primary"
+maintenance:
+  trigger: "Material change to the official portal scope or applicable procedure"
+  suggested_recheck_days: 90
+  automation_created: false
 ---
-
-# Complaint, RTI, police report or court: which route fits?
 
 Before sending a message, finish this sentence: “I need this office to ____.” The answer helps separate four different purposes.
 
@@ -54,26 +117,3 @@ An ordinary grievance ticket may not replace a statutory appeal, tribunal proces
 In a **hypothetical road case**, a resident might complain about a dangerous defect and separately request the existing repair contract. The first seeks action. The second seeks evidence. A court challenge or criminal allegation would raise different issues again.
 
 Keeping these purposes separate makes it easier to see whether a response actually answers your request. It also prevents the mistaken promise that one national portal can solve every accountability problem.
-
-## Try this
-
-Write your desired outcome in one sentence, identify the responsible authority and label the request: service action, existing records, investigation or legal remedy.
-
-## Keep reading
-
-- [How do I write a useful public-service complaint?](/in/action/write-a-complaint)
-- [What can I ask for through RTI?](/in/action/rti-basics)
-- [Which RTI route applies to this authority?](/in/action/rti-central-or-state)
-
-## Sources and scope
-
-1. [Centralised Public Grievance Redress and Monitoring System](https://pgportal.gov.in/). Department of Administrative Reforms and Public Grievances. **Locator:** About CPGRAMS and issues not taken up: service grievances versus RTI and court/sub judice matters.
-
-2. [Right to Information Act 2005, CIC-hosted compilation](https://cic.gov.in/sites/default/files/RTI-Act_English.pdf#page=7). Central Information Commission. **Locator:** Sections 2(f), 2(j), 3 and 4: existing records, access and proactive disclosure. **Edition:** As modified up to 1 February 2011. **Limits:** Not a current consolidated Act. Do not use this copy for present territorial extent, amended exemptions, service conditions, deadlines or case-specific rights. Current procedural references use the live portal.
-
-3. [A Guide for the Information Seekers under the RTI Act 2005](https://aiimsbhubaneswar.nic.in/wp-content/uploads/2025/05/31-1.pdf#page=5). Department of Personnel and Training; official copy hosted by AIIMS Bhubaneswar. **Locator:** PDF page 5, printed page 2, paragraphs 2–4: existing information; no duty to create an answer to a hypothetical. **Edition:** DoPT memorandum dated 8 November 2007. **Published:** 2007-11-08. **Limits:** Historical guide. The 2025 URL folder is not the publication date. Used only for existing-information versus creating answers distinction, not current fees, exemptions or deadlines.
-
-4. [RTI Online, Central Government portal](https://rtionline.gov.in/). Department of Personnel and Training. **Locator:** Notice and introduction: Central public authorities; State authorities including Government of NCT Delhi excluded.
-
-
-Research checked: 2026-10-13. This date is not a claim of continuous monitoring.

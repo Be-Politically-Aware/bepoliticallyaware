@@ -1,28 +1,78 @@
 ---
-id: in-start-why-care
-route: /in/start/why-care
-country: IN
-language: en
-hub: start
-title: Why should I care about politics?
-summary: Politics becomes easier to understand when you start with one decision that
-  affects your life.
-status: ready
-publish: true
-research_checked_at: '2026-10-13'
-version: 2.0.0
-human_reviewed: false
-source_ref_ids:
-- c-powers
-- c-municipality
-- budget-docs
+id: "in-start-why-care"
+route: "/in/start/why-care"
+country: "IN"
+language: "en"
+hub: "start"
+title: "Why should I care about politics?"
+summary: "Politics becomes easier to understand when you start with one decision that affects your life."
+kind: "explainer"
+reader_task: "Pick one recurring problem. Write down the decision you want explained, the likely responsible body and one record that would help."
 related_ids:
-- in-start-country-state-government-party
-- in-local-find-responsible-authority
-- in-evidence-check-before-sharing
+  - "in-start-country-state-government-party"
+  - "in-local-find-responsible-authority"
+  - "in-evidence-check-before-sharing"
+quiz: null
+launch_order: 1
+status: "ready"
+publish: true
+research_checked_at: "2026-10-13"
+human_reviewed: false
+review_method: "Assistant retrieval, source comparison and numerical checks; not independent human review"
+jurisdiction: "India; local administrative responsibility must be checked for the actual location"
+legal_scope: "General civic education, not individual legal advice"
+version: "2.0.0"
+source_ref_ids:
+  - "c-powers"
+  - "c-municipality"
+  - "budget-docs"
+sources:
+  - number: 1
+    ref_id: "c-powers"
+    document_id: "constitution"
+    title: "Constitution of India, official English compilation"
+    publisher: "Legislative Department, Ministry of Law and Justice"
+    url: "https://www.legislative.gov.in/static/uploads/2025/07/c9fe9c9b6840524844316f74bb1c556c.pdf#page=176"
+    locator: "Article 246, read with the Seventh Schedule: legislative subject allocation"
+    version: "As on 1 May 2026"
+    published_at: null
+    reference_period: null
+    checked_at: "2026-10-13"
+    limitations:
+      - "This compilation has a stated cutoff. No assertion that every post-cutoff notification or judgment was exhaustively checked. Article explanations concern the provisions cited, not personalised legal advice."
+    kind: "official_primary"
+  - number: 2
+    ref_id: "c-municipality"
+    document_id: "constitution"
+    title: "Constitution of India, official English compilation"
+    publisher: "Legislative Department, Ministry of Law and Justice"
+    url: "https://www.legislative.gov.in/static/uploads/2025/07/c9fe9c9b6840524844316f74bb1c556c.pdf#page=162"
+    locator: "Article 243W: state legislation and municipal powers"
+    version: "As on 1 May 2026"
+    published_at: null
+    reference_period: null
+    checked_at: "2026-10-13"
+    limitations:
+      - "This compilation has a stated cutoff. No assertion that every post-cutoff notification or judgment was exhaustively checked. Article explanations concern the provisions cited, not personalised legal advice."
+    kind: "official_primary"
+  - number: 3
+    ref_id: "budget-docs"
+    document_id: "budget-key"
+    title: "Key to Budget Documents 2026–2027"
+    publisher: "Ministry of Finance"
+    url: "https://www.indiabudget.gov.in/doc/Key_to_Budget_Document_2026.pdf#page=2"
+    locator: "PDF pages 2–5: document list, Annual Financial Statement, Demands for Grants and Finance Bill"
+    version: "Union Budget 2026–27"
+    published_at: "2026-02"
+    reference_period: null
+    checked_at: "2026-10-13"
+    limitations: []
+    kind: "official_primary"
+maintenance:
+  trigger: "Change to a cited provision, source correction or substantiated reader correction"
+  suggested_recheck_days: 365
+  automation_created: false
 ---
-
-# Why should I care about politics?
 
 You do not have to enjoy political arguments to care about the decisions being made for you. Start with something concrete: the road outside your home, a public hospital, or what happens to money collected in taxes.
 
@@ -47,24 +97,3 @@ Choose one issue you already encounter. Identify the institution involved. Read 
 You can support a policy and still question its implementation. You can disagree with a party and still recognise a well-supported result. The standard should be whether the claim survives examination.
 
 The first goal is modest: replace “politicians do everything” or “nothing can change” with a clearer account of who made a decision, what happened next and what evidence is missing.
-
-## Try this
-
-Pick one recurring problem. Write down the decision you want explained, the likely responsible body and one record that would help.
-
-## Keep reading
-
-- [Country, State, government and party: what is the difference?](/in/start/country-state-government-party)
-- [Who is actually responsible for this local problem?](/in/local/find-responsible-authority)
-- [How do I check a political claim before sharing it?](/in/evidence/check-before-sharing)
-
-## Sources and scope
-
-1. [Constitution of India, official English compilation](https://www.legislative.gov.in/static/uploads/2025/07/c9fe9c9b6840524844316f74bb1c556c.pdf#page=176). Legislative Department, Ministry of Law and Justice. **Locator:** Article 246, read with the Seventh Schedule: legislative subject allocation. **Edition:** As on 1 May 2026. **Limits:** This compilation has a stated cutoff. No assertion that every post-cutoff notification or judgment was exhaustively checked. Article explanations concern the provisions cited, not personalised legal advice.
-
-2. [Constitution of India, official English compilation](https://www.legislative.gov.in/static/uploads/2025/07/c9fe9c9b6840524844316f74bb1c556c.pdf#page=162). Legislative Department, Ministry of Law and Justice. **Locator:** Article 243W: state legislation and municipal powers. **Edition:** As on 1 May 2026. **Limits:** This compilation has a stated cutoff. No assertion that every post-cutoff notification or judgment was exhaustively checked. Article explanations concern the provisions cited, not personalised legal advice.
-
-3. [Key to Budget Documents 2026–2027](https://www.indiabudget.gov.in/doc/Key_to_Budget_Document_2026.pdf#page=2). Ministry of Finance. **Locator:** PDF pages 2–5: document list, Annual Financial Statement, Demands for Grants and Finance Bill. **Edition:** Union Budget 2026–27. **Published:** 2026-02.
-
-
-Research checked: 2026-10-13. This date is not a claim of continuous monitoring.

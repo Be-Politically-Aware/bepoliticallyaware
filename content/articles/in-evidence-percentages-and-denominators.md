@@ -1,25 +1,56 @@
 ---
-id: in-evidence-percentages-and-denominators
-route: /in/evidence/percentages-and-denominators
-country: IN
-language: en
-hub: evidence
-title: Percent of what, and compared with when?
-summary: A percentage only becomes meaningful when you know what it divides by.
-status: ready
-publish: true
-research_checked_at: '2026-10-13'
-version: 2.0.0
-human_reviewed: false
-source_ref_ids:
-- plfs-definitions
+id: "in-evidence-percentages-and-denominators"
+route: "/in/evidence/percentages-and-denominators"
+country: "IN"
+language: "en"
+hub: "evidence"
+title: "Percent of what, and compared with when?"
+summary: "A percentage only becomes meaningful when you know what it divides by."
+kind: "explainer"
+reader_task: "Take a percentage from a headline. Write the numerator, denominator, period and unit, then reproduce the calculation or mark the missing inputs."
 related_ids:
-- in-everyday-jobs-and-wages
-- in-money-estimates-revised-actuals
-- in-crime-crime-statistics
+  - "in-everyday-jobs-and-wages"
+  - "in-money-estimates-revised-actuals"
+  - "in-crime-crime-statistics"
+quiz:
+  question: "A share rises from 20% to 25%. Which description is correct?"
+  options:
+    - "A 5% relative increase."
+    - "A 5-percentage-point increase and a 25% relative increase."
+    - "A 25-percentage-point increase."
+  answer_index: 1
+  explanation: "The difference is 5 points; relative growth is 5 divided by the original 20, or 25%."
+launch_order: 25
+status: "ready"
+publish: true
+research_checked_at: "2026-10-13"
+human_reviewed: false
+review_method: "Assistant retrieval, source comparison and numerical checks; not independent human review"
+jurisdiction: "India; local administrative responsibility must be checked for the actual location"
+legal_scope: "General civic education, not individual legal advice"
+version: "2.0.0"
+source_ref_ids:
+  - "plfs-definitions"
+sources:
+  - number: 1
+    ref_id: "plfs-definitions"
+    document_id: "plfs-release"
+    title: "Periodic Labour Force Survey Annual Report 2025: release and methods note"
+    publisher: "Ministry of Statistics and Programme Implementation, published by PIB"
+    url: "https://www.pib.gov.in/PressReleasePage.aspx?PRID=2246009&lang=1&reg=3"
+    locator: "Endnote D: definitions of LFPR, WPR, UR, usual status and current weekly status"
+    version: null
+    published_at: "2026-03-27"
+    reference_period: "January–December 2025"
+    checked_at: "2026-10-13"
+    limitations:
+      - "This release, not the full underlying report, is the inspected numerical source. Annual usual-status estimates are not current-month unemployment or a job-quality measure."
+    kind: "official_primary"
+maintenance:
+  trigger: "Change to a cited provision, source correction or substantiated reader correction"
+  suggested_recheck_days: 365
+  automation_created: false
 ---
-
-# Percent of what, and compared with when?
 
 “Cases rose 50%” may sound more informative than it is. Ask: how many cases, among whom, over what period, and counted in the same way?
 
@@ -50,20 +81,3 @@ On a chart, check whether the vertical scale begins at zero, whether time interv
 Treat “not reported” as unknown, not zero. Do not add percentages from different populations or average rates without appropriate weights.
 
 A useful numerical caption answers: **what was counted, out of what, where, when, in which unit and by what method?** If those answers are missing, hold the interpretation until you find them.
-
-## Try this
-
-Take a percentage from a headline. Write the numerator, denominator, period and unit, then reproduce the calculation or mark the missing inputs.
-
-## Keep reading
-
-- [What do jobs numbers say about finding decent work?](/in/everyday/jobs-and-wages)
-- [Announced, allocated or actually spent: which number is this?](/in/money/estimates-revised-actuals)
-- [Why do crime figures need careful interpretation?](/in/crime/crime-statistics)
-
-## Sources and scope
-
-1. [Periodic Labour Force Survey Annual Report 2025: release and methods note](https://www.pib.gov.in/PressReleasePage.aspx?PRID=2246009&lang=1&reg=3). Ministry of Statistics and Programme Implementation, published by PIB. **Locator:** Endnote D: definitions of LFPR, WPR, UR, usual status and current weekly status. **Published:** 2026-03-27. **Reference period:** January–December 2025. **Limits:** This release, not the full underlying report, is the inspected numerical source. Annual usual-status estimates are not current-month unemployment or a job-quality measure.
-
-
-Research checked: 2026-10-13. This date is not a claim of continuous monitoring.

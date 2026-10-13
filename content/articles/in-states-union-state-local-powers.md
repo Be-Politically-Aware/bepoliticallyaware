@@ -1,30 +1,109 @@
 ---
-id: in-states-union-state-local-powers
-route: /in/states/union-state-local-powers
-country: IN
-language: en
-hub: states
-title: 'Union, state or local government: who is responsible?'
-summary: Ask separately who can make the rule, who funds the service and who runs
-  it.
-status: ready
-publish: true
-research_checked_at: '2026-10-13'
-version: 2.0.0
-human_reviewed: false
-source_ref_ids:
-- c-powers
-- c-panchayat
-- c-municipality
-- ls-scrutiny
-- c-state-houses
+id: "in-states-union-state-local-powers"
+route: "/in/states/union-state-local-powers"
+country: "IN"
+language: "en"
+hub: "states"
+title: "Union, state or local government: who is responsible?"
+summary: "Ask separately who can make the rule, who funds the service and who runs it."
+kind: "explainer"
+reader_task: "For one issue, make three fields: rule-maker, funder and operator. Leave any unknown field blank until you find evidence."
 related_ids:
-- in-local-find-responsible-authority
-- in-parliament-mp-role
-- in-states-mla-and-mlc
+  - "in-local-find-responsible-authority"
+  - "in-parliament-mp-role"
+  - "in-states-mla-and-mlc"
+quiz: null
+launch_order: 4
+status: "ready"
+publish: true
+research_checked_at: "2026-10-13"
+human_reviewed: false
+review_method: "Assistant retrieval, source comparison and numerical checks; not independent human review"
+jurisdiction: "India; local administrative responsibility must be checked for the actual location"
+legal_scope: "General civic education, not individual legal advice"
+version: "2.0.0"
+source_ref_ids:
+  - "c-powers"
+  - "c-panchayat"
+  - "c-municipality"
+  - "ls-scrutiny"
+  - "c-state-houses"
+sources:
+  - number: 1
+    ref_id: "c-powers"
+    document_id: "constitution"
+    title: "Constitution of India, official English compilation"
+    publisher: "Legislative Department, Ministry of Law and Justice"
+    url: "https://www.legislative.gov.in/static/uploads/2025/07/c9fe9c9b6840524844316f74bb1c556c.pdf#page=176"
+    locator: "Article 246, read with the Seventh Schedule: legislative subject allocation"
+    version: "As on 1 May 2026"
+    published_at: null
+    reference_period: null
+    checked_at: "2026-10-13"
+    limitations:
+      - "This compilation has a stated cutoff. No assertion that every post-cutoff notification or judgment was exhaustively checked. Article explanations concern the provisions cited, not personalised legal advice."
+    kind: "official_primary"
+  - number: 2
+    ref_id: "c-panchayat"
+    document_id: "constitution"
+    title: "Constitution of India, official English compilation"
+    publisher: "Legislative Department, Ministry of Law and Justice"
+    url: "https://www.legislative.gov.in/static/uploads/2025/07/c9fe9c9b6840524844316f74bb1c556c.pdf#page=154"
+    locator: "Article 243G: state legislation and powers devolved to panchayats"
+    version: "As on 1 May 2026"
+    published_at: null
+    reference_period: null
+    checked_at: "2026-10-13"
+    limitations:
+      - "This compilation has a stated cutoff. No assertion that every post-cutoff notification or judgment was exhaustively checked. Article explanations concern the provisions cited, not personalised legal advice."
+    kind: "official_primary"
+  - number: 3
+    ref_id: "c-municipality"
+    document_id: "constitution"
+    title: "Constitution of India, official English compilation"
+    publisher: "Legislative Department, Ministry of Law and Justice"
+    url: "https://www.legislative.gov.in/static/uploads/2025/07/c9fe9c9b6840524844316f74bb1c556c.pdf#page=162"
+    locator: "Article 243W: state legislation and municipal powers"
+    version: "As on 1 May 2026"
+    published_at: null
+    reference_period: null
+    checked_at: "2026-10-13"
+    limitations:
+      - "This compilation has a stated cutoff. No assertion that every post-cutoff notification or judgment was exhaustively checked. Article explanations concern the provisions cited, not personalised legal advice."
+    kind: "official_primary"
+  - number: 4
+    ref_id: "ls-scrutiny"
+    document_id: "ls-faq"
+    title: "Lok Sabha frequently asked questions"
+    publisher: "Lok Sabha Secretariat"
+    url: "https://sansad.in/ls/faq"
+    locator: "Questions on parliamentary committees, parliamentary motions, calling attention and no-confidence motions; use procedural descriptions only"
+    version: null
+    published_at: null
+    reference_period: null
+    checked_at: "2026-10-13"
+    limitations:
+      - "Some office-holder and historical House details on this FAQ are stale. No current names, salaries or membership totals are taken from it."
+    kind: "official_primary"
+  - number: 5
+    ref_id: "c-state-houses"
+    document_id: "constitution"
+    title: "Constitution of India, official English compilation"
+    publisher: "Legislative Department, Ministry of Law and Justice"
+    url: "https://www.legislative.gov.in/static/uploads/2025/07/c9fe9c9b6840524844316f74bb1c556c.pdf#page=106"
+    locator: "Articles 168–171: state legislatures and Legislative Councils"
+    version: "As on 1 May 2026"
+    published_at: null
+    reference_period: null
+    checked_at: "2026-10-13"
+    limitations:
+      - "This compilation has a stated cutoff. No assertion that every post-cutoff notification or judgment was exhaustively checked. Article explanations concern the provisions cited, not personalised legal advice."
+    kind: "official_primary"
+maintenance:
+  trigger: "Change to a cited provision, source correction or substantiated reader correction"
+  suggested_recheck_days: 365
+  automation_created: false
 ---
-
-# Union, state or local government: who is responsible?
 
 There is no single answer to “Is this the government's responsibility?” The useful next question is: which government, which authority and which part of the job?
 
@@ -55,28 +134,3 @@ Useful records would include the project sanction, implementing-agency details, 
 MPs and MLAs participate in legislatures and can scrutinise ministers through legislative procedures. Those roles are different from operating a department's day-to-day service. A representative may help escalate a problem, but your evidence should still identify the office responsible for delivering the remedy. [4](https://sansad.in/ls/faq) [5](https://www.legislative.gov.in/static/uploads/2025/07/c9fe9c9b6840524844316f74bb1c556c.pdf#page=106)
 
 For a Union Territory or an area with special arrangements, check its actual legal and administrative structure rather than forcing it into a standard state template.
-
-## Try this
-
-For one issue, make three fields: rule-maker, funder and operator. Leave any unknown field blank until you find evidence.
-
-## Keep reading
-
-- [Who is actually responsible for this local problem?](/in/local/find-responsible-authority)
-- [What can an MP actually do?](/in/parliament/mp-role)
-- [What do MLAs and MLCs do?](/in/states/mla-and-mlc)
-
-## Sources and scope
-
-1. [Constitution of India, official English compilation](https://www.legislative.gov.in/static/uploads/2025/07/c9fe9c9b6840524844316f74bb1c556c.pdf#page=176). Legislative Department, Ministry of Law and Justice. **Locator:** Article 246, read with the Seventh Schedule: legislative subject allocation. **Edition:** As on 1 May 2026. **Limits:** This compilation has a stated cutoff. No assertion that every post-cutoff notification or judgment was exhaustively checked. Article explanations concern the provisions cited, not personalised legal advice.
-
-2. [Constitution of India, official English compilation](https://www.legislative.gov.in/static/uploads/2025/07/c9fe9c9b6840524844316f74bb1c556c.pdf#page=154). Legislative Department, Ministry of Law and Justice. **Locator:** Article 243G: state legislation and powers devolved to panchayats. **Edition:** As on 1 May 2026. **Limits:** This compilation has a stated cutoff. No assertion that every post-cutoff notification or judgment was exhaustively checked. Article explanations concern the provisions cited, not personalised legal advice.
-
-3. [Constitution of India, official English compilation](https://www.legislative.gov.in/static/uploads/2025/07/c9fe9c9b6840524844316f74bb1c556c.pdf#page=162). Legislative Department, Ministry of Law and Justice. **Locator:** Article 243W: state legislation and municipal powers. **Edition:** As on 1 May 2026. **Limits:** This compilation has a stated cutoff. No assertion that every post-cutoff notification or judgment was exhaustively checked. Article explanations concern the provisions cited, not personalised legal advice.
-
-4. [Lok Sabha frequently asked questions](https://sansad.in/ls/faq). Lok Sabha Secretariat. **Locator:** Questions on parliamentary committees, parliamentary motions, calling attention and no-confidence motions; use procedural descriptions only. **Limits:** Some office-holder and historical House details on this FAQ are stale. No current names, salaries or membership totals are taken from it.
-
-5. [Constitution of India, official English compilation](https://www.legislative.gov.in/static/uploads/2025/07/c9fe9c9b6840524844316f74bb1c556c.pdf#page=106). Legislative Department, Ministry of Law and Justice. **Locator:** Articles 168–171: state legislatures and Legislative Councils. **Edition:** As on 1 May 2026. **Limits:** This compilation has a stated cutoff. No assertion that every post-cutoff notification or judgment was exhaustively checked. Article explanations concern the provisions cited, not personalised legal advice.
-
-
-Research checked: 2026-10-13. This date is not a claim of continuous monitoring.

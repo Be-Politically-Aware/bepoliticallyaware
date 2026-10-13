@@ -32,7 +32,7 @@ After the body: reader task, two or three relevant next articles, source panel, 
 
 Use the article's existing citations, not a second vaguely matched reference list. A link to a PDF should retain the supplied `#page=` locator. Fragment support varies by viewer, so also show the written locator.
 
-Use `body_markdown` for the body. Render `reader_task`, `related` and `sources` from their fields. When using standalone Markdown instead, do not append these fields a second time; they are already included there.
+Use the canonical `content/articles/*.md` body through Astro's native collection `render()` and `<Content />`. Render `reader_task`, `related_ids` and `sources` from frontmatter. The Markdown body has no duplicate h1 or appended task/source sections; the article template owns those sections.
 
 ## Search and glossary
 
@@ -52,7 +52,7 @@ No “criminality” score, political recommendation, person ranking or automati
 
 Version-controlled changes are enough. A correction can be prepared locally as text with article ID, version, original claim, source URL/locator and proposed correction. A configured destination may later enable opening an email composer or issue form, but do not fabricate a destination or promise receipt.
 
-Document how to update canonical content and regenerate exports. Preserve a substantive change log. Deleting an unsupported claim is preferable to inventing a replacement source.
+Document how to edit canonical Markdown and validate it. No export step is required. Preserve a substantive change log. Deleting an unsupported claim is preferable to inventing a replacement source.
 
 Suggested recheck intervals are maintenance metadata, not scheduled jobs. No scheduled task, mailbox, filing integration or external account has been set up by this package.
 

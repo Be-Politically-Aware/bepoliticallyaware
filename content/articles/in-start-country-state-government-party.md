@@ -1,30 +1,108 @@
 ---
-id: in-start-country-state-government-party
-route: /in/start/country-state-government-party
-country: IN
-language: en
-hub: start
-title: 'Country, State, government and party: what is the difference?'
-summary: A country, its public institutions, the government in office and a political
-  party are different things.
-status: ready
-publish: true
-research_checked_at: '2026-10-13'
-version: 2.0.0
-human_reviewed: false
-source_ref_ids:
-- c-state
-- c-executive
-- c-parliament
-- rs-bills
-- ls-scrutiny
+id: "in-start-country-state-government-party"
+route: "/in/start/country-state-government-party"
+country: "IN"
+language: "en"
+hub: "start"
+title: "Country, State, government and party: what is the difference?"
+summary: "A country, its public institutions, the government in office and a political party are different things."
+kind: "explainer"
+reader_task: "Take one headline and underline the actor and the action. Replace vague words such as “they” or “India” with the actual institution where the evidence allows."
 related_ids:
-- in-parliament-lok-sabha-rajya-sabha
-- in-states-union-state-local-powers
-- in-start-politics-without-party-loyalty
+  - "in-parliament-lok-sabha-rajya-sabha"
+  - "in-states-union-state-local-powers"
+  - "in-start-politics-without-party-loyalty"
+quiz: null
+launch_order: 2
+status: "ready"
+publish: true
+research_checked_at: "2026-10-13"
+human_reviewed: false
+review_method: "Assistant retrieval, source comparison and numerical checks; not independent human review"
+jurisdiction: "India; local administrative responsibility must be checked for the actual location"
+legal_scope: "General civic education, not individual legal advice"
+version: "2.0.0"
+source_ref_ids:
+  - "c-state"
+  - "c-executive"
+  - "c-parliament"
+  - "rs-bills"
+  - "ls-scrutiny"
+sources:
+  - number: 1
+    ref_id: "c-state"
+    document_id: "constitution"
+    title: "Constitution of India, official English compilation"
+    publisher: "Legislative Department, Ministry of Law and Justice"
+    url: "https://www.legislative.gov.in/static/uploads/2025/07/c9fe9c9b6840524844316f74bb1c556c.pdf#page=37"
+    locator: "Article 12: definition of State for Part III"
+    version: "As on 1 May 2026"
+    published_at: null
+    reference_period: null
+    checked_at: "2026-10-13"
+    limitations:
+      - "This compilation has a stated cutoff. No assertion that every post-cutoff notification or judgment was exhaustively checked. Article explanations concern the provisions cited, not personalised legal advice."
+    kind: "official_primary"
+  - number: 2
+    ref_id: "c-executive"
+    document_id: "constitution"
+    title: "Constitution of India, official English compilation"
+    publisher: "Legislative Department, Ministry of Law and Justice"
+    url: "https://www.legislative.gov.in/static/uploads/2025/07/c9fe9c9b6840524844316f74bb1c556c.pdf#page=65"
+    locator: "Articles 74 and 75, especially Article 75(3): Union Council of Ministers"
+    version: "As on 1 May 2026"
+    published_at: null
+    reference_period: null
+    checked_at: "2026-10-13"
+    limitations:
+      - "This compilation has a stated cutoff. No assertion that every post-cutoff notification or judgment was exhaustively checked. Article explanations concern the provisions cited, not personalised legal advice."
+    kind: "official_primary"
+  - number: 3
+    ref_id: "c-parliament"
+    document_id: "constitution"
+    title: "Constitution of India, official English compilation"
+    publisher: "Legislative Department, Ministry of Law and Justice"
+    url: "https://www.legislative.gov.in/static/uploads/2025/07/c9fe9c9b6840524844316f74bb1c556c.pdf#page=67"
+    locator: "Articles 79 and 80: Parliament and composition of the Council of States"
+    version: "As on 1 May 2026"
+    published_at: null
+    reference_period: null
+    checked_at: "2026-10-13"
+    limitations:
+      - "This compilation has a stated cutoff. No assertion that every post-cutoff notification or judgment was exhaustively checked. Article explanations concern the provisions cited, not personalised legal advice."
+    kind: "official_primary"
+  - number: 4
+    ref_id: "rs-bills"
+    document_id: "rs-legislation"
+    title: "Introduction to legislation"
+    publisher: "Rajya Sabha Secretariat"
+    url: "https://sansad.in/rs/legislation/introduction"
+    locator: "Introduction: Bills and enactment; read with constitutional exceptions"
+    version: null
+    published_at: null
+    reference_period: null
+    checked_at: "2026-10-13"
+    limitations: []
+    kind: "official_primary"
+  - number: 5
+    ref_id: "ls-scrutiny"
+    document_id: "ls-faq"
+    title: "Lok Sabha frequently asked questions"
+    publisher: "Lok Sabha Secretariat"
+    url: "https://sansad.in/ls/faq"
+    locator: "Questions on parliamentary committees, parliamentary motions, calling attention and no-confidence motions; use procedural descriptions only"
+    version: null
+    published_at: null
+    reference_period: null
+    checked_at: "2026-10-13"
+    limitations:
+      - "Some office-holder and historical House details on this FAQ are stale. No current names, salaries or membership totals are taken from it."
+    kind: "official_primary"
+maintenance:
+  trigger: "Change to a cited provision, source correction or substantiated reader correction"
+  suggested_recheck_days: 365
+  automation_created: false
 ---
-
-# Country, State, government and party: what is the difference?
 
 A criticism of a government's decision is not automatically a criticism of the country. To understand a political argument, first check which institution or group the speaker is talking about.
 
@@ -49,28 +127,3 @@ Consider this **hypothetical headline**: “Party promises free bus travel.” I
 A useful rewrite identifies the actor and stage: “The party's manifesto promises free travel; the relevant government's approval and operating rules have not been identified.”
 
 You do not need to turn every conversation into a constitutional lecture. Simply avoiding these substitutions makes it harder for a speaker to present a party's interests as everyone's interests, or to attribute a decision to an institution that did not make it.
-
-## Try this
-
-Take one headline and underline the actor and the action. Replace vague words such as “they” or “India” with the actual institution where the evidence allows.
-
-## Keep reading
-
-- [Lok Sabha and Rajya Sabha: why two Houses?](/in/parliament/lok-sabha-rajya-sabha)
-- [Union, state or local government: who is responsible?](/in/states/union-state-local-powers)
-- [Can I care about politics without supporting a party?](/in/start/politics-without-party-loyalty)
-
-## Sources and scope
-
-1. [Constitution of India, official English compilation](https://www.legislative.gov.in/static/uploads/2025/07/c9fe9c9b6840524844316f74bb1c556c.pdf#page=37). Legislative Department, Ministry of Law and Justice. **Locator:** Article 12: definition of State for Part III. **Edition:** As on 1 May 2026. **Limits:** This compilation has a stated cutoff. No assertion that every post-cutoff notification or judgment was exhaustively checked. Article explanations concern the provisions cited, not personalised legal advice.
-
-2. [Constitution of India, official English compilation](https://www.legislative.gov.in/static/uploads/2025/07/c9fe9c9b6840524844316f74bb1c556c.pdf#page=65). Legislative Department, Ministry of Law and Justice. **Locator:** Articles 74 and 75, especially Article 75(3): Union Council of Ministers. **Edition:** As on 1 May 2026. **Limits:** This compilation has a stated cutoff. No assertion that every post-cutoff notification or judgment was exhaustively checked. Article explanations concern the provisions cited, not personalised legal advice.
-
-3. [Constitution of India, official English compilation](https://www.legislative.gov.in/static/uploads/2025/07/c9fe9c9b6840524844316f74bb1c556c.pdf#page=67). Legislative Department, Ministry of Law and Justice. **Locator:** Articles 79 and 80: Parliament and composition of the Council of States. **Edition:** As on 1 May 2026. **Limits:** This compilation has a stated cutoff. No assertion that every post-cutoff notification or judgment was exhaustively checked. Article explanations concern the provisions cited, not personalised legal advice.
-
-4. [Introduction to legislation](https://sansad.in/rs/legislation/introduction). Rajya Sabha Secretariat. **Locator:** Introduction: Bills and enactment; read with constitutional exceptions.
-
-5. [Lok Sabha frequently asked questions](https://sansad.in/ls/faq). Lok Sabha Secretariat. **Locator:** Questions on parliamentary committees, parliamentary motions, calling attention and no-confidence motions; use procedural descriptions only. **Limits:** Some office-holder and historical House details on this FAQ are stale. No current names, salaries or membership totals are taken from it.
-
-
-Research checked: 2026-10-13. This date is not a claim of continuous monitoring.

@@ -1,29 +1,94 @@
 ---
-id: in-elections-candidate-affidavits
-route: /in/elections/candidate-affidavits
-country: IN
-language: en
-hub: elections
-title: How do I read a candidate's affidavit?
-summary: Read what a candidate disclosed, when it was disclosed and what the disclosure
-  does not establish.
-status: ready
-publish: true
-research_checked_at: '2026-10-13'
-version: 2.0.0
-human_reviewed: false
-source_ref_ids:
-- affidavit-provenance
-- adr-disclosures
-- bnss-bail
-- bnss-charge
+id: "in-elections-candidate-affidavits"
+route: "/in/elections/candidate-affidavits"
+country: "IN"
+language: "en"
+hub: "elections"
+title: "How do I read a candidate's affidavit?"
+summary: "Read what a candidate disclosed, when it was disclosed and what the disclosure does not establish."
+kind: "explainer"
+reader_task: "Inspect one affidavit or its clearly attributed extraction. Note the election date, one exact field and one conclusion that field does not justify."
 related_ids:
-- in-crime-case-status-terms
-- in-elections-compare-candidates
-- in-evidence-percentages-and-denominators
+  - "in-crime-case-status-terms"
+  - "in-elections-compare-candidates"
+  - "in-evidence-percentages-and-denominators"
+quiz: null
+launch_order: 13
+status: "ready"
+publish: true
+research_checked_at: "2026-10-13"
+human_reviewed: false
+review_method: "Assistant retrieval, source comparison and numerical checks; not independent human review"
+jurisdiction: "India; local administrative responsibility must be checked for the actual location"
+legal_scope: "General civic education, not individual legal advice"
+version: "2.0.0"
+source_ref_ids:
+  - "affidavit-provenance"
+  - "adr-disclosures"
+  - "bnss-bail"
+  - "bnss-charge"
+sources:
+  - number: 1
+    ref_id: "affidavit-provenance"
+    document_id: "myneta"
+    title: "MyNeta affidavit repository and data provenance"
+    publisher: "Association for Democratic Reforms"
+    url: "https://myneta.info/"
+    locator: "Repository provenance/disclaimer: candidate affidavits are the source; original affidavit takes precedence over extraction"
+    version: null
+    published_at: null
+    reference_period: null
+    checked_at: "2026-10-13"
+    limitations:
+      - "Independent non-government repository, not a court finding. Individual 2026 affidavits have not been checked for this package."
+    kind: "independent_primary_analysis"
+  - number: 2
+    ref_id: "adr-disclosures"
+    document_id: "adr-2024"
+    title: "Lok Sabha Elections 2024: Winning Candidates analysis"
+    publisher: "Association for Democratic Reforms and National Election Watch"
+    url: "https://adrindia.org/sites/default/files/Lok_Sabha_Elections_2024_Criminal_and_Financial_background_details_of_Winning_Candidates_Finalver_English%20%281%29.pdf#page=6"
+    locator: "PDF page 6: 251 of 543 winning candidates analysed declared criminal cases; classifier notes and affidavit provenance"
+    version: null
+    published_at: "2024-06-06"
+    reference_period: "Winning-candidate records in the 2024 Lok Sabha election"
+    checked_at: "2026-10-13"
+    limitations:
+      - "Historical election cohort as analysed by ADR; not current Parliament membership, a deduplicated person census or a current case-status database."
+    kind: "independent_primary_analysis"
+  - number: 3
+    ref_id: "bnss-bail"
+    document_id: "bnss"
+    title: "Bharatiya Nagarik Suraksha Sanhita 2023, original gazette text"
+    publisher: "Ministry of Home Affairs / Gazette of India"
+    url: "https://www.mha.gov.in/sites/default/files/2024-04/250884_2_english_01042024.pdf#page=2"
+    locator: "Section 2(1)(b): bail definition"
+    version: "Act 46 of 2023, original enactment"
+    published_at: "2023-12-25"
+    reference_period: null
+    checked_at: "2026-10-13"
+    limitations:
+      - "Original enacted text, not a guaranteed current consolidation. Used for general legal vocabulary, not eligibility, deadline or advice for a specific proceeding. Older proceedings may continue under the former code under the savings provision."
+    kind: "official_primary"
+  - number: 4
+    ref_id: "bnss-charge"
+    document_id: "bnss"
+    title: "Bharatiya Nagarik Suraksha Sanhita 2023, original gazette text"
+    publisher: "Ministry of Home Affairs / Gazette of India"
+    url: "https://www.mha.gov.in/sites/default/files/2024-04/250884_2_english_01042024.pdf#page=82"
+    locator: "Sections 250–251: discharge and framing of charge; general sessions-trial illustration"
+    version: "Act 46 of 2023, original enactment"
+    published_at: "2023-12-25"
+    reference_period: null
+    checked_at: "2026-10-13"
+    limitations:
+      - "Original enacted text, not a guaranteed current consolidation. Used for general legal vocabulary, not eligibility, deadline or advice for a specific proceeding. Older proceedings may continue under the former code under the savings provision."
+    kind: "official_primary"
+maintenance:
+  trigger: "Change to a cited provision, source correction or substantiated reader correction"
+  suggested_recheck_days: 365
+  automation_created: false
 ---
-
-# How do I read a candidate's affidavit?
 
 A candidate's election affidavit is a useful starting record, not a complete biography or a substitute for court records. Begin with the actual election, constituency and filing date.
 
@@ -52,26 +117,3 @@ Do not infer identity from a name alone. Do not merge unrelated proceedings into
 Instead of asking whether a candidate is “clean”, identify the disclosed fact and the uncertainty: “What is the current status of this proceeding?” or “Which comparable fields explain the change in declared assets?”
 
 An unanswered question is still unanswered. It is not permission to fill the gap with an accusation.
-
-## Try this
-
-Inspect one affidavit or its clearly attributed extraction. Note the election date, one exact field and one conclusion that field does not justify.
-
-## Keep reading
-
-- [Accused, charged or convicted: what do these words mean?](/in/crime/case-status-terms)
-- [How can I compare candidates without a popularity contest?](/in/elections/compare-candidates)
-- [Percent of what, and compared with when?](/in/evidence/percentages-and-denominators)
-
-## Sources and scope
-
-1. [MyNeta affidavit repository and data provenance](https://myneta.info/). Association for Democratic Reforms. **Locator:** Repository provenance/disclaimer: candidate affidavits are the source; original affidavit takes precedence over extraction. **Limits:** Independent non-government repository, not a court finding. Individual 2026 affidavits have not been checked for this package.
-
-2. [Lok Sabha Elections 2024: Winning Candidates analysis](https://adrindia.org/sites/default/files/Lok_Sabha_Elections_2024_Criminal_and_Financial_background_details_of_Winning_Candidates_Finalver_English%20%281%29.pdf#page=6). Association for Democratic Reforms and National Election Watch. **Locator:** PDF page 6: 251 of 543 winning candidates analysed declared criminal cases; classifier notes and affidavit provenance. **Published:** 2024-06-06. **Reference period:** Winning-candidate records in the 2024 Lok Sabha election. **Limits:** Historical election cohort as analysed by ADR; not current Parliament membership, a deduplicated person census or a current case-status database.
-
-3. [Bharatiya Nagarik Suraksha Sanhita 2023, original gazette text](https://www.mha.gov.in/sites/default/files/2024-04/250884_2_english_01042024.pdf#page=2). Ministry of Home Affairs / Gazette of India. **Locator:** Section 2(1)(b): bail definition. **Edition:** Act 46 of 2023, original enactment. **Published:** 2023-12-25. **Limits:** Original enacted text, not a guaranteed current consolidation. Used for general legal vocabulary, not eligibility, deadline or advice for a specific proceeding. Older proceedings may continue under the former code under the savings provision.
-
-4. [Bharatiya Nagarik Suraksha Sanhita 2023, original gazette text](https://www.mha.gov.in/sites/default/files/2024-04/250884_2_english_01042024.pdf#page=82). Ministry of Home Affairs / Gazette of India. **Locator:** Sections 250–251: discharge and framing of charge; general sessions-trial illustration. **Edition:** Act 46 of 2023, original enactment. **Published:** 2023-12-25. **Limits:** Original enacted text, not a guaranteed current consolidation. Used for general legal vocabulary, not eligibility, deadline or advice for a specific proceeding. Older proceedings may continue under the former code under the savings provision.
-
-
-Research checked: 2026-10-13. This date is not a claim of continuous monitoring.

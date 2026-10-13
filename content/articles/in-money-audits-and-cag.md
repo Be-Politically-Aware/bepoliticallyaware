@@ -1,26 +1,49 @@
 ---
-id: in-money-audits-and-cag
-route: /in/money/audits-and-cag
-country: IN
-language: en
-hub: money
-title: What does a CAG report prove, and what does it not prove?
-summary: An audit can provide evidence about public administration and spending. Read
-  the finding, scope and response before drawing a wider conclusion.
-status: ready
-publish: true
-research_checked_at: '2026-10-13'
-version: 2.0.0
-human_reviewed: false
-source_ref_ids:
-- c-cag
+id: "in-money-audits-and-cag"
+route: "/in/money/audits-and-cag"
+country: "IN"
+language: "en"
+hub: "money"
+title: "What does a CAG report prove, and what does it not prove?"
+summary: "An audit can provide evidence about public administration and spending. Read the finding, scope and response before drawing a wider conclusion."
+kind: "explainer"
+reader_task: "For one audit paragraph, write down its scope, exact finding, amount category, department response and the conclusion you can responsibly draw."
 related_ids:
-- in-money-read-a-budget
-- in-evidence-question-official-data
-- in-crime-case-status-terms
+  - "in-money-read-a-budget"
+  - "in-evidence-question-official-data"
+  - "in-crime-case-status-terms"
+quiz: null
+launch_order: 18
+status: "ready"
+publish: true
+research_checked_at: "2026-10-13"
+human_reviewed: false
+review_method: "Assistant retrieval, source comparison and numerical checks; not independent human review"
+jurisdiction: "India; local administrative responsibility must be checked for the actual location"
+legal_scope: "General civic education, not individual legal advice"
+version: "2.0.0"
+source_ref_ids:
+  - "c-cag"
+sources:
+  - number: 1
+    ref_id: "c-cag"
+    document_id: "constitution"
+    title: "Constitution of India, official English compilation"
+    publisher: "Legislative Department, Ministry of Law and Justice"
+    url: "https://www.legislative.gov.in/static/uploads/2025/07/c9fe9c9b6840524844316f74bb1c556c.pdf#page=99"
+    locator: "Articles 148–151, especially 149 and 151: CAG and audit reports"
+    version: "As on 1 May 2026"
+    published_at: null
+    reference_period: null
+    checked_at: "2026-10-13"
+    limitations:
+      - "This compilation has a stated cutoff. No assertion that every post-cutoff notification or judgment was exhaustively checked. Article explanations concern the provisions cited, not personalised legal advice."
+    kind: "official_primary"
+maintenance:
+  trigger: "Change to a cited provision, source correction or substantiated reader correction"
+  suggested_recheck_days: 365
+  automation_created: false
 ---
-
-# What does a CAG report prove, and what does it not prove?
 
 The Comptroller and Auditor General of India, or CAG, is a constitutional institution. Articles 149 and 151 address its audit responsibilities and the submission of reports: Union reports go to the President to be laid before Parliament, while state reports go to the Governor to be laid before the state legislature. [1](https://www.legislative.gov.in/static/uploads/2025/07/c9fe9c9b6840524844316f74bb1c556c.pdf#page=99)
 
@@ -51,20 +74,3 @@ An audit finds that a completion certificate is missing from inspected files. Th
 Those possibilities require further investigation. Good reporting makes the audit useful by preserving the distinction between what it establishes and the next question it raises.
 
 Use the [CAG audit-report directory](https://cag.gov.in/en/audit-report) to locate the full report. An index entry or report title is not enough to quote its findings.
-
-## Try this
-
-For one audit paragraph, write down its scope, exact finding, amount category, department response and the conclusion you can responsibly draw.
-
-## Keep reading
-
-- [How do I read a budget without being an economist?](/in/money/read-a-budget)
-- [How can I question official data responsibly?](/in/evidence/question-official-data)
-- [Accused, charged or convicted: what do these words mean?](/in/crime/case-status-terms)
-
-## Sources and scope
-
-1. [Constitution of India, official English compilation](https://www.legislative.gov.in/static/uploads/2025/07/c9fe9c9b6840524844316f74bb1c556c.pdf#page=99). Legislative Department, Ministry of Law and Justice. **Locator:** Articles 148–151, especially 149 and 151: CAG and audit reports. **Edition:** As on 1 May 2026. **Limits:** This compilation has a stated cutoff. No assertion that every post-cutoff notification or judgment was exhaustively checked. Article explanations concern the provisions cited, not personalised legal advice.
-
-
-Research checked: 2026-10-13. This date is not a claim of continuous monitoring.
