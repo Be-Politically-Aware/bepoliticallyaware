@@ -1,0 +1,98 @@
+---
+import { articles } from "../lib/content";
+import { navSections } from "../lib/nav";
+interface Props {
+  route: string;
+  mobile?: boolean;
+}
+const { route, mobile = false } = Astro.props;
+const filterId = mobile ? "article-filter-mobile" : "article-filter";
+let number = 0;
+---
+
+<nav
+  class="sidebar"
+  aria-label={mobile ? "Article index (mobile)" : "Article index"}
+>
+  <label for={filterId} hidden>
+    Find an article
+  </label>
+  <input
+    id={filterId}
+    data-article-filter
+    type="search"
+    name="article-filter"
+    placeholder="Try RTI or WhatsApp…"
+    autocomplete="off"
+    hidden
+  />
+  <p class="count" aria-live="polite" hidden>
+    {articles.length} of {articles.length} articles
+  </p>
+  {navSections.map((section) => (
+    <div data-index-group>
+      <p class="group">
+        <a
+          href={section.route}
+          aria-current={route === section.route ? "true" : undefined}
+        >
+          {section.label}
+        </a>
+      </p>
+      <ol class="toc">
+        {section.articles.map((article) => (
+          <li data-search={`${article.title} ${article.summary}`.toLowerCase()}>
+            <a
+              href={article.route}
+              aria-current={route === article.route ? "page" : undefined}
+            >
+              <span aria-hidden="true">
+                {String(++number).padStart(2, "0")}
+              </span>
+              {article.title}
+            </a>
+          </li>
+        ))}
+      </ol>
+    </div>
+  ))}
+</nav>
+<script>
+  document.querySelectorAll<HTMLElement>(".sidebar").forEach((sidebar) => {
+    const input = sidebar.querySelector<HTMLInputElement>(
+      "[data-article-filter]",
+    )!;
+    const count = sidebar.querySelector<HTMLElement>(".count")!;
+    const items = [
+      ...sidebar.querySelectorAll<HTMLLIElement>("li[data-search]"),
+    ];
+    sidebar.querySelector<HTMLLabelElement>("label")!.hidden = false;
+    input.hidden = false;
+    count.hidden = false;
+    input.addEventListener("input", () => {
+      const query = input.value.trim().toLowerCase();
+      items.forEach((item) => {
+        item.hidden = !item.dataset.search!.includes(query);
+      });
+      sidebar
+        .querySelectorAll<HTMLElement>("[data-index-group]")
+        .forEach((group) => {
+          group.hidden = !group.querySelector("li:not([hidden])");
+        });
+      count.textContent = `${items.filter((item) => !item.hidden).length} of ${items.length} articles`;
+    });
+    const current = sidebar.querySelector<HTMLAnchorElement>(
+      '[aria-current="page"]',
+    );
+    if (
+      current &&
+      sidebar.getClientRects().length &&
+      !window.matchMedia("(prefers-reduced-motion: reduce)").matches
+    ) {
+      const bounds = sidebar.getBoundingClientRect();
+      const item = current.getBoundingClientRect();
+      if (item.top < bounds.top || item.bottom > bounds.bottom)
+        current.scrollIntoView({ block: "nearest", behavior: "auto" });
+    }
+  });
+</script>

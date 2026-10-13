@@ -3,14 +3,20 @@ import Site from "../layouts/Site.astro";
 ---
 
 <Site title="Page not found" noindex>
-  <p class="kicker">404</p>
-  <h1>This page isn’t here.</h1>
-  <p class="lead">
-    The link may be incorrect, or the topic may not be part of the published
-    collection.
-  </p>
-  <div class="hero-links">
-    <a href="/in">Browse the guides</a>
-    <a href="/search">Search for a topic</a>
+  <div class="article">
+    <p class="context">404</p>
+    <h1>Page not found</h1>
+    <p class="summary">
+      The link may be incorrect, or the topic may not be part of the published
+      collection.
+    </p>
+    <div class="hero-actions">
+      <a href="/in">
+        Browse the guides<span aria-hidden="true"> →</span>
+      </a>
+      <a href="/search">
+        Search for a topic<span aria-hidden="true"> →</span>
+      </a>
+    </div>
   </div>
 </Site>

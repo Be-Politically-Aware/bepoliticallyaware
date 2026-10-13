@@ -2,6 +2,7 @@
 import Site from "../layouts/Site.astro";
 import Article from "../components/Article.astro";
 import { articles, sections, paths, byId, navigation } from "../lib/content";
+import { getNavigation } from "../lib/nav";
 import { evidence } from "../lib/evidence";
 export function getStaticPaths() {
   return [
@@ -24,45 +25,65 @@ const title = article?.title ?? section?.label ?? path!.title;
 const groups = section
   ? navigation.hubs.filter((h) => section.hubs.includes(h.id))
   : [];
+const context = getNavigation(section?.route ?? path?.route ?? article!.route);
+const parentSection =
+  section && context.section?.route !== section.route
+    ? context.section
+    : undefined;
 ---
 
 <Site title={title} description={article?.summary ?? path?.outcome}>
   {article ? (
     <Article article={article} />
   ) : (
-    <>
-      <nav class="breadcrumb" aria-label="Breadcrumb">
-        <a href="/in">India guides</a>
-        {path && (
-          <>
-            {" "}
-            / <a href="/in/paths">Reading paths</a>
-          </>
-        )}
+    <div class="article">
+      <nav class="context" aria-label="Breadcrumb">
+        <ol>
+          <li>
+            <a href="/in">India</a>
+          </li>
+          {path && (
+            <li>
+              <span aria-hidden="true">/</span>
+              <a href="/in/paths">Reading paths</a>
+            </li>
+          )}
+          {parentSection && (
+            <li>
+              <span aria-hidden="true">/</span>
+              <a href={parentSection.route}>{parentSection.label}</a>
+            </li>
+          )}
+        </ol>
       </nav>
       <h1>{title}</h1>
       {path ? (
         <>
-          <p class="lead">{path.outcome}</p>
+          <p class="summary">{path.outcome}</p>
           <p class="source-note">
             {path.articles.length} guides, in a suggested order. Read at your
             own pace.
           </p>
-          <ol class="path-list">
+          <ol class="steps">
             {path.articles.map((a) => (
               <li>
-                <a href={a.route}>{a.title}</a>
-                <p>{a.summary}</p>
-                <span class="fine-print">
-                  {a.estimated_reading_minutes} min read
-                </span>
+                <a class="guide-row" href={a.route}>
+                  <span class="row-title">
+                    {a.title}
+                    <span aria-hidden="true"> →</span>
+                  </span>
+                  <span class="row-summary">{a.summary}</span>
+                  <span class="row-meta">
+                    {a.estimated_reading_minutes} min read
+                  </span>
+                </a>
               </li>
             ))}
           </ol>
         </>
       ) : (
         <>
-          <p class="source-note">
+          <p class="summary">
             Clear explanations, with sources and a practical next step.
           </p>
           {groups.map((group) => (
@@ -73,11 +94,16 @@ const groups = section
                   .filter((a) => a.hub === group.id)
                   .map((a) => (
                     <li>
-                      <a href={a.route}>{a.title}</a>
-                      <p>{a.summary}</p>
-                      <span class="fine-print">
-                        {a.estimated_reading_minutes} min read
-                      </span>
+                      <a class="guide-row" href={a.route}>
+                        <span class="row-title">
+                          {a.title}
+                          <span aria-hidden="true"> →</span>
+                        </span>
+                        <span class="row-summary">{a.summary}</span>
+                        <span class="row-meta">
+                          {a.estimated_reading_minutes} min read
+                        </span>
+                      </a>
                     </li>
                   ))}
               </ul>
@@ -94,11 +120,17 @@ const groups = section
                 {evidence.map((card) => (
                   <li>
                     <a
+                      class="guide-row"
                       href={`${byId.get(card.articleId)!.route}#evidence-data`}
                     >
-                      {card.data.title}
+                      <span class="row-title">
+                        {card.data.title}
+                        <span aria-hidden="true"> →</span>
+                      </span>
+                      <span class="row-summary">
+                        {card.data.reference_period}
+                      </span>
                     </a>
-                    <p>{card.data.reference_period}</p>
                   </li>
                 ))}
               </ul>
@@ -106,6 +138,6 @@ const groups = section
           )}
         </>
       )}
-    </>
+    </div>
   )}
 </Site>

@@ -1,13 +1,15 @@
 ---
 import type { Article } from "../../implementation/content-types";
-import { copy, dateLabel, navigation } from "../lib/content";
+import { copy, dateLabel } from "../lib/content";
+import { getNavigation } from "../lib/nav";
+import Pager from "./Pager.astro";
 import { renderMarkdown } from "../lib/markdown";
 import { evidence, evidenceTable } from "../lib/evidence";
 interface Props {
   article: Article;
 }
 const { article } = Astro.props;
-const hub = navigation.hubs.find((h) => h.id === article.hub)!;
+const { section, hub } = getNavigation(article.route);
 const card = evidence.find((c) => c.articleId === article.id);
 const { html, headings } = renderMarkdown(
   article.body_markdown,
@@ -20,36 +22,49 @@ const indexHeadings = isGlossary
 const correction = `Article: ${article.title}\nArticle ID: ${article.id}\nRoute: ${article.route}\nVersion: ${article.version}\nResearch checked: ${article.research_checked_at}\n\nOriginal claim:\n\nSource URL and exact locator:\n\nProposed correction:\n\nReason and supporting evidence:\n`;
 ---
 
-<article>
+<article class="article">
   <header class="article-header">
-    <nav class="breadcrumb" aria-label="Breadcrumb">
-      <a href="/in">India</a> / <a href={hub.route}>{hub.label}</a>
+    <nav class="context" aria-label="Breadcrumb">
+      <ol>
+        <li>
+          <a href="/in">India</a>
+        </li>
+        {section && (
+          <li>
+            <span aria-hidden="true">/</span>{" "}
+            <a href={section.route}>{section.label}</a>
+          </li>
+        )}
+        {hub && hub.label !== section?.label && (
+          <li>
+            <span aria-hidden="true">/</span>{" "}
+            <a href={hub.route}>{hub.label}</a>
+          </li>
+        )}
+      </ol>
     </nav>
     <h1>{article.title}</h1>
-    <p class="lead">{article.summary}</p>
-    <div class="meta">
-      <span>{article.estimated_reading_minutes} min read</span>
-      <span>
-        {copy.article_labels.checked}{" "}
-        <time datetime={article.research_checked_at}>
-          {dateLabel(article.research_checked_at)}
-        </time>
-      </span>
-    </div>
+    <p class="summary">{article.summary}</p>
+    <p class="meta">
+      Research checked{" "}
+      <time datetime={article.research_checked_at}>
+        {dateLabel(article.research_checked_at)}
+      </time>{" "}
+      · {article.estimated_reading_minutes} min read · v{article.version}
+    </p>
   </header>
-  <details class:list={["on-this-page", { "glossary-index": isGlossary }]}>
-    <summary>{isGlossary ? "Find a term (A–Z)" : "On this page"}</summary>
-    <ul>
-      {indexHeadings.map((h) => (
-        <li>
-          <a href={`#${h.id}`}>{h.text}</a>
-        </li>
-      ))}
-      <li>
-        <a href="#sources">Sources and scope</a>
-      </li>
-    </ul>
-  </details>
+  {isGlossary && (
+    <details class="az" open>
+      <summary>Find a term (A–Z)</summary>
+      <ul>
+        {indexHeadings.map((h) => (
+          <li>
+            <a href={`#${h.id}`}>{h.text}</a>
+          </li>
+        ))}
+      </ul>
+    </details>
+  )}
   <div class="prose" set:html={html} />
   {card && (
     <section id="evidence-data" class="article-extra">
@@ -62,7 +77,7 @@ const correction = `Article: ${article.title}\nArticle ID: ${article.id}\nRoute:
         ))}
       </ul>
       <a href={`/data/${card.data.id}.json`} download>
-        Download the source-linked data (JSON)
+        Download the source-linked data (JSON)<span aria-hidden="true"> ↓</span>
       </a>
       <p class="fine-print">
         Research checked {dateLabel(card.data.checked_at)}. Not a live data
@@ -70,24 +85,25 @@ const correction = `Article: ${article.title}\nArticle ID: ${article.id}\nRoute:
       </p>
     </section>
   )}
-  <section class="article-extra">
-    <div class="task">
-      <h2>{copy.article_labels.task}</h2>
-      <p>{article.reader_task}</p>
-    </div>
-  </section>
-  <section class="article-extra">
+  <aside class="task">
+    <h2>{copy.article_labels.task}</h2>
+    <p>{article.reader_task}</p>
+  </aside>
+  <nav class="related" aria-label="Related articles">
     <h2>{copy.article_labels.related}</h2>
-    <ul class="reading-list">
+    <ul>
       {article.related.map((related) => (
         <li>
-          <a href={related.route}>{related.title}</a>
+          <a href={related.route}>
+            {related.title} <span aria-hidden="true">→</span>
+          </a>
         </li>
       ))}
     </ul>
-  </section>
-  <section class="article-extra sources" id="sources">
-    <h2>{copy.article_labels.sources}</h2>
+  </nav>
+  <Pager article={article} />
+  <details class="sources" id="sources" open>
+    <summary>Sources and scope ({article.sources.length})</summary>
     <p class="source-note">
       The check date records a research check, not continuous monitoring or a
       guarantee of current law.
@@ -96,57 +112,64 @@ const correction = `Article: ${article.title}\nArticle ID: ${article.id}\nRoute:
       {article.sources.map((source) => (
         <li id={`source-${source.number}`}>
           <a href={source.url}>{source.title}</a>
-          <p>{source.publisher}</p>
           <p>
-            <strong>Exact locator:</strong> {source.locator}
+            {source.publisher} · {source.locator}
           </p>
-          <dl>
-            {source.version && (
-              <>
-                <dt>Edition / cutoff</dt>
-                <dd>{source.version}</dd>
-              </>
-            )}
-            {source.published_at && (
-              <>
-                <dt>Source published</dt>
-                <dd>{source.published_at}</dd>
-              </>
-            )}
-            {source.reference_period && (
-              <>
-                <dt>Reference period</dt>
-                <dd>{source.reference_period}</dd>
-              </>
-            )}
-          </dl>
+          {(source.version ||
+            source.published_at ||
+            source.reference_period) && (
+            <p>
+              {source.version && (
+                <>
+                  <b>Edition:</b> {source.version}
+                </>
+              )}
+              {source.published_at && (
+                <>
+                  {source.version && <br />}
+                  <b>Published:</b> {source.published_at}
+                </>
+              )}
+              {source.reference_period && (
+                <>
+                  {(source.version || source.published_at) && <br />}
+                  <b>Reference period:</b> {source.reference_period}
+                </>
+              )}
+            </p>
+          )}
           {source.limitations.length > 0 && (
             <p>
-              <strong>Limits:</strong> {source.limitations.join(" ")}
+              <b>Limits:</b> {source.limitations.join(" ")}
             </p>
           )}
           <p class="fine-print">
-            Source checked {dateLabel(source.checked_at)}
+            Source checked {dateLabel(source.checked_at)}.
           </p>
         </li>
       ))}
     </ol>
-  </section>
-  <details class="article-extra correction" data-article-id={article.id}>
+  </details>
+  <details id="correction" class="correction" data-article-id={article.id}>
     <summary>{copy.article_labels.correction}</summary>
     <p class="source-note">
       Prepare a draft to copy or download. Nothing is sent or saved by this
       website; a submission destination has not been configured.
     </p>
     <label for="correction-draft">Correction draft</label>
-    <textarea id="correction-draft" spellcheck="true">{correction}</textarea>
+    <textarea
+      id="correction-draft"
+      name="correction"
+      autocomplete="off"
+      spellcheck="true"
+    >{correction}</textarea>
     <div class="correction-actions">
-      <button id="copy-correction" hidden>
+      <button class="btn" id="copy-correction" hidden>
         Copy draft
       </button>
       <a
         id="download-correction"
-        class="button"
+        class="btn"
         href={`data:text/plain;charset=utf-8,${encodeURIComponent(correction)}`}
         download={`${article.id}-correction.txt`}
       >
@@ -155,14 +178,57 @@ const correction = `Article: ${article.title}\nArticle ID: ${article.id}\nRoute:
     </div>
     <p id="correction-status" class="status" role="status"></p>
   </details>
-  <p class="fine-print article-extra">
+  <p class="meta bottom">
     Article version {article.version}. Research checked{" "}
     {dateLabel(article.research_checked_at)}.<br />
     Assistant source checks; not independently human-reviewed.{" "}
-    <a href="/in/reference/how-we-know">Read our methods</a>.
+    <a href="/in/reference/how-we-know">How we know</a>
+    {" · "}
+    <a href="/in/reference/corrections">Corrections</a>.
   </p>
 </article>
 <script>
+  const sources = document.querySelector<HTMLDetailsElement>("#sources");
+  if (sources && !/^#source-\d+$/.test(window.location.hash))
+    sources.open = false;
+  const openSource = (hash: string) => {
+    if (!/^#source-\d+$/.test(hash) || !sources) return;
+    const target = document.getElementById(hash.slice(1));
+    if (!target || !sources.contains(target)) return;
+    const wasClosed = !sources.open;
+    sources.open = true;
+    if (wasClosed) {
+      requestAnimationFrame(() =>
+        target.scrollIntoView({ behavior: "instant", block: "start" }),
+      );
+    }
+  };
+  openSource(window.location.hash);
+  window.addEventListener("hashchange", () => openSource(window.location.hash));
+  document.addEventListener("click", (event) => {
+    if (!(event.target instanceof Element)) return;
+    const citation = event.target.closest<HTMLAnchorElement>(
+      'a.citation[href^="#source-"]',
+    );
+    if (citation) openSource(citation.hash);
+  });
+  const openCorrection = () => {
+    if (window.location.hash === "#correction") {
+      const panel = document.querySelector<HTMLDetailsElement>("#correction");
+      if (panel) panel.open = true;
+    }
+  };
+  openCorrection();
+  window.addEventListener("hashchange", openCorrection);
+  document.addEventListener("click", (event) => {
+    if (
+      event.target instanceof Element &&
+      event.target.closest('a[href="#correction"]')
+    ) {
+      const panel = document.querySelector<HTMLDetailsElement>("#correction");
+      if (panel) panel.open = true;
+    }
+  });
   const draft =
     document.querySelector<HTMLTextAreaElement>("#correction-draft")!;
   const copyButton =

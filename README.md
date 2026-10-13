@@ -1,6 +1,6 @@
 # Be Politically Aware
 
-A minimal, static Astro civic-education site for India. All 40 launch articles are supplied content, rendered from Markdown with citations, research-check dates and source limitations intact. Geist is self-hosted. No accounts, tracking, third-party embeds or server are required.
+A minimal, static Astro civic-education site for India. All 40 launch articles are supplied content, rendered from Markdown with citations, research-check dates and source limitations intact. Typography uses the system UI stack, with no web fonts. No accounts, tracking, third-party embeds or server are required.
 
 ## Development
 
@@ -28,7 +28,9 @@ bun run preview
 - `/sources`: document provenance and limitations. Each article has its own numbered, exact source locators.
 - `/search`: full-text ranked search across published titles, summaries, headings and body text, with highlighted excerpts, prefix matching and typo tolerance for longer words. Queries are shareable through `?q=`.
 - Cmd/Ctrl+K or `/`: opens search anywhere. `/` does not interrupt typing in inputs. Arrow keys navigate results, Enter opens one, Escape closes the dialog, Tab stays inside it, and focus returns on close. Clicking Search works on touch devices. Search requires JavaScript; article browsing does not.
-- Theme follows the system until explicitly selected and then remembers the choice locally. No analytics storage is used.
+- Light is the default theme; the toggle remembers an explicit choice locally. Without JavaScript, the system colour preference applies. No analytics storage is used.
+
+The presentation matches the supplied `preview.html`: sharp corners, paper/ink light and dark palettes, underlined green links and amber keyboard focus. A solid sticky desktop header and a 320px sidebar sit within a shared 1540px layout. The numbered index appears on every page; its optional title/summary filter reports the visible article count. Full-text search remains separate. The single reading column is 790px including padding. The sidebar narrows to 250px below 850px, then becomes a native “Browse all 40 articles” disclosure at 640px and below, usable without JavaScript. The mobile header scrolls with the page: brand, search icon and theme toggle on the first row, navigation links on the second. There is no drawer or right rail. Article neighbours follow the published navigation order. Sources expand on citation jumps and remain open without JavaScript, retaining exact locators, dates and limitations.
 
 ## Content source of truth
 
@@ -55,6 +57,8 @@ Local checks prove structure, routes, citation matching, export parity and selec
 
 ## Design and implementation references
 
-Skills used: brainstorming, frontend-design and agent-browser. Design references: [Linear Docs](https://linear.app/docs) for restrained navigation/search and [GOV.UK civic guidance](https://www.gov.uk/register-to-vote) for descriptive links and content hierarchy. No imagery or template UI is copied.
+Skills used: brainstorming, frontend-design, agent-browser and web-design-guidelines. The presentation redesign follows the maintainer's approved layout/type/token specification. Earlier design references: [Linear Docs](https://linear.app/docs) for restrained navigation/search and [GOV.UK civic guidance](https://www.gov.uk/register-to-vote) for descriptive links and content hierarchy. No imagery or template UI is copied.
 
 Authoritative implementation sources: [Astro routing](https://docs.astro.build/en/guides/routing/), [Markdown](https://docs.astro.build/en/guides/markdown-content/), [CSP configuration](https://docs.astro.build/en/reference/configuration-reference/#securitycsp), [Marked renderer API](https://marked.js.org/using_pro), [sanitize-html](https://github.com/apostrophecms/apostrophe/tree/main/packages/sanitize-html), [MiniSearch](https://github.com/lucaong/minisearch), and [WAI modal dialog behavior](https://www.w3.org/WAI/ARIA/apg/patterns/dialog-modal/). No upstream regression was diagnosed; issue-thread research was not needed.
+
+Restyle references: the maintainer's local `preview.html`, [Astro processed scripts](https://docs.astro.build/en/guides/client-side-scripts/), [MDN native disclosures](https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/details), [MDN native dialogs](https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/dialog), and [Web Interface Guidelines](https://github.com/vercel-labs/web-interface-guidelines/blob/main/command.md). This is a local presentation change, not a diagnosed upstream regression; GitHub issue research was unnecessary.

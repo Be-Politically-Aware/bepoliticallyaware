@@ -48,3 +48,11 @@ Do not invent an author biography, legal reviewer, organisation, nonprofit statu
 Run `python scripts/validate_content.py` from the pack root, plus the application's own tests. All 40 ready articles, citations, tables and internal routes must work. No planned briefs may leak into public views. Test keyboard navigation, mobile reading, search and an evidence-table page.
 
 Deliver working code and setup commands. Report actual checks, remaining implementation work and configurable details honestly. Do not claim independent editorial or legal approval.
+
+## Design system
+
+- Match the maintainer's `preview.html` visual language with the system UI font stack only: no web fonts. Strong sans-serif headings, an uppercase tracked context label above the h1, and compact muted metadata establish hierarchy.
+- Use the tokens in `src/styles/global.css`: light paper `#fffefb`, ink `#192825`, muted `#586561`, line `#d8dfd9`, strong line `#a8b6ae`, soft `#f0f4ef`, accent `#185d4d`, focus `#aa6209`, mark `#fbe7b5`. Dark equivalents: `#111614`, `#e3eae6`, `#9aa8a2`, `#29332f`, `#46534d`, `#18201d`, `#7cc4ae`, `#e0a24a`, `#4a3a12`. Default to light unless a theme choice is stored; retain the no-JavaScript system-theme fallback.
+- Sharp corners only. No coloured left borders, pills, gradients, backdrop blur or decorative panels. Text links are accent-coloured and underlined; navigational arrows belong in `aria-hidden="true"` spans. Sidebar/header navigation may omit underlines at rest.
+- Use the shared 1540px container with 20px header/sidebar/footer alignment, a 60px sticky header, a 320px scrolling numbered article index (250px at 850px and below), and a single centred 790px reading column including padding. At 640px and below, use a native mobile index disclosure and a two-row header; no drawer or right rail.
+- Maintain amber visible focus, reduced-motion support, accessible tables, no-JavaScript reading and CSP-safe processed scripts. Do not introduce inline styles, external assets, decorative imagery, card grids of articles or marketing filler.

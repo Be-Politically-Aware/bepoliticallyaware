@@ -1,5 +1,6 @@
 ---
-import { copy, paths, navigation, byId } from "../lib/content";
+import { copy, paths, byId } from "../lib/content";
+import { navSections } from "../lib/nav";
 import { evidence } from "../lib/evidence";
 interface Props {
   country?: boolean;
@@ -7,77 +8,124 @@ interface Props {
 const { country = false } = Astro.props;
 ---
 
-<section class="hero">
-  <p class="kicker">{copy.hero.eyebrow}</p>
-  <h1>{copy.hero.title}</h1>
-  <p class="lead">{copy.hero.description}</p>
-  <div class="hero-links">
-    <a href={copy.hero.primary_cta.route}>{copy.hero.primary_cta.label}</a>
-    <a href={copy.hero.secondary_cta.route}>{copy.hero.secondary_cta.label}</a>
-  </div>
-</section>
-<section class="home-section" aria-labelledby="questions-title">
-  <h2 id="questions-title">Start with a question</h2>
-  <ul class="question-list">
-    {copy.entry_questions.map((q) => (
-      <li>
-        <a href={q.route}>{q.label}</a>
-      </li>
-    ))}
-  </ul>
-</section>
-{country && (
-  <section class="home-section">
-    <h2>Explore the guides</h2>
-    <nav class="topic-links" aria-label="Guide topics">
-      {navigation.primary.map((p) => (
-        <a href={p.route}>{p.label}</a>
-      ))}
-    </nav>
-    <p class="source-note section-end">{copy.country_note}</p>
+<div class="article home-content">
+  <section class="hero">
+    <p class="context">{copy.hero.eyebrow}</p>
+    <h1>{copy.hero.title}</h1>
+    <p class="summary">{copy.hero.description}</p>
+    <div class="hero-actions">
+      <a href={copy.hero.primary_cta.route}>
+        {copy.hero.primary_cta.label}
+        <span aria-hidden="true"> →</span>
+      </a>
+      <a href={copy.hero.secondary_cta.route}>
+        {copy.hero.secondary_cta.label}
+        <span aria-hidden="true"> →</span>
+      </a>
+    </div>
   </section>
-)}
-<section class="home-section" aria-labelledby="paths-title">
-  <h2 id="paths-title">A little direction, if you need it</h2>
-  <ul class="reading-list">
-    {paths.slice(0, 3).map((p) => (
-      <li>
-        <a href={p.route}>{p.title}</a>
-        <p>
-          {p.articles.length} short guides. {p.outcome}
-        </p>
-      </li>
-    ))}
-  </ul>
-  <p class="section-end">
-    <a href="/in/paths">All reading paths</a>
-  </p>
-</section>
-<section class="home-section" aria-labelledby="evidence-title">
-  <h2 id="evidence-title">Read the numbers, not just the headline</h2>
-  <p class="source-note">
-    Dated examples, with the sources, definitions and limitations alongside.
-  </p>
-  <ul class="reading-list">
-    {evidence.slice(0, 2).map((card) => (
-      <li>
-        <a href={byId.get(card.articleId)!.route}>{card.data.title}</a>
-        <p>{card.data.reference_period}</p>
-      </li>
-    ))}
-  </ul>
-  <p class="section-end">
-    <a href="/in/library#dated-evidence">Explore the evidence library</a>
-  </p>
-</section>
-{!country && (
-  <section class="home-section">
-    <h2>Go at your own pace</h2>
-    <nav class="topic-links" aria-label="Guide topics">
-      {navigation.primary.map((p) => (
-        <a href={p.route}>{p.label}</a>
+  <section class="home-section" aria-labelledby="questions-title">
+    <h2 id="questions-title">Start with a question</h2>
+    <ul class="reading-list">
+      {copy.entry_questions.map((q) => (
+        <li>
+          <a class="guide-row" href={q.route}>
+            <span class="row-title">
+              {q.label}
+              <span aria-hidden="true"> →</span>
+            </span>
+          </a>
+        </li>
       ))}
-    </nav>
-    <p class="source-note section-end">{copy.country_note}</p>
+    </ul>
   </section>
-)}
+  {country && (
+    <section class="home-section">
+      <h2>Browse by topic</h2>
+      <nav aria-label="Guide topics">
+        <ul class="reading-list">
+          {navSections.map((section) => (
+            <li>
+              <a class="guide-row" href={section.route}>
+                <span class="row-title">
+                  {section.label}
+                  <span aria-hidden="true"> →</span>
+                </span>
+                <span class="row-meta">
+                  {section.hubs.flatMap((hub) => hub.articles).length} guides
+                </span>
+              </a>
+            </li>
+          ))}
+        </ul>
+      </nav>
+    </section>
+  )}
+  <section class="home-section" aria-labelledby="paths-title">
+    <h2 id="paths-title">Suggested reading paths</h2>
+    <ul class="reading-list">
+      {paths.slice(0, 3).map((p) => (
+        <li>
+          <a class="guide-row" href={p.route}>
+            <span class="row-title">
+              {p.title}
+              <span aria-hidden="true"> →</span>
+            </span>
+            <span class="row-summary">
+              {p.articles.length} short guides. {p.outcome}
+            </span>
+          </a>
+        </li>
+      ))}
+    </ul>
+    <p class="section-end">
+      <a href="/in/paths">
+        All reading paths<span aria-hidden="true"> →</span>
+      </a>
+    </p>
+  </section>
+  <section class="home-section" aria-labelledby="evidence-title">
+    <h2 id="evidence-title">Dated evidence</h2>
+    <ul class="reading-list">
+      {evidence.slice(0, 2).map((card) => (
+        <li>
+          <a class="guide-row" href={byId.get(card.articleId)!.route}>
+            <span class="row-title">
+              {card.data.title}
+              <span aria-hidden="true"> →</span>
+            </span>
+            <span class="row-summary">{card.data.reference_period}</span>
+          </a>
+        </li>
+      ))}
+    </ul>
+    <p class="section-end">
+      <a href="/in/library#dated-evidence">
+        Explore the evidence library<span aria-hidden="true"> →</span>
+      </a>
+    </p>
+  </section>
+  {!country && (
+    <section class="home-section">
+      <h2>Browse by topic</h2>
+      <nav aria-label="Guide topics">
+        <ul class="reading-list">
+          {navSections.map((section) => (
+            <li>
+              <a class="guide-row" href={section.route}>
+                <span class="row-title">
+                  {section.label}
+                  <span aria-hidden="true"> →</span>
+                </span>
+                <span class="row-meta">
+                  {section.hubs.flatMap((hub) => hub.articles).length} guides
+                </span>
+              </a>
+            </li>
+          ))}
+        </ul>
+      </nav>
+    </section>
+  )}
+  <p class="source-note section-end">{copy.country_note}</p>
+</div>

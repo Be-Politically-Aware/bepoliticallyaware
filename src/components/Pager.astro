@@ -1,0 +1,29 @@
+---
+import type { Article } from "../../implementation/content-types";
+import { getNavigation } from "../lib/nav";
+
+interface Props {
+  article: Article;
+}
+const { article } = Astro.props;
+const { section } = getNavigation(article.route);
+const ordered = section?.articles ?? [];
+const index = ordered.findIndex((candidate) => candidate.id === article.id);
+const previous = index > 0 ? ordered[index - 1] : undefined;
+const next = index >= 0 ? ordered[index + 1] : undefined;
+---
+
+{(previous || next) && (
+  <nav class="pager article-extra" aria-label="Previous and next guides">
+    {previous && (
+      <a href={previous.route} rel="prev">
+        <span aria-hidden="true">←</span> Previous: {previous.title}
+      </a>
+    )}
+    {next && (
+      <a href={next.route} rel="next">
+        Next: {next.title} <span aria-hidden="true">→</span>
+      </a>
+    )}
+  </nav>
+)}

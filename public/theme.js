@@ -4,9 +4,5 @@
     theme = localStorage.getItem("theme");
   } catch (_) {}
   document.documentElement.dataset.theme =
-    theme === "light" || theme === "dark"
-      ? theme
-      : window.matchMedia("(prefers-color-scheme: dark)").matches
-        ? "dark"
-        : "light";
+    theme === "light" || theme === "dark" ? theme : "light";
 })();

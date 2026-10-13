@@ -2,7 +2,7 @@ import budget from "../../content/data/union-budget-2026-27-expenditure.json";
 import plfs from "../../content/data/plfs-2025-annual-usual-status.json";
 import road from "../../content/data/road-deaths-2024-parliament-answer.json";
 import adr from "../../content/data/adr-2024-winning-candidate-disclosures.json";
-import { escapeHtml } from "./markdown";
+import { escapeHtml, isNumericTableCell } from "./markdown";
 
 const integer = (value: number) =>
   new Intl.NumberFormat("en-IN", { maximumFractionDigits: 0 }).format(value);
@@ -56,5 +56,7 @@ export const evidence = [
 ];
 export function evidenceTable(card: (typeof evidence)[number]) {
   const e = escapeHtml;
-  return `<div class="table-scroll" tabindex="0" role="region" aria-label="${e(card.data.title)}"><table><caption>${e(card.data.title)}</caption><thead><tr>${card.columns.map((c) => `<th scope="col">${e(c)}</th>`).join("")}</tr></thead><tbody>${card.rows.map((row) => `<tr>${row.map((cell, i) => (i === 0 ? `<th scope="row">${e(cell)}</th>` : `<td>${e(cell)}</td>`)).join("")}</tr>`).join("")}</tbody></table></div>`;
+  const numeric = (cell: string) =>
+    isNumericTableCell(cell) ? ' class="num"' : "";
+  return `<div class="table-scroll" tabindex="0" role="region" aria-label="${e(card.data.title)}"><table><caption><div class="table-caption">${e(card.data.title)}</div></caption><thead><tr>${card.columns.map((c) => `<th scope="col"${numeric(c)}>${e(c)}</th>`).join("")}</tr></thead><tbody>${card.rows.map((row) => `<tr>${row.map((cell, i) => (i === 0 ? `<th scope="row"${numeric(cell)}>${e(cell)}</th>` : `<td${numeric(cell)}>${e(cell)}</td>`)).join("")}</tr>`).join("")}</tbody></table></div>`;
 }

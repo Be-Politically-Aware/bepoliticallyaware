@@ -4,65 +4,79 @@ import { sourceDirectory, articles } from "../lib/content";
 ---
 
 <Site title="Source directory">
-  <p class="breadcrumb">
-    <a href="/in">India guides</a>
-  </p>
-  <h1>Sources, with their scope.</h1>
-  <p class="lead">
-    The documents behind the guides. Exact claim locators are listed on each
-    article.
-  </p>
-  <p class="source-note">
-    Source checks are not independent editorial or legal approval, or continuous
-    monitoring.
-  </p>
-  <div class="source-directory">
-    {sourceDirectory.documents.map((source) => (
-      <section class="page-section" id={source.id}>
-        <h2>
-          <a href={source.url}>{source.title}</a>
-        </h2>
-        <p>{source.publisher}</p>
-        <dl>
-          <dt>Source type</dt>
-          <dd>{source.kind.replaceAll("_", " ")}</dd>
-          {source.version && (
-            <>
-              <dt>Edition / cutoff</dt>
-              <dd>{source.version}</dd>
-            </>
-          )}
-          {source.published_at && (
-            <>
-              <dt>Published</dt>
-              <dd>{source.published_at}</dd>
-            </>
-          )}
-          {source.reference_period && (
-            <>
-              <dt>Reference period</dt>
-              <dd>{source.reference_period}</dd>
-            </>
-          )}
-          <dt>What was inspected</dt>
-          <dd>{source.access_scope}</dd>
-        </dl>
-        {source.limitations.map((limit) => (
-          <p class="source-note">{limit}</p>
-        ))}
-        <details>
-          <summary>Guides using this source</summary>
-          <ul>
-            {articles
-              .filter((a) => a.sources.some((s) => s.document_id === source.id))
-              .map((a) => (
-                <li>
-                  <a href={`${a.route}#sources`}>{a.title}</a>
-                </li>
-              ))}
-          </ul>
-        </details>
-      </section>
-    ))}
+  <div class="article">
+    <nav class="context" aria-label="Breadcrumb">
+      <ol>
+        <li>
+          <a href="/in">India</a>
+        </li>
+      </ol>
+    </nav>
+    <h1>Source directory</h1>
+    <p class="summary">
+      The documents behind the guides. Exact claim locators are listed on each
+      article.
+    </p>
+    <p class="source-note">
+      Source checks are not independent editorial or legal approval, or
+      continuous monitoring.
+    </p>
+    <div class="source-directory">
+      {sourceDirectory.documents.map((source) => (
+        <section class="source-document" id={source.id}>
+          <h2 class="source-title">
+            <a href={source.url}>
+              {source.title}
+              <span aria-hidden="true"> →</span>
+            </a>
+          </h2>
+          <p class="source-note">{source.publisher}</p>
+          <dl>
+            <dt>Source type</dt>
+            <dd>{source.kind.replaceAll("_", " ")}</dd>
+            {source.version && (
+              <>
+                <dt>Edition / cutoff</dt>
+                <dd>{source.version}</dd>
+              </>
+            )}
+            {source.published_at && (
+              <>
+                <dt>Published</dt>
+                <dd>{source.published_at}</dd>
+              </>
+            )}
+            {source.reference_period && (
+              <>
+                <dt>Reference period</dt>
+                <dd>{source.reference_period}</dd>
+              </>
+            )}
+            <dt>What was inspected</dt>
+            <dd>{source.access_scope}</dd>
+          </dl>
+          {source.limitations.map((limit) => (
+            <p class="source-note">{limit}</p>
+          ))}
+          <details>
+            <summary>Guides using this source</summary>
+            <ul>
+              {articles
+                .filter((a) =>
+                  a.sources.some((s) => s.document_id === source.id),
+                )
+                .map((a) => (
+                  <li>
+                    <a href={`${a.route}#sources`}>
+                      {a.title}
+                      <span aria-hidden="true"> →</span>
+                    </a>
+                  </li>
+                ))}
+            </ul>
+          </details>
+        </section>
+      ))}
+    </div>
   </div>
 </Site>

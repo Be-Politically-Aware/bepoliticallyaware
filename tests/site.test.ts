@@ -5,6 +5,7 @@ import { load } from "cheerio";
 import { articles, sections, paths, glossary } from "../src/lib/content";
 import backlog from "../roadmap/backlog.json";
 import { renderMarkdown } from "../src/lib/markdown";
+import { evidence, evidenceTable } from "../src/lib/evidence";
 import { createSearch, type SearchEntry } from "../src/lib/search";
 
 const fileFor = (route: string) =>
@@ -186,6 +187,64 @@ describe("built reading website", () => {
       },
     ]);
     expect(isolated("MP").map((result) => result.route)).toEqual(["/a"]);
+  });
+
+  test("Markdown tables classify individual cells before sanitization", () => {
+    const { html } = renderMarkdown(`## Mixed evidence
+
+| 2024 | Label | Value |
+| :--- | :---: | ---: |
+| 1,234 | Text | 3.1% |
+| Narrative | -2 | 2026–27 BE |
+| 2024–25 | [1](https://example.com) | **Readable** |
+`);
+    const $ = load(html);
+    expect(
+      $("thead th.num")
+        .map((_, el) => $(el).text())
+        .get(),
+    ).toEqual(["2024"]);
+    expect(
+      $("tbody td.num")
+        .map((_, el) => $(el).text())
+        .get(),
+    ).toEqual(["1,234", "3.1%", "-2", "2024–25"]);
+    expect($('thead th[scope="col"]').length).toBe(3);
+    expect($("[align]").length).toBe(0);
+    expect($("caption").text()).toBe("Mixed evidence");
+    expect($(".table-scroll").attr("tabindex")).toBe("0");
+    expect($('.citation[href="#source-1"]').text()).toBe("1");
+    expect($("td strong").text()).toBe("Readable");
+  });
+
+  test("evidence replacement retains only num cell classes through sanitization", () => {
+    const card = {
+      ...evidence[0],
+      columns: ["2024", "Label", "Value"],
+      rows: [
+        ["123", "Text", "3.1%"],
+        ["Narrative", "-2", "2026–27 BE"],
+      ],
+    };
+    const replacement = evidenceTable(card)
+      .replaceAll('class="num"', 'class="num arbitrary"')
+      .replace("<td>", '<td class="arbitrary" onclick="alert(1)">');
+    const $ = load(
+      renderMarkdown("| A | B |\n| --- | --- |\n| x | y |", replacement).html,
+    );
+    expect($("table").length).toBe(1);
+    expect($("thead th.num").text()).toBe("2024");
+    expect($('tbody th[scope="row"].num').text()).toBe("123");
+    expect(
+      $("tbody td.num")
+        .map((_, el) => $(el).text())
+        .get(),
+    ).toEqual(["3.1%", "-2"]);
+    expect($('thead th[scope="col"]').length).toBe(3);
+    expect($('tbody th[scope="row"]').length).toBe(2);
+    expect($(".arbitrary,[onclick]").length).toBe(0);
+    expect($("caption").text()).toBe(card.data.title);
+    expect($(".table-scroll").attr("aria-label")).toBe(card.data.title);
   });
 
   test("untrusted Markdown cannot execute HTML or unsafe links", () => {

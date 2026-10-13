@@ -3,35 +3,65 @@ import Site from "../layouts/Site.astro";
 ---
 
 <Site title="Search" noindex>
-  <p class="breadcrumb">
-    <a href="/in">India guides</a>
-  </p>
-  <h1>Find a clearer answer.</h1>
-  <p class="lead">Search the guides by question, institution or issue.</p>
-  <form id="search-form" class="search-form" action="/search">
-    <label for="search-query">Search articles</label>
-    <div class="search-controls">
-      <input
-        id="search-query"
-        type="search"
-        name="q"
-        placeholder="Try “RTI” or “roads”"
-        autocomplete="off"
-      />
-      <button type="submit">Search</button>
-    </div>
-  </form>
-  <p class="search-status" id="search-status" role="status"></p>
-  <ul
-    id="search-results"
-    class="reading-list search-results"
-    aria-label="Search results"
-  ></ul>
-  <noscript>
-    <p>
-      Search needs JavaScript. You can still{" "}
-      <a href="/in">browse every guide by topic</a> or use the{" "}
-      <a href="/in/reference/glossary">glossary</a>.
+  <div class="article">
+    <nav class="context" aria-label="Breadcrumb">
+      <ol>
+        <li>
+          <a href="/in">India</a>
+        </li>
+      </ol>
+    </nav>
+    <h1>Search</h1>
+    <p class="summary">
+      Search all 40 published guides by question, institution or issue.
     </p>
-  </noscript>
+    <form id="search-form" class="search-form" action="/search">
+      <label for="search-query">Search articles</label>
+      <div class="search-controls">
+        <div class="input-wrap">
+          <svg
+            aria-hidden="true"
+            viewBox="0 0 24 24"
+            width="20"
+            height="20"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="1.5"
+          >
+            <circle cx="10.5" cy="10.5" r="6.5" />
+            <path d="m16 16 4.5 4.5" />
+          </svg>
+          <input
+            id="search-query"
+            type="search"
+            name="q"
+            placeholder="Try “RTI” or “roads”…"
+            autocomplete="off"
+          />
+        </div>
+        <button class="btn" type="submit">
+          Search
+        </button>
+      </div>
+    </form>
+    <p class="search-status" id="search-status" role="status"></p>
+    <ul
+      id="search-results"
+      class="reading-list search-results"
+      aria-label="Search results"
+    ></ul>
+    <noscript>
+      <p>
+        Search needs JavaScript. You can still{" "}
+        <a href="/in">
+          browse every guide by topic<span aria-hidden="true"> →</span>
+        </a>{" "}
+        or use the{" "}
+        <a href="/in/reference/glossary">
+          glossary<span aria-hidden="true"> →</span>
+        </a>
+        .
+      </p>
+    </noscript>
+  </div>
 </Site>

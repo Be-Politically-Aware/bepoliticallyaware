@@ -1,4 +1,5 @@
 import { createSearch, type SearchEntry } from "../lib/search";
+import navigation from "../../content/navigation.json";
 
 let searchPromise: Promise<ReturnType<typeof createSearch>> | undefined;
 function loadSearch() {
@@ -49,24 +50,28 @@ function renderResults(
   list.replaceChildren();
   for (const entry of entries) {
     const li = document.createElement("li");
+    const a = document.createElement("a");
+    a.href = entry.route;
+    if (full) a.className = "guide-row";
     if (full) {
       const context = document.createElement("p");
       context.className = "result-context";
-      context.textContent = `India / ${entry.hub}`;
-      li.append(context);
+      context.textContent = `India / ${navigation.hubs.find((hub) => hub.id === entry.hub)?.label ?? entry.hub}`;
+      a.append(context);
     }
-    const a = document.createElement("a");
-    a.href = entry.route;
     const title = document.createElement(full ? "span" : "strong");
+    if (full) title.className = "row-title";
     highlight(title, entry.title, query);
+    const arrow = document.createElement("span");
+    arrow.setAttribute("aria-hidden", "true");
+    arrow.textContent = " →";
+    title.append(arrow);
     a.append(title);
     const p = document.createElement("p");
+    if (full) p.className = "row-summary";
     highlight(p, snippet(entry, query), query);
-    if (full) li.append(a, p);
-    else {
-      a.append(p);
-      li.append(a);
-    }
+    a.append(p);
+    li.append(a);
     list.append(li);
   }
 }

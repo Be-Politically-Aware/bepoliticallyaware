@@ -1,6 +1,10 @@
 import { Marked, Renderer } from "marked";
 import sanitizeHtml from "sanitize-html";
 
+export function isNumericTableCell(text: string) {
+  return /^[\d,.\-–]+%?$/.test(text);
+}
+
 export function escapeHtml(text: string) {
   return text.replace(
     /[&<>"']/g,
@@ -36,22 +40,27 @@ export function renderMarkdown(body: string, evidenceTable?: string) {
       },
       link(token) {
         if (/^\d+$/.test(token.text) && /^https?:/.test(token.href)) {
-          return `<a class="citation" href="#source-${token.text}" aria-label="Source ${token.text}">[${token.text}]</a>`;
+          return `<a class="citation" href="#source-${token.text}" aria-label="Source ${token.text}">${token.text}</a>`;
         }
         defaults.parser = this.parser;
         return defaults.link(token);
       },
       table(token) {
         if (evidenceTable) return evidenceTable;
-        defaults.parser = this.parser;
-        const table = defaults
-          .table(token)
+        const table = defaults.table
+          .call(this, token)
           .replace(
             "<table>",
-            `<table><caption>${escapeHtml(lastHeading)}</caption>`,
-          )
-          .replace(/<th(?=[ >])/g, '<th scope="col"');
+            `<table><caption><div class="table-caption">${escapeHtml(lastHeading)}</div></caption>`,
+          );
         return `<div class="table-scroll" tabindex="0" role="region" aria-label="${escapeHtml(lastHeading)}">${table}</div>`;
+      },
+      tablecell(token) {
+        const tag = token.header ? "th" : "td";
+        const scope = token.header ? ' scope="col"' : "";
+        const numeric = isNumericTableCell(token.text) ? ' class="num"' : "";
+        const align = token.align ? ` align="${token.align}"` : "";
+        return `<${tag}${scope}${numeric}${align}>${this.parser.parseInline(token.tokens)}</${tag}>\n`;
       },
     },
   });
@@ -90,6 +99,7 @@ export function renderMarkdown(body: string, evidenceTable?: string) {
       th: ["scope"],
       "*": ["id"],
     },
+    allowedClasses: { td: ["num"], th: ["num"] },
     allowedSchemes: ["https", "http", "mailto"],
     allowProtocolRelative: false,
   });

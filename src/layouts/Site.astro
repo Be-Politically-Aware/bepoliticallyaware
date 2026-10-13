@@ -1,7 +1,8 @@
 ---
 import "../styles/global.css";
-import { copy } from "../lib/content";
+import { articles, copy } from "../lib/content";
 import SearchDialog from "../components/SearchDialog.astro";
+import Sidebar from "../components/Sidebar.astro";
 interface Props {
   title?: string;
   description?: string;
@@ -13,6 +14,12 @@ const {
   noindex = false,
 } = Astro.props;
 const pathname = Astro.url.pathname.replace(/\/$/, "") || "/";
+const links = [
+  { label: "Guides", route: "/in" },
+  { label: "Reading paths", route: "/in/paths" },
+  { label: "Glossary", route: "/in/reference/glossary" },
+  { label: "Sources", route: "/sources" },
+];
 ---
 
 <!doctype html>
@@ -23,6 +30,16 @@ const pathname = Astro.url.pathname.replace(/\/$/, "") || "/";
     <title>{title ? `${title} | ${copy.site_name}` : copy.site_name}</title>
     <meta name="description" content={description} />
     <meta name="color-scheme" content="light dark" />
+    <meta
+      name="theme-color"
+      content="#fffefb"
+      media="(prefers-color-scheme: light)"
+    />
+    <meta
+      name="theme-color"
+      content="#111614"
+      media="(prefers-color-scheme: dark)"
+    />
     <meta name="referrer" content="strict-origin-when-cross-origin" />
     {noindex && <meta name="robots" content="noindex" />}
     <link rel="canonical" href={new URL(pathname, Astro.site)} />
@@ -30,89 +47,119 @@ const pathname = Astro.url.pathname.replace(/\/$/, "") || "/";
     <script is:inline src="/theme.js"></script>
   </head>
   <body>
-    <a class="skip-link" href="#main">
+    <a class="skip-link btn" href="#main">
       Skip to content
     </a>
     <header class="site-header">
-      <a class="wordmark" href="/">
-        Be Politically Aware<span class="edition">India edition</span>
-      </a>
-      <nav aria-label="Main navigation">
-        <a href="/in" aria-current={pathname === "/in" ? "page" : undefined}>
-          Guides
-        </a>
-        <a
-          href="/in/reference/glossary"
-          aria-current={
-            pathname === "/in/reference/glossary" ? "page" : undefined
-          }
-        >
-          Glossary
-        </a>
-        <a
-          class="search-trigger"
-          data-open-search
-          href="/search"
-          aria-keyshortcuts="Meta+K Control+K /"
-        >
-          Search <kbd aria-hidden="true">⌘ K</kbd>
-        </a>
-        <button
-          id="theme-toggle"
-          class="theme-toggle"
-          aria-label="Switch to dark mode"
-          title="Switch theme"
-          hidden
-        >
-          <svg
-            class="moon"
-            width="18"
-            height="18"
-            viewBox="0 0 24 24"
-            fill="none"
-            stroke="currentColor"
-            stroke-width="1.5"
-            aria-hidden="true"
+      <div class="container header-inner">
+        <div class="header-brand">
+          <a class="wordmark" href="/" translate="no">
+            {copy.site_name}
+          </a>
+          <span class="edition">India edition</span>
+        </div>
+        <div class="header-actions">
+          <nav class="header-links" aria-label="Main navigation">
+            {links.map((link) => (
+              <a
+                href={link.route}
+                aria-current={pathname === link.route ? "page" : undefined}
+              >
+                {link.label}
+              </a>
+            ))}
+          </nav>
+          <a
+            class="search-trigger"
+            data-open-search
+            href="/search"
+            aria-label="Search"
+            aria-keyshortcuts="Meta+K Control+K /"
           >
-            <path d="M20.8 13.4A9 9 0 0 1 10.6 3.2a9 9 0 1 0 10.2 10.2Z" />
-          </svg>
-          <svg
-            class="sun"
-            width="18"
-            height="18"
-            viewBox="0 0 24 24"
-            fill="none"
-            stroke="currentColor"
-            stroke-width="1.5"
-            aria-hidden="true"
+            <svg
+              class="search-icon"
+              width="18"
+              height="18"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="1.5"
+              aria-hidden="true"
+            >
+              <circle cx="10.5" cy="10.5" r="6.5" />
+              <path d="m16 16 4.5 4.5" />
+            </svg>
+            <span class="search-label">Search</span>{" "}
+            <kbd aria-hidden="true">⌘ K</kbd>
+          </a>
+          <button
+            id="theme-toggle"
+            class="icon-button theme-toggle"
+            aria-label="Switch to dark mode"
+            hidden
           >
-            <circle cx="12" cy="12" r="4" />
-            <path d="M12 2v2m0 16v2M2 12h2m16 0h2M5 5l1.5 1.5m11 11L19 19M5 19l1.5-1.5m11-11L19 5" />
-          </svg>
-        </button>
-      </nav>
+            <svg
+              class="moon"
+              width="18"
+              height="18"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="1.5"
+              aria-hidden="true"
+            >
+              <path d="M20.8 13.4A9 9 0 0 1 10.6 3.2a9 9 0 1 0 10.2 10.2Z" />
+            </svg>
+            <svg
+              class="sun"
+              width="18"
+              height="18"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="1.5"
+              aria-hidden="true"
+            >
+              <circle cx="12" cy="12" r="4" />
+              <path d="M12 2v2m0 16v2M2 12h2m16 0h2M5 5l1.5 1.5m11 11L19 19M5 19l1.5-1.5m11-11L19 5" />
+            </svg>
+          </button>
+        </div>
+      </div>
     </header>
-    <main id="main" tabindex="-1">
-      <slot />
-    </main>
+    <div class="layout">
+      <div class="desktop-sidebar">
+        <Sidebar route={pathname} />
+      </div>
+      <details class="mobile-index">
+        <summary>Browse all {articles.length} articles</summary>
+        <Sidebar route={pathname} mobile />
+      </details>
+      <main class="main-pane" id="main" tabindex="-1">
+        <slot />
+      </main>
+    </div>
     <footer class="site-footer">
-      <p>Understand more. Ask better questions.</p>
-      <nav aria-label="Footer navigation">
-        <a href="/in/reference/how-we-know">How we know</a>
-        <a href="/sources">Sources</a>
-        <a href="/in/reference/corrections">Corrections</a>
-      </nav>
-      <p class="fine-print">
-        General civic education, not individual legal advice.
-        <br />
-        Not a live-news service. No tracking. No account needed.
-      </p>
+      <div class="container footer-inner">
+        <p class="footer-brand">Understand more. Ask better questions.</p>
+        <nav aria-label="Footer navigation">
+          <a href="/in/reference/how-we-know">How we know</a>
+          {" · "}
+          <a href="/sources">Sources</a>
+          {" · "}
+          <a href="/in/reference/corrections">Corrections</a>
+        </nav>
+        <p class="fine-print">
+          General civic education, not individual legal advice.
+          <br />
+          Not a live-news service. No tracking. No account needed.
+        </p>
+      </div>
     </footer>
     <SearchDialog />
     <script>
       const button =
         document.querySelector<HTMLButtonElement>("#theme-toggle")!;
-      const media = window.matchMedia("(prefers-color-scheme: dark)");
       function sync() {
         const dark = document.documentElement.dataset.theme === "dark";
         button.setAttribute(
@@ -120,6 +167,11 @@ const pathname = Astro.url.pathname.replace(/\/$/, "") || "/";
           `Switch to ${dark ? "light" : "dark"} mode`,
         );
         button.title = button.getAttribute("aria-label")!;
+        document
+          .querySelectorAll<HTMLMetaElement>('meta[name="theme-color"]')
+          .forEach((meta) => {
+            meta.content = dark ? "#111614" : "#fffefb";
+          });
       }
       button.hidden = false;
       sync();
@@ -130,23 +182,9 @@ const pathname = Astro.url.pathname.replace(/\/$/, "") || "/";
         try {
           localStorage.setItem("theme", theme);
         } catch {
-          /* Theme still works when storage is unavailable. */
+          /* Use the selected theme without storage. */
         }
         sync();
-      });
-      media.addEventListener("change", (event) => {
-        let saved = false;
-        try {
-          saved = !!localStorage.getItem("theme");
-        } catch {
-          /* Use the system preference. */
-        }
-        if (!saved) {
-          document.documentElement.dataset.theme = event.matches
-            ? "dark"
-            : "light";
-          sync();
-        }
       });
       document
         .querySelectorAll<HTMLElement>(".table-scroll")

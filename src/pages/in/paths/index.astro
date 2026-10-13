@@ -4,24 +4,31 @@ import { paths } from "../../../lib/content";
 ---
 
 <Site title="Reading paths">
-  <p class="breadcrumb">
-    <a href="/in">India guides</a>
-  </p>
-  <h1>
-    A question. A few guides.
-    <br />A clearer way forward.
-  </h1>
-  <p class="lead">
-    Choose what brought you here. Each path gives you a short, useful sequence
-    to follow.
-  </p>
-  <ul class="reading-list page-section">
-    {paths.map((p) => (
-      <li>
-        <a href={p.route}>{p.title}</a>
-        <p>{p.outcome}</p>
-        <span class="fine-print">{p.articles.length} guides</span>
-      </li>
-    ))}
-  </ul>
+  <div class="article">
+    <nav class="context" aria-label="Breadcrumb">
+      <ol>
+        <li>
+          <a href="/in">India</a>
+        </li>
+      </ol>
+    </nav>
+    <h1>Reading paths</h1>
+    <p class="summary">
+      Short sequences of guides, each starting from a common question.
+    </p>
+    <ul class="reading-list page-section">
+      {paths.map((p) => (
+        <li>
+          <a class="guide-row" href={p.route}>
+            <span class="row-title">
+              {p.title}
+              <span aria-hidden="true"> →</span>
+            </span>
+            <span class="row-summary">{p.outcome}</span>
+            <span class="row-meta">{p.articles.length} guides</span>
+          </a>
+        </li>
+      ))}
+    </ul>
+  </div>
 </Site>
