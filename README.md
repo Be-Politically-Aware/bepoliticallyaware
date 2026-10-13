@@ -11,7 +11,7 @@ The launch collection includes **40 articles, six reading paths, 46 glossary ter
 Use **Node 24** (recorded in `.node-version`) and **Bun 1.4.0** (recorded in `package.json`). Astro requires Node 22.12+; CI uses Node 24. No environment variables, credentials or Python installation are needed to run the site.
 
 ```sh
-git clone git@github.com:zxcodes/bepoliticallyaware.git
+git clone git@github.com:Be-Politically-Aware/bepoliticallyaware.git
 cd bepoliticallyaware
 bun install --frozen-lockfile
 bun run dev
