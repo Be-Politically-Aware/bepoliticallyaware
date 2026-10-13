@@ -1,75 +1,119 @@
 # Be Politically Aware
 
-A minimal, static Astro civic-education site for India. All 40 launch articles are supplied content, rendered from Markdown with citations, research-check dates and source limitations intact. Typography uses the system UI stack, with no web fonts. No accounts, tracking, third-party embeds or server are required.
+A static civic-education website for India: understand public institutions, read evidence carefully, and ask better questions. Built with Astro, TypeScript, Tailwind CSS and Bun, with Markdown as the article source of truth.
 
-## Development
+The launch collection includes **40 articles, six reading paths, 46 glossary terms and four source-linked evidence tables**. The reading interface uses system fonts, sharp borders, light/dark themes and a mobile article index. No accounts, tracking, database or server-side application are required.
 
-Use Node 22.12+ (or a newer supported Node release) and Bun. Development, builds and validation do not require Python:
+**Status:** implemented and locally validated, not deployed. The configured production URL is `https://bepoliticallyaware.org`. This is general civic education, not legal advice or a live-news/data service. Research-check dates do not imply continuous monitoring or independent human review.
+
+## Quick start
+
+Use **Node 24** (recorded in `.node-version`) and **Bun 1.4.0** (recorded in `package.json`). Astro requires Node 22.12+; CI uses Node 24. No environment variables, credentials or Python installation are needed to run the site.
 
 ```sh
-bun install
+git clone git@github.com:zxcodes/bepoliticallyaware.git
+cd bepoliticallyaware
+bun install --frozen-lockfile
 bun run dev
 ```
 
-Open http://localhost:4321. Build and check the production site:
+Open **http://127.0.0.1:4321**. To validate and preview the production build:
 
 ```sh
 bun run validate
 bun run preview
 ```
 
-`validate` runs the TypeScript content consistency checks, TypeScript and Astro diagnostics, a static build, and Bun tests against that build. `bun run validate:content` runs the content checks alone and writes `checks/validation.json`: exit 0 means passed, 1 means failed checks, and 2 means validation could not complete. `bun run build` also checks types before emitting the site; `bun run check` runs diagnostics alone. `bun test` requires a current `dist/` (run `bun run build` first).
+The development and preview servers bind to localhost. If port 4321 is occupied, use the URL printed by Astro. `preview` serves the existing `dist/`; it does not build or deploy.
 
-The framework is Astro 7.3.8 (current stable at the October 2026 check), with a typed `astro.config.ts`, Astro's strict TypeScript preset, and typed static route/endpoint exports. Duplicate prerendered routes fail the build. TypeScript 6.0.3 is the newest version supported by the installed Astro checker; do not jump to TypeScript 7 until that tooling supports it. `package.json` records the Bun version and Astro's minimum Node version.
+## Commands and checks
 
-Tailwind CSS 4 uses the official `@tailwindcss/vite` plugin, like the portfolio project. `src/styles/global.css` exposes the existing light/dark tokens through `@theme inline` and uses utilities and `@apply` for shared layout/control primitives. Preflight is deliberately omitted to preserve the reading site's existing reset, native disclosures and typography. Keep content-driven prose, table behavior, print rules and bespoke responsive layout in semantic CSS; no legacy `@astrojs/tailwind` integration is needed.
+| Command                    | Purpose                                                              |
+| -------------------------- | -------------------------------------------------------------------- |
+| `bun run dev`              | Development server with live updates                                 |
+| `bun run check`            | Astro diagnostics/type generation, then standalone TypeScript checks |
+| `bun run build`            | Type checks and static production build into `dist/`                 |
+| `bun run preview`          | Serve the production build locally                                   |
+| `bun run validate:content` | Frontmatter, citations, routes and selected arithmetic checks        |
+| `bun test`                 | Regression tests; requires a current production build                |
+| `bun run validate`         | Content checks, type checks, build and all tests                     |
 
-## Reading and search
+GitHub Actions runs `bun install --frozen-lockfile` and `bun run validate` on pushes to `main` and pull requests. The workflow has read-only repository permissions and does **not** deploy.
 
-- `/` and `/in`: question-led introductions; seven public topic entry points and all hub indexes.
-- Exact supplied article routes under `/in/`; six guided paths at `/in/paths`.
-- `/in/reference/glossary`: all 46 terms, with an alphabetical index and explanatory links.
-- `/sources`: document provenance and limitations. Each article has its own numbered, exact source locators.
-- `/search`: full-text ranked search across published titles, summaries, headings and body text, with highlighted excerpts, prefix matching and typo tolerance for longer words. Queries are shareable through `?q=`.
-- Cmd/Ctrl+K or `/`: opens search anywhere. `/` does not interrupt typing in inputs. Arrow keys navigate results, Enter opens one, Escape closes the dialog, Tab stays inside it, and focus returns on close. Clicking Search works on touch devices. Search requires JavaScript; article browsing does not.
-- Light is the default theme; the toggle remembers an explicit choice locally. Without JavaScript, the system colour preference applies. No analytics storage is used.
+The content validator writes `checks/validation.json`. Exit code **0** means passed, **1** means failed checks, and **2** means validation could not complete. The release baseline is deliberately fixed at 40 articles; extend it intentionally when publishing newly researched content.
 
-The presentation matches the supplied `preview.html`: sharp corners, paper/ink light and dark palettes, underlined green links and amber keyboard focus. A solid sticky desktop header and a 320px sidebar sit within a shared 1540px layout. The numbered index appears on every page; its optional title/summary filter reports the visible article count. Full-text search remains separate. The single reading column is 790px including padding. The sidebar narrows to 250px below 850px, then becomes a native “Browse all 40 articles” disclosure at 640px and below, usable without JavaScript. The mobile header scrolls with the page: brand, search icon and theme toggle on the first row, navigation links on the second. There is no drawer or right rail. Article neighbours follow the published navigation order. Sources expand on citation jumps and remain open without JavaScript, retaining exact locators, dates and limitations.
+Tests cover published routes, internal links/fragments, exact source locators, exclusion of planned briefs, evidence tables, search ranking and Markdown safety. Automated checks do not establish factual truth, remote-source availability, or independent editorial/legal approval. See [research notes](RESEARCH_NOTES.md) for source-access limitations.
 
-## Content source of truth
+## Repository map
 
-**`content/articles/*.md` is canonical.** Each file contains typed YAML frontmatter and the article body. `src/content.config.ts` uses Astro's native `glob()` loader and a shared Zod schema; pages use `getCollection()` and `render()` with `<Content />`. Only `status === "ready" && publish === true` is included in routes, navigation, search and sitemap. There is no duplicate article JSON, portable exporter or hand-maintained article index.
-
-Edit an article's prose and frontmatter directly, then run:
-
-```sh
-bun run validate
+```text
+content/articles/       Canonical Markdown articles and YAML frontmatter
+content/data/           Four evidence datasets, also emitted as downloadable JSON
+content/                Navigation, glossary, site copy and source directory
+src/content.config.ts   Native Astro collection and shared schema
+src/components/         Article, index, reading paths/home and search components
+src/layouts/            Shared page shell, metadata and theme controls
+src/lib/                Content queries, Markdown plugins, tables and search
+src/pages/              Static routes, search index, sitemap and data endpoints
+src/styles/             Design tokens, Tailwind aliases, prose and print styles
+public/                 Favicon, robots.txt and the first-paint theme script
+scripts/                TypeScript content validator
+tests/                  Built-site and validator regression tests
+evidence/               Research passage associations and service links
+roadmap/                Unpublished briefs; never imported by public pages
+implementation/         Build specification
+.github/workflows/      Validation-only CI
 ```
 
-Keep date values quoted (`"2026-10-13"`), filenames equal to frontmatter IDs, and page titles in frontmatter only. Tasks, related links and source panels are rendered by the article template, not appended to the Markdown body. Reading time and related titles/routes are derived, and full-text search uses Astro's rendered collection HTML with tags and URL noise removed.
+## Editing content
 
-Astro 7's native Sätteri pipeline runs presentation and safety plugins in `src/lib/markdown.ts`: citation jumps, stable heading IDs, accessible tables, rejection of raw contributor HTML/images and a final allowlist sanitizer. This extends the native renderer rather than maintaining another Markdown parser. Numeric-cell classification is shared with the evidence table renderer.
+**Edit `content/articles/*.md` directly.** Each file contains metadata, reader tasks, related IDs and source notes in YAML frontmatter, followed by the article body. Astro's native `glob()` collection validates frontmatter with the shared Zod schema; pages use `getCollection()` and `render()` with `<Content />`. There is no exporter, duplicate article JSON or hand-maintained search index.
 
-Update relevant sources, evidence associations, data JSON, `content/release.json` and `CHANGELOG.md` together when changing a factual claim. The TypeScript validator shares the collection schema and checks citations, routes, publication flags and arithmetic; it does not independently verify truth. It is intentionally pinned to the 40-article release; expand its baseline deliberately for newly researched articles. `roadmap/` remains private build input and is never imported into public pages.
+- Keep the filename equal to the frontmatter `id`, and preserve the supplied `/in/` route.
+- Quote dates, e.g. `research_checked_at: "2026-10-13"`.
+- Keep the page title in frontmatter, not as a second `# Heading` in the body.
+- Cite sources using `[1](https://original-source-url)` and match each number/URL to its frontmatter source entry. Preserve exact locators, PDF page fragments, editions, reference periods and limitations.
+- Do not append task, related or source sections to the body; the article template renders them.
+- Only `status: "ready"` **and** `publish: true` appear in pages, navigation, search and sitemap. The 141 briefs in `roadmap/` remain unpublished.
+- When changing a factual claim, update its dependent source notes, evidence/data, article version, release metadata and [change history](CHANGELOG.md) together.
+- Run `bun run validate`, then inspect the affected article, citation jumps and tables in the production preview. Check mobile and keyboard behavior when changing presentation.
 
-The four evidence tables use `content/data/*.json` and are downloadable without rounding stored inputs. Existing budget and road tables are replaced in place with the data-driven table rather than duplicated. The two other tables supplement the prose. Original citation URLs, including PDF `#page=` fragments, remain in the source panels.
+Reading time, related article titles/routes and full-text search are derived at build time. Evidence tables use the stored JSON inputs without changing their precision; the budget and road tables replace the corresponding prose tables rather than appearing twice.
 
-## Corrections and publishing
+## Reading experience
 
-Every article offers an editable, copyable/downloadable correction draft with article ID, version, original claim, source URL/locator and proposed correction. **Nothing is submitted or saved.** No contact destination was supplied. Configure an actual maintained email/issue workflow before adding submission functionality.
+- `/` and `/in`: question-led introductions; seven topic entry points and hub indexes.
+- `/in/paths`: six guided reading paths. `/in/reference/glossary`: all 46 terms.
+- `/sources`: provenance and limitations; articles also have exact numbered source panels.
+- `/search`: full-text search with shareable `?q=` queries, highlighted excerpts, prefix matching and typo tolerance.
+- **Cmd/Ctrl+K** or **/** opens search; arrow keys navigate, Enter opens a result and Escape closes it. The slash shortcut does not interrupt typing.
+- The article index's filter searches titles/summaries only; full-text search is separate.
+- Reading, source panels and the native mobile index work without JavaScript. Search and optional filter/theme/copy controls require JavaScript.
+- Light is the default; an explicit theme choice is remembered locally. Without JavaScript, the system colour preference applies. Print uses a light, full-width layout.
 
-Deploy `dist/` to any static host, configure HTTPS and a real 404 response using `404.html`, and avoid SPA fallback rewrites for unpublished routes. `astro.config.ts`, `public/robots.txt` and the sitemap use `https://bepoliticallyaware.org`; update all three if the domain changes. Astro emits a hash-based CSP in production HTML. Deployment and DNS are not configured by this project.
+Every article offers an editable correction draft to copy or download. **Nothing is submitted or saved.** A maintained submission destination must be configured before adding a real reporting workflow.
 
-Local checks prove schema consistency, structure, routes, citation matching and selected arithmetic, not remote source uptime, factual truth or independent editorial/legal approval. See `RESEARCH_NOTES.md` for the source pack’s access limitations.
+## Implementation conventions
 
-## Design and implementation references
+Astro 7 uses a typed `astro.config.ts`, strict TypeScript and typed route boundaries. Conflicting prerendered routes fail the build. `astro check` runs before `tsc` so a fresh checkout receives generated collection types. Keep TypeScript within the Astro checker's supported range.
 
-Skills used: brainstorming, frontend-design, agent-browser and web-design-guidelines. The presentation redesign follows the maintainer's approved layout/type/token specification. Earlier design references: [Linear Docs](https://linear.app/docs) for restrained navigation/search and [GOV.UK civic guidance](https://www.gov.uk/register-to-vote) for descriptive links and content hierarchy. No imagery or template UI is copied.
+Tailwind 4 uses `@tailwindcss/vite`; Preflight is intentionally omitted to preserve native disclosures and the reading site's reset. Theme utilities alias existing CSS tokens. Keep content-driven prose, tables and print behavior in semantic CSS. Prettier is configured for Astro; `.editorconfig` defines UTF-8, LF and two-space indentation. Canonical article files are excluded from blanket formatting to avoid rewriting supplied prose.
 
-Authoritative implementation sources: [Astro routing](https://docs.astro.build/en/guides/routing/), [content collections](https://docs.astro.build/en/guides/content-collections/), [Markdown](https://docs.astro.build/en/guides/markdown-content/), [CSP configuration](https://docs.astro.build/en/reference/configuration-reference/#securitycsp), [Sätteri plugins](https://satteri.bruits.org/docs/plugins/), [plugin API](https://satteri.bruits.org/docs/plugin-api/), [hast-util-sanitize](https://github.com/syntax-tree/hast-util-sanitize), [MiniSearch](https://github.com/lucaong/minisearch), and [WAI modal dialog behavior](https://www.w3.org/WAI/ARIA/apg/patterns/dialog-modal/).
+The native Sätteri Markdown pipeline extends Astro with citation jumps, stable heading IDs and accessible tables. It rejects raw contributor HTML/images and applies a final allowlist sanitizer. Production HTML includes Astro's hash-based CSP; no unrestricted raw HTML, inline event handlers or third-party embeds are needed.
 
-Native-renderer migration research: [Sätteri documentation/API drift issue #104](https://github.com/bruits/satteri/issues/104) and the [upstream node-cloning changeset](https://github.com/bruits/satteri/blob/main/.sampo/changesets/clone-tree-nodes.md). Sätteri 0.10.5's lazy tree nodes are passed directly to the sanitizer, which returns a new tree; no `structuredClone()` workaround or second renderer is needed. Evidence-table replacement uses the supported `htmlToHast()` fragment API rather than raw-HTML replacement nodes (see [#60](https://github.com/bruits/satteri/issues/60) and [#140](https://github.com/bruits/satteri/pull/140)).
+Read [AGENTS.md](AGENTS.md) and the [build specification](implementation/BUILD_SPEC.md) before changing code or content. This is a private project; no project redistribution license has been selected. Source documents and dependencies retain their respective terms.
 
-Restyle references: the maintainer's local `preview.html`, [Astro processed scripts](https://docs.astro.build/en/guides/client-side-scripts/), [MDN native disclosures](https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/details), [MDN native dialogs](https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/dialog), and [Web Interface Guidelines](https://github.com/vercel-labs/web-interface-guidelines/blob/main/command.md). This is a local presentation change, not a diagnosed upstream regression; GitHub issue research was unnecessary.
+## Deployment
 
-Framework alignment references: [Astro configuration formats](https://docs.astro.build/en/guides/configuring-astro/) (both `.mjs` and `.ts` are supported), [current Astro release](https://docs.astro.build/en/upgrade-astro/), [Astro 7 migration guide](https://docs.astro.build/en/guides/upgrade-to/v7/), [Astro TypeScript utilities](https://docs.astro.build/en/guides/typescript/), [typed endpoints](https://docs.astro.build/en/guides/endpoints/), [Tailwind's Astro setup](https://tailwindcss.com/docs/installation/framework-guides/astro), [theme aliases](https://tailwindcss.com/docs/theme), and [omitting Preflight](https://tailwindcss.com/docs/preflight). The external `/theme.js` intentionally retains `is:inline` so it runs before first paint, as documented for public scripts.
+1. Run `bun install --frozen-lockfile` and `bun run validate`.
+2. Publish **only `dist/`** to a static host, with HTTPS and `404.html` served as a genuine 404 response. Do not deploy the repository root or use a catch-all SPA rewrite.
+3. If the domain changes, update `astro.config.ts`, `public/robots.txt` and the sitemap origin in `src/pages/sitemap.xml.ts` together.
+4. Check production routes, citation fragments, search, CSP console output and mobile behavior on the actual host.
+
+Hosting, DNS, scheduled source checks and correction submissions are **not configured**. Pushing this repository runs validation, not a release.
+
+## Technical references
+
+[Astro content collections](https://docs.astro.build/en/guides/content-collections/) · [Astro CLI/type generation](https://docs.astro.build/en/reference/cli-reference/) · [Tailwind's Astro setup](https://tailwindcss.com/docs/installation/framework-guides/astro) · [Sätteri plugins](https://satteri.bruits.org/docs/plugins/) · [hast-util-sanitize](https://github.com/syntax-tree/hast-util-sanitize).
+
+Earlier native-renderer research: Sätteri [API documentation issue #104](https://github.com/bruits/satteri/issues/104) and [HTML-to-HAST support #60](https://github.com/bruits/satteri/issues/60). The sanitizer returns a new tree directly; evidence replacement uses `htmlToHast()` rather than raw replacement nodes.

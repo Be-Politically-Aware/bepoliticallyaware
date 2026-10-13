@@ -1,13 +1,48 @@
 [
   {
+    "path": ".editorconfig",
+    "bytes": 188,
+    "sha256": "6d6796f174b736bcd7a68999e30d2f19a3719ad92355dcc0cfdfce8a66864553"
+  },
+  {
+    "path": ".github/workflows/validate.yml",
+    "bytes": 830,
+    "sha256": "c18f619a3766c005a9be40eaa5e6b9c4d7d392bac78f9508258e6dfa26c4474f"
+  },
+  {
+    "path": ".gitignore",
+    "bytes": 455,
+    "sha256": "d8cb2f6abb55c2b4cdf2ee8e9c00b9c2363f0b3c261d43c8e40aebf0d70958fa"
+  },
+  {
+    "path": ".node-version",
+    "bytes": 3,
+    "sha256": "68ca3fba3b7e864770cb61aeb306d4bd4354b68ab4dd38450860c5d823e42a53"
+  },
+  {
+    "path": ".prettierignore",
+    "bytes": 140,
+    "sha256": "4f7a82d013059e2bc70f927b5590902603cb78635cc4ab50950bb94ad4212a5e"
+  },
+  {
+    "path": ".prettierrc.json",
+    "bytes": 43,
+    "sha256": "8502fc123a6899007d4de20ab7b5066645bae7f6c7bdcb4125aa89cb8eb1b49b"
+  },
+  {
     "path": "AGENTS.md",
     "bytes": 7419,
     "sha256": "2a210036d7a78b5628b4f613c4aa626ab8eabda4c9d5879baa79101028107c08"
   },
   {
+    "path": "CHANGELOG.md",
+    "bytes": 1397,
+    "sha256": "89ee4c99c48826f40e6bedb867838f5783ae750bc3275d333d7502f8463b5449"
+  },
+  {
     "path": "README.md",
-    "bytes": 10369,
-    "sha256": "f13a907f776a4bff91452464c0d9a4c3095f35172d02bf1b2700b835a43ea2c7"
+    "bytes": 10033,
+    "sha256": "1d0b1bf72a18cd26990bec589e9034fde7b7919d775709496b5ac2dd8b1e9518"
   },
   {
     "path": "RESEARCH_NOTES.md",
@@ -278,6 +313,11 @@
     "path": "implementation/BUILD_SPEC.md",
     "bytes": 6393,
     "sha256": "57743b0cd83d3affc66f90d26ae4bb92c4c03bf8f777b140dd4a662af247e3ee"
+  },
+  {
+    "path": "package.json",
+    "bytes": 1078,
+    "sha256": "dc8a3bf6e53f696f2784f28a53b0b08944608550b04884228d07a3789390e6e4"
   },
   {
     "path": "roadmap/backlog.json",

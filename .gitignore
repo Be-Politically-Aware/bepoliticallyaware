@@ -28,6 +28,9 @@ report.[0-9]_.[0-9]_.[0-9]_.[0-9]_.json
 .astro
 *.tsbuildinfo
 
+# local agent scratch files and review artifacts
+/.amp/in/
+
 # IntelliJ based IDEs
 .idea
 

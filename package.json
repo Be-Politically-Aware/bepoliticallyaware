@@ -10,7 +10,7 @@
     "dev": "astro dev --host 127.0.0.1",
     "build": "bun run check && astro build",
     "preview": "astro preview --host 127.0.0.1",
-    "check": "tsc --noEmit && astro check",
+    "check": "astro check && tsc --noEmit",
     "test": "bun test",
     "validate:content": "bun scripts/validate_content.ts",
     "validate": "bun run validate:content && bun run build && bun test"
