@@ -508,6 +508,7 @@ hr {
   border-bottom: 1px solid var(--line);
 }
 .guide-row {
+  padding-inline: 0.65rem;
   text-decoration: none;
 }
 .guide-row:hover {
@@ -590,7 +591,7 @@ hr {
   font-variant-numeric: tabular-nums;
 }
 .steps .guide-row {
-  padding: 0;
+  padding-block: 0;
 }
 .table-scroll {
   overflow-x: auto;
