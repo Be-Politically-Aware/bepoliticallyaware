@@ -1,6 +1,7 @@
+import type { APIRoute } from "astro";
 import { articles } from "../lib/content";
 import { plainText } from "../lib/markdown";
-export function GET() {
+export const GET = (() => {
   return Response.json(
     articles.map((a) => ({
       route: a.route,
@@ -10,4 +11,4 @@ export function GET() {
       hub: a.hub,
     })),
   );
-}
+}) satisfies APIRoute;

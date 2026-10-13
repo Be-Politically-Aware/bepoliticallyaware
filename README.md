@@ -18,7 +18,11 @@ bun run validate
 bun run preview
 ```
 
-`validate` runs the supplied Python consistency checks, Astro diagnostics, a static build, and Bun tests against that build. `bun test` requires a current `dist/` (run `bun run build` first).
+`validate` runs the supplied Python consistency checks, TypeScript and Astro diagnostics, a static build, and Bun tests against that build. `bun run build` also checks types before emitting the site; `bun run check` runs diagnostics alone. `bun test` requires a current `dist/` (run `bun run build` first).
+
+The framework is Astro 7.3.8 (current stable at the October 2026 check), with a typed `astro.config.ts`, Astro's strict TypeScript preset, and typed static route/endpoint exports. Duplicate prerendered routes fail the build. TypeScript 6.0.3 is the newest version supported by the installed Astro checker; do not jump to TypeScript 7 until that tooling supports it. `package.json` records the Bun version and Astro's minimum Node version.
+
+Tailwind CSS 4 uses the official `@tailwindcss/vite` plugin, like the portfolio project. `src/styles/global.css` exposes the existing light/dark tokens through `@theme inline` and uses utilities and `@apply` for shared layout/control primitives. Preflight is deliberately omitted to preserve the reading site's existing reset, native disclosures and typography. Keep content-driven prose, table behavior, print rules and bespoke responsive layout in semantic CSS; no legacy `@astrojs/tailwind` integration is needed.
 
 ## Reading and search
 
@@ -51,7 +55,7 @@ The four evidence tables use `content/data/*.json` and are downloadable without 
 
 Every article offers an editable, copyable/downloadable correction draft with article ID, version, original claim, source URL/locator and proposed correction. **Nothing is submitted or saved.** No contact destination was supplied. Configure an actual maintained email/issue workflow before adding submission functionality.
 
-Deploy `dist/` to any static host, configure HTTPS and a real 404 response using `404.html`, and avoid SPA fallback rewrites for unpublished routes. `astro.config.mjs`, `public/robots.txt` and the sitemap use `https://bepoliticallyaware.org`; update all three if the domain changes. Astro emits a hash-based CSP in production HTML. Deployment and DNS are not configured by this project.
+Deploy `dist/` to any static host, configure HTTPS and a real 404 response using `404.html`, and avoid SPA fallback rewrites for unpublished routes. `astro.config.ts`, `public/robots.txt` and the sitemap use `https://bepoliticallyaware.org`; update all three if the domain changes. Astro emits a hash-based CSP in production HTML. Deployment and DNS are not configured by this project.
 
 Local checks prove structure, routes, citation matching, export parity and selected arithmetic, not remote source uptime, factual truth or independent editorial/legal approval. See `RESEARCH_NOTES.md` for the source pack’s access limitations.
 
@@ -62,3 +66,5 @@ Skills used: brainstorming, frontend-design, agent-browser and web-design-guidel
 Authoritative implementation sources: [Astro routing](https://docs.astro.build/en/guides/routing/), [Markdown](https://docs.astro.build/en/guides/markdown-content/), [CSP configuration](https://docs.astro.build/en/reference/configuration-reference/#securitycsp), [Marked renderer API](https://marked.js.org/using_pro), [sanitize-html](https://github.com/apostrophecms/apostrophe/tree/main/packages/sanitize-html), [MiniSearch](https://github.com/lucaong/minisearch), and [WAI modal dialog behavior](https://www.w3.org/WAI/ARIA/apg/patterns/dialog-modal/). No upstream regression was diagnosed; issue-thread research was not needed.
 
 Restyle references: the maintainer's local `preview.html`, [Astro processed scripts](https://docs.astro.build/en/guides/client-side-scripts/), [MDN native disclosures](https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/details), [MDN native dialogs](https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/dialog), and [Web Interface Guidelines](https://github.com/vercel-labs/web-interface-guidelines/blob/main/command.md). This is a local presentation change, not a diagnosed upstream regression; GitHub issue research was unnecessary.
+
+Framework alignment references: [Astro configuration formats](https://docs.astro.build/en/guides/configuring-astro/) (both `.mjs` and `.ts` are supported), [current Astro release](https://docs.astro.build/en/upgrade-astro/), [Astro 7 migration guide](https://docs.astro.build/en/guides/upgrade-to/v7/), [Astro TypeScript utilities](https://docs.astro.build/en/guides/typescript/), [typed endpoints](https://docs.astro.build/en/guides/endpoints/), [Tailwind's Astro setup](https://tailwindcss.com/docs/installation/framework-guides/astro), [theme aliases](https://tailwindcss.com/docs/theme), and [omitting Preflight](https://tailwindcss.com/docs/preflight). The external `/theme.js` intentionally retains `is:inline` so it runs before first paint, as documented for public scripts.

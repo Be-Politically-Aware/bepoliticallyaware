@@ -2,23 +2,29 @@
   "name": "bepoliticallyaware",
   "private": true,
   "type": "module",
+  "packageManager": "bun@1.4.0",
+  "engines": {
+    "node": ">=22.12.0"
+  },
   "scripts": {
     "dev": "astro dev --host 127.0.0.1",
-    "build": "astro build",
+    "build": "bun run check && astro build",
     "preview": "astro preview --host 127.0.0.1",
-    "check": "astro check",
+    "check": "tsc --noEmit && astro check",
     "test": "bun test",
-    "validate": "python3 scripts/validate_content.py && bun run check && bun run build && bun test"
+    "validate": "python3 scripts/validate_content.py && bun run build && bun test"
   },
   "devDependencies": {
     "@astrojs/check": "^0.9.10",
+    "@tailwindcss/vite": "^4.3.3",
     "@types/bun": "latest",
     "@types/node": "^26.6.5",
     "@types/sanitize-html": "^2.16.2",
     "cheerio": "^1.2.0",
     "prettier": "^3.9.10",
     "prettier-plugin-astro": "^1.1.1",
-    "typescript": "5.9.3"
+    "tailwindcss": "^4.3.3",
+    "typescript": "6.0.3"
   },
   "dependencies": {
     "astro": "^7.3.8",

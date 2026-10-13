@@ -56,3 +56,10 @@ Deliver working code and setup commands. Report actual checks, remaining impleme
 - Sharp corners only. No coloured left borders, pills, gradients, backdrop blur or decorative panels. Text links are accent-coloured and underlined; navigational arrows belong in `aria-hidden="true"` spans. Sidebar/header navigation may omit underlines at rest.
 - Use the shared 1540px container with 20px header/sidebar/footer alignment, a 60px sticky header, a 320px scrolling numbered article index (250px at 850px and below), and a single centred 790px reading column including padding. At 640px and below, use a native mobile index disclosure and a two-row header; no drawer or right rail.
 - Maintain amber visible focus, reduced-motion support, accessible tables, no-JavaScript reading and CSP-safe processed scripts. Do not introduce inline styles, external assets, decorative imagery, card grids of articles or marketing filler.
+
+## Astro and styling conventions
+
+- Configure Astro in `astro.config.ts`. Keep the static output model and hash-based CSP; no server adapter is needed. Route conflicts must fail the build.
+- Use Astro's `GetStaticPaths`, inferred route props and `APIRoute` types at route boundaries. `bun run build` runs TypeScript and Astro checks before building; `bun run validate` additionally checks content and built-site tests.
+- Use Tailwind v4 through `@tailwindcss/vite`, not the legacy Astro Tailwind integration. Theme utilities alias the existing CSS tokens. Preflight is intentionally omitted: preserve native disclosures, numbered lists and the reading site's reset. Keep prose, table, print and bespoke responsive behavior in semantic CSS.
+- Keep TypeScript within the installed Astro checker's supported peer range. The public blocking theme script intentionally uses `is:inline`; interactive component scripts remain processed.

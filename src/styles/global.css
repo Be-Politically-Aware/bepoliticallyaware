@@ -1,3 +1,24 @@
+@layer theme, base, components, utilities;
+@import "tailwindcss/theme.css" layer(theme);
+@import "tailwindcss/utilities.css" layer(utilities) source("../");
+/* This existing caption wrapper is not Tailwind's display utility. */
+@source not inline("table-caption");
+
+@theme inline {
+  --color-*: initial;
+  --radius-*: initial;
+  --font-sans: var(--font);
+  --color-paper: var(--paper);
+  --color-ink: var(--ink);
+  --color-muted: var(--muted);
+  --color-line: var(--line);
+  --color-line-strong: var(--line-strong);
+  --color-soft: var(--soft);
+  --color-accent: var(--accent);
+  --color-focus: var(--focus);
+  --color-mark: var(--mark);
+}
+
 :root,
 :root[data-theme="light"] {
   color-scheme: light;
@@ -56,8 +77,6 @@ html {
 }
 body {
   margin: 0;
-  background: var(--paper);
-  color: var(--ink);
   line-height: 1.5;
 }
 [hidden] {
@@ -76,8 +95,7 @@ main:focus {
 }
 a,
 a:visited {
-  color: var(--accent);
-  text-decoration: underline;
+  @apply text-accent underline;
   text-underline-offset: 3px;
   text-decoration-thickness: 1px;
 }
@@ -112,15 +130,9 @@ code {
 }
 button,
 .btn {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
+  @apply inline-flex items-center justify-center border border-line-strong bg-transparent text-ink no-underline;
   padding: 0.5rem 0.9rem;
-  border: 1px solid var(--line-strong);
-  background: transparent;
-  color: var(--ink);
   font-size: 0.875rem;
-  text-decoration: none;
 }
 button:hover,
 .btn:hover {
@@ -131,11 +143,7 @@ button:hover,
 }
 input,
 textarea {
-  min-width: 0;
-  padding: 0.75rem;
-  border: 1px solid var(--line-strong);
-  background: var(--paper);
-  color: var(--ink);
+  @apply min-w-0 border border-line-strong bg-paper p-3 text-ink;
 }
 input::placeholder {
   color: var(--muted);
@@ -187,20 +195,18 @@ li {
     max(20px, env(safe-area-inset-right));
 }
 .layout {
-  display: grid;
+  @apply grid mx-auto;
   grid-template-columns: var(--sidebar-w) minmax(0, 1fr);
   max-width: var(--container);
-  margin-inline: auto;
 }
 .main-pane,
 .desktop-sidebar {
-  min-width: 0;
+  @apply min-w-0;
 }
 .article {
-  width: 100%;
+  @apply w-full mx-auto;
   max-width: 790px;
   padding: 3.5rem 3rem 4rem;
-  margin-inline: auto;
   overflow-wrap: anywhere;
 }
 .site-header {
@@ -212,17 +218,10 @@ li {
   background: var(--paper);
 }
 .header-inner {
-  height: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 1rem;
+  @apply flex h-full items-center justify-between gap-4;
 }
 .header-brand {
-  display: flex;
-  align-items: baseline;
-  gap: 12px;
-  flex-shrink: 0;
+  @apply flex shrink-0 items-baseline gap-3;
 }
 .wordmark {
   font-size: 1.18rem;
@@ -237,11 +236,7 @@ li {
 }
 .header-actions,
 .header-links {
-  display: flex;
-  align-items: center;
-  gap: 1rem;
-  min-width: 0;
-  white-space: nowrap;
+  @apply flex min-w-0 items-center gap-4 whitespace-nowrap;
   font-size: 0.875rem;
 }
 .header-actions > a {
@@ -493,9 +488,7 @@ hr {
 }
 .related ul,
 .reading-list {
-  list-style: none;
-  padding: 0;
-  margin: 0;
+  @apply m-0 list-none p-0;
 }
 .related li,
 .reading-list li {
@@ -521,11 +514,9 @@ hr {
   background: var(--soft);
 }
 .row-title {
-  display: block;
-  text-decoration: underline;
+  @apply block font-medium underline;
   text-underline-offset: 3px;
   text-decoration-thickness: 1px;
-  font-weight: 500;
 }
 .guide-row:hover .row-title {
   text-decoration-thickness: 2px;
@@ -546,8 +537,7 @@ hr {
 }
 .hero-actions,
 .correction-actions {
-  display: flex;
-  flex-wrap: wrap;
+  @apply flex flex-wrap;
   gap: 0.75rem 1.5rem;
 }
 .hero-actions a:first-child {
@@ -641,8 +631,7 @@ tbody th {
   font-weight: 400;
 }
 .num {
-  text-align: right;
-  white-space: nowrap;
+  @apply text-right whitespace-nowrap;
 }
 .sources,
 .correction {
