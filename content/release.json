@@ -1,0 +1,17 @@
+{
+  "version": "2.0.0",
+  "date": "2026-10-13",
+  "article_count": 40,
+  "original_launch_pages_completed": 32,
+  "additional_articles": 8,
+  "source_document_count": 22,
+  "official_primary_document_count": 18,
+  "source_locator_count": 49,
+  "passage_evidence_count": 128,
+  "glossary_terms": 46,
+  "datasets": 4,
+  "word_count": 15924,
+  "unwritten_original_briefs": 141,
+  "review": "Assistant source review plus programmatic checks; not independent human review.",
+  "automations_created": false
+}

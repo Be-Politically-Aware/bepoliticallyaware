@@ -1,0 +1,40 @@
+{
+  "id": "plfs-2025-annual-usual-status",
+  "title": "PLFS 2025 annual usual-status indicators",
+  "source_ref_ids": [
+    "plfs-figures",
+    "plfs-definitions",
+    "plfs-comparability"
+  ],
+  "published_at": "2026-03-27",
+  "reference_period": "January–December 2025",
+  "checked_at": "2026-10-13",
+  "geography": "India, rural and urban combined",
+  "age_group": "15 years and above",
+  "sex": "persons, all sexes combined",
+  "activity_status": "usual status (principal plus subsidiary)",
+  "unit": "percent",
+  "indicators": [
+    {
+      "name": "LFPR",
+      "value": 59.3,
+      "denominator": "Relevant population aged 15+"
+    },
+    {
+      "name": "WPR",
+      "value": 57.4,
+      "denominator": "Relevant population aged 15+"
+    },
+    {
+      "name": "UR",
+      "value": 3.1,
+      "denominator": "Labour force aged 15+"
+    }
+  ],
+  "limitations": [
+    "Source inspected is the official release and its methods note, not the full report.",
+    "Not current-month unemployment or a measure of job quality.",
+    "Revised sample design from January 2025 affects comparability.",
+    "Published rounded percentages should not be used to reverse-engineer exact population counts."
+  ]
+}

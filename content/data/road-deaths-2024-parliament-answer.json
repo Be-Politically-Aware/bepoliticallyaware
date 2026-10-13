@@ -1,0 +1,44 @@
+{
+  "id": "road-deaths-2024-parliament-answer",
+  "title": "Different 2024 road-death categories in a parliamentary answer",
+  "source_ref_ids": [
+    "road-numbers",
+    "road-method"
+  ],
+  "published_at": "2026-08-12",
+  "reference_period": "2024",
+  "checked_at": "2026-10-13",
+  "unit": "reported deaths",
+  "geography": "India",
+  "attribution": "Figures as stated by MoRTH in Rajya Sabha Unstarred Question 2820; underlying full series not independently reconstructed.",
+  "observations": [
+    {
+      "series": "MoRTH Road Accidents in India",
+      "definition_in_answer": "Total road-accident fatalities",
+      "value": 177175
+    },
+    {
+      "series": "NCRB Accidental Deaths and Suicides in India",
+      "definition_in_answer": "Road-accident deaths",
+      "value": 175142
+    },
+    {
+      "series": "NCRB Crime in India",
+      "definition_in_answer": "Deaths due to negligence relating to road accidents",
+      "value": 162500
+    }
+  ],
+  "calculations": [
+    {
+      "formula": "177175 - 175142",
+      "value": 2033,
+      "unit": "deaths",
+      "interpretation": "Arithmetic difference only; not an estimate of omitted cases."
+    }
+  ],
+  "limitations": [
+    "Different reporting channels and scopes, as explained by the Ministry.",
+    "Do not average these figures as interchangeable estimates.",
+    "Do not use the question’s premise as a finding in the answer."
+  ]
+}

@@ -1,0 +1,272 @@
+{
+  "country": "IN",
+  "country_route": "/in",
+  "primary": [
+    {
+      "label": "Start here",
+      "route": "/in/start",
+      "hubs": [
+        "start"
+      ]
+    },
+    {
+      "label": "Your daily life",
+      "route": "/in/everyday",
+      "hubs": [
+        "everyday",
+        "local"
+      ]
+    },
+    {
+      "label": "How power works",
+      "route": "/in/power",
+      "hubs": [
+        "parliament",
+        "states",
+        "parties"
+      ]
+    },
+    {
+      "label": "Elections",
+      "route": "/in/elections",
+      "hubs": [
+        "elections"
+      ]
+    },
+    {
+      "label": "Check a claim",
+      "route": "/in/check",
+      "hubs": [
+        "evidence",
+        "media",
+        "crime"
+      ]
+    },
+    {
+      "label": "Take action",
+      "route": "/in/action",
+      "hubs": [
+        "action"
+      ]
+    },
+    {
+      "label": "Evidence library",
+      "route": "/in/library",
+      "hubs": [
+        "money",
+        "dossiers",
+        "reference"
+      ]
+    }
+  ],
+  "hubs": [
+    {
+      "id": "start",
+      "label": "Start here",
+      "route": "/in/start",
+      "article_ids": [
+        "in-start-why-care",
+        "in-start-country-state-government-party",
+        "in-start-first-half-hour",
+        "in-start-politics-without-party-loyalty",
+        "in-start-reasonable-disagreement"
+      ]
+    },
+    {
+      "id": "states",
+      "label": "States and responsibilities",
+      "route": "/in/states",
+      "article_ids": [
+        "in-states-union-state-local-powers",
+        "in-states-mla-and-mlc"
+      ]
+    },
+    {
+      "id": "parliament",
+      "label": "Parliament",
+      "route": "/in/parliament",
+      "article_ids": [
+        "in-parliament-lok-sabha-rajya-sabha",
+        "in-parliament-mp-role",
+        "in-parliament-bill-to-law"
+      ]
+    },
+    {
+      "id": "parties",
+      "label": "Parties and opposition",
+      "route": "/in/parties",
+      "article_ids": [
+        "in-parties-opposition-role"
+      ]
+    },
+    {
+      "id": "local",
+      "label": "Local government",
+      "route": "/in/local",
+      "article_ids": [
+        "in-local-find-responsible-authority"
+      ]
+    },
+    {
+      "id": "everyday",
+      "label": "Your daily life",
+      "route": "/in/everyday",
+      "article_ids": [
+        "in-everyday-roads-and-transport",
+        "in-everyday-water-and-sanitation",
+        "in-everyday-jobs-and-wages"
+      ]
+    },
+    {
+      "id": "elections",
+      "label": "Elections",
+      "route": "/in/elections",
+      "article_ids": [
+        "in-elections-voter-registration",
+        "in-elections-candidate-affidavits",
+        "in-elections-how-seats-are-won",
+        "in-elections-compare-candidates"
+      ]
+    },
+    {
+      "id": "money",
+      "label": "Public money",
+      "route": "/in/money",
+      "article_ids": [
+        "in-money-read-a-budget",
+        "in-money-estimates-revised-actuals",
+        "in-money-audits-and-cag"
+      ]
+    },
+    {
+      "id": "action",
+      "label": "Take action",
+      "route": "/in/action",
+      "article_ids": [
+        "in-action-choose-a-route",
+        "in-action-write-a-complaint",
+        "in-action-rti-basics",
+        "in-action-rti-central-or-state",
+        "in-action-ask-a-representative"
+      ]
+    },
+    {
+      "id": "evidence",
+      "label": "Read evidence",
+      "route": "/in/evidence",
+      "article_ids": [
+        "in-evidence-check-before-sharing",
+        "in-evidence-percentages-and-denominators",
+        "in-evidence-question-official-data",
+        "in-evidence-observe-and-verify"
+      ]
+    },
+    {
+      "id": "media",
+      "label": "News and WhatsApp",
+      "route": "/in/media",
+      "article_ids": [
+        "in-media-whatsapp-forward",
+        "in-media-assess-a-news-report"
+      ]
+    },
+    {
+      "id": "crime",
+      "label": "Crime and justice",
+      "route": "/in/crime",
+      "article_ids": [
+        "in-crime-case-status-terms",
+        "in-crime-crime-statistics"
+      ]
+    },
+    {
+      "id": "reference",
+      "label": "Reference and methods",
+      "route": "/in/reference",
+      "article_ids": [
+        "in-reference-glossary",
+        "in-reference-how-we-know",
+        "in-reference-corrections"
+      ]
+    },
+    {
+      "id": "dossiers",
+      "label": "Evidence library",
+      "route": "/in/dossiers",
+      "article_ids": [
+        "in-dossiers-road-deaths-2024",
+        "in-dossiers-union-budget-2026"
+      ]
+    }
+  ],
+  "reading_paths": [
+    {
+      "id": "new-to-politics",
+      "title": "I do not follow politics",
+      "article_ids": [
+        "in-start-why-care",
+        "in-start-country-state-government-party",
+        "in-states-union-state-local-powers",
+        "in-evidence-check-before-sharing",
+        "in-action-choose-a-route"
+      ],
+      "outcome": "Identify an institution, inspect a claim and choose a useful next action."
+    },
+    {
+      "id": "public-service",
+      "title": "A local service is failing",
+      "article_ids": [
+        "in-local-find-responsible-authority",
+        "in-everyday-roads-and-transport",
+        "in-everyday-water-and-sanitation",
+        "in-action-write-a-complaint",
+        "in-action-rti-basics"
+      ],
+      "outcome": "Describe the failure, identify responsibility and separate requests for action from requests for records."
+    },
+    {
+      "id": "political-forward",
+      "title": "I received a political forward",
+      "article_ids": [
+        "in-media-whatsapp-forward",
+        "in-evidence-check-before-sharing",
+        "in-media-assess-a-news-report",
+        "in-crime-case-status-terms"
+      ],
+      "outcome": "Identify original evidence and avoid repeating unsupported captions or allegations."
+    },
+    {
+      "id": "candidate-comparison",
+      "title": "I want to compare candidates",
+      "article_ids": [
+        "in-parliament-mp-role",
+        "in-elections-how-seats-are-won",
+        "in-elections-candidate-affidavits",
+        "in-elections-compare-candidates"
+      ],
+      "outcome": "Compare responsibilities, disclosures and promises without unsupported guilt labels."
+    },
+    {
+      "id": "money-claim",
+      "title": "A politician says spending increased",
+      "article_ids": [
+        "in-money-read-a-budget",
+        "in-money-estimates-revised-actuals",
+        "in-dossiers-union-budget-2026",
+        "in-money-audits-and-cag"
+      ],
+      "outcome": "Distinguish estimates, actual spending and evidence of delivery."
+    },
+    {
+      "id": "data-disagreement",
+      "title": "Two official figures disagree",
+      "article_ids": [
+        "in-evidence-percentages-and-denominators",
+        "in-evidence-question-official-data",
+        "in-dossiers-road-deaths-2024",
+        "in-crime-crime-statistics"
+      ],
+      "outcome": "Check definitions, denominators and coverage before interpreting a discrepancy."
+    }
+  ]
+}

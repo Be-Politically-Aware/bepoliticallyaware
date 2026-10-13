@@ -1,0 +1,16 @@
+{
+  "passed": true,
+  "checks": 1211,
+  "articles": 40,
+  "original_launch_articles": 32,
+  "source_documents": 22,
+  "exact_source_locators": 49,
+  "errors": [],
+  "scope": "Local structure, internal links, export parity, citation-reference consistency, hashes and selected arithmetic checks.",
+  "not_tested": [
+    "Network availability of remote URLs",
+    "Automated proof of factual truth",
+    "Independent human or legal review",
+    "Production frontend accessibility or deployment"
+  ]
+}

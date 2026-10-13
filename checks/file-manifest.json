@@ -1,0 +1,327 @@
+[
+  {
+    "path": "AGENTS.md",
+    "bytes": 4791,
+    "sha256": "d72f63c9f6fdb4302a04a61f6ae910efce41feee41a2841ddf617470ca0d15b9"
+  },
+  {
+    "path": "BUILD_PROMPT.md",
+    "bytes": 1270,
+    "sha256": "d1f042922bc2b84f42cf137e15abe47616600609acd1b051f3edb3d35fe35deb"
+  },
+  {
+    "path": "README.md",
+    "bytes": 5020,
+    "sha256": "31e80fdb223e79ee8d3ad64da34f6c57921f37ef7eb86f1eac25c45af8e9a7ed"
+  },
+  {
+    "path": "RESEARCH_NOTES.md",
+    "bytes": 5345,
+    "sha256": "535fb0c87dbb79363aa1584456d368f8cfe32314d286092aa49d4ddb181dcdfc"
+  },
+  {
+    "path": "checks/validation.json",
+    "bytes": 498,
+    "sha256": "a0cbf84111a6105ab7c3f27002a746bc0fd37959088238bf9de122bd5bb27ef2"
+  },
+  {
+    "path": "content/article-index.json",
+    "bytes": 24745,
+    "sha256": "46af55e09f2d1d889c02ed1c36818c0a02b834ea06d8fdbe5270d296ee5ce39c"
+  },
+  {
+    "path": "content/articles/in-action-ask-a-representative.md",
+    "bytes": 4843,
+    "sha256": "21bd6240aa42218eb2edeafa52c865be489aa20eea84018128ba88ffc3d00d7e"
+  },
+  {
+    "path": "content/articles/in-action-choose-a-route.md",
+    "bytes": 5639,
+    "sha256": "2abd1cd85988b631f0d6402ef2f2c91425ce81cf2ee5043e24beba819483bd33"
+  },
+  {
+    "path": "content/articles/in-action-rti-basics.md",
+    "bytes": 5689,
+    "sha256": "e6d449882c0bc6189d0eb83060d6a2cda9598f78507c0ba22b56c0dec599218b"
+  },
+  {
+    "path": "content/articles/in-action-rti-central-or-state.md",
+    "bytes": 4308,
+    "sha256": "1ec9fb8a72b5ef8b345c2cdb4dbf92871ba8a91423f7de1b732e5287fc331629"
+  },
+  {
+    "path": "content/articles/in-action-write-a-complaint.md",
+    "bytes": 4316,
+    "sha256": "6bf3d7e1ac2c3a038f551bfd1366b4ceefb7882e7696f4a66794ab6ac19e4eb4"
+  },
+  {
+    "path": "content/articles/in-crime-case-status-terms.md",
+    "bytes": 8287,
+    "sha256": "0f1b353d420a9aa3b2559e0ecbdcff05b5d94c329c1624b2e055d27ee4149b09"
+  },
+  {
+    "path": "content/articles/in-crime-crime-statistics.md",
+    "bytes": 5082,
+    "sha256": "b02eb2f22166905d2ba4338abe620aba17042d5b5e8b24d0b5460472ea19ed70"
+  },
+  {
+    "path": "content/articles/in-dossiers-road-deaths-2024.md",
+    "bytes": 5101,
+    "sha256": "12e0ffa27f9c61a8ea9227c29c6bb3fa70aed7436bb07ea9c1e25f83f505df5f"
+  },
+  {
+    "path": "content/articles/in-dossiers-union-budget-2026.md",
+    "bytes": 3877,
+    "sha256": "32129bc1b06a8a04b5c18c1c6e68ca9222aad60dffc5c0dc7e8c55129efc1ea5"
+  },
+  {
+    "path": "content/articles/in-elections-candidate-affidavits.md",
+    "bytes": 6337,
+    "sha256": "d6d0a152a760e14731beb2c052fd1715b9a9116313712d7d846cd5de74758baf"
+  },
+  {
+    "path": "content/articles/in-elections-compare-candidates.md",
+    "bytes": 6432,
+    "sha256": "a0bf357856cc0f2b936567ada3e836aa33af0f4320419daae0a9aa61b2fa3a40"
+  },
+  {
+    "path": "content/articles/in-elections-how-seats-are-won.md",
+    "bytes": 4510,
+    "sha256": "75700bf3f74b95c900889dd88ba540b9478a608cfae9c5b6a96587b6be025bad"
+  },
+  {
+    "path": "content/articles/in-elections-voter-registration.md",
+    "bytes": 4190,
+    "sha256": "c848abe70bb71564a3d49503610c1c64ca3db9f5103363c171ac54b43a3e7723"
+  },
+  {
+    "path": "content/articles/in-everyday-jobs-and-wages.md",
+    "bytes": 5545,
+    "sha256": "f4032d77a431c6a166f7f81afed00e194d7a5a8403542522e2adeb658cc7cbf0"
+  },
+  {
+    "path": "content/articles/in-everyday-roads-and-transport.md",
+    "bytes": 5091,
+    "sha256": "f78835308f814882c947b76cb29d337155e3b5a6ae2923aa306a5d7445a5265d"
+  },
+  {
+    "path": "content/articles/in-everyday-water-and-sanitation.md",
+    "bytes": 6012,
+    "sha256": "97e4ea9be9579d33ec3ec40a176c564be0dbaf16cb88f2edde46080c68fcdc01"
+  },
+  {
+    "path": "content/articles/in-evidence-check-before-sharing.md",
+    "bytes": 3922,
+    "sha256": "f154cfcc3118ba481f5165cae915359e34566941dd6bd987678ce1b1b0679697"
+  },
+  {
+    "path": "content/articles/in-evidence-observe-and-verify.md",
+    "bytes": 4315,
+    "sha256": "378efc31294e0a9be71edcb9ef98f650c488956402f26c133f12b2b0a97bb6f4"
+  },
+  {
+    "path": "content/articles/in-evidence-percentages-and-denominators.md",
+    "bytes": 4086,
+    "sha256": "7538bd0579f0cbee75cb6b748303fa0d3242ed4f84e32e0cfe49c4ac4b501912"
+  },
+  {
+    "path": "content/articles/in-evidence-question-official-data.md",
+    "bytes": 5660,
+    "sha256": "5bccca4385cb0c027698d13734bd61e9fee4f02eb425985f1db9c54f22da475e"
+  },
+  {
+    "path": "content/articles/in-local-find-responsible-authority.md",
+    "bytes": 5153,
+    "sha256": "111b55979c933336e5eb2a84b8c57a93ca43137e67adc083f8b63a9ca1c56caa"
+  },
+  {
+    "path": "content/articles/in-media-assess-a-news-report.md",
+    "bytes": 4117,
+    "sha256": "f9331916ba58ed53704a019b29d7466e40a257570fd835bbf96f866cb69a296f"
+  },
+  {
+    "path": "content/articles/in-media-whatsapp-forward.md",
+    "bytes": 3816,
+    "sha256": "4461e4a50459f93bce43ea7e5b98310e651d4fbb9584c13a3bde311d4b404734"
+  },
+  {
+    "path": "content/articles/in-money-audits-and-cag.md",
+    "bytes": 4288,
+    "sha256": "eb067e536d75be34f92c489a3b175f6494bf786ff1a9361ae83b9ce2319fa40f"
+  },
+  {
+    "path": "content/articles/in-money-estimates-revised-actuals.md",
+    "bytes": 4436,
+    "sha256": "675f1947ff74658d00b5a5072ebbcb654185637ea627389a4cd25d1b3004f057"
+  },
+  {
+    "path": "content/articles/in-money-read-a-budget.md",
+    "bytes": 5019,
+    "sha256": "5f67b6ee1233cde7b660923b80e6b42807d97c3723eb02644bc834f37a8616d6"
+  },
+  {
+    "path": "content/articles/in-parliament-bill-to-law.md",
+    "bytes": 6556,
+    "sha256": "d4b055f45d239dac56e0a440424e6e052be5cb488d08a535c7d407b2fe709252"
+  },
+  {
+    "path": "content/articles/in-parliament-lok-sabha-rajya-sabha.md",
+    "bytes": 8271,
+    "sha256": "65ab426128cacdc8db36dde71fcdb3ba282ce0b854161d7c25befb637ed363cb"
+  },
+  {
+    "path": "content/articles/in-parliament-mp-role.md",
+    "bytes": 5221,
+    "sha256": "e7dc1448e17654f5cfad65378f26fd31ee4eaa9c2ee81f68368e6cc96c6b648a"
+  },
+  {
+    "path": "content/articles/in-parties-opposition-role.md",
+    "bytes": 5018,
+    "sha256": "0acb11e09f2390be9d93ff697546aee40071145fa9952f1be38dcd4ebb504931"
+  },
+  {
+    "path": "content/articles/in-reference-corrections.md",
+    "bytes": 3579,
+    "sha256": "8e64a0b61a5330209d5c102bf6c8c2605537bb85dc7a926cfc01610944203d05"
+  },
+  {
+    "path": "content/articles/in-reference-glossary.md",
+    "bytes": 27344,
+    "sha256": "371639ce4be45183ea8449c461113386b8db3e1efc16af9178645d913573f73a"
+  },
+  {
+    "path": "content/articles/in-reference-how-we-know.md",
+    "bytes": 5090,
+    "sha256": "0fff9af18fb43ff3f5244ac156a8c29c236b73ee044dff37ca61afbc58aadbc2"
+  },
+  {
+    "path": "content/articles/in-start-country-state-government-party.md",
+    "bytes": 6453,
+    "sha256": "c7f5a8efb73d2aad380dd1e5d356c387c30eb4553e97432bfb4f33d0f435a6d0"
+  },
+  {
+    "path": "content/articles/in-start-first-half-hour.md",
+    "bytes": 4525,
+    "sha256": "49fa1f7214d7c04094f9ebef9d37dcfe5a59fc9b04bf25050d9e270683f7d4a3"
+  },
+  {
+    "path": "content/articles/in-start-politics-without-party-loyalty.md",
+    "bytes": 3801,
+    "sha256": "273018901c3392d7566f7f55b0d40a1c9488ed23368bf18af73463151ccc72dd"
+  },
+  {
+    "path": "content/articles/in-start-reasonable-disagreement.md",
+    "bytes": 3914,
+    "sha256": "2fa9623ec45f6db9f9b0582f4dea0131903bdcdae86c7ac9c75d3cc3eb9c8095"
+  },
+  {
+    "path": "content/articles/in-start-why-care.md",
+    "bytes": 5063,
+    "sha256": "5f29986d3c7060dcdf5588b8ded10adaad2f2298eb1a0c27bd0e495c2baa3642"
+  },
+  {
+    "path": "content/articles/in-states-mla-and-mlc.md",
+    "bytes": 5654,
+    "sha256": "b1b81671ab913ec7e78e7cdbbd41fa606926b0a6b69ec379916e554a7cc1d9de"
+  },
+  {
+    "path": "content/articles/in-states-union-state-local-powers.md",
+    "bytes": 6510,
+    "sha256": "473c11562afaf3094c0e34119ae6aaef5b5ed9ae1d7cd22da468b87d68bd4425"
+  },
+  {
+    "path": "content/articles.json",
+    "bytes": 328626,
+    "sha256": "b1c6bdfc9519f3a12d11d32c7c2e52c1d7bf61c5043991ca6d9ea0ff0d0f5a2c"
+  },
+  {
+    "path": "content/data/adr-2024-winning-candidate-disclosures.json",
+    "bytes": 829,
+    "sha256": "2528f4d818fe0a83c5f7ff32a73c88440bfe9e3681f8489266c2145026226c20"
+  },
+  {
+    "path": "content/data/plfs-2025-annual-usual-status.json",
+    "bytes": 1206,
+    "sha256": "e76491322b3b8c6ccc05d4a54fe6ac75abb248d1da23f86448fee6226b24c897"
+  },
+  {
+    "path": "content/data/road-deaths-2024-parliament-answer.json",
+    "bytes": 1407,
+    "sha256": "c1b1d48b1e22f33cd0a186d4bc7b31b2c0a2ed0b7e5f0fa873c05dfe9eb027e4"
+  },
+  {
+    "path": "content/data/union-budget-2026-27-expenditure.json",
+    "bytes": 1537,
+    "sha256": "3026b5fb2ceaf3e979114432968ec959a2d4e39dbd26ee74caf4d5af7df2ec28"
+  },
+  {
+    "path": "content/glossary.json",
+    "bytes": 15177,
+    "sha256": "4bc48cc5f28618fd1b59a5bcc3026418829118cbad9209cca0188c5e6ec2e3b7"
+  },
+  {
+    "path": "content/navigation.json",
+    "bytes": 6907,
+    "sha256": "e79cb68750afffd2ef3b6fe0d63cb6daf2bbbd651e933bbe65f933f2c31d9cf9"
+  },
+  {
+    "path": "content/release.json",
+    "bytes": 503,
+    "sha256": "4c4f7118f3b936386171bf913e6aaed0636a32212fd8d78f437f45632242274c"
+  },
+  {
+    "path": "content/site-copy.json",
+    "bytes": 1724,
+    "sha256": "ed7e7a48a9234046d6c3ebd07133206c0c57652871d2fc7e5304f7f838213a8f"
+  },
+  {
+    "path": "content/sources.json",
+    "bytes": 28993,
+    "sha256": "669a54d65a3ad29764e6af10c47630624bb84ae84bc950dd9712a5b926964456"
+  },
+  {
+    "path": "evidence/passage-ledger.json",
+    "bytes": 84237,
+    "sha256": "c92ff6dc460347462a4e7bf0abef35e9713f0e4941dd168e6db0e4aaa3013f1d"
+  },
+  {
+    "path": "evidence/service-links.json",
+    "bytes": 1338,
+    "sha256": "16936983fb3eb9ede4186c321bcd74254714a3c43947eb4e4338ddbe95768725"
+  },
+  {
+    "path": "implementation/BUILD_SPEC.md",
+    "bytes": 6294,
+    "sha256": "d7bb4273821ec2dc5a04777fdcbedfad72318d81423a97e30aaf3b004dc3235f"
+  },
+  {
+    "path": "implementation/content-types.ts",
+    "bytes": 1702,
+    "sha256": "760386fe197c63a4ce68fc45444b5e264d1a4597f47c37129a7189a5ba3a4f71"
+  },
+  {
+    "path": "preview.html",
+    "bytes": 276573,
+    "sha256": "d3cb67ea3069db95bd1e35a17a87d6f6724a467c49093a6b4e2c2500f0cc0bed"
+  },
+  {
+    "path": "roadmap/backlog.json",
+    "bytes": 203954,
+    "sha256": "0d5764c30b632a009bf32bb865450a57c1dd4a29c606bf194524a12c70e7d205"
+  },
+  {
+    "path": "roadmap/original-source-leads.json",
+    "bytes": 66281,
+    "sha256": "c13de88149ef8aaa058210add44d4d0a4446a706462d4fb0a9aeb2a42113a14c"
+  },
+  {
+    "path": "scripts/export_markdown.py",
+    "bytes": 2706,
+    "sha256": "07721af79c9083af7b26068013da2d4fe08a226cd86884028a01c76a8ac33c99"
+  },
+  {
+    "path": "scripts/validate_content.py",
+    "bytes": 7925,
+    "sha256": "ab9c44b19abb64eebb363c748a88a2f98902c338a84f329ccfe1f1314a9eb55c"
+  }
+]

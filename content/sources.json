@@ -1,0 +1,683 @@
+{
+  "schema_version": "2.0.0",
+  "checked_at": "2026-10-13",
+  "documents": [
+    {
+      "id": "adr-2024",
+      "title": "Lok Sabha Elections 2024: Winning Candidates analysis",
+      "publisher": "Association for Democratic Reforms and National Election Watch",
+      "url": "https://adrindia.org/sites/default/files/Lok_Sabha_Elections_2024_Criminal_and_Financial_background_details_of_Winning_Candidates_Finalver_English%20%281%29.pdf",
+      "kind": "independent_primary_analysis",
+      "version": null,
+      "published_at": "2024-06-06",
+      "reference_period": "Winning-candidate records in the 2024 Lok Sabha election",
+      "checked_at": "2026-10-13",
+      "access_scope": "Cover, provenance note and page 6 criminal-case summary inspected; page 6 checked visually.",
+      "limitations": [
+        "Historical election cohort as analysed by ADR; not current Parliament membership, a deduplicated person census or a current case-status database."
+      ],
+      "full_document_rehosted": false
+    },
+    {
+      "id": "bnss",
+      "title": "Bharatiya Nagarik Suraksha Sanhita 2023, original gazette text",
+      "publisher": "Ministry of Home Affairs / Gazette of India",
+      "url": "https://www.mha.gov.in/sites/default/files/2024-04/250884_2_english_01042024.pdf",
+      "kind": "official_primary",
+      "version": "Act 46 of 2023, original enactment",
+      "published_at": "2023-12-25",
+      "reference_period": null,
+      "checked_at": "2026-10-13",
+      "access_scope": "Definitions, police report, charge/discharge provisions and savings clause inspected.",
+      "limitations": [
+        "Original enacted text, not a guaranteed current consolidation. Used for general legal vocabulary, not eligibility, deadline or advice for a specific proceeding. Older proceedings may continue under the former code under the savings provision."
+      ],
+      "full_document_rehosted": false
+    },
+    {
+      "id": "budget-glance",
+      "title": "Budget at a Glance 2026–2027",
+      "publisher": "Ministry of Finance",
+      "url": "https://www.indiabudget.gov.in/doc/Budget_at_Glance/bag1.pdf",
+      "kind": "official_primary",
+      "version": "Union Budget 2026–27",
+      "published_at": null,
+      "reference_period": "2024–25 actuals; 2025–26 BE and RE; 2026–27 BE",
+      "checked_at": "2026-10-13",
+      "access_scope": "PDF page 3 table (printed page 1) inspected in text and screenshot; units and column headings checked.",
+      "limitations": [],
+      "full_document_rehosted": false
+    },
+    {
+      "id": "budget-key",
+      "title": "Key to Budget Documents 2026–2027",
+      "publisher": "Ministry of Finance",
+      "url": "https://www.indiabudget.gov.in/doc/Key_to_Budget_Document_2026.pdf",
+      "kind": "official_primary",
+      "version": "Union Budget 2026–27",
+      "published_at": "2026-02",
+      "reference_period": null,
+      "checked_at": "2026-10-13",
+      "access_scope": "Explanatory text inspected; first content page checked as a PDF image.",
+      "limitations": [],
+      "full_document_rehosted": false
+    },
+    {
+      "id": "constitution",
+      "title": "Constitution of India, official English compilation",
+      "publisher": "Legislative Department, Ministry of Law and Justice",
+      "url": "https://www.legislative.gov.in/static/uploads/2025/07/c9fe9c9b6840524844316f74bb1c556c.pdf",
+      "kind": "official_primary",
+      "version": "As on 1 May 2026",
+      "published_at": null,
+      "reference_period": null,
+      "checked_at": "2026-10-13",
+      "access_scope": "Cover and cited constitutional provisions inspected; PDF page numbers below are physical PDF pages, not printed article-page labels.",
+      "limitations": [
+        "This compilation has a stated cutoff. No assertion that every post-cutoff notification or judgment was exhaustively checked. Article explanations concern the provisions cited, not personalised legal advice."
+      ],
+      "full_document_rehosted": false
+    },
+    {
+      "id": "cpgrams",
+      "title": "Centralised Public Grievance Redress and Monitoring System",
+      "publisher": "Department of Administrative Reforms and Public Grievances",
+      "url": "https://pgportal.gov.in/",
+      "kind": "official_primary",
+      "version": null,
+      "published_at": null,
+      "reference_period": null,
+      "checked_at": "2026-10-13",
+      "access_scope": "About, tracking/appeal description and matters excluded from redress read.",
+      "limitations": [],
+      "full_document_rehosted": false
+    },
+    {
+      "id": "eci-roll-notice",
+      "title": "Electors on the voter list and identification at polling",
+      "publisher": "Election Commission of India, published by PIB",
+      "url": "https://www.pib.gov.in/PressReleasePage.aspx?PRID=2177191",
+      "kind": "official_primary",
+      "version": null,
+      "published_at": "2025-10-10",
+      "reference_period": null,
+      "checked_at": "2026-10-13",
+      "access_scope": "Paragraphs stating roll inclusion is a prerequisite and EPIC identifies the voter inspected.",
+      "limitations": [
+        "The notice concerns specified 2025 elections. Its election-specific alternative ID list is not reproduced as a universal current list."
+      ],
+      "full_document_rehosted": false
+    },
+    {
+      "id": "egramswaraj",
+      "title": "eGramSwaraj overview",
+      "publisher": "Ministry of Panchayati Raj",
+      "url": "https://panchayat.gov.in/en/e-gramswaraj/",
+      "kind": "official_primary",
+      "version": null,
+      "published_at": null,
+      "reference_period": null,
+      "checked_at": "2026-10-13",
+      "access_scope": "Panchayat profile, planning and progress-reporting modules inspected.",
+      "limitations": [],
+      "full_document_rehosted": false
+    },
+    {
+      "id": "lgd",
+      "title": "Local Government Directory overview",
+      "publisher": "Ministry of Panchayati Raj",
+      "url": "https://panchayat.gov.in/en/lgd/",
+      "kind": "official_primary",
+      "version": null,
+      "published_at": null,
+      "reference_period": null,
+      "checked_at": "2026-10-13",
+      "access_scope": "Directory purpose, local-body hierarchy and unique codes read.",
+      "limitations": [],
+      "full_document_rehosted": false
+    },
+    {
+      "id": "ls-faq",
+      "title": "Lok Sabha frequently asked questions",
+      "publisher": "Lok Sabha Secretariat",
+      "url": "https://sansad.in/ls/faq",
+      "kind": "official_primary",
+      "version": null,
+      "published_at": null,
+      "reference_period": null,
+      "checked_at": "2026-10-13",
+      "access_scope": "Evergreen procedure sections read: scrutiny, motions, committees and member contact information.",
+      "limitations": [
+        "Some office-holder and historical House details on this FAQ are stale. No current names, salaries or membership totals are taken from it."
+      ],
+      "full_document_rehosted": false
+    },
+    {
+      "id": "ls-questions",
+      "title": "Questions in Lok Sabha",
+      "publisher": "Lok Sabha Secretariat",
+      "url": "https://sansad.in/ls/questions/questions",
+      "kind": "official_primary",
+      "version": null,
+      "published_at": null,
+      "reference_period": null,
+      "checked_at": "2026-10-13",
+      "access_scope": "Question procedure and question-category overview inspected; no live performance rankings calculated.",
+      "limitations": [],
+      "full_document_rehosted": false
+    },
+    {
+      "id": "myneta",
+      "title": "MyNeta affidavit repository and data provenance",
+      "publisher": "Association for Democratic Reforms",
+      "url": "https://myneta.info/",
+      "kind": "independent_primary_analysis",
+      "version": null,
+      "published_at": null,
+      "reference_period": null,
+      "checked_at": "2026-10-13",
+      "access_scope": "Repository explanation and original-affidavit precedence disclaimer inspected.",
+      "limitations": [
+        "Independent non-government repository, not a court finding. Individual 2026 affidavits have not been checked for this package."
+      ],
+      "full_document_rehosted": false
+    },
+    {
+      "id": "ncert-elections",
+      "title": "Indian Constitution at Work, chapter 3: Election and Representation",
+      "publisher": "NCERT",
+      "url": "https://ncert.nic.in/textbook/pdf/keps203.pdf",
+      "kind": "official_primary",
+      "version": "Reprint 2026–27",
+      "published_at": null,
+      "reference_period": null,
+      "checked_at": "2026-10-13",
+      "access_scope": "FPTP explanation on PDF pages 6–7 inspected.",
+      "limitations": [
+        "Historical illustrations and proposals for electoral reform are not current law. No figures from historic examples used as live results."
+      ],
+      "full_document_rehosted": false
+    },
+    {
+      "id": "plfs-release",
+      "title": "Periodic Labour Force Survey Annual Report 2025: release and methods note",
+      "publisher": "Ministry of Statistics and Programme Implementation, published by PIB",
+      "url": "https://www.pib.gov.in/PressReleasePage.aspx?PRID=2246009&lang=1&reg=3",
+      "kind": "official_primary",
+      "version": null,
+      "published_at": "2026-03-27",
+      "reference_period": "January–December 2025",
+      "checked_at": "2026-10-13",
+      "access_scope": "Key findings, indicator definitions, revised sampling and comparability note read.",
+      "limitations": [
+        "This release, not the full underlying report, is the inspected numerical source. Annual usual-status estimates are not current-month unemployment or a job-quality measure."
+      ],
+      "full_document_rehosted": false
+    },
+    {
+      "id": "reuters-standards",
+      "title": "Reuters standards and values",
+      "publisher": "Reuters",
+      "url": "https://reutersagency.com/about/standards-values/",
+      "kind": "publisher_own_standards",
+      "version": null,
+      "published_at": null,
+      "reference_period": null,
+      "checked_at": "2026-10-13",
+      "access_scope": "Accuracy, corrections, source attribution and anonymous sourcing standards read.",
+      "limitations": [
+        "A publisher statement about its own standards is not independent proof every report meets them."
+      ],
+      "full_document_rehosted": false
+    },
+    {
+      "id": "road-reply",
+      "title": "Road accident death data: Rajya Sabha Unstarred Question 2820",
+      "publisher": "Ministry of Road Transport and Highways / Rajya Sabha",
+      "url": "https://sansad.in/getFile/annex/271/AU2820_vMN9Gb.pdf?source=pqars",
+      "kind": "official_primary",
+      "version": null,
+      "published_at": "2026-08-12",
+      "reference_period": "2024 road fatalities",
+      "checked_at": "2026-10-13",
+      "access_scope": "Both pages read in text and screenshots, including question versus answer and differing series.",
+      "limitations": [
+        "The figures and explanations are attributed to the Ministry in this answer. The three underlying full report series were not independently audited here."
+      ],
+      "full_document_rehosted": false
+    },
+    {
+      "id": "rs-legislation",
+      "title": "Introduction to legislation",
+      "publisher": "Rajya Sabha Secretariat",
+      "url": "https://sansad.in/rs/legislation/introduction",
+      "kind": "official_primary",
+      "version": null,
+      "published_at": null,
+      "reference_period": null,
+      "checked_at": "2026-10-13",
+      "access_scope": "Introduction describing Bills and the legislative process inspected.",
+      "limitations": [],
+      "full_document_rehosted": false
+    },
+    {
+      "id": "rti-act",
+      "title": "Right to Information Act 2005, CIC-hosted compilation",
+      "publisher": "Central Information Commission",
+      "url": "https://cic.gov.in/sites/default/files/RTI-Act_English.pdf",
+      "kind": "official_primary",
+      "version": "As modified up to 1 February 2011",
+      "published_at": null,
+      "reference_period": null,
+      "checked_at": "2026-10-13",
+      "access_scope": "Sections 2(f), 2(j), 3 and 4 read for the basic records-access concept only.",
+      "limitations": [
+        "Not a current consolidated Act. Do not use this copy for present territorial extent, amended exemptions, service conditions, deadlines or case-specific rights. Current procedural references use the live portal."
+      ],
+      "full_document_rehosted": false
+    },
+    {
+      "id": "rti-faq",
+      "title": "RTI Online frequently asked questions",
+      "publisher": "Department of Personnel and Training",
+      "url": "https://rtionline.gov.in/faq.php?pageid=c9f0f895fb98ab9159f51fd0297e236d",
+      "kind": "official_primary",
+      "version": null,
+      "published_at": null,
+      "reference_period": null,
+      "checked_at": "2026-10-13",
+      "access_scope": "FAQ on covered authorities, acknowledgement, routing and request status inspected.",
+      "limitations": [],
+      "full_document_rehosted": false
+    },
+    {
+      "id": "rti-guide",
+      "title": "A Guide for the Information Seekers under the RTI Act 2005",
+      "publisher": "Department of Personnel and Training; official copy hosted by AIIMS Bhubaneswar",
+      "url": "https://aiimsbhubaneswar.nic.in/wp-content/uploads/2025/05/31-1.pdf",
+      "kind": "official_primary",
+      "version": "DoPT memorandum dated 8 November 2007",
+      "published_at": "2007-11-08",
+      "reference_period": null,
+      "checked_at": "2026-10-13",
+      "access_scope": "Cover/date and PDF page 5 (printed page 2) read visually.",
+      "limitations": [
+        "Historical guide. The 2025 URL folder is not the publication date. Used only for existing-information versus creating answers distinction, not current fees, exemptions or deadlines."
+      ],
+      "full_document_rehosted": false
+    },
+    {
+      "id": "rti-online",
+      "title": "RTI Online, Central Government portal",
+      "publisher": "Department of Personnel and Training",
+      "url": "https://rtionline.gov.in/",
+      "kind": "official_primary",
+      "version": null,
+      "published_at": null,
+      "reference_period": null,
+      "checked_at": "2026-10-13",
+      "access_scope": "Current scope warning and portal introduction read.",
+      "limitations": [],
+      "full_document_rehosted": false
+    },
+    {
+      "id": "sift",
+      "title": "SIFT: The Four Moves",
+      "publisher": "Mike Caulfield",
+      "url": "https://hapgood.us/2019/06/19/sift-the-four-moves/",
+      "kind": "method_author_primary",
+      "version": null,
+      "published_at": "2019-06-19",
+      "reference_period": null,
+      "checked_at": "2026-10-13",
+      "access_scope": "Original verification framework used as an attributed method; no empirical effect sizes asserted.",
+      "limitations": [],
+      "full_document_rehosted": false
+    }
+  ],
+  "references": [
+    {
+      "id": "adr-disclosures",
+      "document_id": "adr-2024",
+      "locator": "PDF page 6: 251 of 543 winning candidates analysed declared criminal cases; classifier notes and affidavit provenance",
+      "url": "https://adrindia.org/sites/default/files/Lok_Sabha_Elections_2024_Criminal_and_Financial_background_details_of_Winning_Candidates_Finalver_English%20%281%29.pdf#page=6",
+      "notes": null
+    },
+    {
+      "id": "affidavit-provenance",
+      "document_id": "myneta",
+      "locator": "Repository provenance/disclaimer: candidate affidavits are the source; original affidavit takes precedence over extraction",
+      "url": "https://myneta.info/",
+      "notes": null
+    },
+    {
+      "id": "bnss-bail",
+      "document_id": "bnss",
+      "locator": "Section 2(1)(b): bail definition",
+      "url": "https://www.mha.gov.in/sites/default/files/2024-04/250884_2_english_01042024.pdf#page=2",
+      "notes": null
+    },
+    {
+      "id": "bnss-charge",
+      "document_id": "bnss",
+      "locator": "Sections 250–251: discharge and framing of charge; general sessions-trial illustration",
+      "url": "https://www.mha.gov.in/sites/default/files/2024-04/250884_2_english_01042024.pdf#page=82",
+      "notes": null
+    },
+    {
+      "id": "bnss-commencement",
+      "document_id": "bnss",
+      "locator": "Section 1(3): an example of commencement by notification, distinct from assent",
+      "url": "https://www.mha.gov.in/sites/default/files/2024-04/250884_2_english_01042024.pdf#page=2",
+      "notes": null
+    },
+    {
+      "id": "bnss-fir",
+      "document_id": "bnss",
+      "locator": "Section 173: information relating to cognizable offences; introductory terminology only",
+      "url": "https://www.mha.gov.in/sites/default/files/2024-04/250884_2_english_01042024.pdf#page=52",
+      "notes": null
+    },
+    {
+      "id": "bnss-judgment",
+      "document_id": "bnss",
+      "locator": "Sections 255 and 258: acquittal and judgment of acquittal or conviction",
+      "url": "https://www.mha.gov.in/sites/default/files/2024-04/250884_2_english_01042024.pdf#page=83",
+      "notes": null
+    },
+    {
+      "id": "bnss-report",
+      "document_id": "bnss",
+      "locator": "Section 193: police report on completion of investigation",
+      "url": "https://www.mha.gov.in/sites/default/files/2024-04/250884_2_english_01042024.pdf#page=62",
+      "notes": null
+    },
+    {
+      "id": "bnss-saving",
+      "document_id": "bnss",
+      "locator": "Section 531: repeal and savings for pending proceedings",
+      "url": "https://www.mha.gov.in/sites/default/files/2024-04/250884_2_english_01042024.pdf#page=156",
+      "notes": null
+    },
+    {
+      "id": "budget-classification",
+      "document_id": "budget-key",
+      "locator": "Descriptions of revenue/capital expenditure and Demands for Grants",
+      "url": "https://www.indiabudget.gov.in/doc/Key_to_Budget_Document_2026.pdf#page=3",
+      "notes": null
+    },
+    {
+      "id": "budget-deficit",
+      "document_id": "budget-glance",
+      "locator": "PDF page 3, printed page 1: receipts, borrowings and fiscal deficit rows",
+      "url": "https://www.indiabudget.gov.in/doc/Budget_at_Glance/bag1.pdf#page=3",
+      "notes": null
+    },
+    {
+      "id": "budget-docs",
+      "document_id": "budget-key",
+      "locator": "PDF pages 2–5: document list, Annual Financial Statement, Demands for Grants and Finance Bill",
+      "url": "https://www.indiabudget.gov.in/doc/Key_to_Budget_Document_2026.pdf#page=2",
+      "notes": null
+    },
+    {
+      "id": "budget-table",
+      "document_id": "budget-glance",
+      "locator": "PDF page 3, printed page 1: rows 9, 10 and 13; amounts in ₹ crore",
+      "url": "https://www.indiabudget.gov.in/doc/Budget_at_Glance/bag1.pdf#page=3",
+      "notes": null
+    },
+    {
+      "id": "c-bills",
+      "document_id": "constitution",
+      "locator": "Articles 107–111: legislative procedure; Money Bill exceptions; assent",
+      "url": "https://www.legislative.gov.in/static/uploads/2025/07/c9fe9c9b6840524844316f74bb1c556c.pdf#page=79",
+      "notes": null
+    },
+    {
+      "id": "c-cag",
+      "document_id": "constitution",
+      "locator": "Articles 148–151, especially 149 and 151: CAG and audit reports",
+      "url": "https://www.legislative.gov.in/static/uploads/2025/07/c9fe9c9b6840524844316f74bb1c556c.pdf#page=99",
+      "notes": null
+    },
+    {
+      "id": "c-council-bills",
+      "document_id": "constitution",
+      "locator": "Articles 197–198: Legislative Council powers on ordinary Bills and Money Bills",
+      "url": "https://www.legislative.gov.in/static/uploads/2025/07/c9fe9c9b6840524844316f74bb1c556c.pdf#page=119",
+      "notes": null
+    },
+    {
+      "id": "c-duration",
+      "document_id": "constitution",
+      "locator": "Article 83: duration of the Houses",
+      "url": "https://www.legislative.gov.in/static/uploads/2025/07/c9fe9c9b6840524844316f74bb1c556c.pdf#page=70",
+      "notes": null
+    },
+    {
+      "id": "c-executive",
+      "document_id": "constitution",
+      "locator": "Articles 74 and 75, especially Article 75(3): Union Council of Ministers",
+      "url": "https://www.legislative.gov.in/static/uploads/2025/07/c9fe9c9b6840524844316f74bb1c556c.pdf#page=65",
+      "notes": null
+    },
+    {
+      "id": "c-local-functions",
+      "document_id": "constitution",
+      "locator": "Twelfth Schedule, entries 4–6: roads, water and sanitation",
+      "url": "https://www.legislative.gov.in/static/uploads/2025/07/c9fe9c9b6840524844316f74bb1c556c.pdf#page=381",
+      "notes": null
+    },
+    {
+      "id": "c-money-bill",
+      "document_id": "constitution",
+      "locator": "Articles 109 and 110: Money Bill procedure and definition",
+      "url": "https://www.legislative.gov.in/static/uploads/2025/07/c9fe9c9b6840524844316f74bb1c556c.pdf#page=80",
+      "notes": null
+    },
+    {
+      "id": "c-municipality",
+      "document_id": "constitution",
+      "locator": "Article 243W: state legislation and municipal powers",
+      "url": "https://www.legislative.gov.in/static/uploads/2025/07/c9fe9c9b6840524844316f74bb1c556c.pdf#page=162",
+      "notes": null
+    },
+    {
+      "id": "c-panchayat",
+      "document_id": "constitution",
+      "locator": "Article 243G: state legislation and powers devolved to panchayats",
+      "url": "https://www.legislative.gov.in/static/uploads/2025/07/c9fe9c9b6840524844316f74bb1c556c.pdf#page=154",
+      "notes": null
+    },
+    {
+      "id": "c-parliament",
+      "document_id": "constitution",
+      "locator": "Articles 79 and 80: Parliament and composition of the Council of States",
+      "url": "https://www.legislative.gov.in/static/uploads/2025/07/c9fe9c9b6840524844316f74bb1c556c.pdf#page=67",
+      "notes": null
+    },
+    {
+      "id": "c-powers",
+      "document_id": "constitution",
+      "locator": "Article 246, read with the Seventh Schedule: legislative subject allocation",
+      "url": "https://www.legislative.gov.in/static/uploads/2025/07/c9fe9c9b6840524844316f74bb1c556c.pdf#page=176",
+      "notes": null
+    },
+    {
+      "id": "c-rs-election",
+      "document_id": "constitution",
+      "locator": "Article 80(4): elected state representatives in Rajya Sabha",
+      "url": "https://www.legislative.gov.in/static/uploads/2025/07/c9fe9c9b6840524844316f74bb1c556c.pdf#page=68",
+      "notes": null
+    },
+    {
+      "id": "c-state",
+      "document_id": "constitution",
+      "locator": "Article 12: definition of State for Part III",
+      "url": "https://www.legislative.gov.in/static/uploads/2025/07/c9fe9c9b6840524844316f74bb1c556c.pdf#page=37",
+      "notes": null
+    },
+    {
+      "id": "c-state-executive",
+      "document_id": "constitution",
+      "locator": "Article 164(2): Council of Ministers collectively responsible to Legislative Assembly",
+      "url": "https://www.legislative.gov.in/static/uploads/2025/07/c9fe9c9b6840524844316f74bb1c556c.pdf#page=104",
+      "notes": null
+    },
+    {
+      "id": "c-state-houses",
+      "document_id": "constitution",
+      "locator": "Articles 168–171: state legislatures and Legislative Councils",
+      "url": "https://www.legislative.gov.in/static/uploads/2025/07/c9fe9c9b6840524844316f74bb1c556c.pdf#page=106",
+      "notes": null
+    },
+    {
+      "id": "cpgrams-scope",
+      "document_id": "cpgrams",
+      "locator": "About CPGRAMS and issues not taken up: service grievances versus RTI and court/sub judice matters",
+      "url": "https://pgportal.gov.in/",
+      "notes": null
+    },
+    {
+      "id": "cpgrams-track",
+      "document_id": "cpgrams",
+      "locator": "About CPGRAMS: registration ID, tracking and feedback-linked appeal facility; not a promise of outcome",
+      "url": "https://pgportal.gov.in/",
+      "notes": null
+    },
+    {
+      "id": "eci-roll",
+      "document_id": "eci-roll-notice",
+      "locator": "Paragraphs 1 and 4: name on electoral roll required; identity document is not a substitute for registration",
+      "url": "https://www.pib.gov.in/PressReleasePage.aspx?PRID=2177191",
+      "notes": null
+    },
+    {
+      "id": "egram-records",
+      "document_id": "egramswaraj",
+      "locator": "Panchayat Profile, Planning and Progress Reporting modules; record availability is not proof of delivery",
+      "url": "https://panchayat.gov.in/en/e-gramswaraj/",
+      "notes": null
+    },
+    {
+      "id": "fptp",
+      "document_id": "ncert-elections",
+      "locator": "PDF pages 6–7, printed pages 56–57: First Past the Post",
+      "url": "https://ncert.nic.in/textbook/pdf/keps203.pdf#page=6",
+      "notes": null
+    },
+    {
+      "id": "lgd-directory",
+      "document_id": "lgd",
+      "locator": "Overview of rural/urban local bodies, administrative units and LGD codes",
+      "url": "https://panchayat.gov.in/en/lgd/",
+      "notes": null
+    },
+    {
+      "id": "ls-mplads",
+      "document_id": "ls-faq",
+      "locator": "MPLADS description: members recommend works; implementing agencies execute them",
+      "url": "https://sansad.in/ls/faq",
+      "notes": null
+    },
+    {
+      "id": "ls-questions",
+      "document_id": "ls-questions",
+      "locator": "General information and starred/unstarred question categories",
+      "url": "https://sansad.in/ls/questions/questions",
+      "notes": null
+    },
+    {
+      "id": "ls-scrutiny",
+      "document_id": "ls-faq",
+      "locator": "Questions on parliamentary committees, parliamentary motions, calling attention and no-confidence motions; use procedural descriptions only",
+      "url": "https://sansad.in/ls/faq",
+      "notes": null
+    },
+    {
+      "id": "news-standards",
+      "document_id": "reuters-standards",
+      "locator": "Standards on accuracy, correcting errors and sourcing; used as an example of stated editorial standards",
+      "url": "https://reutersagency.com/about/standards-values/",
+      "notes": null
+    },
+    {
+      "id": "plfs-comparability",
+      "document_id": "plfs-release",
+      "locator": "Endnote A and E: January 2025 sampling redesign, calendar-year cycle and comparability warning",
+      "url": "https://www.pib.gov.in/PressReleasePage.aspx?PRID=2246009&lang=1&reg=3",
+      "notes": null
+    },
+    {
+      "id": "plfs-definitions",
+      "document_id": "plfs-release",
+      "locator": "Endnote D: definitions of LFPR, WPR, UR, usual status and current weekly status",
+      "url": "https://www.pib.gov.in/PressReleasePage.aspx?PRID=2246009&lang=1&reg=3",
+      "notes": null
+    },
+    {
+      "id": "plfs-figures",
+      "document_id": "plfs-release",
+      "locator": "Key findings: persons aged 15+, usual status (principal plus subsidiary), LFPR 59.3%, WPR 57.4%, UR 3.1%",
+      "url": "https://www.pib.gov.in/PressReleasePage.aspx?PRID=2246009&lang=1&reg=3",
+      "notes": null
+    },
+    {
+      "id": "road-method",
+      "document_id": "road-reply",
+      "locator": "Pages 1–2, answer explaining reporting channels and difference between accidental deaths and offences registered under penal law",
+      "url": "https://sansad.in/getFile/annex/271/AU2820_vMN9Gb.pdf?source=pqars#page=2",
+      "notes": null
+    },
+    {
+      "id": "road-numbers",
+      "document_id": "road-reply",
+      "locator": "Page 1, answer to parts (a) and (b): MoRTH 177,175; NCRB ADSI 175,142; NCRB Crime in India negligence category 162,500",
+      "url": "https://sansad.in/getFile/annex/271/AU2820_vMN9Gb.pdf?source=pqars#page=1",
+      "notes": null
+    },
+    {
+      "id": "rs-bills",
+      "document_id": "rs-legislation",
+      "locator": "Introduction: Bills and enactment; read with constitutional exceptions",
+      "url": "https://sansad.in/rs/legislation/introduction",
+      "notes": null
+    },
+    {
+      "id": "rti-no-new-answer",
+      "document_id": "rti-guide",
+      "locator": "PDF page 5, printed page 2, paragraphs 2–4: existing information; no duty to create an answer to a hypothetical",
+      "url": "https://aiimsbhubaneswar.nic.in/wp-content/uploads/2025/05/31-1.pdf#page=5",
+      "notes": null
+    },
+    {
+      "id": "rti-records",
+      "document_id": "rti-act",
+      "locator": "Sections 2(f), 2(j), 3 and 4: existing records, access and proactive disclosure",
+      "url": "https://cic.gov.in/sites/default/files/RTI-Act_English.pdf#page=7",
+      "notes": null
+    },
+    {
+      "id": "rti-scope",
+      "document_id": "rti-online",
+      "locator": "Notice and introduction: Central public authorities; State authorities including Government of NCT Delhi excluded",
+      "url": "https://rtionline.gov.in/",
+      "notes": null
+    },
+    {
+      "id": "rti-tracking",
+      "document_id": "rti-faq",
+      "locator": "FAQs on registration number, routing to nodal officer/CPIO and status tracking",
+      "url": "https://rtionline.gov.in/faq.php?pageid=c9f0f895fb98ab9159f51fd0297e236d",
+      "notes": null
+    },
+    {
+      "id": "sift-method",
+      "document_id": "sift",
+      "locator": "Original method: stop, investigate the source, find better coverage, trace claims to original context",
+      "url": "https://hapgood.us/2019/06/19/sift-the-four-moves/",
+      "notes": null
+    }
+  ]
+}

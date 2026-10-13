@@ -1,0 +1,32 @@
+[
+  {
+    "url": "https://voters.eci.gov.in/",
+    "label": "Election Commission voter services",
+    "status": "official_destination_confirmed; full dynamic interface not readable in this research",
+    "use": "Link out. Do not hardcode an unverified form, deadline or document checklist."
+  },
+  {
+    "url": "https://affidavit.eci.gov.in/",
+    "label": "ECI candidate affidavit portal",
+    "status": "original source destination established via ADR provenance; individual current affidavits not inspected",
+    "use": "Locate specific original affidavits before adding named profiles."
+  },
+  {
+    "url": "https://lgdirectory.gov.in/",
+    "label": "Local Government Directory",
+    "status": "destination established by Ministry of Panchayati Raj overview; no local asset search performed",
+    "use": "Identify administrative bodies, not asset ownership."
+  },
+  {
+    "url": "https://egramswaraj.gov.in/",
+    "label": "eGramSwaraj",
+    "status": "module purpose inspected on Ministry site; no individual work certified",
+    "use": "Record discovery, not proof of delivery."
+  },
+  {
+    "url": "https://cag.gov.in/en/audit-report",
+    "label": "CAG report directory",
+    "status": "directory inspected; no new report findings inferred from index titles",
+    "use": "Retrieve the full audit before quoting a finding."
+  }
+]

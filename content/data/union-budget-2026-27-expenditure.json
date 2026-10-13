@@ -1,0 +1,63 @@
+{
+  "id": "union-budget-2026-27-expenditure",
+  "title": "Union Budget 2026–27: expenditure columns",
+  "source_ref_id": "budget-table",
+  "checked_at": "2026-10-13",
+  "reference_period": "2024–25 to 2026–27; stage varies by column",
+  "unit": "INR crore",
+  "geography": "Union Government of India",
+  "source_document_version": "Budget 2026–27",
+  "column_order": [
+    "2024-25_actuals",
+    "2025-26_BE",
+    "2025-26_RE",
+    "2026-27_BE"
+  ],
+  "rows": [
+    {
+      "label": "Total expenditure",
+      "source_row": 9,
+      "values": [
+        4652867,
+        5065345,
+        4964842,
+        5347315
+      ]
+    },
+    {
+      "label": "Revenue expenditure",
+      "source_row": 10,
+      "values": [
+        3600914,
+        3944255,
+        3869087,
+        4125494
+      ]
+    },
+    {
+      "label": "Capital expenditure",
+      "source_row": 13,
+      "values": [
+        1051953,
+        1121090,
+        1095755,
+        1221821
+      ]
+    }
+  ],
+  "calculations": [
+    {
+      "id": "be26-vs-re25-growth",
+      "formula": "(5347315 - 4964842) / 4964842 * 100",
+      "value": 7.7036288365269225,
+      "unit": "percent",
+      "display_decimals": 2,
+      "interpretation": "Growth of 2026–27 BE total expenditure relative to 2025–26 RE; not actual expenditure growth or service improvement."
+    }
+  ],
+  "limitations": [
+    "Not a live expenditure feed.",
+    "Nominal figures; not adjusted for prices or population.",
+    "Accounting classifications are not a judgment about policy quality."
+  ]
+}

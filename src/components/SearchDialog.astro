@@ -1,0 +1,49 @@
+<dialog class="search-dialog" id="search-dialog" aria-label="Search the guides">
+  <div class="palette-head">
+    <svg
+      width="20"
+      height="20"
+      viewBox="0 0 24 24"
+      fill="none"
+      stroke="currentColor"
+      stroke-width="1.5"
+      aria-hidden="true"
+    >
+      <circle cx="10.5" cy="10.5" r="6.5" />
+      <path d="m16 16 4.5 4.5" />
+    </svg>
+    <label class="sr-only" for="command-query">
+      Search articles
+    </label>
+    <input
+      type="search"
+      id="command-query"
+      placeholder="Search politics, institutions, evidence…"
+      autocomplete="off"
+      autofocus
+    />
+    <button id="close-search" aria-label="Close search">
+      Esc
+    </button>
+  </div>
+  <p class="palette-status" id="command-status" role="status">
+    Try “MP”, “RTI” or “budget”.
+  </p>
+  <ul
+    class="palette-results"
+    id="command-results"
+    aria-label="Search results"
+  ></ul>
+  <div class="palette-foot">
+    <span>
+      <kbd>↑</kbd> <kbd>↓</kbd> navigate &nbsp; <kbd>↵</kbd> open
+    </span>
+    <a id="all-results" href="/search">
+      Open full search
+    </a>
+  </div>
+</dialog>
+<script>
+  import { setupSearch } from "../scripts/search-ui";
+  setupSearch();
+</script>

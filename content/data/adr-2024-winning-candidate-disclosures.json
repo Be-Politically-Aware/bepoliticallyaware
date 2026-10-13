@@ -1,0 +1,21 @@
+{
+  "id": "adr-2024-winning-candidate-disclosures",
+  "title": "ADR: declared criminal cases in the 2024 winning-candidate records",
+  "source_ref_id": "adr-disclosures",
+  "published_at": "2024-06-06",
+  "reference_period": "2024 Lok Sabha election winning-candidate records",
+  "checked_at": "2026-10-13",
+  "geography": "India",
+  "numerator": 251,
+  "denominator": 543,
+  "reported_rounded_percentage": 46,
+  "computed_percentage": 46.224677716390424,
+  "unit": "winning candidates as analysed by ADR",
+  "source_type": "Independent affidavit-based analysis, not government or court classification",
+  "limitations": [
+    "Not a present membership roster.",
+    "Not a count of convictions.",
+    "Not a deduplicated census of unique current office-holders.",
+    "Current case status requires case-specific records."
+  ]
+}

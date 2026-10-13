@@ -1,0 +1,49 @@
+{
+  "site_name": "Be Politically Aware",
+  "domain": "bepoliticallyaware.org",
+  "language": "en",
+  "country": "IN",
+  "hero": {
+    "eyebrow": "India · Politics, explained",
+    "title": "Understand the decisions that affect your life.",
+    "description": "Learn who has the power, check the evidence and ask better questions of people in office.",
+    "primary_cta": {
+      "label": "Start with the basics",
+      "route": "/in/start/first-half-hour"
+    },
+    "secondary_cta": {
+      "label": "Check a claim",
+      "route": "/in/evidence/check-before-sharing"
+    }
+  },
+  "entry_questions": [
+    {
+      "label": "Who should fix this?",
+      "route": "/in/local/find-responsible-authority"
+    },
+    {
+      "label": "Can I trust this forward?",
+      "route": "/in/media/whatsapp-forward"
+    },
+    {
+      "label": "What does an MP do?",
+      "route": "/in/parliament/mp-role"
+    },
+    {
+      "label": "Where did the money go?",
+      "route": "/in/money/read-a-budget"
+    }
+  ],
+  "article_labels": {
+    "sources": "Sources and scope",
+    "task": "Try this",
+    "related": "Keep reading",
+    "checked": "Research checked",
+    "reading_time": "Estimated reading time",
+    "correction": "Prepare a correction"
+  },
+  "search_empty": "No published article matches that search. Try an institution, issue or simpler term.",
+  "planned_route_message": "This topic is not part of the published collection yet.",
+  "country_note": "This edition covers India. Other country guides need their own institutions, laws and verified sources.",
+  "correction_behavior": "Always offer a copyable/downloadable correction template. Add a send/issue link only when the maintainer configures a real destination."
+}

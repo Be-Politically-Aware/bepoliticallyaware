@@ -1,0 +1,762 @@
+[
+  {
+    "id": "in-start-why-care",
+    "route": "/in/start/why-care",
+    "country": "IN",
+    "language": "en",
+    "hub": "start",
+    "title": "Why should I care about politics?",
+    "summary": "Politics becomes easier to understand when you start with one decision that affects your life.",
+    "kind": "explainer",
+    "status": "ready",
+    "publish": true,
+    "launch_order": 1,
+    "estimated_reading_minutes": 2,
+    "related_ids": [
+      "in-start-country-state-government-party",
+      "in-local-find-responsible-authority",
+      "in-evidence-check-before-sharing"
+    ]
+  },
+  {
+    "id": "in-start-country-state-government-party",
+    "route": "/in/start/country-state-government-party",
+    "country": "IN",
+    "language": "en",
+    "hub": "start",
+    "title": "Country, State, government and party: what is the difference?",
+    "summary": "A country, its public institutions, the government in office and a political party are different things.",
+    "kind": "explainer",
+    "status": "ready",
+    "publish": true,
+    "launch_order": 2,
+    "estimated_reading_minutes": 2,
+    "related_ids": [
+      "in-parliament-lok-sabha-rajya-sabha",
+      "in-states-union-state-local-powers",
+      "in-start-politics-without-party-loyalty"
+    ]
+  },
+  {
+    "id": "in-start-first-half-hour",
+    "route": "/in/start/first-half-hour",
+    "country": "IN",
+    "language": "en",
+    "hub": "start",
+    "title": "I am new to this. Where do I start?",
+    "summary": "A short route through power, evidence and one useful action. No background knowledge needed.",
+    "kind": "explainer",
+    "status": "ready",
+    "publish": true,
+    "launch_order": 3,
+    "estimated_reading_minutes": 2,
+    "related_ids": [
+      "in-start-why-care",
+      "in-reference-glossary",
+      "in-action-choose-a-route"
+    ]
+  },
+  {
+    "id": "in-states-union-state-local-powers",
+    "route": "/in/states/union-state-local-powers",
+    "country": "IN",
+    "language": "en",
+    "hub": "states",
+    "title": "Union, state or local government: who is responsible?",
+    "summary": "Ask separately who can make the rule, who funds the service and who runs it.",
+    "kind": "explainer",
+    "status": "ready",
+    "publish": true,
+    "launch_order": 4,
+    "estimated_reading_minutes": 2,
+    "related_ids": [
+      "in-local-find-responsible-authority",
+      "in-parliament-mp-role",
+      "in-states-mla-and-mlc"
+    ]
+  },
+  {
+    "id": "in-parliament-lok-sabha-rajya-sabha",
+    "route": "/in/parliament/lok-sabha-rajya-sabha",
+    "country": "IN",
+    "language": "en",
+    "hub": "parliament",
+    "title": "Lok Sabha and Rajya Sabha: why two Houses?",
+    "summary": "The two Houses have different representative structures and different powers in some procedures.",
+    "kind": "explainer",
+    "status": "ready",
+    "publish": true,
+    "launch_order": 5,
+    "estimated_reading_minutes": 2,
+    "related_ids": [
+      "in-parliament-bill-to-law",
+      "in-parliament-mp-role",
+      "in-parties-opposition-role"
+    ]
+  },
+  {
+    "id": "in-parliament-mp-role",
+    "route": "/in/parliament/mp-role",
+    "country": "IN",
+    "language": "en",
+    "hub": "parliament",
+    "title": "What can an MP actually do?",
+    "summary": "Judge an MP against parliamentary responsibilities, while identifying who actually operates local services.",
+    "kind": "explainer",
+    "status": "ready",
+    "publish": true,
+    "launch_order": 6,
+    "estimated_reading_minutes": 2,
+    "related_ids": [
+      "in-action-ask-a-representative",
+      "in-states-mla-and-mlc",
+      "in-local-find-responsible-authority"
+    ]
+  },
+  {
+    "id": "in-states-mla-and-mlc",
+    "route": "/in/states/mla-and-mlc",
+    "country": "IN",
+    "language": "en",
+    "hub": "states",
+    "title": "What do MLAs and MLCs do?",
+    "summary": "An MLA sits in a Legislative Assembly. An MLC sits in a Legislative Council where one exists.",
+    "kind": "explainer",
+    "status": "ready",
+    "publish": true,
+    "launch_order": 7,
+    "estimated_reading_minutes": 2,
+    "related_ids": [
+      "in-states-union-state-local-powers",
+      "in-action-ask-a-representative",
+      "in-parties-opposition-role"
+    ]
+  },
+  {
+    "id": "in-parties-opposition-role",
+    "route": "/in/parties/opposition-role",
+    "country": "IN",
+    "language": "en",
+    "hub": "parties",
+    "title": "What is the opposition supposed to do?",
+    "summary": "Opposition is part of the system of scrutiny and political alternatives, not an interruption to it.",
+    "kind": "explainer",
+    "status": "ready",
+    "publish": true,
+    "launch_order": 8,
+    "estimated_reading_minutes": 2,
+    "related_ids": [
+      "in-start-politics-without-party-loyalty",
+      "in-start-reasonable-disagreement",
+      "in-evidence-check-before-sharing"
+    ]
+  },
+  {
+    "id": "in-local-find-responsible-authority",
+    "route": "/in/local/find-responsible-authority",
+    "country": "IN",
+    "language": "en",
+    "hub": "local",
+    "title": "Who is actually responsible for this local problem?",
+    "summary": "Find the owner, operator and complaint recipient before sending a problem to every politician you can name.",
+    "kind": "explainer",
+    "status": "ready",
+    "publish": true,
+    "launch_order": 9,
+    "estimated_reading_minutes": 2,
+    "related_ids": [
+      "in-everyday-roads-and-transport",
+      "in-everyday-water-and-sanitation",
+      "in-action-choose-a-route"
+    ]
+  },
+  {
+    "id": "in-everyday-roads-and-transport",
+    "route": "/in/everyday/roads-and-transport",
+    "country": "IN",
+    "language": "en",
+    "hub": "everyday",
+    "title": "Who should fix this road or bus service?",
+    "summary": "A useful transport complaint identifies the asset or service and the authority responsible for it.",
+    "kind": "explainer",
+    "status": "ready",
+    "publish": true,
+    "launch_order": 10,
+    "estimated_reading_minutes": 2,
+    "related_ids": [
+      "in-local-find-responsible-authority",
+      "in-action-write-a-complaint",
+      "in-evidence-observe-and-verify"
+    ]
+  },
+  {
+    "id": "in-everyday-water-and-sanitation",
+    "route": "/in/everyday/water-and-sanitation",
+    "country": "IN",
+    "language": "en",
+    "hub": "everyday",
+    "title": "Who should answer for unsafe water or poor sanitation?",
+    "summary": "A connection, a functioning service and safe water are different claims requiring different evidence.",
+    "kind": "explainer",
+    "status": "ready",
+    "publish": true,
+    "launch_order": 11,
+    "estimated_reading_minutes": 2,
+    "related_ids": [
+      "in-local-find-responsible-authority",
+      "in-action-rti-basics",
+      "in-evidence-observe-and-verify"
+    ]
+  },
+  {
+    "id": "in-elections-voter-registration",
+    "route": "/in/elections/voter-registration",
+    "country": "IN",
+    "language": "en",
+    "hub": "elections",
+    "title": "How do I check registration and my name on the electoral roll?",
+    "summary": "Check the electoral roll itself. An identity card and an entry on the roll are not the same thing.",
+    "kind": "explainer",
+    "status": "ready",
+    "publish": true,
+    "launch_order": 12,
+    "estimated_reading_minutes": 2,
+    "related_ids": [
+      "in-elections-how-seats-are-won",
+      "in-elections-candidate-affidavits",
+      "in-media-whatsapp-forward"
+    ]
+  },
+  {
+    "id": "in-elections-candidate-affidavits",
+    "route": "/in/elections/candidate-affidavits",
+    "country": "IN",
+    "language": "en",
+    "hub": "elections",
+    "title": "How do I read a candidate's affidavit?",
+    "summary": "Read what a candidate disclosed, when it was disclosed and what the disclosure does not establish.",
+    "kind": "explainer",
+    "status": "ready",
+    "publish": true,
+    "launch_order": 13,
+    "estimated_reading_minutes": 2,
+    "related_ids": [
+      "in-crime-case-status-terms",
+      "in-elections-compare-candidates",
+      "in-evidence-percentages-and-denominators"
+    ]
+  },
+  {
+    "id": "in-elections-how-seats-are-won",
+    "route": "/in/elections/how-seats-are-won",
+    "country": "IN",
+    "language": "en",
+    "hub": "elections",
+    "title": "How do votes become seats?",
+    "summary": "Winning a constituency and winning most votes across the country are different calculations.",
+    "kind": "explainer",
+    "status": "ready",
+    "publish": true,
+    "launch_order": 14,
+    "estimated_reading_minutes": 2,
+    "related_ids": [
+      "in-elections-compare-candidates",
+      "in-parliament-lok-sabha-rajya-sabha",
+      "in-evidence-percentages-and-denominators"
+    ]
+  },
+  {
+    "id": "in-elections-compare-candidates",
+    "route": "/in/elections/compare-candidates",
+    "country": "IN",
+    "language": "en",
+    "hub": "elections",
+    "title": "How can I compare candidates without a popularity contest?",
+    "summary": "Use the same questions and comparable records. Keep your own priorities visible.",
+    "kind": "explainer",
+    "status": "ready",
+    "publish": true,
+    "launch_order": 15,
+    "estimated_reading_minutes": 2,
+    "related_ids": [
+      "in-elections-candidate-affidavits",
+      "in-parliament-mp-role",
+      "in-money-estimates-revised-actuals"
+    ]
+  },
+  {
+    "id": "in-money-read-a-budget",
+    "route": "/in/money/read-a-budget",
+    "country": "IN",
+    "language": "en",
+    "hub": "money",
+    "title": "How do I read a budget without being an economist?",
+    "summary": "Start with the year, the unit and the stage of the number. You do not need to understand every table at once.",
+    "kind": "explainer",
+    "status": "ready",
+    "publish": true,
+    "launch_order": 16,
+    "estimated_reading_minutes": 2,
+    "related_ids": [
+      "in-money-estimates-revised-actuals",
+      "in-dossiers-union-budget-2026",
+      "in-money-audits-and-cag"
+    ]
+  },
+  {
+    "id": "in-money-estimates-revised-actuals",
+    "route": "/in/money/estimates-revised-actuals",
+    "country": "IN",
+    "language": "en",
+    "hub": "money",
+    "title": "Announced, allocated or actually spent: which number is this?",
+    "summary": "“More money” can mean a new plan, an updated estimate or completed expenditure. Always name the stage.",
+    "kind": "explainer",
+    "status": "ready",
+    "publish": true,
+    "launch_order": 17,
+    "estimated_reading_minutes": 2,
+    "related_ids": [
+      "in-money-read-a-budget",
+      "in-dossiers-union-budget-2026",
+      "in-evidence-percentages-and-denominators"
+    ]
+  },
+  {
+    "id": "in-money-audits-and-cag",
+    "route": "/in/money/audits-and-cag",
+    "country": "IN",
+    "language": "en",
+    "hub": "money",
+    "title": "What does a CAG report prove, and what does it not prove?",
+    "summary": "An audit can provide evidence about public administration and spending. Read the finding, scope and response before drawing a wider conclusion.",
+    "kind": "explainer",
+    "status": "ready",
+    "publish": true,
+    "launch_order": 18,
+    "estimated_reading_minutes": 2,
+    "related_ids": [
+      "in-money-read-a-budget",
+      "in-evidence-question-official-data",
+      "in-crime-case-status-terms"
+    ]
+  },
+  {
+    "id": "in-action-choose-a-route",
+    "route": "/in/action/choose-a-route",
+    "country": "IN",
+    "language": "en",
+    "hub": "action",
+    "title": "Complaint, RTI, police report or court: which route fits?",
+    "summary": "First decide whether you need action, an existing record, an investigation or a legal remedy.",
+    "kind": "explainer",
+    "status": "ready",
+    "publish": true,
+    "launch_order": 19,
+    "estimated_reading_minutes": 2,
+    "related_ids": [
+      "in-action-write-a-complaint",
+      "in-action-rti-basics",
+      "in-action-rti-central-or-state"
+    ]
+  },
+  {
+    "id": "in-action-write-a-complaint",
+    "route": "/in/action/write-a-complaint",
+    "country": "IN",
+    "language": "en",
+    "hub": "action",
+    "title": "How do I write a useful public-service complaint?",
+    "summary": "Give an office a problem it can identify, evidence it can examine and an action you can track.",
+    "kind": "explainer",
+    "status": "ready",
+    "publish": true,
+    "launch_order": 20,
+    "estimated_reading_minutes": 2,
+    "related_ids": [
+      "in-local-find-responsible-authority",
+      "in-action-choose-a-route",
+      "in-action-rti-basics"
+    ]
+  },
+  {
+    "id": "in-action-rti-basics",
+    "route": "/in/action/rti-basics",
+    "country": "IN",
+    "language": "en",
+    "hub": "action",
+    "title": "What can I ask for through RTI?",
+    "summary": "Ask for information that exists in the authority’s records, rather than a new essay explaining why things are wrong.",
+    "kind": "explainer",
+    "status": "ready",
+    "publish": true,
+    "launch_order": 21,
+    "estimated_reading_minutes": 2,
+    "related_ids": [
+      "in-action-rti-central-or-state",
+      "in-action-choose-a-route",
+      "in-action-ask-a-representative"
+    ]
+  },
+  {
+    "id": "in-action-rti-central-or-state",
+    "route": "/in/action/rti-central-or-state",
+    "country": "IN",
+    "language": "en",
+    "hub": "action",
+    "title": "Which RTI route applies to this authority?",
+    "summary": "Choose the RTI route according to the public authority concerned, not the applicant’s address.",
+    "kind": "explainer",
+    "status": "ready",
+    "publish": true,
+    "launch_order": 22,
+    "estimated_reading_minutes": 2,
+    "related_ids": [
+      "in-action-rti-basics",
+      "in-local-find-responsible-authority",
+      "in-action-write-a-complaint"
+    ]
+  },
+  {
+    "id": "in-action-ask-a-representative",
+    "route": "/in/action/ask-a-representative",
+    "country": "IN",
+    "language": "en",
+    "hub": "action",
+    "title": "How can I ask an MP, MLA or councillor a question that needs an answer?",
+    "summary": "Ask about a specific responsibility or recorded action, with evidence that makes a vague answer visible.",
+    "kind": "explainer",
+    "status": "ready",
+    "publish": true,
+    "launch_order": 23,
+    "estimated_reading_minutes": 2,
+    "related_ids": [
+      "in-parliament-mp-role",
+      "in-states-mla-and-mlc",
+      "in-action-rti-basics"
+    ]
+  },
+  {
+    "id": "in-evidence-check-before-sharing",
+    "route": "/in/evidence/check-before-sharing",
+    "country": "IN",
+    "language": "en",
+    "hub": "evidence",
+    "title": "How do I check a political claim before sharing it?",
+    "summary": "Find out what is being claimed, what evidence supports it and what remains uncertain.",
+    "kind": "explainer",
+    "status": "ready",
+    "publish": true,
+    "launch_order": 24,
+    "estimated_reading_minutes": 2,
+    "related_ids": [
+      "in-media-whatsapp-forward",
+      "in-evidence-question-official-data",
+      "in-media-assess-a-news-report"
+    ]
+  },
+  {
+    "id": "in-evidence-percentages-and-denominators",
+    "route": "/in/evidence/percentages-and-denominators",
+    "country": "IN",
+    "language": "en",
+    "hub": "evidence",
+    "title": "Percent of what, and compared with when?",
+    "summary": "A percentage only becomes meaningful when you know what it divides by.",
+    "kind": "explainer",
+    "status": "ready",
+    "publish": true,
+    "launch_order": 25,
+    "estimated_reading_minutes": 2,
+    "related_ids": [
+      "in-everyday-jobs-and-wages",
+      "in-money-estimates-revised-actuals",
+      "in-crime-crime-statistics"
+    ]
+  },
+  {
+    "id": "in-evidence-question-official-data",
+    "route": "/in/evidence/question-official-data",
+    "country": "IN",
+    "language": "en",
+    "hub": "evidence",
+    "title": "How can I question official data responsibly?",
+    "summary": "Check the method and the claim. Being official makes a source identifiable, not immune to scrutiny.",
+    "kind": "explainer",
+    "status": "ready",
+    "publish": true,
+    "launch_order": 26,
+    "estimated_reading_minutes": 2,
+    "related_ids": [
+      "in-everyday-jobs-and-wages",
+      "in-dossiers-road-deaths-2024",
+      "in-evidence-observe-and-verify"
+    ]
+  },
+  {
+    "id": "in-evidence-observe-and-verify",
+    "route": "/in/evidence/observe-and-verify",
+    "country": "IN",
+    "language": "en",
+    "hub": "evidence",
+    "title": "When should I trust what I see myself?",
+    "summary": "Your experience can reveal a real problem. Keep the observation separate from how widely it occurs and why.",
+    "kind": "explainer",
+    "status": "ready",
+    "publish": true,
+    "launch_order": 27,
+    "estimated_reading_minutes": 2,
+    "related_ids": [
+      "in-local-find-responsible-authority",
+      "in-evidence-question-official-data",
+      "in-action-write-a-complaint"
+    ]
+  },
+  {
+    "id": "in-media-whatsapp-forward",
+    "route": "/in/media/whatsapp-forward",
+    "country": "IN",
+    "language": "en",
+    "hub": "media",
+    "title": "A political WhatsApp forward arrived. What should I do?",
+    "summary": "A familiar sender is not the original source. Check the message before passing along its claim.",
+    "kind": "explainer",
+    "status": "ready",
+    "publish": true,
+    "launch_order": 28,
+    "estimated_reading_minutes": 2,
+    "related_ids": [
+      "in-evidence-check-before-sharing",
+      "in-media-assess-a-news-report",
+      "in-crime-case-status-terms"
+    ]
+  },
+  {
+    "id": "in-media-assess-a-news-report",
+    "route": "/in/media/assess-a-news-report",
+    "country": "IN",
+    "language": "en",
+    "hub": "media",
+    "title": "What makes a news report worth relying on?",
+    "summary": "Examine sourcing, context and corrections. An outlet’s reputation is a lead, not a verdict on every article.",
+    "kind": "explainer",
+    "status": "ready",
+    "publish": true,
+    "launch_order": 29,
+    "estimated_reading_minutes": 2,
+    "related_ids": [
+      "in-evidence-check-before-sharing",
+      "in-evidence-question-official-data",
+      "in-start-reasonable-disagreement"
+    ]
+  },
+  {
+    "id": "in-crime-case-status-terms",
+    "route": "/in/crime/case-status-terms",
+    "country": "IN",
+    "language": "en",
+    "hub": "crime",
+    "title": "Accused, charged or convicted: what do these words mean?",
+    "summary": "An allegation, an investigation and a judgment are different events. Always identify the proceeding and date.",
+    "kind": "explainer",
+    "status": "ready",
+    "publish": true,
+    "launch_order": 30,
+    "estimated_reading_minutes": 3,
+    "related_ids": [
+      "in-elections-candidate-affidavits",
+      "in-crime-crime-statistics",
+      "in-media-assess-a-news-report"
+    ]
+  },
+  {
+    "id": "in-reference-glossary",
+    "route": "/in/reference/glossary",
+    "country": "IN",
+    "language": "en",
+    "hub": "reference",
+    "title": "Political terms in plain English",
+    "summary": "Short definitions with links to explanations, examples and the relevant sources.",
+    "kind": "glossary",
+    "status": "ready",
+    "publish": true,
+    "launch_order": 31,
+    "estimated_reading_minutes": 7,
+    "related_ids": [
+      "in-start-country-state-government-party",
+      "in-crime-case-status-terms",
+      "in-evidence-percentages-and-denominators"
+    ]
+  },
+  {
+    "id": "in-reference-how-we-know",
+    "route": "/in/reference/how-we-know",
+    "country": "IN",
+    "language": "en",
+    "hub": "reference",
+    "title": "How does this website decide what is true?",
+    "summary": "An evidence standard that applies to government, opposition, media and this website.",
+    "kind": "editorial-method",
+    "status": "ready",
+    "publish": true,
+    "launch_order": 32,
+    "estimated_reading_minutes": 3,
+    "related_ids": [
+      "in-reference-corrections",
+      "in-evidence-check-before-sharing",
+      "in-evidence-question-official-data"
+    ]
+  },
+  {
+    "id": "in-crime-crime-statistics",
+    "route": "/in/crime/crime-statistics",
+    "country": "IN",
+    "language": "en",
+    "hub": "crime",
+    "title": "Why do crime figures need careful interpretation?",
+    "summary": "Before comparing crime numbers, check what counts as a case, which records are included and what population is being described.",
+    "kind": "explainer",
+    "status": "ready",
+    "publish": true,
+    "launch_order": null,
+    "estimated_reading_minutes": 2,
+    "related_ids": [
+      "in-dossiers-road-deaths-2024",
+      "in-crime-case-status-terms",
+      "in-evidence-percentages-and-denominators"
+    ]
+  },
+  {
+    "id": "in-dossiers-road-deaths-2024",
+    "route": "/in/dossiers/road-deaths-2024",
+    "country": "IN",
+    "language": "en",
+    "hub": "dossiers",
+    "title": "Why do official road-death figures differ?",
+    "summary": "An August 2026 parliamentary answer explains why three official road-death figures should not be treated as one interchangeable measure.",
+    "kind": "evidence-card",
+    "status": "ready",
+    "publish": true,
+    "launch_order": null,
+    "estimated_reading_minutes": 2,
+    "related_ids": [
+      "in-crime-crime-statistics",
+      "in-evidence-question-official-data",
+      "in-parliament-mp-role"
+    ]
+  },
+  {
+    "id": "in-dossiers-union-budget-2026",
+    "route": "/in/dossiers/union-budget-2026",
+    "country": "IN",
+    "language": "en",
+    "hub": "dossiers",
+    "title": "What does the 2026–27 Union Budget actually say about spending?",
+    "summary": "A worked example using the official 2026–27 Budget at a Glance table, with the inputs and arithmetic visible.",
+    "kind": "evidence-card",
+    "status": "ready",
+    "publish": true,
+    "launch_order": null,
+    "estimated_reading_minutes": 2,
+    "related_ids": [
+      "in-money-read-a-budget",
+      "in-money-estimates-revised-actuals",
+      "in-evidence-percentages-and-denominators"
+    ]
+  },
+  {
+    "id": "in-everyday-jobs-and-wages",
+    "route": "/in/everyday/jobs-and-wages",
+    "country": "IN",
+    "language": "en",
+    "hub": "everyday",
+    "title": "What do jobs numbers say about finding decent work?",
+    "summary": "Employment, unemployment, participation and decent work answer different questions.",
+    "kind": "explainer",
+    "status": "ready",
+    "publish": true,
+    "launch_order": null,
+    "estimated_reading_minutes": 2,
+    "related_ids": [
+      "in-evidence-percentages-and-denominators",
+      "in-evidence-question-official-data",
+      "in-evidence-observe-and-verify"
+    ]
+  },
+  {
+    "id": "in-parliament-bill-to-law",
+    "route": "/in/parliament/bill-to-law",
+    "country": "IN",
+    "language": "en",
+    "hub": "parliament",
+    "title": "How does a Bill become an enforceable law?",
+    "summary": "Proposal, passage, assent and commencement are distinct stages. A headline may describe only one.",
+    "kind": "explainer",
+    "status": "ready",
+    "publish": true,
+    "launch_order": null,
+    "estimated_reading_minutes": 3,
+    "related_ids": [
+      "in-parliament-lok-sabha-rajya-sabha",
+      "in-money-read-a-budget",
+      "in-reference-glossary"
+    ]
+  },
+  {
+    "id": "in-reference-corrections",
+    "route": "/in/reference/corrections",
+    "country": "IN",
+    "language": "en",
+    "hub": "reference",
+    "title": "How can readers challenge or correct this site?",
+    "summary": "A correction should identify the exact claim, the evidence and what needs to change.",
+    "kind": "editorial-method",
+    "status": "ready",
+    "publish": true,
+    "launch_order": null,
+    "estimated_reading_minutes": 2,
+    "related_ids": [
+      "in-reference-how-we-know",
+      "in-evidence-check-before-sharing",
+      "in-media-assess-a-news-report"
+    ]
+  },
+  {
+    "id": "in-start-politics-without-party-loyalty",
+    "route": "/in/start/politics-without-party-loyalty",
+    "country": "IN",
+    "language": "en",
+    "hub": "start",
+    "title": "Can I care about politics without supporting a party?",
+    "summary": "You can assess an issue without letting a party decide which evidence counts.",
+    "kind": "explainer",
+    "status": "ready",
+    "publish": true,
+    "launch_order": null,
+    "estimated_reading_minutes": 2,
+    "related_ids": [
+      "in-start-reasonable-disagreement",
+      "in-elections-compare-candidates",
+      "in-parties-opposition-role"
+    ]
+  },
+  {
+    "id": "in-start-reasonable-disagreement",
+    "route": "/in/start/reasonable-disagreement",
+    "country": "IN",
+    "language": "en",
+    "hub": "start",
+    "title": "How can people disagree without abandoning evidence?",
+    "summary": "Disagreement about facts, uncertainty and values should not be treated as one undifferentiated argument.",
+    "kind": "explainer",
+    "status": "ready",
+    "publish": true,
+    "launch_order": null,
+    "estimated_reading_minutes": 2,
+    "related_ids": [
+      "in-start-politics-without-party-loyalty",
+      "in-evidence-check-before-sharing",
+      "in-elections-compare-candidates"
+    ]
+  }
+]

@@ -1,0 +1,398 @@
+[
+  {
+    "term": "Country",
+    "definition": "India considered as a political and geographical community; not a synonym for the party in office.",
+    "source_ref_ids": [],
+    "article_id": "in-start-country-state-government-party",
+    "route": "/in/start/country-state-government-party"
+  },
+  {
+    "term": "State (in Article 12)",
+    "definition": "A defined constitutional term for Part III that includes specified governmental institutions and authorities. It is wider than one constituent state.",
+    "source_ref_ids": [
+      "c-state"
+    ],
+    "article_id": "in-start-country-state-government-party",
+    "route": "/in/start/country-state-government-party"
+  },
+  {
+    "term": "Government",
+    "definition": "Often the executive in office: ministers and the administration carrying out public decisions. Identify the institution when the word is being used more broadly.",
+    "source_ref_ids": [
+      "c-executive"
+    ],
+    "article_id": "in-start-country-state-government-party",
+    "route": "/in/start/country-state-government-party"
+  },
+  {
+    "term": "Political party",
+    "definition": "A political organisation that may contest elections, govern, support a coalition or sit in opposition. It is not the same thing as the country.",
+    "source_ref_ids": [],
+    "article_id": "in-start-politics-without-party-loyalty",
+    "route": "/in/start/politics-without-party-loyalty"
+  },
+  {
+    "term": "Parliament",
+    "definition": "The constitutional institution consisting of the President, Rajya Sabha and Lok Sabha.",
+    "source_ref_ids": [
+      "c-parliament"
+    ],
+    "article_id": "in-parliament-lok-sabha-rajya-sabha",
+    "route": "/in/parliament/lok-sabha-rajya-sabha"
+  },
+  {
+    "term": "Lok Sabha",
+    "definition": "The House of the People, with representatives elected from territorial constituencies.",
+    "source_ref_ids": [
+      "c-parliament",
+      "fptp"
+    ],
+    "article_id": "in-parliament-lok-sabha-rajya-sabha",
+    "route": "/in/parliament/lok-sabha-rajya-sabha"
+  },
+  {
+    "term": "Rajya Sabha",
+    "definition": "The Council of States. Its elected state representatives are chosen by elected MLAs using the constitutional indirect-election method.",
+    "source_ref_ids": [
+      "c-rs-election"
+    ],
+    "article_id": "in-parliament-lok-sabha-rajya-sabha",
+    "route": "/in/parliament/lok-sabha-rajya-sabha"
+  },
+  {
+    "term": "MP",
+    "definition": "Member of Parliament. Specify the House and the role when assessing a particular action.",
+    "source_ref_ids": [
+      "c-parliament"
+    ],
+    "article_id": "in-parliament-mp-role",
+    "route": "/in/parliament/mp-role"
+  },
+  {
+    "term": "MLA",
+    "definition": "Member of a Legislative Assembly. An Assembly and its state government are not interchangeable institutions.",
+    "source_ref_ids": [
+      "c-state-houses"
+    ],
+    "article_id": "in-states-mla-and-mlc",
+    "route": "/in/states/mla-and-mlc"
+  },
+  {
+    "term": "MLC",
+    "definition": "Member of a Legislative Council, in a state where that institution operates. Councils and Assemblies have different composition and powers.",
+    "source_ref_ids": [
+      "c-state-houses",
+      "c-council-bills"
+    ],
+    "article_id": "in-states-mla-and-mlc",
+    "route": "/in/states/mla-and-mlc"
+  },
+  {
+    "term": "Council of Ministers",
+    "definition": "The executive group of ministers headed by the Prime Minister at Union level. It is collectively responsible to Lok Sabha.",
+    "source_ref_ids": [
+      "c-executive"
+    ],
+    "article_id": "in-start-country-state-government-party",
+    "route": "/in/start/country-state-government-party"
+  },
+  {
+    "term": "Collective responsibility",
+    "definition": "The constitutional responsibility of the Council of Ministers to the relevant directly elected House: Lok Sabha at Union level and the Legislative Assembly at state level.",
+    "source_ref_ids": [
+      "c-executive",
+      "c-state-executive"
+    ],
+    "article_id": "in-parties-opposition-role",
+    "route": "/in/parties/opposition-role"
+  },
+  {
+    "term": "Opposition",
+    "definition": "The political side outside the governing side that can scrutinise it and offer alternatives. This broad term is different from a formally recognised leadership office.",
+    "source_ref_ids": [],
+    "article_id": "in-parties-opposition-role",
+    "route": "/in/parties/opposition-role"
+  },
+  {
+    "term": "Constituency",
+    "definition": "An electoral unit that returns a representative under the applicable system. Ordinary Lok Sabha constituency elections return one winner.",
+    "source_ref_ids": [
+      "fptp"
+    ],
+    "article_id": "in-elections-how-seats-are-won",
+    "route": "/in/elections/how-seats-are-won"
+  },
+  {
+    "term": "First-past-the-post",
+    "definition": "A constituency voting system in which the candidate with the most votes wins; an absolute majority is not required.",
+    "source_ref_ids": [
+      "fptp"
+    ],
+    "article_id": "in-elections-how-seats-are-won",
+    "route": "/in/elections/how-seats-are-won"
+  },
+  {
+    "term": "Electoral roll",
+    "definition": "The list on which an elector must be included for the relevant election. Possession of an identity card is not a substitute for inclusion.",
+    "source_ref_ids": [
+      "eci-roll"
+    ],
+    "article_id": "in-elections-voter-registration",
+    "route": "/in/elections/voter-registration"
+  },
+  {
+    "term": "EPIC",
+    "definition": "Electors Photo Identity Card. Identification and inclusion on an electoral roll are separate requirements to check.",
+    "source_ref_ids": [
+      "eci-roll"
+    ],
+    "article_id": "in-elections-voter-registration",
+    "route": "/in/elections/voter-registration"
+  },
+  {
+    "term": "Affidavit",
+    "definition": "A sworn statement. An election affidavit is a dated disclosure by a candidate, not a judicial finding that every allegation it records is proved.",
+    "source_ref_ids": [
+      "affidavit-provenance"
+    ],
+    "article_id": "in-elections-candidate-affidavits",
+    "route": "/in/elections/candidate-affidavits"
+  },
+  {
+    "term": "Bill",
+    "definition": "A legislative proposal before enactment. A vote in one House does not automatically mean every required stage has been completed.",
+    "source_ref_ids": [
+      "rs-bills",
+      "c-bills"
+    ],
+    "article_id": "in-parliament-bill-to-law",
+    "route": "/in/parliament/bill-to-law"
+  },
+  {
+    "term": "Act",
+    "definition": "An enacted law. For practical application, check its commencement provisions and any later changes as well as assent.",
+    "source_ref_ids": [
+      "rs-bills"
+    ],
+    "article_id": "in-parliament-bill-to-law",
+    "route": "/in/parliament/bill-to-law"
+  },
+  {
+    "term": "Money Bill",
+    "definition": "A constitutionally defined category with a special parliamentary procedure. A proposal is not a Money Bill merely because it has a financial cost.",
+    "source_ref_ids": [
+      "c-money-bill"
+    ],
+    "article_id": "in-parliament-bill-to-law",
+    "route": "/in/parliament/bill-to-law"
+  },
+  {
+    "term": "Panchayat",
+    "definition": "A rural local-government institution within the applicable constitutional and state-law arrangements. Do not assume identical powers everywhere.",
+    "source_ref_ids": [
+      "c-panchayat"
+    ],
+    "article_id": "in-states-union-state-local-powers",
+    "route": "/in/states/union-state-local-powers"
+  },
+  {
+    "term": "Municipality",
+    "definition": "An urban local-government institution whose actual powers must be established under the applicable law, not assumed from its location alone.",
+    "source_ref_ids": [
+      "c-municipality"
+    ],
+    "article_id": "in-local-find-responsible-authority",
+    "route": "/in/local/find-responsible-authority"
+  },
+  {
+    "term": "Budget Estimate (BE)",
+    "definition": "A budget-stage estimate for the specified financial year, not expenditure already completed.",
+    "source_ref_ids": [
+      "budget-docs"
+    ],
+    "article_id": "in-money-estimates-revised-actuals",
+    "route": "/in/money/estimates-revised-actuals"
+  },
+  {
+    "term": "Revised Estimate (RE)",
+    "definition": "An updated estimate for the specified year. It is still distinct from final reported actual expenditure.",
+    "source_ref_ids": [
+      "budget-docs"
+    ],
+    "article_id": "in-money-estimates-revised-actuals",
+    "route": "/in/money/estimates-revised-actuals"
+  },
+  {
+    "term": "Actual expenditure",
+    "definition": "Expenditure reported for a completed period under the source’s accounting scope. It does not by itself establish a service outcome.",
+    "source_ref_ids": [
+      "budget-table"
+    ],
+    "article_id": "in-money-read-a-budget",
+    "route": "/in/money/read-a-budget"
+  },
+  {
+    "term": "Fiscal deficit",
+    "definition": "In the budget presentation, the gap between total expenditure and receipts other than borrowing, under the stated accounting definitions.",
+    "source_ref_ids": [
+      "budget-deficit"
+    ],
+    "article_id": "in-money-read-a-budget",
+    "route": "/in/money/read-a-budget"
+  },
+  {
+    "term": "CAG",
+    "definition": "Comptroller and Auditor General of India, the constitutional audit institution. An audit observation is not a criminal conviction.",
+    "source_ref_ids": [
+      "c-cag"
+    ],
+    "article_id": "in-money-audits-and-cag",
+    "route": "/in/money/audits-and-cag"
+  },
+  {
+    "term": "RTI",
+    "definition": "Right to Information: access to information held by public authorities, subject to the applicable law. It is different from requesting a service repair.",
+    "source_ref_ids": [
+      "rti-records",
+      "rti-no-new-answer"
+    ],
+    "article_id": "in-action-rti-basics",
+    "route": "/in/action/rti-basics"
+  },
+  {
+    "term": "CPIO",
+    "definition": "Central Public Information Officer, the designated information officer in the Central RTI process. A portal nodal officer and the CPIO are not necessarily the same role.",
+    "source_ref_ids": [
+      "rti-tracking"
+    ],
+    "article_id": "in-action-rti-central-or-state",
+    "route": "/in/action/rti-central-or-state"
+  },
+  {
+    "term": "Grievance",
+    "definition": "A complaint seeking attention to a problem, such as a public-service failure. Its appropriate route depends on the subject and authority.",
+    "source_ref_ids": [
+      "cpgrams-scope"
+    ],
+    "article_id": "in-action-choose-a-route",
+    "route": "/in/action/choose-a-route"
+  },
+  {
+    "term": "Allegation",
+    "definition": "A claim that something happened or someone did something. The word alone establishes neither truth nor falsity.",
+    "source_ref_ids": [],
+    "article_id": "in-crime-case-status-terms",
+    "route": "/in/crime/case-status-terms"
+  },
+  {
+    "term": "Chargesheet",
+    "definition": "Common terminology for a police report following investigation in the relevant procedural setting. It is distinct from a court-framed charge.",
+    "source_ref_ids": [
+      "bnss-report",
+      "bnss-charge"
+    ],
+    "article_id": "in-crime-case-status-terms",
+    "route": "/in/crime/case-status-terms"
+  },
+  {
+    "term": "Bail",
+    "definition": "Release from custody under the applicable conditions and bond arrangement. It is not a judgment of acquittal.",
+    "source_ref_ids": [
+      "bnss-bail"
+    ],
+    "article_id": "in-crime-case-status-terms",
+    "route": "/in/crime/case-status-terms"
+  },
+  {
+    "term": "Discharge",
+    "definition": "A procedural outcome distinct from acquittal; the cited sessions-trial provisions concern whether there is sufficient ground to proceed before framing a charge.",
+    "source_ref_ids": [
+      "bnss-charge"
+    ],
+    "article_id": "in-crime-case-status-terms",
+    "route": "/in/crime/case-status-terms"
+  },
+  {
+    "term": "Numerator",
+    "definition": "The quantity above the division line: what is being counted in a fraction or rate.",
+    "source_ref_ids": [],
+    "article_id": "in-evidence-percentages-and-denominators",
+    "route": "/in/evidence/percentages-and-denominators"
+  },
+  {
+    "term": "Denominator",
+    "definition": "The quantity below the division line: the population or total against which the numerator is compared.",
+    "source_ref_ids": [],
+    "article_id": "in-evidence-percentages-and-denominators",
+    "route": "/in/evidence/percentages-and-denominators"
+  },
+  {
+    "term": "Percentage point",
+    "definition": "The arithmetic difference between two percentages. A rise from 20% to 25% is five percentage points.",
+    "source_ref_ids": [],
+    "article_id": "in-evidence-percentages-and-denominators",
+    "route": "/in/evidence/percentages-and-denominators"
+  },
+  {
+    "term": "Reference period",
+    "definition": "The time the evidence describes. It is not necessarily the year the report was published.",
+    "source_ref_ids": [],
+    "article_id": "in-evidence-question-official-data",
+    "route": "/in/evidence/question-official-data"
+  },
+  {
+    "term": "Labour force participation rate",
+    "definition": "People in the labour force as a share of the relevant population, using the survey’s definitions and reference period.",
+    "source_ref_ids": [
+      "plfs-definitions"
+    ],
+    "article_id": "in-everyday-jobs-and-wages",
+    "route": "/in/everyday/jobs-and-wages"
+  },
+  {
+    "term": "Worker population ratio",
+    "definition": "Employed people as a share of the relevant population, under the stated survey measure.",
+    "source_ref_ids": [
+      "plfs-definitions"
+    ],
+    "article_id": "in-everyday-jobs-and-wages",
+    "route": "/in/everyday/jobs-and-wages"
+  },
+  {
+    "term": "Unemployment rate",
+    "definition": "Unemployed people as a share of the labour force, not of the entire population.",
+    "source_ref_ids": [
+      "plfs-definitions"
+    ],
+    "article_id": "in-everyday-jobs-and-wages",
+    "route": "/in/everyday/jobs-and-wages"
+  },
+  {
+    "term": "Primary source",
+    "definition": "The original record relevant to a claim, such as an order, dataset or recording. Being original does not make it complete or infallible.",
+    "source_ref_ids": [],
+    "article_id": "in-reference-how-we-know",
+    "route": "/in/reference/how-we-know"
+  },
+  {
+    "term": "Corroboration",
+    "definition": "Additional evidence supporting a claim. Copies of one original story are not independent confirmations.",
+    "source_ref_ids": [],
+    "article_id": "in-evidence-check-before-sharing",
+    "route": "/in/evidence/check-before-sharing"
+  },
+  {
+    "term": "Inference",
+    "definition": "A conclusion drawn from evidence rather than a fact directly stated or observed. Make the reasoning and uncertainty visible.",
+    "source_ref_ids": [],
+    "article_id": "in-start-reasonable-disagreement",
+    "route": "/in/start/reasonable-disagreement"
+  },
+  {
+    "term": "Conflict of interest",
+    "definition": "A relationship or incentive that may affect a judgment. Document the relationship; do not treat its existence as automatic proof that every statement is false.",
+    "source_ref_ids": [],
+    "article_id": "in-media-assess-a-news-report",
+    "route": "/in/media/assess-a-news-report"
+  }
+]
