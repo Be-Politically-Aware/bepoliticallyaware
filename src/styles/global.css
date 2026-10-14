@@ -508,6 +508,11 @@ hr {
   padding: 0.8rem 0;
   font-size: 0.94rem;
 }
+.related a,
+.pager a,
+.row-title {
+  text-wrap: pretty;
+}
 .reading-list > li:last-child {
   border-bottom: 1px solid var(--line);
 }
@@ -552,12 +557,15 @@ hr {
 .status {
   margin-top: 1rem;
 }
+.status:empty {
+  display: none;
+}
 .pager {
   display: flex;
   justify-content: space-between;
   gap: 1.5rem;
   margin-top: 2rem;
-  padding-top: 1rem;
+  padding-block: 1rem;
   border-top: 1px solid var(--line);
 }
 .pager a {
@@ -659,8 +667,21 @@ summary:hover {
   font-weight: 700;
   line-height: 1.65;
 }
-.sources + .correction {
+.related + .pager,
+.related + .sources,
+.pager + .sources,
+.sources + .sources,
+.sources + .correction,
+.correction + .bottom {
   margin-top: 0;
+}
+.article > :last-child,
+.source-document > :last-child,
+.source-document details > :last-child,
+.sources > :last-child,
+.correction > :last-child,
+.prose blockquote > :last-child {
+  margin-bottom: 0;
 }
 .sources summary:hover,
 .correction summary:hover {
@@ -675,6 +696,10 @@ summary:hover {
 }
 .sources p {
   margin: 0.35rem 0;
+}
+.sources > summary + *,
+.correction > summary + * {
+  margin-top: 1rem;
 }
 [id^="source-"]:target {
   background: var(--soft);
@@ -941,7 +966,8 @@ kbd {
     padding-block: 1rem;
   }
   .article {
-    padding: 2.25rem 1.2rem;
+    padding: 2.25rem max(20px, env(safe-area-inset-right)) 2.25rem
+      max(20px, env(safe-area-inset-left));
   }
   h1 {
     font-size: 2rem;
@@ -954,6 +980,8 @@ kbd {
     grid-template-columns: minmax(0, 1fr) 32px 32px;
     grid-template-rows: 56px 44px;
     gap: 0 12px;
+    padding-inline: max(20px, env(safe-area-inset-left))
+      max(20px, env(safe-area-inset-right));
   }
   .header-actions {
     display: contents;
@@ -1007,6 +1035,10 @@ kbd {
   }
   .source-directory dl {
     grid-template-columns: 1fr;
+    row-gap: 0.25rem;
+  }
+  .source-directory dd + dt {
+    margin-top: 0.5rem;
   }
 }
 @media (prefers-reduced-motion: reduce) {
