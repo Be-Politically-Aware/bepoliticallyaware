@@ -4,14 +4,16 @@ A static civic-education website for India: understand public institutions, read
 
 The collection includes **64 articles, 10 reading paths, 73 glossary terms and 11 source-linked data assets** after expansion v3. The reading interface uses system fonts, sharp borders, light/dark themes and a mobile article index. No accounts, tracking, database or server-side application are required.
 
-**Status:** implemented and locally validated, not deployed. The configured production URL is `https://bepoliticallyaware.org`. This is general civic education, not legal advice or a live-news/data service. Research-check dates do not imply continuous monitoring or independent human review.
+**Website:** [bepoliticallyaware.org](https://bepoliticallyaware.org), deployed to Cloudflare Workers Static Assets. The [GitHub repository](https://github.com/Be-Politically-Aware/bepoliticallyaware) is public. Content release **3.0.1** includes the targeted v2/v3 audit corrections.
+
+This is general civic education, not legal advice or a live-news/data service. Research-check dates do not imply continuous monitoring or independent human review.
 
 ## Quick start
 
 Use **Node 24** (recorded in `.node-version`) and **Bun 1.4.0** (recorded in `package.json`). Astro requires Node 22.12+; CI uses Node 24. No environment variables, credentials or Python installation are needed to run the site.
 
 ```sh
-git clone git@github.com:Be-Politically-Aware/bepoliticallyaware.git
+git clone https://github.com/Be-Politically-Aware/bepoliticallyaware.git
 cd bepoliticallyaware
 bun install --frozen-lockfile
 bun run dev
@@ -24,7 +26,7 @@ bun run validate
 bun run preview
 ```
 
-The development and preview servers bind to localhost. If port 4321 is occupied, use the URL printed by Astro. `preview` serves the existing `dist/`; it does not build or deploy.
+The development script uses `--host`, so it listens on all network interfaces for local-device testing. To restrict it to your own machine, run `bun run dev --host 127.0.0.1`. The production preview binds to `127.0.0.1`. If port 4321 is occupied, use the URL printed by Astro. `preview` serves the existing `dist/`; it does not build or deploy. Neither server is for production hosting.
 
 ## Commands and checks
 
@@ -49,6 +51,12 @@ GitHub Actions runs `bun install --frozen-lockfile` and `bun run validate` on pu
 The content validator writes `checks/validation.json`. Exit code **0** means passed, **1** means failed checks, and **2** means validation could not complete. The release baseline is deliberately fixed at 64 articles and 117 unpublished briefs; extend it intentionally when publishing newly researched content.
 
 Tests cover published routes, internal links/fragments, exact source locators, exclusion of planned briefs, evidence tables, search ranking and Markdown safety. Automated checks do not establish factual truth, remote-source availability, or independent editorial/legal approval. See [research notes](RESEARCH_NOTES.md) for source-access limitations.
+
+### Avoid overlapping builds
+
+Run one build/validation/deployment workflow at a time in this checkout. Astro clears `dist/` before rebuilding it, and the built-site tests read that directory. Starting another build while tests run can produce `ENOENT` failures for `dist/index.html`, `dist/sitemap.xml` or the search index even when the site is correct.
+
+`bun run validate` already builds before testing; `bun run deploy` already validates before publishing. Do not run another build or validation alongside either command. Wrangler's local preview also rebuilds when watched files change. Use separate checkouts if you need independent concurrent builds. After an interrupted or overlapping run, rerun `bun run validate` on its own; do not skip tests or retain stale output to hide the failure.
 
 ## Repository map
 
@@ -107,9 +115,9 @@ Every article offers an editable correction draft to copy or download. **Nothing
 
 `src/lib/seo.ts` shares published page titles, descriptions and routes between the layout, sitemap and social-image endpoint. Every indexable page has an absolute canonical URL, Open Graph metadata, a Twitter large-image card and JSON-LD for the website, page and breadcrumbs. Article schema includes its headline and original source links; research-check dates are deliberately not presented as publication/modification dates, and author identities are not invented. Search and 404 stay `noindex` and are excluded from the sitemap.
 
-`src/pages/og/[...route].png.ts` generates a **1200×630 PNG per indexable page** during the normal Astro build, using Satori and Resvg like the portfolio implementation. The homepage image is `/og/index.png`; an article such as `/in/start/why-care` uses `/og/in/start/why-care.png`. Edit `src/lib/og-image.ts` to change the dark card design. The local Geist font and its OFL license live in `src/assets/fonts/` and are used only at build time; page typography remains system-only. No remote image service, browser font download or runtime image server is required.
+`src/pages/og/[...route].png.ts` generates a **1200×630 PNG per indexable page** during the normal Astro build, using Satori and Resvg. The homepage image is `/og/index.png`; an article such as `/in/start/why-care` uses `/og/in/start/why-care.png`. Edit `src/lib/og-image.ts` to change the dark card design. The local Geist font and its OFL license live in `src/assets/fonts/` and are used only at build time; page typography remains system-only. No remote image service, browser font download or runtime image server is required.
 
-Built-site tests verify metadata, sitemap coverage, every linked PNG's dimensions, breadcrumbs and JSON-LD CSP hashes. Generated files live in `dist/`, not version control. Search-engine indexing and social-platform previews can only be checked after deployment; structured data does not guarantee rich results. Submit the deployed sitemap to your own Search Console account when launching.
+Built-site tests verify metadata, sitemap coverage, every linked PNG's dimensions, breadcrumbs and JSON-LD CSP hashes. Generated files live in `dist/`, not version control. The production [sitemap](https://bepoliticallyaware.org/sitemap.xml) and [robots.txt](https://bepoliticallyaware.org/robots.txt) are served as static files. Deployment does not guarantee indexing, rich results or refreshed social-platform caches. Maintainers can submit the sitemap through their own Search Console account; no Search Console integration or submission automation is configured here.
 
 ## Implementation conventions
 
@@ -123,9 +131,11 @@ Oxlint and Oxfmt are the project's lint/format tools, configured in `.oxlintrc.j
 
 The native Sätteri Markdown pipeline extends Astro with citation jumps, stable heading IDs and accessible tables. It rejects raw contributor HTML/images and applies a final allowlist sanitizer. Production HTML includes Astro's hash-based CSP; no unrestricted raw HTML, inline event handlers or third-party embeds are needed.
 
-Read [AGENTS.md](AGENTS.md) and the [build specification](implementation/BUILD_SPEC.md) before changing code or content. This is a private project; no project redistribution license has been selected. Source documents and dependencies retain their respective terms.
+Read [AGENTS.md](AGENTS.md) and the [build specification](implementation/BUILD_SPEC.md) before changing code or content. The repository is publicly readable, but no project redistribution license has been selected. Public visibility is not an open-source license. The `private: true` field in `package.json` prevents accidental package publication; it does not control GitHub visibility. Source documents and dependencies retain their respective terms.
 
 ## Deployment
+
+The production site is deployed at **https://bepoliticallyaware.org**. Deployments are manual; pushing to GitHub runs validation only.
 
 `wrangler.jsonc` is the Cloudflare Workers Static Assets configuration. It serves **only `dist/`**, with no Worker script, server adapter, database or runtime bindings. The hostname `bepoliticallyaware.org` is declared as a Custom Domain (`custom_domain: true`), not a wildcard origin route. Public `workers.dev` and preview URLs are disabled. HTML URLs omit trailing slashes to match the canonical routes; missing URLs serve `404.html` with an actual 404 status, not an SPA fallback.
 
@@ -143,7 +153,16 @@ To inspect the deployment without uploading assets or changing DNS:
 bunx wrangler deploy --dry-run
 ```
 
-Wrangler's custom build runs `bun run build` before preview/deployment so it cannot silently deploy stale output. To publish, authenticate deliberately to the correct Cloudflare account with `bunx wrangler login`, then run `bun run deploy`. That command validates the site before deploying. Deployment requires ownership of an active Cloudflare zone for `bepoliticallyaware.org`; Cloudflare then creates the Custom Domain's DNS record and certificate. Resolve any conflicting hostname records before publishing. This configuration alone does not verify zone ownership, activate the domain or deploy anything. `www` is not configured; add a Cloudflare redirect separately if required.
+Wrangler's custom build runs `bun run build` before preview/deployment. To publish an update, authenticate to the Cloudflare account that owns the deployment, then run:
+
+```sh
+bunx wrangler login
+bun run deploy
+```
+
+`deploy` runs the complete validation suite, then Wrangler runs its configured build again and publishes the assets. Keep the workflow sequential as described above. CI does not authenticate to Cloudflare or publish changes.
+
+Setting up the same Custom Domain in another account requires ownership of an active Cloudflare zone for `bepoliticallyaware.org`; Cloudflare manages the domain's DNS record and certificate. Configuration files alone do not provision a deployment. `www` is not declared in this repository's Wrangler configuration; configure a redirect separately if needed.
 
 If the domain changes, update `wrangler.jsonc`, `astro.config.ts`, `public/robots.txt` and `content/site-copy.json` together. Canonical URLs, the sitemap and social-image URLs derive their origin from Astro's site configuration; the image footer uses the domain in site copy. After deployment, check production routes, citation fragments, search, CSP console output and mobile behavior on the actual host.
 
