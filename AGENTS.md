@@ -63,3 +63,10 @@ Deliver working code and setup commands. Report actual checks, remaining impleme
 - Use Astro's `GetStaticPaths`, inferred route props and `APIRoute` types at route boundaries. `bun run build` runs TypeScript and Astro checks before building; `bun run validate` additionally checks content and built-site tests.
 - Use Tailwind v4 through `@tailwindcss/vite`, not the legacy Astro Tailwind integration. Theme utilities alias the existing CSS tokens. Preflight is intentionally omitted: preserve native disclosures, numbered lists and the reading site's reset. Keep prose, table, print and bespoke responsive behavior in semantic CSS.
 - Keep TypeScript within the installed Astro checker's supported peer range. The public blocking theme script intentionally uses `is:inline`; interactive component scripts remain processed.
+
+## Tooling and deployment
+
+- Use Oxlint and Oxfmt, not a separate Prettier setup. Run `bun run lint`, `bun run format` and `bun run format:check`; `bun run validate` includes lint and formatting checks before content/type/build/tests. Keep imported content and research handoffs excluded from blanket formatting.
+- Oxfmt's `astro: true` integration requires the explicit `@astrojs/compiler-rs` peer. Keep `astro check` for template diagnostics; Oxlint does not provide template linting.
+- Keep `wrangler.jsonc` as the static-hosting source of truth: only `dist/`, genuine 404s, canonical slashless HTML routes and `bepoliticallyaware.org` as a Custom Domain. No server adapter or Worker entry point is needed.
+- Use `bun run preview:cloudflare` for local runtime verification and `bunx wrangler deploy --dry-run` for non-publishing validation. `bun run deploy` publishes and configures the Custom Domain; run it only with explicit deployment authorization. CI validates but never deploys.

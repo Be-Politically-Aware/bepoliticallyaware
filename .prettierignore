@@ -1,8 +1,0 @@
-.amp/in/
-.astro/
-dist/
-checks/
-bun.lock
-
-# Preserve canonical prose; format articles only as an intentional content edit.
-content/articles/

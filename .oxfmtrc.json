@@ -1,0 +1,18 @@
+{
+  "$schema": "./node_modules/oxfmt/configuration_schema.json",
+  "astro": true,
+  "printWidth": 80,
+  "sortPackageJson": false,
+  "ignorePatterns": [
+    ".amp/in/**",
+    ".astro/**",
+    ".wrangler/**",
+    "dist/**",
+    "checks/**",
+    "bun.lock",
+    "content/**",
+    "evidence/**",
+    "roadmap/**",
+    "implementation/**"
+  ]
+}

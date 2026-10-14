@@ -18,6 +18,7 @@
 
 ## Unreleased — implementation updates
 
+- Replaced the standalone Prettier setup with Oxlint and Oxfmt, including Astro formatting and CI quality gates. Added Wrangler static-assets hosting, slashless HTML routing, genuine 404 responses and the `bepoliticallyaware.org` Custom Domain declaration; no deployment or DNS changes were performed.
 - Replaced the initial typography with the approved sharp, system-font reading design, numbered article index and native mobile browsing disclosure.
 - Adopted typed Astro configuration and Tailwind CSS 4 without changing the content contract.
 - Made Markdown frontmatter canonical through Astro content collections, replacing duplicate article JSON, export tooling and Python validation with shared TypeScript schema/checks.

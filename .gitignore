@@ -26,7 +26,12 @@ report.[0-9]_.[0-9]_.[0-9]_.[0-9]_.json
 .eslintcache
 .cache
 .astro
+.wrangler
 *.tsbuildinfo
+
+# Wrangler local secrets
+.dev.vars
+.dev.vars.*
 
 # local agent scratch files and review artifacts
 /.amp/in/

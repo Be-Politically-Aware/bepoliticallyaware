@@ -6,13 +6,13 @@
   },
   {
     "path": ".github/workflows/validate.yml",
-    "bytes": 830,
-    "sha256": "c18f619a3766c005a9be40eaa5e6b9c4d7d392bac78f9508258e6dfa26c4474f"
+    "bytes": 848,
+    "sha256": "e0ac11241ef0fb2d1c0f14e0d069f456af3e6466f1789c4605f7710a0ccdce65"
   },
   {
     "path": ".gitignore",
-    "bytes": 455,
-    "sha256": "d8cb2f6abb55c2b4cdf2ee8e9c00b9c2363f0b3c261d43c8e40aebf0d70958fa"
+    "bytes": 513,
+    "sha256": "06a0110aa44e8d5c660d2be49fd10037cb4a4442afe000b61643a1ec727f21a1"
   },
   {
     "path": ".node-version",
@@ -20,29 +20,29 @@
     "sha256": "68ca3fba3b7e864770cb61aeb306d4bd4354b68ab4dd38450860c5d823e42a53"
   },
   {
-    "path": ".prettierignore",
-    "bytes": 140,
-    "sha256": "4f7a82d013059e2bc70f927b5590902603cb78635cc4ab50950bb94ad4212a5e"
+    "path": ".oxfmtrc.json",
+    "bytes": 340,
+    "sha256": "770dd247e08e0eefe483eb71d5df899658b3a5f8c5301305d3b664a60714ffec"
   },
   {
-    "path": ".prettierrc.json",
-    "bytes": 43,
-    "sha256": "8502fc123a6899007d4de20ab7b5066645bae7f6c7bdcb4125aa89cb8eb1b49b"
+    "path": ".oxlintrc.json",
+    "bytes": 193,
+    "sha256": "8e221dfe1a6ff0f6fc5d0d4c4321a178061fd411f181104f549c92d557c258b0"
   },
   {
     "path": "AGENTS.md",
-    "bytes": 7645,
-    "sha256": "3b437aa965aa2d266a0cfa6654cbf9d6df391eebdacc012d7b910c04d8cbde9c"
+    "bytes": 8635,
+    "sha256": "f0b9fcaa4d40c52beed671e183015f2dd23c1abe3b7dc4ec2ddde6a99cc34f2d"
   },
   {
     "path": "CHANGELOG.md",
-    "bytes": 3933,
-    "sha256": "ac2dac8bbc12f3abac5b3097f7c7f969a380ff6d17e889d91fabca45a3e4f495"
+    "bytes": 4235,
+    "sha256": "0401cc952a4cadeb9615e3be675a917d7faf746d67b06b26fca576e6be2ece87"
   },
   {
     "path": "README.md",
-    "bytes": 12740,
-    "sha256": "3e8ed569144c5e69d722115c9027c45863ec9307bbaa86713f9b4b0d106f37c8"
+    "bytes": 16516,
+    "sha256": "b3e5651fb87cbd4a75d7a56bb3b078a199dd94d07eb2bf24958d51ceebed43ad"
   },
   {
     "path": "RESEARCH_NOTES.md",
@@ -546,8 +546,8 @@
   },
   {
     "path": "package.json",
-    "bytes": 1124,
-    "sha256": "3fe486e713aa13c53d69fba6f470d7f05c7299bd50a24c728017f479c05daf60"
+    "bytes": 1479,
+    "sha256": "b6eafd6bf1d8cab43918e1082074cc4af20f4eeca0444e86e3e87e1eb5ad2e35"
   },
   {
     "path": "roadmap/backlog.json",
@@ -598,5 +598,10 @@
     "path": "tests/content-tools.test.ts",
     "bytes": 3558,
     "sha256": "f967180cabb44a9489d026124d7ed44d4622eda07d960ebecacc62d0a0054924"
+  },
+  {
+    "path": "wrangler.jsonc",
+    "bytes": 602,
+    "sha256": "3d97287d417c8310e68a4240465dfe0c1305820c2937b3938093b3756a8f551d"
   }
 ]

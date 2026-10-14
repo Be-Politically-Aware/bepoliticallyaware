@@ -139,7 +139,8 @@ export function setupSearch() {
         !event.altKey)
     ) {
       event.preventDefault();
-      dialog.open ? dialog.close() : open();
+      if (dialog.open) dialog.close();
+      else open();
     }
   });
   input.addEventListener("input", () => void update());
@@ -211,7 +212,8 @@ export function setupSearch() {
     const version = ++pageRevision,
       query = pageInput.value.trim();
     const url = new URL(location.href);
-    query ? url.searchParams.set("q", query) : url.searchParams.delete("q");
+    if (query) url.searchParams.set("q", query);
+    else url.searchParams.delete("q");
     history.replaceState(null, "", url);
     if (!query) {
       pageList.replaceChildren();

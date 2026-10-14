@@ -10,13 +10,20 @@
     "dev": "astro dev --host",
     "build": "bun run check && astro build",
     "preview": "astro preview --host 127.0.0.1",
+    "preview:cloudflare": "wrangler dev --local --ip 127.0.0.1",
+    "deploy": "bun run validate && wrangler deploy",
+    "lint": "oxlint --max-warnings 0",
+    "lint:fix": "oxlint --fix --max-warnings 0",
+    "format": "oxfmt",
+    "format:check": "oxfmt --check",
     "check": "astro check && tsc --noEmit",
     "test": "bun test",
     "validate:content": "bun scripts/validate_content.ts",
-    "validate": "bun run validate:content && bun run build && bun test"
+    "validate": "bun run lint && bun run format:check && bun run validate:content && bun run build && bun test"
   },
   "devDependencies": {
     "@astrojs/check": "^0.9.10",
+    "@astrojs/compiler-rs": "^0.5.1",
     "@resvg/resvg-js": "2.6.2",
     "@tailwindcss/vite": "^4.3.3",
     "@types/bun": "latest",
@@ -24,11 +31,12 @@
     "@types/node": "^26.6.5",
     "@types/sanitize-html": "^2.16.2",
     "cheerio": "^1.2.0",
-    "prettier": "^3.9.10",
-    "prettier-plugin-astro": "^1.1.1",
+    "oxfmt": "^0.73.0",
+    "oxlint": "^1.88.0",
     "satori": "0.26.0",
     "tailwindcss": "^4.3.3",
-    "typescript": "6.0.3"
+    "typescript": "6.0.3",
+    "wrangler": "^4.150.0"
   },
   "dependencies": {
     "@astrojs/markdown-satteri": "0.4.3",

@@ -79,7 +79,7 @@ export const readingMarkdownPlugins: HastPluginEntry = () => {
             lastHeading = text;
           } else if (node.tagName === "a") {
             const href = String(node.properties.href ?? "");
-            if (/^[\/\\]{2}/.test(href)) {
+            if (/^[/\\]{2}/.test(href)) {
               ctx.replaceNode(node, { ...node, properties: {} });
             } else if (/^\d+$/.test(text) && /^https?:/.test(href)) {
               ctx.setProperty(node, "href", `#source-${text}`);

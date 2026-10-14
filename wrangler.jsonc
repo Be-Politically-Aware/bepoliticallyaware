@@ -1,0 +1,23 @@
+{
+  "$schema": "./node_modules/wrangler/config-schema.json",
+  "name": "bepoliticallyaware",
+  // Latest date supported by Wrangler 4.150.0's bundled local runtime.
+  "compatibility_date": "2026-10-13",
+  "workers_dev": false,
+  "preview_urls": false,
+  "build": {
+    "command": "bun run build",
+    "watch_dir": ["src", "content", "public", "astro.config.ts"],
+  },
+  "assets": {
+    "directory": "./dist",
+    "html_handling": "drop-trailing-slash",
+    "not_found_handling": "404-page",
+  },
+  "routes": [
+    {
+      "pattern": "bepoliticallyaware.org",
+      "custom_domain": true,
+    },
+  ],
+}
