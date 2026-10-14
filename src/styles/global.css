@@ -249,7 +249,7 @@ li {
   color: var(--ink);
   text-decoration: none;
 }
-.site-header a:hover,
+.site-header a:not(.search-trigger):hover,
 .site-header a[aria-current="page"] {
   text-decoration: underline;
 }
