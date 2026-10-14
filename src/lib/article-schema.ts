@@ -16,6 +16,7 @@ const source = z.object({
   limitations: z.array(z.string()),
   kind: z.enum([
     "official_primary",
+    "official_primary_mirror",
     "independent_primary_analysis",
     "method_author_primary",
     "publisher_own_standards",
@@ -43,6 +44,10 @@ export const articleSchema = z.object({
   related_ids: z.array(z.string()),
   source_ref_ids: z.array(z.string()),
   sources: z.array(source),
+  data_ids: z.array(z.string()).optional(),
+  release_batch: z.string().optional(),
+  content_sha256: z.string().optional(),
+  word_count: z.number().int().positive().optional(),
   launch_order: z.number().int().positive().nullable(),
   quiz: z
     .object({

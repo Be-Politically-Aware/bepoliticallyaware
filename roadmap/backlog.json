@@ -1,6 +1,6 @@
 {
   "note": "Unwritten expansion briefs only. Exclude from public routes, search and sitemaps. Never turn these briefs into article bodies at build time.",
-  "planned_count": 141,
+  "planned_count": 117,
   "pages": [
     {
       "id": "in-start-how-power-reaches-you",
@@ -96,120 +96,6 @@
       "related_routes": [
         "/in/reference/how-we-know",
         "/in/reference/corrections"
-      ],
-      "launch_batch": null,
-      "publish": false,
-      "review_policy": "Risk-based research and publication; no inherited blanket human gate."
-    },
-    {
-      "id": "in-everyday-prices-and-food",
-      "route": "/in/everyday/prices-and-food",
-      "country": "IN",
-      "jurisdiction": "India; specify state/UT/locality where applicable",
-      "hub": "everyday",
-      "title": "Why are groceries getting expensive?",
-      "format": "explainer",
-      "brief_questions": [
-        "What can inflation data say about prices and household experience?",
-        "Which supply, tax and policy decisions may matter?",
-        "What would be needed to attribute a price rise to a particular decision?"
-      ],
-      "reader_task": "Compare a household shopping basket with an appropriately dated price measure.",
-      "seed_source_ids": [
-        "mospi",
-        "rbi",
-        "rbi-data",
-        "union-budget"
-      ],
-      "required_evidence": "Retrieve the actual responsible authority and scheme/rule for the chosen jurisdiction, plus an outcome measure and its limits.",
-      "priority": "P0",
-      "risk": "data_review",
-      "status": "planned",
-      "review_cadence": "annual, plus replacement when a cited dataset changes",
-      "prerequisites": [
-        "/in/evidence/claim-evidence-opinion"
-      ],
-      "related_routes": [
-        "/in/reference/how-we-know",
-        "/in/reference/corrections",
-        "/in/local/find-responsible-authority",
-        "/in/action/choose-a-route"
-      ],
-      "launch_batch": null,
-      "publish": false,
-      "review_policy": "Risk-based research and publication; no inherited blanket human gate."
-    },
-    {
-      "id": "in-everyday-schools-and-exams",
-      "route": "/in/everyday/schools-and-exams",
-      "country": "IN",
-      "jurisdiction": "India; specify state/UT/locality where applicable",
-      "hub": "everyday",
-      "title": "Who is responsible for schools, exams and recruitment failures?",
-      "format": "explainer",
-      "brief_questions": [
-        "Which authority runs the school or exam?",
-        "How do enrolment, attendance, learning and recruitment records differ?",
-        "Which complaint or record request fits the failure?"
-      ],
-      "reader_task": "Identify the governing institution and an appropriate outcome measure.",
-      "seed_source_ids": [
-        "udise",
-        "aser",
-        "lgd",
-        "india-code"
-      ],
-      "required_evidence": "Retrieve the actual responsible authority and scheme/rule for the chosen jurisdiction, plus an outcome measure and its limits.",
-      "priority": "P1",
-      "risk": "jurisdiction_review",
-      "status": "planned",
-      "review_cadence": "annual, plus replacement when a cited dataset changes",
-      "prerequisites": [
-        "/in/evidence/claim-evidence-opinion"
-      ],
-      "related_routes": [
-        "/in/reference/how-we-know",
-        "/in/reference/corrections",
-        "/in/local/find-responsible-authority",
-        "/in/action/choose-a-route"
-      ],
-      "launch_batch": null,
-      "publish": false,
-      "review_policy": "Risk-based research and publication; no inherited blanket human gate."
-    },
-    {
-      "id": "in-everyday-healthcare",
-      "route": "/in/everyday/healthcare",
-      "country": "IN",
-      "jurisdiction": "India; specify state/UT/locality where applicable",
-      "hub": "everyday",
-      "title": "Why does public healthcare fail some patients?",
-      "format": "explainer",
-      "brief_questions": [
-        "Who funds and operates the facility?",
-        "What do staffing, access and health-financing records measure?",
-        "How can a service failure be documented without exposing patient information?"
-      ],
-      "reader_task": "Build a facility-specific question using staffing or service records.",
-      "seed_source_ids": [
-        "nha",
-        "nha-2022-23",
-        "cag",
-        "lgd"
-      ],
-      "required_evidence": "Retrieve the actual responsible authority and scheme/rule for the chosen jurisdiction, plus an outcome measure and its limits.",
-      "priority": "P1",
-      "risk": "jurisdiction_review",
-      "status": "planned",
-      "review_cadence": "annual, plus replacement when a cited dataset changes",
-      "prerequisites": [
-        "/in/evidence/claim-evidence-opinion"
-      ],
-      "related_routes": [
-        "/in/reference/how-we-know",
-        "/in/reference/corrections",
-        "/in/local/find-responsible-authority",
-        "/in/action/choose-a-route"
       ],
       "launch_batch": null,
       "publish": false,
@@ -312,43 +198,6 @@
       "required_evidence": "Retrieve the actual responsible authority and scheme/rule for the chosen jurisdiction, plus an outcome measure and its limits.",
       "priority": "P1",
       "risk": "jurisdiction_review",
-      "status": "planned",
-      "review_cadence": "annual, plus replacement when a cited dataset changes",
-      "prerequisites": [
-        "/in/evidence/claim-evidence-opinion"
-      ],
-      "related_routes": [
-        "/in/reference/how-we-know",
-        "/in/reference/corrections",
-        "/in/local/find-responsible-authority",
-        "/in/action/choose-a-route"
-      ],
-      "launch_batch": null,
-      "publish": false,
-      "review_policy": "Risk-based research and publication; no inherited blanket human gate."
-    },
-    {
-      "id": "in-everyday-air-and-environment",
-      "route": "/in/everyday/air-and-environment",
-      "country": "IN",
-      "jurisdiction": "India; specify state/UT/locality where applicable",
-      "hub": "everyday",
-      "title": "Who is accountable for the air I breathe?",
-      "format": "explainer",
-      "brief_questions": [
-        "What do monitoring stations measure and miss?",
-        "Which regulator and local authority have duties?",
-        "What evidence links an emission source, enforcement decision and exposure?"
-      ],
-      "reader_task": "Read a dated local pollution measurement with its coverage limits.",
-      "seed_source_ids": [
-        "cpcb",
-        "cag",
-        "lgd"
-      ],
-      "required_evidence": "Retrieve the actual responsible authority and scheme/rule for the chosen jurisdiction, plus an outcome measure and its limits.",
-      "priority": "P1",
-      "risk": "data_review",
       "status": "planned",
       "review_cadence": "annual, plus replacement when a cited dataset changes",
       "prerequisites": [
@@ -493,41 +342,6 @@
       ],
       "required_evidence": "Check the exact current constitutional/statutory provision, commencement and relevant judgment. State citizenship and jurisdiction limits.",
       "priority": "P1",
-      "risk": "legal_review",
-      "status": "planned",
-      "review_cadence": "quarterly and on law changes",
-      "prerequisites": [
-        "/in/evidence/claim-evidence-opinion"
-      ],
-      "related_routes": [
-        "/in/reference/how-we-know",
-        "/in/reference/corrections"
-      ],
-      "launch_batch": null,
-      "publish": false,
-      "review_policy": "Risk-based research and publication; no inherited blanket human gate."
-    },
-    {
-      "id": "in-constitution-rights-and-who-has-them",
-      "route": "/in/constitution/rights-and-who-has-them",
-      "country": "IN",
-      "jurisdiction": "India; specify state/UT/locality where applicable",
-      "hub": "constitution",
-      "title": "Which rights protect me, and who can claim them?",
-      "format": "explainer",
-      "brief_questions": [
-        "Which protections apply to citizens and which to persons?",
-        "What restrictions and remedies apply?",
-        "How can simplified wording distort a right?"
-      ],
-      "reader_task": "Read a right together with its scope, exceptions and remedy.",
-      "seed_source_ids": [
-        "constitution",
-        "supreme-court",
-        "nalsa"
-      ],
-      "required_evidence": "Check the exact current constitutional/statutory provision, commencement and relevant judgment. State citizenship and jurisdiction limits.",
-      "priority": "P0",
       "risk": "legal_review",
       "status": "planned",
       "review_cadence": "quarterly and on law changes",
@@ -718,40 +532,6 @@
       "review_policy": "Risk-based research and publication; no inherited blanket human gate."
     },
     {
-      "id": "in-constitution-duties-directive-principles",
-      "route": "/in/constitution/duties-directive-principles",
-      "country": "IN",
-      "jurisdiction": "India; specify state/UT/locality where applicable",
-      "hub": "constitution",
-      "title": "Rights, duties and Directive Principles: what is different?",
-      "format": "explainer",
-      "brief_questions": [
-        "Which concepts are enforceable and how?",
-        "How can they inform policy without being treated as interchangeable?",
-        "What does a reader need to avoid a misleading rights-versus-duties slogan?"
-      ],
-      "reader_task": "Classify a constitutional statement and its legal effect.",
-      "seed_source_ids": [
-        "constitution",
-        "supreme-court"
-      ],
-      "required_evidence": "Check the exact current constitutional/statutory provision, commencement and relevant judgment. State citizenship and jurisdiction limits.",
-      "priority": "P2",
-      "risk": "legal_review",
-      "status": "planned",
-      "review_cadence": "quarterly and on law changes",
-      "prerequisites": [
-        "/in/evidence/claim-evidence-opinion"
-      ],
-      "related_routes": [
-        "/in/reference/how-we-know",
-        "/in/reference/corrections"
-      ],
-      "launch_batch": null,
-      "publish": false,
-      "review_policy": "Risk-based research and publication; no inherited blanket human gate."
-    },
-    {
       "id": "in-constitution-amendments-and-emergency",
       "route": "/in/constitution/amendments-and-emergency",
       "country": "IN",
@@ -893,77 +673,6 @@
       "review_policy": "Risk-based research and publication; no inherited blanket human gate."
     },
     {
-      "id": "in-parliament-questions-and-debates",
-      "route": "/in/parliament/questions-and-debates",
-      "country": "IN",
-      "jurisdiction": "India; specify state/UT/locality where applicable",
-      "hub": "parliament",
-      "title": "How do parliamentary questions and debates hold ministers to account?",
-      "format": "explainer",
-      "brief_questions": [
-        "What are the main question formats and their limits?",
-        "What can an answer establish or leave unanswered?",
-        "How can a reader find the original question and reply?"
-      ],
-      "reader_task": "Locate and read one full question-answer pair.",
-      "seed_source_ids": [
-        "lok-sabha",
-        "rajya-sabha",
-        "prs"
-      ],
-      "required_evidence": "Use current House rules and original proceedings, not an undated civics summary, for procedural claims.",
-      "priority": "P1",
-      "risk": "standard",
-      "status": "planned",
-      "review_cadence": "quarterly and on law changes",
-      "prerequisites": [
-        "/in/start/country-state-government-party"
-      ],
-      "related_routes": [
-        "/in/reference/how-we-know",
-        "/in/reference/corrections"
-      ],
-      "launch_batch": null,
-      "publish": false,
-      "review_policy": "Risk-based research and publication; no inherited blanket human gate."
-    },
-    {
-      "id": "in-parliament-committees",
-      "route": "/in/parliament/committees",
-      "country": "IN",
-      "jurisdiction": "India; specify state/UT/locality where applicable",
-      "hub": "parliament",
-      "title": "What happens in parliamentary committees?",
-      "format": "explainer",
-      "brief_questions": [
-        "Which kinds of committees exist and what do they examine?",
-        "How do recommendations differ from binding implementation?",
-        "How can reports and action-taken responses be followed?"
-      ],
-      "reader_task": "Trace one recommendation to the government's response.",
-      "seed_source_ids": [
-        "lok-sabha",
-        "rajya-sabha",
-        "prs",
-        "cag"
-      ],
-      "required_evidence": "Use current House rules and original proceedings, not an undated civics summary, for procedural claims.",
-      "priority": "P1",
-      "risk": "standard",
-      "status": "planned",
-      "review_cadence": "quarterly and on law changes",
-      "prerequisites": [
-        "/in/start/country-state-government-party"
-      ],
-      "related_routes": [
-        "/in/reference/how-we-know",
-        "/in/reference/corrections"
-      ],
-      "launch_batch": null,
-      "publish": false,
-      "review_policy": "Risk-based research and publication; no inherited blanket human gate."
-    },
-    {
       "id": "in-parliament-speaker-procedure-and-order",
       "route": "/in/parliament/speaker-procedure-and-order",
       "country": "IN",
@@ -985,77 +694,6 @@
       ],
       "required_evidence": "Use current House rules and original proceedings, not an undated civics summary, for procedural claims.",
       "priority": "P2",
-      "risk": "legal_review",
-      "status": "planned",
-      "review_cadence": "quarterly and on law changes",
-      "prerequisites": [
-        "/in/start/country-state-government-party"
-      ],
-      "related_routes": [
-        "/in/reference/how-we-know",
-        "/in/reference/corrections"
-      ],
-      "launch_batch": null,
-      "publish": false,
-      "review_policy": "Risk-based research and publication; no inherited blanket human gate."
-    },
-    {
-      "id": "in-parliament-confidence-coalitions-and-dissolution",
-      "route": "/in/parliament/confidence-coalitions-and-dissolution",
-      "country": "IN",
-      "jurisdiction": "India; specify state/UT/locality where applicable",
-      "hub": "parliament",
-      "title": "How can a government win or lose a majority?",
-      "format": "explainer",
-      "brief_questions": [
-        "How do confidence, no-confidence and coalition support differ?",
-        "Which House and procedures matter?",
-        "How can a seat change affect the arithmetic without replacing evidence with speculation?"
-      ],
-      "reader_task": "Work through a clearly labelled hypothetical majority example.",
-      "seed_source_ids": [
-        "constitution",
-        "lok-sabha",
-        "prs"
-      ],
-      "required_evidence": "Use current House rules and original proceedings, not an undated civics summary, for procedural claims.",
-      "priority": "P1",
-      "risk": "legal_review",
-      "status": "planned",
-      "review_cadence": "quarterly and on law changes",
-      "prerequisites": [
-        "/in/start/country-state-government-party"
-      ],
-      "related_routes": [
-        "/in/reference/how-we-know",
-        "/in/reference/corrections"
-      ],
-      "launch_batch": null,
-      "publish": false,
-      "review_policy": "Risk-based research and publication; no inherited blanket human gate."
-    },
-    {
-      "id": "in-parliament-whips-and-anti-defection",
-      "route": "/in/parliament/whips-and-anti-defection",
-      "country": "IN",
-      "jurisdiction": "India; specify state/UT/locality where applicable",
-      "hub": "parliament",
-      "title": "Can representatives vote against their party?",
-      "format": "explainer",
-      "brief_questions": [
-        "What is a whip and how does it differ from anti-defection law?",
-        "What exceptions, procedures and current judgments matter?",
-        "How do these rules affect independent scrutiny?"
-      ],
-      "reader_task": "Read a vote and its legal context without assuming every dissent causes disqualification.",
-      "seed_source_ids": [
-        "constitution",
-        "lok-sabha",
-        "rajya-sabha",
-        "supreme-court"
-      ],
-      "required_evidence": "Use current House rules and original proceedings, not an undated civics summary, for procedural claims.",
-      "priority": "P1",
       "risk": "legal_review",
       "status": "planned",
       "review_cadence": "quarterly and on law changes",
@@ -1761,42 +1399,6 @@
       "review_policy": "Risk-based research and publication; no inherited blanket human gate."
     },
     {
-      "id": "in-elections-eci-and-state-election-commissions",
-      "route": "/in/elections/eci-and-state-election-commissions",
-      "country": "IN",
-      "jurisdiction": "India; specify state/UT/locality where applicable",
-      "hub": "elections",
-      "title": "Who runs different elections?",
-      "format": "explainer",
-      "brief_questions": [
-        "Which responsibilities belong to ECI and which to a State Election Commission?",
-        "What does the Constitution say and what local rules apply?",
-        "Who receives a complaint about this election?"
-      ],
-      "reader_task": "Identify the correct election authority.",
-      "seed_source_ids": [
-        "constitution",
-        "eci",
-        "mopr",
-        "igod"
-      ],
-      "required_evidence": "Verify the specific election, applicable order/manual, dates and final disclosure/result records. Human-review all voting instructions.",
-      "priority": "P1",
-      "risk": "election_review",
-      "status": "planned",
-      "review_cadence": "event-driven plus monthly status check",
-      "prerequisites": [
-        "/in/start/country-state-government-party"
-      ],
-      "related_routes": [
-        "/in/reference/how-we-know",
-        "/in/reference/corrections"
-      ],
-      "launch_batch": null,
-      "publish": false,
-      "review_policy": "Risk-based research and publication; no inherited blanket human gate."
-    },
-    {
       "id": "in-elections-evm-vvpat-and-verification",
       "route": "/in/elections/evm-vvpat-and-verification",
       "country": "IN",
@@ -1952,42 +1554,6 @@
         "eci",
         "india-code",
         "nalsa"
-      ],
-      "required_evidence": "Verify the specific election, applicable order/manual, dates and final disclosure/result records. Human-review all voting instructions.",
-      "priority": "P1",
-      "risk": "legal_review",
-      "status": "planned",
-      "review_cadence": "event-driven plus monthly status check",
-      "prerequisites": [
-        "/in/start/country-state-government-party"
-      ],
-      "related_routes": [
-        "/in/reference/how-we-know",
-        "/in/reference/corrections"
-      ],
-      "launch_batch": null,
-      "publish": false,
-      "review_policy": "Risk-based research and publication; no inherited blanket human gate."
-    },
-    {
-      "id": "in-elections-funding-and-spending",
-      "route": "/in/elections/funding-and-spending",
-      "country": "IN",
-      "jurisdiction": "India; specify state/UT/locality where applicable",
-      "hub": "elections",
-      "title": "Who pays for parties and campaigns?",
-      "format": "explainer",
-      "brief_questions": [
-        "How do party finance, candidate expenditure and third-party campaigning differ?",
-        "Which disclosures and reporting limits apply?",
-        "What can missing or late data not establish?"
-      ],
-      "reader_task": "Trace one disclosed amount to the original filing and its period.",
-      "seed_source_ids": [
-        "eci",
-        "eci-bonds",
-        "myneta",
-        "india-code"
       ],
       "required_evidence": "Verify the specific election, applicable order/manual, dates and final disclosure/result records. Human-review all voting instructions.",
       "priority": "P1",
@@ -2397,80 +1963,6 @@
       "review_policy": "Risk-based research and publication; no inherited blanket human gate."
     },
     {
-      "id": "in-money-where-money-comes-from",
-      "route": "/in/money/where-money-comes-from",
-      "country": "IN",
-      "jurisdiction": "India; specify state/UT/locality where applicable",
-      "hub": "money",
-      "title": "Where does government money come from?",
-      "format": "explainer",
-      "brief_questions": [
-        "How do taxes, non-tax revenue, borrowing and transfers differ?",
-        "What belongs to Union, state and local finances?",
-        "What is a useful household-level analogy and where does it fail?"
-      ],
-      "reader_task": "Read the revenue side of one budget without conflating all levels of government.",
-      "seed_source_ids": [
-        "union-budget",
-        "cag",
-        "rbi"
-      ],
-      "required_evidence": "Record financial year, units, BE/RE/actual status, denominator, inflation treatment and institution responsible.",
-      "priority": "P1",
-      "risk": "data_review",
-      "status": "planned",
-      "review_cadence": "annual, plus replacement when a cited dataset changes",
-      "prerequisites": [
-        "/in/evidence/claim-evidence-opinion"
-      ],
-      "related_routes": [
-        "/in/reference/how-we-know",
-        "/in/reference/corrections",
-        "/in/local/find-responsible-authority",
-        "/in/action/choose-a-route"
-      ],
-      "launch_batch": null,
-      "publish": false,
-      "review_policy": "Risk-based research and publication; no inherited blanket human gate."
-    },
-    {
-      "id": "in-money-from-allocation-to-outcome",
-      "route": "/in/money/from-allocation-to-outcome",
-      "country": "IN",
-      "jurisdiction": "India; specify state/UT/locality where applicable",
-      "hub": "money",
-      "title": "Does a bigger budget mean a better service?",
-      "format": "explainer",
-      "brief_questions": [
-        "What happens between allocation, release, expenditure and delivery?",
-        "How do inflation and population change comparisons?",
-        "Which outcomes would establish improvement?"
-      ],
-      "reader_task": "Trace a spending claim to a service measure and show the remaining gap.",
-      "seed_source_ids": [
-        "union-budget",
-        "cag",
-        "egramswaraj"
-      ],
-      "required_evidence": "Record financial year, units, BE/RE/actual status, denominator, inflation treatment and institution responsible.",
-      "priority": "P0",
-      "risk": "data_review",
-      "status": "planned",
-      "review_cadence": "annual, plus replacement when a cited dataset changes",
-      "prerequisites": [
-        "/in/evidence/claim-evidence-opinion"
-      ],
-      "related_routes": [
-        "/in/reference/how-we-know",
-        "/in/reference/corrections",
-        "/in/local/find-responsible-authority",
-        "/in/action/choose-a-route"
-      ],
-      "launch_batch": null,
-      "publish": false,
-      "review_policy": "Risk-based research and publication; no inherited blanket human gate."
-    },
-    {
       "id": "in-money-taxes-and-gst",
       "route": "/in/money/taxes-and-gst",
       "country": "IN",
@@ -2508,44 +2000,6 @@
       "review_policy": "Risk-based research and publication; no inherited blanket human gate."
     },
     {
-      "id": "in-money-debt-deficit-and-interest",
-      "route": "/in/money/debt-deficit-and-interest",
-      "country": "IN",
-      "jurisdiction": "India; specify state/UT/locality where applicable",
-      "hub": "money",
-      "title": "What do debt and deficit numbers mean?",
-      "format": "explainer",
-      "brief_questions": [
-        "How do stocks and annual flows differ?",
-        "Which government level and denominator are being used?",
-        "What trade-offs cannot be settled by a single ratio?"
-      ],
-      "reader_task": "Read a fiscal claim without confusing debt, deficit and interest expenditure.",
-      "seed_source_ids": [
-        "union-budget",
-        "rbi",
-        "rbi-data",
-        "cag"
-      ],
-      "required_evidence": "Record financial year, units, BE/RE/actual status, denominator, inflation treatment and institution responsible.",
-      "priority": "P1",
-      "risk": "data_review",
-      "status": "planned",
-      "review_cadence": "annual, plus replacement when a cited dataset changes",
-      "prerequisites": [
-        "/in/evidence/claim-evidence-opinion"
-      ],
-      "related_routes": [
-        "/in/reference/how-we-know",
-        "/in/reference/corrections",
-        "/in/local/find-responsible-authority",
-        "/in/action/choose-a-route"
-      ],
-      "launch_batch": null,
-      "publish": false,
-      "review_policy": "Risk-based research and publication; no inherited blanket human gate."
-    },
-    {
       "id": "in-money-welfare-subsidy-freebie",
       "route": "/in/money/welfare-subsidy-freebie",
       "country": "IN",
@@ -2567,43 +2021,6 @@
       "required_evidence": "Record financial year, units, BE/RE/actual status, denominator, inflation treatment and institution responsible.",
       "priority": "P1",
       "risk": "data_review",
-      "status": "planned",
-      "review_cadence": "annual, plus replacement when a cited dataset changes",
-      "prerequisites": [
-        "/in/evidence/claim-evidence-opinion"
-      ],
-      "related_routes": [
-        "/in/reference/how-we-know",
-        "/in/reference/corrections",
-        "/in/local/find-responsible-authority",
-        "/in/action/choose-a-route"
-      ],
-      "launch_batch": null,
-      "publish": false,
-      "review_policy": "Risk-based research and publication; no inherited blanket human gate."
-    },
-    {
-      "id": "in-money-procurement-and-contracts",
-      "route": "/in/money/procurement-and-contracts",
-      "country": "IN",
-      "jurisdiction": "India; specify state/UT/locality where applicable",
-      "hub": "money",
-      "title": "How does the government buy work and services?",
-      "format": "explainer",
-      "brief_questions": [
-        "How do tender, bid, award, contract and payment records differ?",
-        "What competition and conflict-of-interest questions are legitimate?",
-        "When is an irregularity not proof of corruption?"
-      ],
-      "reader_task": "Follow one procurement record chain and flag what is missing.",
-      "seed_source_ids": [
-        "procurement",
-        "cag",
-        "india-code"
-      ],
-      "required_evidence": "Record financial year, units, BE/RE/actual status, denominator, inflation treatment and institution responsible.",
-      "priority": "P1",
-      "risk": "legal_review",
       "status": "planned",
       "review_cadence": "annual, plus replacement when a cited dataset changes",
       "prerequisites": [
@@ -2734,44 +2151,6 @@
       "review_policy": "Risk-based research and publication; no inherited blanket human gate."
     },
     {
-      "id": "in-money-political-money-and-conflicts",
-      "route": "/in/money/political-money-and-conflicts",
-      "country": "IN",
-      "jurisdiction": "India; specify state/UT/locality where applicable",
-      "hub": "money",
-      "title": "When does political funding raise a conflict-of-interest question?",
-      "format": "explainer",
-      "brief_questions": [
-        "What funding and official decision records can be linked reliably?",
-        "What evidence would establish more than timing or association?",
-        "How are responses and legal outcomes documented?"
-      ],
-      "reader_task": "Build a transparent evidence chain without converting a donation into a bribery verdict.",
-      "seed_source_ids": [
-        "eci-bonds",
-        "myneta",
-        "cag",
-        "supreme-court"
-      ],
-      "required_evidence": "Record financial year, units, BE/RE/actual status, denominator, inflation treatment and institution responsible.",
-      "priority": "P1",
-      "risk": "reputation_review",
-      "status": "planned",
-      "review_cadence": "annual, plus replacement when a cited dataset changes",
-      "prerequisites": [
-        "/in/evidence/claim-evidence-opinion"
-      ],
-      "related_routes": [
-        "/in/reference/how-we-know",
-        "/in/reference/corrections",
-        "/in/local/find-responsible-authority",
-        "/in/action/choose-a-route"
-      ],
-      "launch_batch": null,
-      "publish": false,
-      "review_policy": "Risk-based research and publication; no inherited blanket human gate."
-    },
-    {
       "id": "in-action-rti-follow-up",
       "route": "/in/action/rti-follow-up",
       "country": "IN",
@@ -2794,78 +2173,6 @@
       "required_evidence": "Verify recipient jurisdiction, eligibility, filing method, current time limits, escalation and privacy risks; do not promise success.",
       "priority": "P1",
       "risk": "legal_review",
-      "status": "planned",
-      "review_cadence": "monthly and before procedural publication",
-      "prerequisites": [
-        "/in/evidence/claim-evidence-opinion"
-      ],
-      "related_routes": [
-        "/in/reference/how-we-know",
-        "/in/reference/corrections"
-      ],
-      "launch_batch": null,
-      "publish": false,
-      "review_policy": "Risk-based research and publication; no inherited blanket human gate."
-    },
-    {
-      "id": "in-action-read-an-evasive-reply",
-      "route": "/in/action/read-an-evasive-reply",
-      "country": "IN",
-      "jurisdiction": "India; specify state/UT/locality where applicable",
-      "hub": "action",
-      "title": "How can I tell whether an official reply answers the question?",
-      "format": "action_guide",
-      "brief_questions": [
-        "Was the requested period, locality and measure addressed?",
-        "Is an announcement substituted for an outcome?",
-        "What precise follow-up would close the gap?"
-      ],
-      "reader_task": "Compare the question and answer side by side and identify the unanswered part.",
-      "seed_source_ids": [
-        "lok-sabha",
-        "rajya-sabha",
-        "cic",
-        "cpgrams"
-      ],
-      "required_evidence": "Verify recipient jurisdiction, eligibility, filing method, current time limits, escalation and privacy risks; do not promise success.",
-      "priority": "P1",
-      "risk": "standard",
-      "status": "planned",
-      "review_cadence": "monthly and before procedural publication",
-      "prerequisites": [
-        "/in/evidence/claim-evidence-opinion"
-      ],
-      "related_routes": [
-        "/in/reference/how-we-know",
-        "/in/reference/corrections"
-      ],
-      "launch_batch": null,
-      "publish": false,
-      "review_policy": "Risk-based research and publication; no inherited blanket human gate."
-    },
-    {
-      "id": "in-action-consultations-and-hearings",
-      "route": "/in/action/consultations-and-hearings",
-      "country": "IN",
-      "jurisdiction": "India; specify state/UT/locality where applicable",
-      "hub": "action",
-      "title": "How can I contribute to a public consultation?",
-      "format": "action_guide",
-      "brief_questions": [
-        "What is open for comment and what is already decided?",
-        "Which official deadline, format and submission route apply?",
-        "How can evidence and affected people's experience be included?"
-      ],
-      "reader_task": "Submit a specific response to a verified live consultation.",
-      "seed_source_ids": [
-        "prs",
-        "mopr",
-        "india-code",
-        "igod"
-      ],
-      "required_evidence": "Verify recipient jurisdiction, eligibility, filing method, current time limits, escalation and privacy risks; do not promise success.",
-      "priority": "P1",
-      "risk": "jurisdiction_review",
       "status": "planned",
       "review_cadence": "monthly and before procedural publication",
       "prerequisites": [
@@ -3162,112 +2469,6 @@
       "review_policy": "Risk-based research and publication; no inherited blanket human gate."
     },
     {
-      "id": "in-evidence-nominal-real-per-person",
-      "route": "/in/evidence/nominal-real-per-person",
-      "country": "IN",
-      "jurisdiction": "India; specify state/UT/locality where applicable",
-      "hub": "evidence",
-      "title": "Has spending really increased?",
-      "format": "explainer",
-      "brief_questions": [
-        "Is the amount nominal or inflation-adjusted?",
-        "Has the relevant population or beneficiary count changed?",
-        "Are fiscal years and accounting stages comparable?"
-      ],
-      "reader_task": "Show nominal and adjusted comparisons with explicit assumptions.",
-      "seed_source_ids": [
-        "union-budget",
-        "rbi-data",
-        "mospi"
-      ],
-      "required_evidence": "Use a reproducible example with original data/methodology, explicit denominator and uncertainty. Clearly label invented teaching examples.",
-      "priority": "P1",
-      "risk": "data_review",
-      "status": "planned",
-      "review_cadence": "annual, plus replacement when a cited dataset changes",
-      "prerequisites": [
-        "/in/evidence/claim-evidence-opinion"
-      ],
-      "related_routes": [
-        "/in/reference/how-we-know",
-        "/in/reference/corrections"
-      ],
-      "launch_batch": null,
-      "publish": false,
-      "review_policy": "Risk-based research and publication; no inherited blanket human gate."
-    },
-    {
-      "id": "in-evidence-correlation-and-causation",
-      "route": "/in/evidence/correlation-and-causation",
-      "country": "IN",
-      "jurisdiction": "India; specify state/UT/locality where applicable",
-      "hub": "evidence",
-      "title": "Did this policy actually cause the result?",
-      "format": "explainer",
-      "brief_questions": [
-        "What alternative explanations and pre-existing trends matter?",
-        "What comparison or research design would support attribution?",
-        "Which conclusions should remain tentative?"
-      ],
-      "reader_task": "Rewrite an overconfident causal claim to match its evidence.",
-      "seed_source_ids": [
-        "dig-research",
-        "microdata",
-        "cag"
-      ],
-      "required_evidence": "Use a reproducible example with original data/methodology, explicit denominator and uncertainty. Clearly label invented teaching examples.",
-      "priority": "P1",
-      "risk": "data_review",
-      "status": "planned",
-      "review_cadence": "annual, plus replacement when a cited dataset changes",
-      "prerequisites": [
-        "/in/evidence/claim-evidence-opinion"
-      ],
-      "related_routes": [
-        "/in/reference/how-we-know",
-        "/in/reference/corrections"
-      ],
-      "launch_batch": null,
-      "publish": false,
-      "review_policy": "Risk-based research and publication; no inherited blanket human gate."
-    },
-    {
-      "id": "in-evidence-survey-vs-administrative-data",
-      "route": "/in/evidence/survey-vs-administrative-data",
-      "country": "IN",
-      "jurisdiction": "India; specify state/UT/locality where applicable",
-      "hub": "evidence",
-      "title": "Why do two official datasets disagree?",
-      "format": "explainer",
-      "brief_questions": [
-        "Does one measure survey responses and the other recorded activity?",
-        "Are definitions, populations and periods aligned?",
-        "Can both be informative without being interchangeable?"
-      ],
-      "reader_task": "Compare the measurement process before comparing the numbers.",
-      "seed_source_ids": [
-        "microdata",
-        "plfs-2025",
-        "ncrb",
-        "udise"
-      ],
-      "required_evidence": "Use a reproducible example with original data/methodology, explicit denominator and uncertainty. Clearly label invented teaching examples.",
-      "priority": "P1",
-      "risk": "data_review",
-      "status": "planned",
-      "review_cadence": "annual, plus replacement when a cited dataset changes",
-      "prerequisites": [
-        "/in/evidence/claim-evidence-opinion"
-      ],
-      "related_routes": [
-        "/in/reference/how-we-know",
-        "/in/reference/corrections"
-      ],
-      "launch_batch": null,
-      "publish": false,
-      "review_policy": "Risk-based research and publication; no inherited blanket human gate."
-    },
-    {
       "id": "in-evidence-missing-data-and-underreporting",
       "route": "/in/evidence/missing-data-and-underreporting",
       "country": "IN",
@@ -3372,40 +2573,6 @@
       "review_policy": "Risk-based research and publication; no inherited blanket human gate."
     },
     {
-      "id": "in-media-headlines-and-clips",
-      "route": "/in/media/headlines-and-clips",
-      "country": "IN",
-      "jurisdiction": "India; specify state/UT/locality where applicable",
-      "hub": "media",
-      "title": "How can a true clip still mislead me?",
-      "format": "explainer",
-      "brief_questions": [
-        "What came before and after the excerpt?",
-        "Is the date, location or translation wrong?",
-        "Does the headline make a stronger claim than the evidence?"
-      ],
-      "reader_task": "Compare the full context with the circulated excerpt.",
-      "seed_source_ids": [
-        "sift",
-        "dig-curriculum"
-      ],
-      "required_evidence": "Use traceable, dated examples; show the original item and verification steps without amplifying harmful rumours or exposing private people.",
-      "priority": "P1",
-      "risk": "standard",
-      "status": "planned",
-      "review_cadence": "annual, plus replacement when a cited dataset changes",
-      "prerequisites": [
-        "/in/evidence/claim-evidence-opinion"
-      ],
-      "related_routes": [
-        "/in/reference/how-we-know",
-        "/in/reference/corrections"
-      ],
-      "launch_batch": null,
-      "publish": false,
-      "review_policy": "Risk-based research and publication; no inherited blanket human gate."
-    },
-    {
       "id": "in-media-photos-video-and-ai",
       "route": "/in/media/photos-video-and-ai",
       "country": "IN",
@@ -3461,41 +2628,6 @@
       "required_evidence": "Use traceable, dated examples; show the original item and verification steps without amplifying harmful rumours or exposing private people.",
       "priority": "P0",
       "risk": "reputation_review",
-      "status": "planned",
-      "review_cadence": "annual, plus replacement when a cited dataset changes",
-      "prerequisites": [
-        "/in/evidence/claim-evidence-opinion"
-      ],
-      "related_routes": [
-        "/in/reference/how-we-know",
-        "/in/reference/corrections"
-      ],
-      "launch_batch": null,
-      "publish": false,
-      "review_policy": "Risk-based research and publication; no inherited blanket human gate."
-    },
-    {
-      "id": "in-media-news-opinion-advertising",
-      "route": "/in/media/news-opinion-advertising",
-      "country": "IN",
-      "jurisdiction": "India; specify state/UT/locality where applicable",
-      "hub": "media",
-      "title": "Is this reporting, opinion, advertising or a press release?",
-      "format": "explainer",
-      "brief_questions": [
-        "Who produced the item and how is it labelled?",
-        "Which factual claims are independently supported?",
-        "Is sponsored material presented as independent reporting?"
-      ],
-      "reader_task": "Label the item type and verify factual claims separately.",
-      "seed_source_ids": [
-        "dnr-2026",
-        "nbdsa",
-        "sift"
-      ],
-      "required_evidence": "Use traceable, dated examples; show the original item and verification steps without amplifying harmful rumours or exposing private people.",
-      "priority": "P1",
-      "risk": "standard",
       "status": "planned",
       "review_cadence": "annual, plus replacement when a cited dataset changes",
       "prerequisites": [

@@ -1,0 +1,159 @@
+---
+import { dataAssets, dataLabels } from "../lib/data";
+import { sourceDirectory, dateLabel } from "../lib/content";
+import { isNumericTableCell } from "../lib/tables";
+interface Props {
+  ids: string[];
+}
+const { ids } = Astro.props;
+const assets = ids.map((id) => {
+  const asset = dataAssets.find((asset) => asset.id === id);
+  if (!asset) throw new Error(`Unknown data asset: ${id}`);
+  return asset;
+});
+const provenance = new Set([
+  "source_ref_id",
+  "source_url",
+  "source_locator",
+  "published_at",
+  "checked_at",
+]);
+const label = (value: string) => value.replaceAll("_", " ");
+const display = (value: string | number | boolean | null | undefined) =>
+  value == null ? "Not supplied" : String(value);
+---
+
+{assets.length > 0 && (
+  <section id="evidence-data" class="article-extra">
+    <h2>Source-linked data</h2>
+    {assets.map((asset) => (
+      <section data-asset-id={asset.id} data-asset-type={asset.asset_type}>
+        <h3>{asset.title}</h3>
+        <p>
+          <strong>{dataLabels[asset.asset_type]}</strong>
+        </p>
+        <p class="source-note">
+          {asset.description} Reference period: {asset.reference_period}
+        </p>
+        <ul class="source-note">
+          {asset.limitations.map((limit) => (
+            <li>{limit}</li>
+          ))}
+        </ul>
+        {asset.tables.map((table) => {
+          const columns = table.columns.filter(
+            (column) => !provenance.has(column),
+          );
+          return (
+            <details class="sources" data-table-id={table.id}>
+              <summary>
+                {table.title} ({table.row_count} rows)
+              </summary>
+              <div
+                class="table-scroll"
+                tabindex="0"
+                role="region"
+                aria-label={table.title}
+              >
+                <table>
+                  <caption>
+                    <div class="table-caption">{table.title}</div>
+                  </caption>
+                  <thead>
+                    <tr>
+                      {columns.map((column) => (
+                        <th scope="col">{label(column)}</th>
+                      ))}
+                      <th scope="col">Source and dates</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    {table.rows.map((row) => (
+                      <tr>
+                        {columns.map((column, index) =>
+                          index === 0 ? (
+                            <th scope="row">{display(row[column])}</th>
+                          ) : (
+                            <td
+                              class:list={{
+                                num: isNumericTableCell(display(row[column])),
+                              }}
+                            >
+                              {display(row[column])}
+                            </td>
+                          ),
+                        )}
+                        <td>
+                          <details>
+                            <summary>Source details</summary>
+                            {typeof row.source_url === "string" && (
+                              <a href={row.source_url}>Original source</a>
+                            )}
+                            <p>{row.source_locator}</p>
+                            <p>
+                              Published: {display(row.published_at)}
+                              <br />
+                              Checked: {display(row.checked_at)}
+                            </p>
+                          </details>
+                        </td>
+                      </tr>
+                    ))}
+                  </tbody>
+                </table>
+              </div>
+              <p>
+                <a href={`/csv/${table.csv_path.split("/").pop()}`} download>
+                  Download this table (CSV)<span aria-hidden="true"> ↓</span>
+                </a>
+              </p>
+            </details>
+          );
+        })}
+        <details class="sources">
+          <summary>
+            Data sources and scope ({asset.source_ref_ids.length})
+          </summary>
+          <ul>
+            {asset.source_ref_ids.map((id) => {
+              const ref = sourceDirectory.references.find(
+                (ref) => ref.id === id,
+              )!;
+              const document = sourceDirectory.documents.find(
+                (document) => document.id === ref.document_id,
+              )!;
+              return (
+                <li>
+                  <a href={ref.url}>{document.title}</a>
+                  <p>
+                    {document.publisher} · {ref.locator}
+                  </p>
+                  <p>
+                    Published: {document.published_at ?? "Not supplied"}
+                    <br />
+                    Reference period:{" "}
+                    {document.reference_period ?? "Not supplied"}
+                    <br />
+                    Source checked: {document.checked_at}
+                  </p>
+                  <p>{document.access_scope}</p>
+                  {document.kind === "official_primary_mirror" && (
+                    <p>Official-origin document on a third-party mirror.</p>
+                  )}
+                  <p>{document.limitations.join(" ")}</p>
+                </li>
+              );
+            })}
+          </ul>
+        </details>
+        <a href={`/data/${asset.id}.json`} download>
+          Download the source-linked data (JSON)
+          <span aria-hidden="true"> ↓</span>
+        </a>
+        <p class="fine-print">
+          Research checked {dateLabel(asset.checked_at)}. Not a live data feed.
+        </p>
+      </section>
+    ))}
+  </section>
+)}

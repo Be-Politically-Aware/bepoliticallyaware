@@ -1,0 +1,183 @@
+{
+  "schema_version": "1.0.0",
+  "id": "v3-teaching-calculations",
+  "title": "Teaching examples: real spending and causal comparisons",
+  "asset_type": "synthetic_teaching_example",
+  "description": "Invented inputs with executable arithmetic. Never chart as observed Indian data.",
+  "country": "IN",
+  "checked_at": "2026-10-14",
+  "version": "3.0.0",
+  "source_ref_ids": [
+    "v3-counterfactual",
+    "v3-equal-trends"
+  ],
+  "limitations": [
+    "All numerical inputs in this asset are invented for teaching.",
+    "The difference-in-differences arithmetic is not a valid causal estimate unless its assumptions are justified for actual data.",
+    "An appropriate deflator and population are needed for a real spending-per-person analysis."
+  ],
+  "definitions": {},
+  "tables": [
+    {
+      "id": "spending-inputs",
+      "title": "Hypothetical spending inputs",
+      "rows": [
+        {
+          "example_id": "spending",
+          "period": "Year A",
+          "nominal_spending_INR_crore": 100,
+          "price_index": 100,
+          "population": 100000,
+          "synthetic": true,
+          "source_ref_id": null,
+          "source_url": null,
+          "source_locator": "Authored hypothetical inputs; not extracted from a real programme.",
+          "published_at": null,
+          "checked_at": "2026-10-14"
+        },
+        {
+          "example_id": "spending",
+          "period": "Year B",
+          "nominal_spending_INR_crore": 110,
+          "price_index": 108,
+          "population": 105000,
+          "synthetic": true,
+          "source_ref_id": null,
+          "source_url": null,
+          "source_locator": "Authored hypothetical inputs; not extracted from a real programme.",
+          "published_at": null,
+          "checked_at": "2026-10-14"
+        }
+      ],
+      "row_count": 2,
+      "csv_path": "content/csv/v3-teaching-calculations--spending-inputs.csv",
+      "columns": [
+        "example_id",
+        "period",
+        "nominal_spending_INR_crore",
+        "price_index",
+        "population",
+        "synthetic",
+        "source_ref_id",
+        "source_url",
+        "source_locator",
+        "published_at",
+        "checked_at"
+      ]
+    },
+    {
+      "id": "causal-inputs",
+      "title": "Hypothetical absence rates",
+      "rows": [
+        {
+          "example_id": "absence",
+          "group": "programme",
+          "period": "before",
+          "absence_rate_percent": 20,
+          "synthetic": true,
+          "source_ref_id": "v3-equal-trends",
+          "source_url": "https://documents1.worldbank.org/curated/en/698441474029568469/pdf/108270-PUB-Box396299B-PUBLIC-PUBDATE-9-13-16.pdf#page=167",
+          "source_locator": "Chapter 7, printed pages 137–138 / PDF pages 167–168: assessing the equal-trends assumption",
+          "published_at": "2016",
+          "checked_at": "2026-10-14",
+          "data_origin": "Authored example; cited source supports the method, not these invented inputs."
+        },
+        {
+          "example_id": "absence",
+          "group": "programme",
+          "period": "after",
+          "absence_rate_percent": 12,
+          "synthetic": true,
+          "source_ref_id": "v3-equal-trends",
+          "source_url": "https://documents1.worldbank.org/curated/en/698441474029568469/pdf/108270-PUB-Box396299B-PUBLIC-PUBDATE-9-13-16.pdf#page=167",
+          "source_locator": "Chapter 7, printed pages 137–138 / PDF pages 167–168: assessing the equal-trends assumption",
+          "published_at": "2016",
+          "checked_at": "2026-10-14",
+          "data_origin": "Authored example; cited source supports the method, not these invented inputs."
+        },
+        {
+          "example_id": "absence",
+          "group": "comparison",
+          "period": "before",
+          "absence_rate_percent": 18,
+          "synthetic": true,
+          "source_ref_id": "v3-equal-trends",
+          "source_url": "https://documents1.worldbank.org/curated/en/698441474029568469/pdf/108270-PUB-Box396299B-PUBLIC-PUBDATE-9-13-16.pdf#page=167",
+          "source_locator": "Chapter 7, printed pages 137–138 / PDF pages 167–168: assessing the equal-trends assumption",
+          "published_at": "2016",
+          "checked_at": "2026-10-14",
+          "data_origin": "Authored example; cited source supports the method, not these invented inputs."
+        },
+        {
+          "example_id": "absence",
+          "group": "comparison",
+          "period": "after",
+          "absence_rate_percent": 14,
+          "synthetic": true,
+          "source_ref_id": "v3-equal-trends",
+          "source_url": "https://documents1.worldbank.org/curated/en/698441474029568469/pdf/108270-PUB-Box396299B-PUBLIC-PUBDATE-9-13-16.pdf#page=167",
+          "source_locator": "Chapter 7, printed pages 137–138 / PDF pages 167–168: assessing the equal-trends assumption",
+          "published_at": "2016",
+          "checked_at": "2026-10-14",
+          "data_origin": "Authored example; cited source supports the method, not these invented inputs."
+        }
+      ],
+      "row_count": 4,
+      "csv_path": "content/csv/v3-teaching-calculations--causal-inputs.csv",
+      "columns": [
+        "example_id",
+        "group",
+        "period",
+        "absence_rate_percent",
+        "synthetic",
+        "source_ref_id",
+        "source_url",
+        "source_locator",
+        "published_at",
+        "checked_at",
+        "data_origin"
+      ]
+    }
+  ],
+  "calculations": [
+    {
+      "id": "nominal-growth",
+      "formula": "(110 / 100 - 1) * 100",
+      "result": 10.0,
+      "unit": "percent"
+    },
+    {
+      "id": "real-spending",
+      "formula": "110 * 100 / 108",
+      "result": 101.85185185185185,
+      "unit": "INR_crore_in_Year_A_prices"
+    },
+    {
+      "id": "real-growth",
+      "formula": "((110 / 100) / (108 / 100) - 1) * 100",
+      "result": 1.85185185185186,
+      "unit": "percent"
+    },
+    {
+      "id": "real-per-person-growth",
+      "formula": "((110 / 100) / (108 / 100) / (105000 / 100000) - 1) * 100",
+      "result": -2.998236331569659,
+      "unit": "percent"
+    },
+    {
+      "id": "did",
+      "formula": "(12 - 20) - (14 - 18)",
+      "result": -4.0,
+      "unit": "percentage_points",
+      "interpretation": "Synthetic comparison-adjusted change only; equal-trends and other identifying assumptions required."
+    }
+  ],
+  "human_reviewed": false,
+  "review_method": "Source passages/tables inspected by assistant; transcription and arithmetic validated locally. Not an independent audit.",
+  "is_live": false,
+  "synthetic": true,
+  "published_at": null,
+  "reference_period": "Invented Year A/Year B and before/after periods; not calendar observations",
+  "geography": "Hypothetical; no real geography",
+  "row_count": 6
+}

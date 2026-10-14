@@ -1,0 +1,162 @@
+{
+  "schema_version": "1.0.0",
+  "id": "v3-political-finance-records",
+  "title": "Political finance: record types and dated source events",
+  "asset_type": "reference_table",
+  "description": "A source-navigation and interpretation asset, not a donor/party money dataset.",
+  "country": "IN",
+  "checked_at": "2026-10-14",
+  "version": "3.0.0",
+  "source_ref_ids": [
+    "v3-finance-records",
+    "v3-candidate-expenses",
+    "v3-bonds-disclosed",
+    "v3-bonds-court",
+    "v3-bonds-allegations"
+  ],
+  "limitations": [
+    "No donor totals, party rankings, suspicious-transaction matching or guilt scores are generated.",
+    "The three source events are selected historical context, not a complete chronology or live case-status tracker.",
+    "No underlying party filing or electoral-bond transaction file is represented as audited."
+  ],
+  "definitions": {},
+  "tables": [
+    {
+      "id": "record-types",
+      "title": "Financial records and their limits",
+      "rows": [
+        {
+          "record_type_id": "party_contribution_report",
+          "record_type": "Party Contribution Report",
+          "scope": "Contributions disclosed by a party for its reporting period",
+          "does_not_establish": "Not automatically total income, all funding flows or proof that a donor influenced a decision.",
+          "reference_period": "As specified by the individual filing or historical disclosure",
+          "source_ref_id": "v3-finance-records",
+          "source_url": "https://www.pib.gov.in/PressReleasePage.aspx?PRID=1937050",
+          "source_locator": "Announcement identifying Contribution Reports, Audited Annual Accounts and Election Expenditure Statements",
+          "published_at": "2023-07-03",
+          "checked_at": "2026-10-14"
+        },
+        {
+          "record_type_id": "party_audited_accounts",
+          "record_type": "Party Audited Annual Accounts",
+          "scope": "Financial accounts for the party’s financial year",
+          "does_not_establish": "Accounting categories differ from contribution reports and election-period spending; inspect the actual filing.",
+          "reference_period": "As specified by the individual filing or historical disclosure",
+          "source_ref_id": "v3-finance-records",
+          "source_url": "https://www.pib.gov.in/PressReleasePage.aspx?PRID=1937050",
+          "source_locator": "Announcement identifying Contribution Reports, Audited Annual Accounts and Election Expenditure Statements",
+          "published_at": "2023-07-03",
+          "checked_at": "2026-10-14"
+        },
+        {
+          "record_type_id": "party_election_expenditure",
+          "record_type": "Party Election Expenditure Statement",
+          "scope": "Party reporting for a specified election",
+          "does_not_establish": "Not the same reporting entity or period as an individual candidate’s expense account.",
+          "reference_period": "As specified by the individual filing or historical disclosure",
+          "source_ref_id": "v3-finance-records",
+          "source_url": "https://www.pib.gov.in/PressReleasePage.aspx?PRID=1937050",
+          "source_locator": "Announcement identifying Contribution Reports, Audited Annual Accounts and Election Expenditure Statements",
+          "published_at": "2023-07-03",
+          "checked_at": "2026-10-14"
+        },
+        {
+          "record_type_id": "candidate_expense_account",
+          "record_type": "Candidate election-expense account",
+          "scope": "Candidate-level records under RPA sections 76–78, scoped to Lok Sabha and Assembly elections",
+          "does_not_establish": "Verify the specific account and election instructions; no ceiling or filing deadline is supplied here.",
+          "reference_period": "As specified by the individual filing or historical disclosure",
+          "source_ref_id": "v3-candidate-expenses",
+          "source_url": "https://www.ceo.kerala.gov.in/ceokerala/backend/public/uploads/pdfs/representation-of-the-people-acti-1951.pdf#page=38",
+          "source_locator": "Sections 76–78, PDF pages 38–39: scope, candidate accounts and lodging",
+          "published_at": null,
+          "checked_at": "2026-10-14"
+        },
+        {
+          "record_type_id": "electoral_bond_disclosure",
+          "record_type": "Historical electoral-bond disclosure",
+          "scope": "Data ECI announced it uploaded as received from SBI",
+          "does_not_establish": "Not all political finance and not proof of a quid pro quo; underlying transaction files were not reconstructed here.",
+          "reference_period": "As specified by the individual filing or historical disclosure",
+          "source_ref_id": "v3-bonds-disclosed",
+          "source_url": "https://www.pib.gov.in/PressReleasePage.aspx?PRID=2015989",
+          "source_locator": "21 March 2024 notice: SBI data uploaded as received, pursuant to court directions",
+          "published_at": "2024-03-21",
+          "checked_at": "2026-10-14"
+        }
+      ],
+      "row_count": 5,
+      "csv_path": "content/csv/v3-political-finance-records--record-types.csv",
+      "columns": [
+        "record_type_id",
+        "record_type",
+        "scope",
+        "does_not_establish",
+        "reference_period",
+        "source_ref_id",
+        "source_url",
+        "source_locator",
+        "published_at",
+        "checked_at"
+      ]
+    },
+    {
+      "id": "events",
+      "title": "Selected historical source events",
+      "rows": [
+        {
+          "event_date": "2023-07-03",
+          "event": "ECI announced an online filing facility for three party financial-report categories.",
+          "interpretation_limit": "Does not establish the completeness of any individual party filing.",
+          "source_ref_id": "v3-finance-records",
+          "source_url": "https://www.pib.gov.in/PressReleasePage.aspx?PRID=1937050",
+          "source_locator": "Announcement identifying Contribution Reports, Audited Annual Accounts and Election Expenditure Statements",
+          "published_at": "2023-07-03",
+          "checked_at": "2026-10-14"
+        },
+        {
+          "event_date": "2024-03-21",
+          "event": "ECI announced it uploaded SBI electoral-bond data as received pursuant to court directions.",
+          "interpretation_limit": "Disclosure event, not an independent transaction audit.",
+          "source_ref_id": "v3-bonds-disclosed",
+          "source_url": "https://www.pib.gov.in/PressReleasePage.aspx?PRID=2015989",
+          "source_locator": "21 March 2024 notice: SBI data uploaded as received, pursuant to court directions",
+          "published_at": "2024-03-21",
+          "checked_at": "2026-10-14"
+        },
+        {
+          "event_date": "2024-08-02",
+          "event": "Supreme Court order distinguished the earlier scheme-invalidity judgment from petitions seeking investigation and discussed ordinary remedies.",
+          "interpretation_limit": "Not a finding that every donation was criminal or that every transaction was cleared; not a complete case chronology.",
+          "source_ref_id": "v3-bonds-court",
+          "source_url": "https://api.sci.gov.in/supremecourt/2024/17622/17622_2024_1_30_54391_Order_02-Aug-2024.pdf#page=1",
+          "source_locator": "Opening recap of the 15 February 2024 judgment and paragraphs 15–17 on Article 32 intervention",
+          "published_at": "2024-08-02",
+          "checked_at": "2026-10-14"
+        }
+      ],
+      "row_count": 3,
+      "csv_path": "content/csv/v3-political-finance-records--events.csv",
+      "columns": [
+        "event_date",
+        "event",
+        "interpretation_limit",
+        "source_ref_id",
+        "source_url",
+        "source_locator",
+        "published_at",
+        "checked_at"
+      ]
+    }
+  ],
+  "calculations": [],
+  "human_reviewed": false,
+  "review_method": "Source passages/tables inspected by assistant; transcription and arithmetic validated locally. Not an independent audit.",
+  "is_live": false,
+  "synthetic": false,
+  "published_at": null,
+  "reference_period": "Selected 2023–2024 source events; record-specific periods must be checked",
+  "geography": "India",
+  "row_count": 8
+}

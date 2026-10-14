@@ -7,7 +7,7 @@
     "node": ">=22.12.0"
   },
   "scripts": {
-    "dev": "astro dev --host 127.0.0.1",
+    "dev": "astro dev --host",
     "build": "bun run check && astro build",
     "preview": "astro preview --host 127.0.0.1",
     "check": "astro check && tsc --noEmit",
@@ -17,6 +17,7 @@
   },
   "devDependencies": {
     "@astrojs/check": "^0.9.10",
+    "@resvg/resvg-js": "2.6.2",
     "@tailwindcss/vite": "^4.3.3",
     "@types/bun": "latest",
     "@types/hast": "^3",
@@ -25,6 +26,7 @@
     "cheerio": "^1.2.0",
     "prettier": "^3.9.10",
     "prettier-plugin-astro": "^1.1.1",
+    "satori": "0.26.0",
     "tailwindcss": "^4.3.3",
     "typescript": "6.0.3"
   },

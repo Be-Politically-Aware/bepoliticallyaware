@@ -333,6 +333,420 @@
       "access_scope": "Original verification framework used as an attributed method; no empirical effect sizes asserted.",
       "limitations": [],
       "full_document_rehosted": false
+    },
+    {
+      "id": "v3-constitution",
+      "title": "Constitution of India: official English compilation",
+      "publisher": "Legislative Department, Ministry of Law and Justice",
+      "url": "https://www.legislative.gov.in/static/uploads/2025/07/c9fe9c9b6840524844316f74bb1c556c.pdf",
+      "kind": "official_primary",
+      "version": "As on 1 May 2026",
+      "published_at": null,
+      "reference_period": null,
+      "checked_at": "2026-10-14",
+      "access_scope": "Cover visually checked; cited articles, schedules and relevant footnotes inspected in parsed text.",
+      "limitations": [
+        "The compilation has a 1 May 2026 cutoff. These are explanations of cited provisions, not a claim that every later case or notification has been reviewed. No current office-holder or live majority is inferred."
+      ],
+      "full_document_rehosted": false
+    },
+    {
+      "id": "v3-ls-faq",
+      "title": "Lok Sabha frequently asked questions",
+      "publisher": "Lok Sabha Secretariat",
+      "url": "https://sansad.in/ls/faq",
+      "kind": "official_primary",
+      "version": "Page includes an as-on 1 August 2019 notice",
+      "published_at": null,
+      "reference_period": null,
+      "checked_at": "2026-10-14",
+      "access_scope": "Relevant passages read from the original source through web retrieval.",
+      "limitations": [
+        "Only basic question-format explanations are used. Dated office-holder information, membership numbers, exact notice periods and conflicting timing statements are not reused."
+      ],
+      "full_document_rehosted": false
+    },
+    {
+      "id": "v3-committees-intro",
+      "title": "Introduction to parliamentary committees",
+      "publisher": "Lok Sabha Secretariat",
+      "url": "https://sansad.in/ls/committee/introduction",
+      "kind": "official_primary",
+      "version": null,
+      "published_at": null,
+      "reference_period": null,
+      "checked_at": "2026-10-14",
+      "access_scope": "Relevant passages read from the original source through web retrieval.",
+      "limitations": [],
+      "full_document_rehosted": false
+    },
+    {
+      "id": "v3-committee-handbook",
+      "title": "Handbook chapter III: Parliamentary Committees",
+      "publisher": "Lok Sabha Secretariat",
+      "url": "https://sansad.in/uploads/Chapter3_5166a53cf4_a948264f07.pdf?updated_at=2022-09-14T11%3A59%3A57.151Z",
+      "kind": "official_primary",
+      "version": "Parliament-hosted handbook chapter; publication date not established",
+      "published_at": null,
+      "reference_period": null,
+      "checked_at": "2026-10-14",
+      "access_scope": "PDF text inspected, including printed pages 146–149; first-page committee table visually checked.",
+      "limitations": [
+        "Historical examples and lists in the handbook are not presented as current committee membership. A report must be read with its own date and scope."
+      ],
+      "full_document_rehosted": false
+    },
+    {
+      "id": "v3-defection-handbook",
+      "title": "Handbook chapter V: anti-defection provisions",
+      "publisher": "Lok Sabha Secretariat",
+      "url": "https://sansad.in/uploads/Chapter5_bcef32a522_57941e8421.pdf?updated_at=2022-09-14T12%3A00%3A45.541Z",
+      "kind": "official_primary",
+      "version": "Parliament-hosted handbook chapter",
+      "published_at": null,
+      "reference_period": null,
+      "checked_at": "2026-10-14",
+      "access_scope": "Four-page chapter inspected; printed page 176 visually checked.",
+      "limitations": [
+        "Simplified parliamentary explanation. The full Tenth Schedule and case-specific orders control; no named current dispute is adjudicated here."
+      ],
+      "full_document_rehosted": false
+    },
+    {
+      "id": "v3-sec",
+      "title": "Constitutional provisions for State Election Commissions",
+      "publisher": "State Election Commission, Himachal Pradesh",
+      "url": "https://sechimachal.hp.gov.in/En/Constitutional%20Provisions.html",
+      "kind": "official_primary",
+      "version": null,
+      "published_at": null,
+      "reference_period": null,
+      "checked_at": "2026-10-14",
+      "access_scope": "Relevant passages read from the original source through web retrieval.",
+      "limitations": [
+        "Reproduction of constitutional provisions, not a verified list of every state/local election procedure or special-area arrangement."
+      ],
+      "full_document_rehosted": false
+    },
+    {
+      "id": "v3-party-filing",
+      "title": "Online filing of political-party financial accounts",
+      "publisher": "Election Commission of India, via PIB",
+      "url": "https://www.pib.gov.in/PressReleasePage.aspx?PRID=1937050",
+      "kind": "official_primary",
+      "version": null,
+      "published_at": "2023-07-03",
+      "reference_period": null,
+      "checked_at": "2026-10-14",
+      "access_scope": "Relevant passages read from the original source through web retrieval.",
+      "limitations": [
+        "Establishes the three report categories and the filing initiative. It does not verify the completeness or truth of any party’s individual filing."
+      ],
+      "full_document_rehosted": false
+    },
+    {
+      "id": "v3-bond-disclosure",
+      "title": "ECI uploads electoral-bond data received from SBI",
+      "publisher": "Election Commission of India, via PIB",
+      "url": "https://www.pib.gov.in/PressReleasePage.aspx?PRID=2015989",
+      "kind": "official_primary",
+      "version": null,
+      "published_at": "2024-03-21",
+      "reference_period": "Historical disclosure event on 21 March 2024",
+      "checked_at": "2026-10-14",
+      "access_scope": "Relevant passages read from the original source through web retrieval.",
+      "limitations": [
+        "Disclosure event only. Underlying transaction files were not reconstructed or audited in this release."
+      ],
+      "full_document_rehosted": false
+    },
+    {
+      "id": "v3-bond-order",
+      "title": "Common Cause and connected petitions: Supreme Court order",
+      "publisher": "Supreme Court of India",
+      "url": "https://api.sci.gov.in/supremecourt/2024/17622/17622_2024_1_30_54391_Order_02-Aug-2024.pdf",
+      "kind": "official_primary",
+      "version": null,
+      "published_at": "2024-08-02",
+      "reference_period": "Order dated 2 August 2024",
+      "checked_at": "2026-10-14",
+      "access_scope": "Original ten-page order inspected, especially the recap of the February judgment and paragraphs 15–17.",
+      "limitations": [
+        "Historical order, not a live status check of all electoral-bond investigations. Petitioners’ allegations are not judicial findings. The February judgment is referenced through this later official order, not claimed as fully inspected."
+      ],
+      "full_document_rehosted": false
+    },
+    {
+      "id": "v3-budget",
+      "title": "Budget at a Glance 2026–27",
+      "publisher": "Ministry of Finance",
+      "url": "https://www.indiabudget.gov.in/doc/Budget_at_Glance/bag1.pdf",
+      "kind": "official_primary",
+      "version": "Union Budget 2026–27",
+      "published_at": null,
+      "reference_period": "FY 2024–25 actuals; FY 2025–26 BE and RE; FY 2026–27 BE",
+      "checked_at": "2026-10-14",
+      "access_scope": "Five-page PDF inspected. Main table on PDF page 3 was visually checked against parsed values.",
+      "limitations": [
+        "Union figures, not consolidated Union/state/local finances. Estimates are not actual expenditure. Published crore values can produce small arithmetic differences because of rounding; no source total is silently adjusted."
+      ],
+      "full_document_rehosted": false
+    },
+    {
+      "id": "v3-oomf",
+      "title": "Output Outcome Monitoring Framework 2026–27",
+      "publisher": "Government of India / Union Budget",
+      "url": "https://www.indiabudget.gov.in/doc/OutcomeBudgetE2026_2027.pdf",
+      "kind": "official_primary",
+      "version": "2026–27 major Central Sector and Centrally Sponsored schemes",
+      "published_at": null,
+      "reference_period": "FY 2026–27 targets",
+      "checked_at": "2026-10-14",
+      "access_scope": "Preface and selected scheme pages inspected. This release uses definitions, not a full audit of 302 pages.",
+      "limitations": [
+        "Budget targets are not achievements. An outcome indicator can be an imperfect proxy for the public benefit of interest."
+      ],
+      "full_document_rehosted": false
+    },
+    {
+      "id": "v3-procurement-index",
+      "title": "Department of Expenditure procurement manuals directory",
+      "publisher": "Department of Expenditure, Ministry of Finance",
+      "url": "https://doe.gov.in/en/manuals",
+      "kind": "official_primary",
+      "version": null,
+      "published_at": null,
+      "reference_period": null,
+      "checked_at": "2026-10-14",
+      "access_scope": "Live index inspected: Works Second Edition 2025 listed 5 January 2026; Goods Second Edition 2024; service manuals 2025.",
+      "limitations": [
+        "An index verifies listed editions, not the text of every manual. Works and service manuals are not claimed as read."
+      ],
+      "full_document_rehosted": false
+    },
+    {
+      "id": "v3-procurement-goods",
+      "title": "Manual for Procurement of Goods, Second Edition 2024",
+      "publisher": "Department of Expenditure; copy hosted by IIT Kanpur",
+      "url": "https://www.iitk.ac.in/centralstores/data/Manual_Goods_2024-17-09-24.pdf",
+      "kind": "official_primary",
+      "version": "Second Edition 2024",
+      "published_at": null,
+      "reference_period": null,
+      "checked_at": "2026-10-14",
+      "access_scope": "Official manual on public-institution host. Cited sections read; printed page 42 / PDF page 66 visually checked.",
+      "limitations": [
+        "Central goods-procurement framework; not a universal rulebook for every state, municipality, works contract or service purchase. Current tender terms and applicable amendments must be checked for an individual contract."
+      ],
+      "full_document_rehosted": false
+    },
+    {
+      "id": "v3-cpi",
+      "title": "Consumer Price Index release: September 2026",
+      "publisher": "National Statistics Office, MoSPI",
+      "url": "https://www.mospi.gov.in/uploads/latestReleases/latest_release_1791800601071_643518af-5320-4e52-b78c-75c92b83885b_Press_Release_for_the_month_of_September,_2026.pdf",
+      "kind": "official_primary",
+      "version": "CPI base 2024=100",
+      "published_at": "2026-10-12",
+      "reference_period": "September 2026 provisional; August 2026 final",
+      "checked_at": "2026-10-14",
+      "access_scope": "Ten-page release inspected. Main table (PDF page 1) and division table (PDF page 6) visually checked.",
+      "limitations": [
+        "Year-on-year rates are not month-on-month price changes. CFPI is not identical to the Food and Beverages division. September figures are provisional. Rounded indices do not reproduce every published rate exactly."
+      ],
+      "full_document_rehosted": false
+    },
+    {
+      "id": "v3-school-release",
+      "title": "UDISE+ 2025–26: Ministry of Education release and tables",
+      "publisher": "Ministry of Education, via PIB",
+      "url": "https://www.pib.gov.in/PressReleasePage.aspx?PRID=2282141&lang=1&reg=48",
+      "kind": "official_primary",
+      "version": null,
+      "published_at": "2026-07-07",
+      "reference_period": "Academic years 2022–23 through 2025–26",
+      "checked_at": "2026-10-14",
+      "access_scope": "Original release’s HTML tables inspected directly, not reconstructed from search snippets.",
+      "limitations": [
+        "Selected tables from the ministry’s release, not a full extraction of the national reports. Administrative reporting is not an independent measure of classroom learning or daily facility functionality. Narrative claims of causal success are not adopted."
+      ],
+      "full_document_rehosted": false
+    },
+    {
+      "id": "v3-aser",
+      "title": "ASER basic survey design and scope",
+      "publisher": "ASER Centre",
+      "url": "https://asercentre.org/aser-survey/",
+      "kind": "independent_primary_analysis",
+      "version": null,
+      "published_at": null,
+      "reference_period": null,
+      "checked_at": "2026-10-14",
+      "access_scope": "Original survey producer’s design explanation inspected.",
+      "limitations": [
+        "Explains the basic rural household survey. Not all ASER thematic or rapid surveys use this design. No new national learning estimate is extracted here."
+      ],
+      "full_document_rehosted": false
+    },
+    {
+      "id": "v3-health",
+      "title": "National Health Accounts 2022–23 release",
+      "publisher": "Ministry of Health and Family Welfare, via PIB",
+      "url": "https://www.pib.gov.in/PressReleasePage.aspx?PRID=2265816&lang=1&reg=3",
+      "kind": "official_primary",
+      "version": null,
+      "published_at": "2026-05-27",
+      "reference_period": "FY 2013–14, 2021–22 and 2022–23 (selected comparisons)",
+      "checked_at": "2026-10-14",
+      "access_scope": "Official release inspected, including the GDP-series note. Full NHA report was too large for successful web retrieval; no claim of full-table inspection.",
+      "limitations": [
+        "The source is the official release, not the full report. Percentages use different denominators. Rounded expenditure amounts must not be converted into invented exact totals. Aggregate spending does not establish access, quality or individual bills."
+      ],
+      "full_document_rehosted": false
+    },
+    {
+      "id": "v3-aqi",
+      "title": "National Air Quality Index launch and methodology",
+      "publisher": "Ministry of Environment, Forest and Climate Change, via PIB",
+      "url": "https://www.pib.gov.in/newsite/printrelease.aspx?relid=110654",
+      "kind": "official_primary",
+      "version": "Indian National AQI category framework",
+      "published_at": "2014-10-17",
+      "reference_period": null,
+      "checked_at": "2026-10-14",
+      "access_scope": "Original methodology text and category table inspected.",
+      "limitations": [
+        "Reference classification, not live air-quality readings, pollutant source attribution, exposure estimates or individual medical advice."
+      ],
+      "full_document_rehosted": false
+    },
+    {
+      "id": "v3-aqi-current",
+      "title": "National Air Quality Index: concept note",
+      "publisher": "Indian Economic Service, Ministry of Finance",
+      "url": "https://ies.gov.in/arthapedia/concept/national-air-quality-index",
+      "kind": "official_primary",
+      "version": null,
+      "published_at": null,
+      "reference_period": null,
+      "checked_at": "2026-10-14",
+      "access_scope": "Official explanatory page inspected to corroborate the category framework.",
+      "limitations": [
+        "Undated concept explanation, not a monitoring dataset."
+      ],
+      "full_document_rehosted": false
+    },
+    {
+      "id": "v3-cpcb-functions",
+      "title": "Central Pollution Control Board: functions",
+      "publisher": "Government of India, via PIB",
+      "url": "https://www.pib.gov.in/newsite/erelcontent.aspx?relid=39318",
+      "kind": "official_primary",
+      "version": "Historical government explanation of institutional functions",
+      "published_at": "2008-06-02",
+      "reference_period": null,
+      "checked_at": "2026-10-14",
+      "access_scope": "Government description of central coordination and pollution-control functions inspected.",
+      "limitations": [
+        "Broad institutional functions only. No historical monitoring-station count is presented as current. State/local enforcement powers must be identified for the actual issue."
+      ],
+      "full_document_rehosted": false
+    },
+    {
+      "id": "v3-impact",
+      "title": "Impact Evaluation in Practice, Second Edition",
+      "publisher": "World Bank and Inter-American Development Bank",
+      "url": "https://documents1.worldbank.org/curated/en/698441474029568469/pdf/108270-PUB-Box396299B-PUBLIC-PUBDATE-9-13-16.pdf",
+      "kind": "method_author_primary",
+      "version": "Second Edition",
+      "published_at": "2016",
+      "reference_period": null,
+      "checked_at": "2026-10-14",
+      "access_scope": "Original book inspected: counterfactual discussion in chapter 3 and equal-trends discussion in chapter 7.",
+      "limitations": [
+        "Method explanation, not an evaluation of an Indian policy. Numerical teaching examples in this pack are newly authored and explicitly synthetic."
+      ],
+      "full_document_rehosted": false
+    },
+    {
+      "id": "v3-sift",
+      "title": "SIFT: The Four Moves",
+      "publisher": "Mike Caulfield",
+      "url": "https://hapgood.us/2019/06/19/sift-the-four-moves/",
+      "kind": "method_author_primary",
+      "version": null,
+      "published_at": "2019-06-19",
+      "reference_period": null,
+      "checked_at": "2026-10-14",
+      "access_scope": "Author’s original post inspected; comments and trackbacks are not evidence.",
+      "limitations": [
+        "Verification workflow, not a guarantee that an image or claim can be conclusively authenticated."
+      ],
+      "full_document_rehosted": false
+    },
+    {
+      "id": "v3-political-ads",
+      "title": "Political advertisements and MCMC pre-certification",
+      "publisher": "Election Commission of India, via PIB",
+      "url": "https://www.pib.gov.in/PressReleasePage.aspx?PRID=2242903&lang=1&reg=3",
+      "kind": "official_primary",
+      "version": null,
+      "published_at": "2026-03-20",
+      "reference_period": "Guidance issued for specified 2026 assembly elections and by-elections",
+      "checked_at": "2026-10-14",
+      "access_scope": "Original release inspected, including scope of electronic political advertisements.",
+      "limitations": [
+        "Dated election guidance, not a statement that every political opinion post requires certification. Certification is not an independent fact-check endorsement."
+      ],
+      "full_document_rehosted": false
+    },
+    {
+      "id": "v3-plcp-answer",
+      "title": "Lok Sabha Unstarred Question 2110: Pre-Legislative Consultation Policy",
+      "publisher": "Ministry of Law and Justice / Lok Sabha",
+      "url": "https://sansad.in/getFile/loksabhaquestions/annex/186/AU2110_008KJB.pdf?source=pqals",
+      "kind": "official_primary",
+      "version": null,
+      "published_at": "2025-12-12",
+      "reference_period": "Reply dated 12 December 2025",
+      "checked_at": "2026-10-14",
+      "access_scope": "All three PDF pages inspected; answer page visually checked.",
+      "limitations": [
+        "Establishes what the ministry answered on this date. It does not establish that no department consulted the public or that the 2025 position is unchanged indefinitely."
+      ],
+      "full_document_rehosted": false
+    },
+    {
+      "id": "v3-plcp-policy",
+      "title": "Decisions on Pre-Legislative Consultation Policy",
+      "publisher": "Committee of Secretaries, Government of India; copy hosted by Jacobs, Cordova & Associates",
+      "url": "https://regulatoryreform.com/wp-content/uploads/2015/03/India-Pre-legislative-consultation-policy-2014.pdf",
+      "kind": "official_primary_mirror",
+      "version": "2014 policy",
+      "published_at": null,
+      "reference_period": "Committee of Secretaries meeting: 10 January 2014",
+      "checked_at": "2026-10-14",
+      "access_scope": "Original three-page policy copy inspected; PDF page 2 visually checked. Official department landing page did not return readable policy text.",
+      "limitations": [
+        "Primary government document on a third-party host, disclosed as a mirror. Policy language is not a universal statutory deadline or a guarantee of an oral hearing."
+      ],
+      "full_document_rehosted": false
+    },
+    {
+      "id": "v3-candidate-accounts",
+      "title": "Representation of the People Act 1951: election-expense provisions",
+      "publisher": "Chief Electoral Officer, Kerala (statutory text host)",
+      "url": "https://www.ceo.kerala.gov.in/ceokerala/backend/public/uploads/pdfs/representation-of-the-people-acti-1951.pdf",
+      "kind": "official_primary",
+      "version": "Hosted compilation; consolidation date not established",
+      "published_at": null,
+      "reference_period": null,
+      "checked_at": "2026-10-14",
+      "access_scope": "Sections 76–78 on PDF pages 38–39 inspected.",
+      "limitations": [
+        "Used only for the distinction between candidate expense accounts and party reports, scoped to Lok Sabha and Assembly elections. No expenditure ceiling, current filing instruction or obsolete electoral-bond exemption is extracted. Other provisions are not presented as fully current."
+      ],
+      "full_document_rehosted": false
     }
   ],
   "references": [
@@ -678,6 +1092,378 @@
       "locator": "Original method: stop, investigate the source, find better coverage, trace claims to original context",
       "url": "https://hapgood.us/2019/06/19/sift-the-four-moves/",
       "notes": null
+    },
+    {
+      "id": "v3-rights-equality",
+      "document_id": "v3-constitution",
+      "locator": "Article 14; citizen-specific language in Articles 15 and 16",
+      "url": "https://www.legislative.gov.in/static/uploads/2025/07/c9fe9c9b6840524844316f74bb1c556c.pdf#page=37",
+      "notes": null
+    },
+    {
+      "id": "v3-rights-freedoms",
+      "document_id": "v3-constitution",
+      "locator": "Article 19(1) and restrictions in clauses (2)–(6)",
+      "url": "https://www.legislative.gov.in/static/uploads/2025/07/c9fe9c9b6840524844316f74bb1c556c.pdf#page=40",
+      "notes": null
+    },
+    {
+      "id": "v3-rights-life",
+      "document_id": "v3-constitution",
+      "locator": "Articles 21 and 21A",
+      "url": "https://www.legislative.gov.in/static/uploads/2025/07/c9fe9c9b6840524844316f74bb1c556c.pdf#page=42",
+      "notes": null
+    },
+    {
+      "id": "v3-rights-remedy",
+      "document_id": "v3-constitution",
+      "locator": "Article 32: enforcement of Part III rights",
+      "url": "https://www.legislative.gov.in/static/uploads/2025/07/c9fe9c9b6840524844316f74bb1c556c.pdf#page=50",
+      "notes": null
+    },
+    {
+      "id": "v3-directive-principles",
+      "document_id": "v3-constitution",
+      "locator": "Articles 37–39 and 41–47: scope and policy directions",
+      "url": "https://www.legislative.gov.in/static/uploads/2025/07/c9fe9c9b6840524844316f74bb1c556c.pdf#page=52",
+      "notes": null
+    },
+    {
+      "id": "v3-duties",
+      "document_id": "v3-constitution",
+      "locator": "Article 51A, particularly clauses (e), (g), (h) and (i)",
+      "url": "https://www.legislative.gov.in/static/uploads/2025/07/c9fe9c9b6840524844316f74bb1c556c.pdf#page=56",
+      "notes": null
+    },
+    {
+      "id": "v3-confidence",
+      "document_id": "v3-constitution",
+      "locator": "Article 75(1) and (3): appointment and collective responsibility",
+      "url": "https://www.legislative.gov.in/static/uploads/2025/07/c9fe9c9b6840524844316f74bb1c556c.pdf#page=65",
+      "notes": null
+    },
+    {
+      "id": "v3-state-confidence",
+      "document_id": "v3-constitution",
+      "locator": "Article 164(2): collective responsibility to the Legislative Assembly",
+      "url": "https://www.legislative.gov.in/static/uploads/2025/07/c9fe9c9b6840524844316f74bb1c556c.pdf#page=104",
+      "notes": null
+    },
+    {
+      "id": "v3-dissolution",
+      "document_id": "v3-constitution",
+      "locator": "Article 85(2): prorogation and dissolution",
+      "url": "https://www.legislative.gov.in/static/uploads/2025/07/c9fe9c9b6840524844316f74bb1c556c.pdf#page=71",
+      "notes": null
+    },
+    {
+      "id": "v3-voting",
+      "document_id": "v3-constitution",
+      "locator": "Article 100(1): ordinary present-and-voting rule and casting vote",
+      "url": "https://www.legislative.gov.in/static/uploads/2025/07/c9fe9c9b6840524844316f74bb1c556c.pdf#page=75",
+      "notes": null
+    },
+    {
+      "id": "v3-defection",
+      "document_id": "v3-constitution",
+      "locator": "Tenth Schedule paragraphs 2, 4 and 6; paragraph 7 invalidity footnote",
+      "url": "https://www.legislative.gov.in/static/uploads/2025/07/c9fe9c9b6840524844316f74bb1c556c.pdf#page=376",
+      "notes": null
+    },
+    {
+      "id": "v3-eci",
+      "document_id": "v3-constitution",
+      "locator": "Article 324(1): elections within ECI responsibility",
+      "url": "https://www.legislative.gov.in/static/uploads/2025/07/c9fe9c9b6840524844316f74bb1c556c.pdf#page=217",
+      "notes": null
+    },
+    {
+      "id": "v3-public-services-powers",
+      "document_id": "v3-constitution",
+      "locator": "Article 246 and Seventh Schedule: legislative allocation; implementation must be traced to the relevant authority",
+      "url": "https://www.legislative.gov.in/static/uploads/2025/07/c9fe9c9b6840524844316f74bb1c556c.pdf#page=176",
+      "notes": null
+    },
+    {
+      "id": "v3-questions",
+      "document_id": "v3-ls-faq",
+      "locator": "Questions section: starred, unstarred, short-notice and private-member questions; half-an-hour discussion",
+      "url": "https://sansad.in/ls/faq",
+      "notes": null
+    },
+    {
+      "id": "v3-committee-structure",
+      "document_id": "v3-committees-intro",
+      "locator": "Departmentally Related Standing Committees: 24 committees; 31 members, 21 Lok Sabha and 10 Rajya Sabha",
+      "url": "https://sansad.in/ls/committee/introduction",
+      "notes": null
+    },
+    {
+      "id": "v3-committee-work",
+      "document_id": "v3-committee-handbook",
+      "locator": "Printed pages 146–148 / PDF pages 29–31: functions, evidence, dissent and reports",
+      "url": "https://sansad.in/uploads/Chapter3_5166a53cf4_a948264f07.pdf?updated_at=2022-09-14T11%3A59%3A57.151Z#page=29",
+      "notes": null
+    },
+    {
+      "id": "v3-committee-followup",
+      "document_id": "v3-committee-handbook",
+      "locator": "Printed page 149 / PDF page 32: persuasive value and Action Taken Reports",
+      "url": "https://sansad.in/uploads/Chapter3_5166a53cf4_a948264f07.pdf?updated_at=2022-09-14T11%3A59%3A57.151Z#page=32",
+      "notes": null
+    },
+    {
+      "id": "v3-whips",
+      "document_id": "v3-defection-handbook",
+      "locator": "Printed pages 176–178: directions, disqualification and merger provisions",
+      "url": "https://sansad.in/uploads/Chapter5_bcef32a522_57941e8421.pdf?updated_at=2022-09-14T12%3A00%3A45.541Z#page=1",
+      "notes": null
+    },
+    {
+      "id": "v3-sec-scope",
+      "document_id": "v3-sec",
+      "locator": "Articles 243K and 243ZA: panchayat and municipal elections",
+      "url": "https://sechimachal.hp.gov.in/En/Constitutional%20Provisions.html",
+      "notes": null
+    },
+    {
+      "id": "v3-finance-records",
+      "document_id": "v3-party-filing",
+      "locator": "Announcement identifying Contribution Reports, Audited Annual Accounts and Election Expenditure Statements",
+      "url": "https://www.pib.gov.in/PressReleasePage.aspx?PRID=1937050",
+      "notes": null
+    },
+    {
+      "id": "v3-bonds-disclosed",
+      "document_id": "v3-bond-disclosure",
+      "locator": "21 March 2024 notice: SBI data uploaded as received, pursuant to court directions",
+      "url": "https://www.pib.gov.in/PressReleasePage.aspx?PRID=2015989",
+      "notes": null
+    },
+    {
+      "id": "v3-bonds-court",
+      "document_id": "v3-bond-order",
+      "locator": "Opening recap of the 15 February 2024 judgment and paragraphs 15–17 on Article 32 intervention",
+      "url": "https://api.sci.gov.in/supremecourt/2024/17622/17622_2024_1_30_54391_Order_02-Aug-2024.pdf#page=1",
+      "notes": null
+    },
+    {
+      "id": "v3-bonds-allegations",
+      "document_id": "v3-bond-order",
+      "locator": "Paragraphs 15–17, PDF pages 6–8: ordinary remedies and the distinction between validity and individual wrongdoing",
+      "url": "https://api.sci.gov.in/supremecourt/2024/17622/17622_2024_1_30_54391_Order_02-Aug-2024.pdf#page=6",
+      "notes": null
+    },
+    {
+      "id": "v3-budget-definitions",
+      "document_id": "v3-budget",
+      "locator": "PDF pages 1–2: receipts/expenditure and fiscal, revenue and primary deficit definitions",
+      "url": "https://www.indiabudget.gov.in/doc/Budget_at_Glance/bag1.pdf#page=1",
+      "notes": null
+    },
+    {
+      "id": "v3-budget-table",
+      "document_id": "v3-budget",
+      "locator": "Printed page 1 / PDF page 3: complete main table and GDP/adjustment notes",
+      "url": "https://www.indiabudget.gov.in/doc/Budget_at_Glance/bag1.pdf#page=3",
+      "notes": null
+    },
+    {
+      "id": "v3-budget-rupee",
+      "document_id": "v3-budget",
+      "locator": "PDF page 4: Rupee Comes From infographic, whose presentation includes states’ tax share",
+      "url": "https://www.indiabudget.gov.in/doc/Budget_at_Glance/bag1.pdf#page=4",
+      "notes": null
+    },
+    {
+      "id": "v3-output-outcome",
+      "document_id": "v3-oomf",
+      "locator": "Preface, PDF page 5: outlay, output, outcome and annual targets",
+      "url": "https://www.indiabudget.gov.in/doc/OutcomeBudgetE2026_2027.pdf#page=5",
+      "notes": null
+    },
+    {
+      "id": "v3-procurement-editions",
+      "document_id": "v3-procurement-index",
+      "locator": "Live manual listing, including separate works, goods, consultancy and non-consultancy manuals",
+      "url": "https://doe.gov.in/en/manuals",
+      "notes": null
+    },
+    {
+      "id": "v3-procurement-cycle",
+      "document_id": "v3-procurement-goods",
+      "locator": "Sections 1.12–1.13, printed page 42 / PDF page 66: disclosure and procurement cycle",
+      "url": "https://www.iitk.ac.in/centralstores/data/Manual_Goods_2024-17-09-24.pdf#page=66",
+      "notes": null
+    },
+    {
+      "id": "v3-procurement-evaluation",
+      "document_id": "v3-procurement-goods",
+      "locator": "Section 7.6.14, printed pages 177–178 / PDF pages 201–202: responsive, qualified, lowest evaluated bid",
+      "url": "https://www.iitk.ac.in/centralstores/data/Manual_Goods_2024-17-09-24.pdf#page=201",
+      "notes": null
+    },
+    {
+      "id": "v3-procurement-award",
+      "document_id": "v3-procurement-goods",
+      "locator": "Section 7.7.2, printed page 179 / PDF page 203: award publication and exceptions",
+      "url": "https://www.iitk.ac.in/centralstores/data/Manual_Goods_2024-17-09-24.pdf#page=203",
+      "notes": null
+    },
+    {
+      "id": "v3-cpi-headline",
+      "document_id": "v3-cpi",
+      "locator": "PDF page 1: rural/urban/combined CPI and CFPI inflation and indices",
+      "url": "https://www.mospi.gov.in/uploads/latestReleases/latest_release_1791800601071_643518af-5320-4e52-b78c-75c92b83885b_Press_Release_for_the_month_of_September,_2026.pdf#page=1",
+      "notes": null
+    },
+    {
+      "id": "v3-cpi-method",
+      "document_id": "v3-cpi",
+      "locator": "PDF page 4: price collection, precision, coverage and interpretation notes",
+      "url": "https://www.mospi.gov.in/uploads/latestReleases/latest_release_1791800601071_643518af-5320-4e52-b78c-75c92b83885b_Press_Release_for_the_month_of_September,_2026.pdf#page=4",
+      "notes": null
+    },
+    {
+      "id": "v3-cpi-divisions",
+      "document_id": "v3-cpi",
+      "locator": "Annexure I, PDF page 6: division-wise indices and year-on-year inflation; division code 12 absent",
+      "url": "https://www.mospi.gov.in/uploads/latestReleases/latest_release_1791800601071_643518af-5320-4e52-b78c-75c92b83885b_Press_Release_for_the_month_of_September,_2026.pdf#page=6",
+      "notes": null
+    },
+    {
+      "id": "v3-schools-counts",
+      "document_id": "v3-school-release",
+      "locator": "Tables: teacher counts, single-teacher schools and zero-enrolment schools",
+      "url": "https://www.pib.gov.in/PressReleasePage.aspx?PRID=2282141&lang=1&reg=48",
+      "notes": null
+    },
+    {
+      "id": "v3-schools-progression",
+      "document_id": "v3-school-release",
+      "locator": "Tables: dropout, retention, gross enrolment and transition rates (NEP-stage labels)",
+      "url": "https://www.pib.gov.in/PressReleasePage.aspx?PRID=2282141&lang=1&reg=48",
+      "notes": null
+    },
+    {
+      "id": "v3-schools-facilities",
+      "document_id": "v3-school-release",
+      "locator": "Tables: computer/internet access and basic infrastructure facilities",
+      "url": "https://www.pib.gov.in/PressReleasePage.aspx?PRID=2282141&lang=1&reg=48",
+      "notes": null
+    },
+    {
+      "id": "v3-aser-method",
+      "document_id": "v3-aser",
+      "locator": "Basic design: rural households; enrolment ages 3–16; basic reading/arithmetic ages 5–16",
+      "url": "https://asercentre.org/aser-survey/",
+      "notes": null
+    },
+    {
+      "id": "v3-health-spending",
+      "document_id": "v3-health",
+      "locator": "Government spending, per-capita values, GHE/THE and OOPE/THE comparisons",
+      "url": "https://www.pib.gov.in/PressReleasePage.aspx?PRID=2265816&lang=1&reg=3",
+      "notes": null
+    },
+    {
+      "id": "v3-health-gdp",
+      "document_id": "v3-health",
+      "locator": "GDP note: FY 2022–23 GHE/GDP is 1.43% in the earlier presentation and 1.48% using the new GDP series with base 2022–23",
+      "url": "https://www.pib.gov.in/PressReleasePage.aspx?PRID=2265816&lang=1&reg=3",
+      "notes": null
+    },
+    {
+      "id": "v3-aqi-method",
+      "document_id": "v3-aqi",
+      "locator": "Six category ranges; eight pollutants; worst sub-index approach",
+      "url": "https://www.pib.gov.in/newsite/printrelease.aspx?relid=110654",
+      "notes": null
+    },
+    {
+      "id": "v3-aqi-interpret",
+      "document_id": "v3-aqi-current",
+      "locator": "National AQI concept and category explanation",
+      "url": "https://ies.gov.in/arthapedia/concept/national-air-quality-index",
+      "notes": null
+    },
+    {
+      "id": "v3-air-responsibility",
+      "document_id": "v3-cpcb-functions",
+      "locator": "CPCB advisory, national coordination, technical assistance and air-pollution functions",
+      "url": "https://www.pib.gov.in/newsite/erelcontent.aspx?relid=39318",
+      "notes": null
+    },
+    {
+      "id": "v3-counterfactual",
+      "document_id": "v3-impact",
+      "locator": "Chapter 3, especially printed page 49 / PDF page 79: counterfactual; subsequent before/after discussion",
+      "url": "https://documents1.worldbank.org/curated/en/698441474029568469/pdf/108270-PUB-Box396299B-PUBLIC-PUBDATE-9-13-16.pdf#page=79",
+      "notes": null
+    },
+    {
+      "id": "v3-equal-trends",
+      "document_id": "v3-impact",
+      "locator": "Chapter 7, printed pages 137–138 / PDF pages 167–168: assessing the equal-trends assumption",
+      "url": "https://documents1.worldbank.org/curated/en/698441474029568469/pdf/108270-PUB-Box396299B-PUBLIC-PUBDATE-9-13-16.pdf#page=167",
+      "notes": null
+    },
+    {
+      "id": "v3-trace-context",
+      "document_id": "v3-sift",
+      "locator": "Original post: investigating sources and tracing claims, quotations and media to original context",
+      "url": "https://hapgood.us/2019/06/19/sift-the-four-moves/",
+      "notes": null
+    },
+    {
+      "id": "v3-advertising",
+      "document_id": "v3-political-ads",
+      "locator": "Paragraphs 1–3: election context, electronic political ads and District/State MCMC",
+      "url": "https://www.pib.gov.in/PressReleasePage.aspx?PRID=2242903&lang=1&reg=3",
+      "notes": null
+    },
+    {
+      "id": "v3-plcp-reply",
+      "document_id": "v3-plcp-answer",
+      "locator": "Question parts (a)–(e) and answer: evaluation, compliance records and mandatory-consultation proposal",
+      "url": "https://sansad.in/getFile/loksabhaquestions/annex/186/AU2110_008KJB.pdf?source=pqals#page=1",
+      "notes": null
+    },
+    {
+      "id": "v3-consultation-policy",
+      "document_id": "v3-plcp-policy",
+      "locator": "Numbered decisions 1–7, PDF page 2: draft information, 30-day policy language, plain-language note and feedback summary",
+      "url": "https://regulatoryreform.com/wp-content/uploads/2015/03/India-Pre-legislative-consultation-policy-2014.pdf#page=2",
+      "notes": null
+    },
+    {
+      "id": "v3-consultation-exceptions",
+      "document_id": "v3-plcp-policy",
+      "locator": "Numbered decision 11, PDF page 3: recording reasons where consultation is infeasible or undesirable",
+      "url": "https://regulatoryreform.com/wp-content/uploads/2015/03/India-Pre-legislative-consultation-policy-2014.pdf#page=3",
+      "notes": null
+    },
+    {
+      "id": "v3-candidate-expenses",
+      "document_id": "v3-candidate-accounts",
+      "locator": "Sections 76–78, PDF pages 38–39: scope, candidate accounts and lodging",
+      "url": "https://www.ceo.kerala.gov.in/ceokerala/backend/public/uploads/pdfs/representation-of-the-people-acti-1951.pdf#page=38",
+      "notes": null
+    },
+    {
+      "id": "v3-schools-ratios",
+      "document_id": "v3-school-release",
+      "locator": "Pupil Teacher Ratio table, with NEP-stage labels",
+      "url": "https://www.pib.gov.in/PressReleasePage.aspx?PRID=2282141&lang=1&reg=48",
+      "notes": null
+    },
+    {
+      "id": "v3-schools-representation",
+      "document_id": "v3-school-release",
+      "locator": "Female Representation in Education table",
+      "url": "https://www.pib.gov.in/PressReleasePage.aspx?PRID=2282141&lang=1&reg=48",
+      "notes": null
     }
-  ]
+  ],
+  "latest_release_checked_at": "2026-10-14"
 }

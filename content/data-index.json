@@ -1,0 +1,65 @@
+[
+  {
+    "id": "v3-cpi-september-2026",
+    "title": "Consumer prices: September 2026",
+    "asset_type": "official_statistics",
+    "path": "content/data/v3-cpi-september-2026.json",
+    "row_count": 96,
+    "synthetic": false,
+    "is_live": false
+  },
+  {
+    "id": "v3-udise-2025-26",
+    "title": "School education: UDISE+ 2025–26 release tables",
+    "asset_type": "official_statistics",
+    "path": "content/data/v3-udise-2025-26.json",
+    "row_count": 128,
+    "synthetic": false,
+    "is_live": false
+  },
+  {
+    "id": "v3-nha-2022-23",
+    "title": "Health financing: selected NHA 2022–23 comparisons",
+    "asset_type": "official_statistics",
+    "path": "content/data/v3-nha-2022-23.json",
+    "row_count": 15,
+    "synthetic": false,
+    "is_live": false
+  },
+  {
+    "id": "v3-union-budget-receipts-deficits",
+    "title": "Union Budget 2026–27: receipts, expenditure and deficits",
+    "asset_type": "official_statistics",
+    "path": "content/data/v3-union-budget-receipts-deficits.json",
+    "row_count": 88,
+    "synthetic": false,
+    "is_live": false
+  },
+  {
+    "id": "v3-india-aqi-reference",
+    "title": "Indian AQI category reference",
+    "asset_type": "reference_table",
+    "path": "content/data/v3-india-aqi-reference.json",
+    "row_count": 6,
+    "synthetic": false,
+    "is_live": false
+  },
+  {
+    "id": "v3-political-finance-records",
+    "title": "Political finance: record types and dated source events",
+    "asset_type": "reference_table",
+    "path": "content/data/v3-political-finance-records.json",
+    "row_count": 8,
+    "synthetic": false,
+    "is_live": false
+  },
+  {
+    "id": "v3-teaching-calculations",
+    "title": "Teaching examples: real spending and causal comparisons",
+    "asset_type": "synthetic_teaching_example",
+    "path": "content/data/v3-teaching-calculations.json",
+    "row_count": 6,
+    "synthetic": true,
+    "is_live": false
+  }
+]

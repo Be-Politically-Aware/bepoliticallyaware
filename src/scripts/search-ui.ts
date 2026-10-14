@@ -216,7 +216,7 @@ export function setupSearch() {
     if (!query) {
       pageList.replaceChildren();
       pageStatus.textContent =
-        "Search all 40 published guides. Try “MP”, “RTI”, “WhatsApp”, “budget” or “unemployment”.";
+        "Search all published guides. Try “MP”, “RTI”, “WhatsApp”, “budget” or “unemployment”.";
       return;
     }
     pageList.replaceChildren();

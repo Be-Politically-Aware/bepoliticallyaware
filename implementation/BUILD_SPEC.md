@@ -4,6 +4,8 @@
 
 Build the reading website, not an article-generation pipeline. The package supplies 40 finished articles, four dated data cards, 46 glossary entries, six reading paths and the navigation/copy model. All 32 original launch briefs have been written. Eight additional pages cover party-independent reasoning, disagreement, legislation, employment, crime data, two worked evidence examples and corrections.
 
+Expansion v3 adds 24 finished articles, seven data assets, 27 glossary definitions, a Constitution hub and four reading paths. The combined release has 64 articles and 117 remaining unpublished briefs. Original Markdown and per-article research dates remain unchanged. New `tables[]` assets use the existing table presentation with explicit official-statistics, reference-table and synthetic-example labels, preserved row-level provenance and JSON/CSV downloads. See `EXPANSION_V3_DATA_DICTIONARY.md` for interpretation boundaries.
+
 The initial public collection is India-only. Preserve `country` and `language` fields so an eventual country contribution can define its own institutions and routes. Do not generate other country pages by replacing “India” in these articles.
 
 ## Routes

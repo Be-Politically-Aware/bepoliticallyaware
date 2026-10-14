@@ -1,9 +1,10 @@
 import { evidence } from "../../lib/evidence";
+import { dataAssets } from "../../lib/data";
 import type { APIRoute, GetStaticPaths, InferGetStaticPropsType } from "astro";
 export const getStaticPaths = (() => {
-  return evidence.map((card) => ({
-    params: { id: card.data.id },
-    props: { data: card.data },
+  return [...evidence.map((card) => card.data), ...dataAssets].map((data) => ({
+    params: { id: data.id },
+    props: { data },
   }));
 }) satisfies GetStaticPaths;
 type Props = InferGetStaticPropsType<typeof getStaticPaths>;

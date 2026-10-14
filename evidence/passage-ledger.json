@@ -1442,6 +1442,925 @@
       ],
       "scope": "Passage-level evidence mapping; original advice and hypothetical examples are distinguished in the article, not claimed to be verbatim from sources.",
       "checked_at": "2026-10-13"
+    },
+    {
+      "id": "v3-in-constitution-rights-and-who-has-them-p2",
+      "article_id": "in-constitution-rights-and-who-has-them",
+      "paragraph_index": 2,
+      "statement": "Article 14 protects **persons** in relation to equality before the law and equal protection of the laws. Article 19 gives specified freedoms to **citizens**. Article 21 protects **persons** in relation to life and personal liberty. These categories are not interchangeable. A non-citizen does not lose every constitutional protection merely because some rights are citizen-specific. [1](https://www.legislative.gov.in/static/uploads/2025/07/c9fe9c9b6840524844316f74bb1c556c.pdf#page=37) [2](https://www.legislative.gov.in/static/uploads/2025/07/c9fe9c9b6840524844316f74bb1c556c.pdf#page=40) [3](https://www.legislative.gov.in/static/uploads/2025/07/c9fe9c9b6840524844316f74bb1c556c.pdf#page=42)",
+      "source_ref_ids": [
+        "v3-rights-equality",
+        "v3-rights-freedoms",
+        "v3-rights-life"
+      ],
+      "scope": "Passage-to-source association. Interpretive and hypothetical sentences are distinguished in the article; this is not automated proof of every claim.",
+      "checked_at": "2026-10-14"
+    },
+    {
+      "id": "v3-in-constitution-rights-and-who-has-them-p5",
+      "article_id": "in-constitution-rights-and-who-has-them",
+      "paragraph_index": 5,
+      "statement": "Article 19 includes freedoms such as expression and peaceful, unarmed assembly. Its later clauses provide for restrictions on specified grounds. Quoting the freedom while hiding those clauses is incomplete; claiming that officials can restrict it for any reason is incomplete too. [2](https://www.legislative.gov.in/static/uploads/2025/07/c9fe9c9b6840524844316f74bb1c556c.pdf#page=40)",
+      "source_ref_ids": [
+        "v3-rights-freedoms"
+      ],
+      "scope": "Passage-to-source association. Interpretive and hypothetical sentences are distinguished in the article; this is not automated proof of every claim.",
+      "checked_at": "2026-10-14"
+    },
+    {
+      "id": "v3-in-constitution-rights-and-who-has-them-p10",
+      "article_id": "in-constitution-rights-and-who-has-them",
+      "paragraph_index": 10,
+      "statement": "Article 32 provides a constitutional route to the Supreme Court for enforcement of Part III rights. That is not a promise that every service complaint belongs in the Supreme Court or that a court will accept an unsupported allegation. [4](https://www.legislative.gov.in/static/uploads/2025/07/c9fe9c9b6840524844316f74bb1c556c.pdf#page=50)",
+      "source_ref_ids": [
+        "v3-rights-remedy"
+      ],
+      "scope": "Passage-to-source association. Interpretive and hypothetical sentences are distinguished in the article; this is not automated proof of every claim.",
+      "checked_at": "2026-10-14"
+    },
+    {
+      "id": "v3-in-constitution-duties-directive-principles-p2",
+      "article_id": "in-constitution-duties-directive-principles",
+      "paragraph_index": 2,
+      "statement": "**Fundamental Rights** concern protected freedoms and other constitutional guarantees in Part III, with constitutional remedies for their enforcement. **Directive Principles** in Part IV guide the State’s policy choices. **Fundamental Duties** in Article 51A are duties of citizens. They should not be merged into a single list of promises that all operate in the same way. [1](https://www.legislative.gov.in/static/uploads/2025/07/c9fe9c9b6840524844316f74bb1c556c.pdf#page=50) [2](https://www.legislative.gov.in/static/uploads/2025/07/c9fe9c9b6840524844316f74bb1c556c.pdf#page=52) [3](https://www.legislative.gov.in/static/uploads/2025/07/c9fe9c9b6840524844316f74bb1c556c.pdf#page=56)",
+      "source_ref_ids": [
+        "v3-rights-remedy",
+        "v3-directive-principles",
+        "v3-duties"
+      ],
+      "scope": "Passage-to-source association. Interpretive and hypothetical sentences are distinguished in the article; this is not automated proof of every claim.",
+      "checked_at": "2026-10-14"
+    },
+    {
+      "id": "v3-in-constitution-duties-directive-principles-p3",
+      "article_id": "in-constitution-duties-directive-principles",
+      "paragraph_index": 3,
+      "statement": "Article 37 says that Directive Principles are not enforceable by a court in themselves, while treating them as fundamental to governance and requiring the State to apply them when making laws. “Not directly enforceable” therefore does not mean “irrelevant” or “permission to ignore them”. [2](https://www.legislative.gov.in/static/uploads/2025/07/c9fe9c9b6840524844316f74bb1c556c.pdf#page=52)",
+      "source_ref_ids": [
+        "v3-directive-principles"
+      ],
+      "scope": "Passage-to-source association. Interpretive and hypothetical sentences are distinguished in the article; this is not automated proof of every claim.",
+      "checked_at": "2026-10-14"
+    },
+    {
+      "id": "v3-in-constitution-duties-directive-principles-p6",
+      "article_id": "in-constitution-duties-directive-principles",
+      "paragraph_index": 6,
+      "statement": "Article 51A includes scientific temper, humanism, inquiry and reform, alongside responsibilities concerning harmony, the environment and public property. A description of duties that mentions only obedience leaves out important parts of the text. [3](https://www.legislative.gov.in/static/uploads/2025/07/c9fe9c9b6840524844316f74bb1c556c.pdf#page=56)",
+      "source_ref_ids": [
+        "v3-duties"
+      ],
+      "scope": "Passage-to-source association. Interpretive and hypothetical sentences are distinguished in the article; this is not automated proof of every claim.",
+      "checked_at": "2026-10-14"
+    },
+    {
+      "id": "v3-in-parliament-questions-and-debates-p2",
+      "article_id": "in-parliament-questions-and-debates",
+      "paragraph_index": 2,
+      "statement": "A **starred question** seeks an oral answer; an **unstarred question** receives a written answer. Lok Sabha also has short-notice questions for urgent matters and questions addressed to private members about matters for which they are responsible. These formats have different procedures. A starred question appearing on a list does not establish that it was actually reached orally. [1](https://sansad.in/ls/faq)",
+      "source_ref_ids": [
+        "v3-questions"
+      ],
+      "scope": "Passage-to-source association. Interpretive and hypothetical sentences are distinguished in the article; this is not automated proof of every claim.",
+      "checked_at": "2026-10-14"
+    },
+    {
+      "id": "v3-in-parliament-questions-and-debates-p6",
+      "article_id": "in-parliament-questions-and-debates",
+      "paragraph_index": 6,
+      "statement": "A concrete example is **Lok Sabha Unstarred Question 2110, answered on 12 December 2025**, about the Pre-Legislative Consultation Policy. The answer said that the policy’s effectiveness had not been evaluated and that the Ministry did not maintain records of compliance. Those are narrower statements than “the government never consults anyone”. [2](https://sansad.in/getFile/loksabhaquestions/annex/186/AU2110_008KJB.pdf?source=pqals#page=1)",
+      "source_ref_ids": [
+        "v3-plcp-reply"
+      ],
+      "scope": "Passage-to-source association. Interpretive and hypothetical sentences are distinguished in the article; this is not automated proof of every claim.",
+      "checked_at": "2026-10-14"
+    },
+    {
+      "id": "v3-in-parliament-committees-p2",
+      "article_id": "in-parliament-committees",
+      "paragraph_index": 2,
+      "statement": "Parliament’s departmentally related standing committee system has **24 committees**, each with **31 members: 21 from Lok Sabha and 10 from Rajya Sabha**. This is a description of the system, not a current membership list for a particular committee. [1](https://sansad.in/ls/committee/introduction)",
+      "source_ref_ids": [
+        "v3-committee-structure"
+      ],
+      "scope": "Passage-to-source association. Interpretive and hypothetical sentences are distinguished in the article; this is not automated proof of every claim.",
+      "checked_at": "2026-10-14"
+    },
+    {
+      "id": "v3-in-parliament-committees-p3",
+      "article_id": "in-parliament-committees",
+      "paragraph_index": 3,
+      "statement": "Their work includes examining demands for grants, departmental annual reports and Bills referred to them. Referral matters: do not assume every Bill automatically receives this form of examination. Other parliamentary committees have different remits, so identify the actual committee before describing its powers. [2](https://sansad.in/uploads/Chapter3_5166a53cf4_a948264f07.pdf?updated_at=2022-09-14T11%3A59%3A57.151Z#page=29)",
+      "source_ref_ids": [
+        "v3-committee-work"
+      ],
+      "scope": "Passage-to-source association. Interpretive and hypothetical sentences are distinguished in the article; this is not automated proof of every claim.",
+      "checked_at": "2026-10-14"
+    },
+    {
+      "id": "v3-in-parliament-committees-p5",
+      "article_id": "in-parliament-committees",
+      "paragraph_index": 5,
+      "statement": "The parliamentary handbook describes obtaining written material and hearing evidence, and allows dissenting notes with a report. A witness’s statement, the ministry’s response, a committee’s conclusion and an individual member’s dissent are different parts of the record. [2](https://sansad.in/uploads/Chapter3_5166a53cf4_a948264f07.pdf?updated_at=2022-09-14T11%3A59%3A57.151Z#page=29)",
+      "source_ref_ids": [
+        "v3-committee-work"
+      ],
+      "scope": "Passage-to-source association. Interpretive and hypothetical sentences are distinguished in the article; this is not automated proof of every claim.",
+      "checked_at": "2026-10-14"
+    },
+    {
+      "id": "v3-in-parliament-committees-p9",
+      "article_id": "in-parliament-committees",
+      "paragraph_index": 9,
+      "statement": "The handbook describes these reports as considered advice with persuasive value and explains the action-taken process. Ministries’ replies can be examined in **Action Taken Reports**. A committee recommendation is not itself an Act, a court order or proof that a service improved. [3](https://sansad.in/uploads/Chapter3_5166a53cf4_a948264f07.pdf?updated_at=2022-09-14T11%3A59%3A57.151Z#page=32)",
+      "source_ref_ids": [
+        "v3-committee-followup"
+      ],
+      "scope": "Passage-to-source association. Interpretive and hypothetical sentences are distinguished in the article; this is not automated proof of every claim.",
+      "checked_at": "2026-10-14"
+    },
+    {
+      "id": "v3-in-parliament-confidence-coalitions-and-dissolution-p2",
+      "article_id": "in-parliament-confidence-coalitions-and-dissolution",
+      "paragraph_index": 2,
+      "statement": "Under Article 75(3), the Union Council of Ministers is collectively responsible to **Lok Sabha**. The corresponding state provision, Article 164(2), concerns the Legislative Assembly. Rajya Sabha’s important legislative and scrutiny roles do not make it the House that sustains a Union government through confidence. [1](https://www.legislative.gov.in/static/uploads/2025/07/c9fe9c9b6840524844316f74bb1c556c.pdf#page=65) [2](https://www.legislative.gov.in/static/uploads/2025/07/c9fe9c9b6840524844316f74bb1c556c.pdf#page=104)",
+      "source_ref_ids": [
+        "v3-confidence",
+        "v3-state-confidence"
+      ],
+      "scope": "Passage-to-source association. Interpretive and hypothetical sentences are distinguished in the article; this is not automated proof of every claim.",
+      "checked_at": "2026-10-14"
+    },
+    {
+      "id": "v3-in-parliament-confidence-coalitions-and-dissolution-p5",
+      "article_id": "in-parliament-confidence-coalitions-and-dissolution",
+      "paragraph_index": 5,
+      "statement": "Article 100(1) sets the ordinary rule of a majority of members **present and voting**, except where the Constitution provides otherwise. The presiding officer does not vote in the first instance and has a casting vote if votes are equal. Some parliamentary decisions have other requirements, so do not apply this rule to every constitutional vote. [3](https://www.legislative.gov.in/static/uploads/2025/07/c9fe9c9b6840524844316f74bb1c556c.pdf#page=75)",
+      "source_ref_ids": [
+        "v3-voting"
+      ],
+      "scope": "Passage-to-source association. Interpretive and hypothetical sentences are distinguished in the article; this is not automated proof of every claim.",
+      "checked_at": "2026-10-14"
+    },
+    {
+      "id": "v3-in-parliament-confidence-coalitions-and-dissolution-p9",
+      "article_id": "in-parliament-confidence-coalitions-and-dissolution",
+      "paragraph_index": 9,
+      "statement": "A confidence motion asks the House to affirm support; a no-confidence motion challenges the Council of Ministers’ continuation. Each has procedural requirements. Distinguish giving notice, admission, discussion and the result rather than reporting every notice as a government already having fallen. The constitutional background is collective responsibility, not social-media popularity. [1](https://www.legislative.gov.in/static/uploads/2025/07/c9fe9c9b6840524844316f74bb1c556c.pdf#page=65)",
+      "source_ref_ids": [
+        "v3-confidence"
+      ],
+      "scope": "Passage-to-source association. Interpretive and hypothetical sentences are distinguished in the article; this is not automated proof of every claim.",
+      "checked_at": "2026-10-14"
+    },
+    {
+      "id": "v3-in-parliament-confidence-coalitions-and-dissolution-p12",
+      "article_id": "in-parliament-confidence-coalitions-and-dissolution",
+      "paragraph_index": 12,
+      "statement": "Appointment of a Prime Minister, the Council’s responsibility to Lok Sabha and dissolution of Lok Sabha involve different constitutional provisions. An early election should not be treated as automatically completed by a press conference or a disputed tally. [1](https://www.legislative.gov.in/static/uploads/2025/07/c9fe9c9b6840524844316f74bb1c556c.pdf#page=65) [4](https://www.legislative.gov.in/static/uploads/2025/07/c9fe9c9b6840524844316f74bb1c556c.pdf#page=71)",
+      "source_ref_ids": [
+        "v3-confidence",
+        "v3-dissolution"
+      ],
+      "scope": "Passage-to-source association. Interpretive and hypothetical sentences are distinguished in the article; this is not automated proof of every claim.",
+      "checked_at": "2026-10-14"
+    },
+    {
+      "id": "v3-in-parliament-whips-and-anti-defection-p2",
+      "article_id": "in-parliament-whips-and-anti-defection",
+      "paragraph_index": 2,
+      "statement": "In parliamentary usage, “whip” can mean a party official organising its members or an instruction concerning parliamentary business and voting. A party’s instruction is not itself the Speaker’s decision that a member has lost their seat. Keep the instruction, alleged breach and formal decision separate. [1](https://sansad.in/uploads/Chapter5_bcef32a522_57941e8421.pdf?updated_at=2022-09-14T12%3A00%3A45.541Z#page=1)",
+      "source_ref_ids": [
+        "v3-whips"
+      ],
+      "scope": "Passage-to-source association. Interpretive and hypothetical sentences are distinguished in the article; this is not automated proof of every claim.",
+      "checked_at": "2026-10-14"
+    },
+    {
+      "id": "v3-in-parliament-whips-and-anti-defection-p3",
+      "article_id": "in-parliament-whips-and-anti-defection",
+      "paragraph_index": 3,
+      "statement": "The Tenth Schedule includes disqualification grounds involving voluntarily giving up party membership and voting or abstaining contrary to an authorised party direction, subject to the stated permission and condonation provisions. [2](https://www.legislative.gov.in/static/uploads/2025/07/c9fe9c9b6840524844316f74bb1c556c.pdf#page=376)",
+      "source_ref_ids": [
+        "v3-defection"
+      ],
+      "scope": "Passage-to-source association. Interpretive and hypothetical sentences are distinguished in the article; this is not automated proof of every claim.",
+      "checked_at": "2026-10-14"
+    },
+    {
+      "id": "v3-in-parliament-whips-and-anti-defection-p9",
+      "article_id": "in-parliament-whips-and-anti-defection",
+      "paragraph_index": 9,
+      "statement": "Paragraph 4 contains a merger exception with a two-thirds legislature-party condition. It is not a general permission for any two-thirds group to do anything without consequence. The original-party and merger requirements also matter. The earlier one-third “split” provision was removed; it should not be quoted as the operative exception. [2](https://www.legislative.gov.in/static/uploads/2025/07/c9fe9c9b6840524844316f74bb1c556c.pdf#page=376)",
+      "source_ref_ids": [
+        "v3-defection"
+      ],
+      "scope": "Passage-to-source association. Interpretive and hypothetical sentences are distinguished in the article; this is not automated proof of every claim.",
+      "checked_at": "2026-10-14"
+    },
+    {
+      "id": "v3-in-parliament-whips-and-anti-defection-p12",
+      "article_id": "in-parliament-whips-and-anti-defection",
+      "paragraph_index": 12,
+      "statement": "Paragraph 6 gives the disqualification question to the Chairman or Speaker of the relevant House. The official compilation also records the invalidation of paragraph 7’s attempted court-jurisdiction bar. Do not describe the process as an ECI decision or assume a presiding officer’s order is immune from judicial scrutiny. [2](https://www.legislative.gov.in/static/uploads/2025/07/c9fe9c9b6840524844316f74bb1c556c.pdf#page=376)",
+      "source_ref_ids": [
+        "v3-defection"
+      ],
+      "scope": "Passage-to-source association. Interpretive and hypothetical sentences are distinguished in the article; this is not automated proof of every claim.",
+      "checked_at": "2026-10-14"
+    },
+    {
+      "id": "v3-in-elections-eci-and-state-election-commissions-p2",
+      "article_id": "in-elections-eci-and-state-election-commissions",
+      "paragraph_index": 2,
+      "statement": "Article 324 places elections to Parliament, state legislatures and the offices of President and Vice-President within the Election Commission of India’s constitutional remit. The fact that an Assembly election happens inside a state does not make it a State Election Commission election. [1](https://www.legislative.gov.in/static/uploads/2025/07/c9fe9c9b6840524844316f74bb1c556c.pdf#page=217)",
+      "source_ref_ids": [
+        "v3-eci"
+      ],
+      "scope": "Passage-to-source association. Interpretive and hypothetical sentences are distinguished in the article; this is not automated proof of every claim.",
+      "checked_at": "2026-10-14"
+    },
+    {
+      "id": "v3-in-elections-eci-and-state-election-commissions-p3",
+      "article_id": "in-elections-eci-and-state-election-commissions",
+      "paragraph_index": 3,
+      "statement": "Articles 243K and 243ZA provide for State Election Commissions in relation to panchayat and municipal elections. A State Election Commission is a separate constitutional authority for this purpose, not merely a different name for ECI’s operations in that state. Applicable state laws and special local arrangements still need attention. [2](https://sechimachal.hp.gov.in/En/Constitutional%20Provisions.html)",
+      "source_ref_ids": [
+        "v3-sec-scope"
+      ],
+      "scope": "Passage-to-source association. Interpretive and hypothetical sentences are distinguished in the article; this is not automated proof of every claim.",
+      "checked_at": "2026-10-14"
+    },
+    {
+      "id": "v3-in-elections-eci-and-state-election-commissions-p12",
+      "article_id": "in-elections-eci-and-state-election-commissions",
+      "paragraph_index": 12,
+      "statement": "This page intentionally does not provide a universal deadline or promise a single complaint route. Such details must come from the current notice and applicable procedure. The national constitutional map tells you where to begin; it does not replace election-specific instructions. [1](https://www.legislative.gov.in/static/uploads/2025/07/c9fe9c9b6840524844316f74bb1c556c.pdf#page=217) [2](https://sechimachal.hp.gov.in/En/Constitutional%20Provisions.html)",
+      "source_ref_ids": [
+        "v3-eci",
+        "v3-sec-scope"
+      ],
+      "scope": "Passage-to-source association. Interpretive and hypothetical sentences are distinguished in the article; this is not automated proof of every claim.",
+      "checked_at": "2026-10-14"
+    },
+    {
+      "id": "v3-in-elections-funding-and-spending-p2",
+      "article_id": "in-elections-funding-and-spending",
+      "paragraph_index": 2,
+      "statement": "ECI’s financial-filing system distinguishes **Contribution Reports**, **Audited Annual Accounts** and **Election Expenditure Statements**. The first concerns contributions disclosed in that reporting category; the second concerns the party’s annual financial accounts; the third concerns election expenditure. The existence of separate filings is a warning not to treat one as a complete substitute for the others. [1](https://www.pib.gov.in/PressReleasePage.aspx?PRID=1937050)",
+      "source_ref_ids": [
+        "v3-finance-records"
+      ],
+      "scope": "Passage-to-source association. Interpretive and hypothetical sentences are distinguished in the article; this is not automated proof of every claim.",
+      "checked_at": "2026-10-14"
+    },
+    {
+      "id": "v3-in-elections-funding-and-spending-p10",
+      "article_id": "in-elections-funding-and-spending",
+      "paragraph_index": 10,
+      "statement": "On 21 March 2024, ECI said it had uploaded electoral-bond data supplied by SBI pursuant to Supreme Court directions, as received. This identifies a historical disclosure event. It does not establish that those records cover all party finance, every year, or every possible source of campaign spending. [2](https://www.pib.gov.in/PressReleasePage.aspx?PRID=2015989)",
+      "source_ref_ids": [
+        "v3-bonds-disclosed"
+      ],
+      "scope": "Passage-to-source association. Interpretive and hypothetical sentences are distinguished in the article; this is not automated proof of every claim.",
+      "checked_at": "2026-10-14"
+    },
+    {
+      "id": "v3-in-elections-funding-and-spending-p11",
+      "article_id": "in-elections-funding-and-spending",
+      "paragraph_index": 11,
+      "statement": "The Supreme Court’s 2 August 2024 order recaps the earlier judgment invalidating the scheme. The distinction between a scheme’s constitutional validity and an allegation about an individual transaction remains important. A donation record does not itself prove a purchased decision. [3](https://api.sci.gov.in/supremecourt/2024/17622/17622_2024_1_30_54391_Order_02-Aug-2024.pdf#page=1)",
+      "source_ref_ids": [
+        "v3-bonds-court"
+      ],
+      "scope": "Passage-to-source association. Interpretive and hypothetical sentences are distinguished in the article; this is not automated proof of every claim.",
+      "checked_at": "2026-10-14"
+    },
+    {
+      "id": "v3-in-elections-funding-and-spending-p12",
+      "article_id": "in-elections-funding-and-spending",
+      "paragraph_index": 12,
+      "statement": "Candidate expense accounts are a separate record category under sections 76–78 of the Representation of the People Act. That chapter concerns Lok Sabha and state Assembly elections. Do not substitute a party-wide report for an individual candidate’s account. This page does not supply current ceilings or filing instructions. [4](https://www.ceo.kerala.gov.in/ceokerala/backend/public/uploads/pdfs/representation-of-the-people-acti-1951.pdf#page=38)",
+      "source_ref_ids": [
+        "v3-candidate-expenses"
+      ],
+      "scope": "Passage-to-source association. Interpretive and hypothetical sentences are distinguished in the article; this is not automated proof of every claim.",
+      "checked_at": "2026-10-14"
+    },
+    {
+      "id": "v3-in-money-political-money-and-conflicts-p6",
+      "article_id": "in-money-political-money-and-conflicts",
+      "paragraph_index": 6,
+      "statement": "The Supreme Court’s order of 2 August 2024 recounts the earlier judgment invalidating the electoral-bond scheme. It separately considers petitions seeking investigation of alleged wrongdoing. In paragraphs 15–17, the Court explains why invoking its Article 32 jurisdiction at that stage was premature without first pursuing ordinary legal remedies. [1](https://api.sci.gov.in/supremecourt/2024/17622/17622_2024_1_30_54391_Order_02-Aug-2024.pdf#page=1) [2](https://api.sci.gov.in/supremecourt/2024/17622/17622_2024_1_30_54391_Order_02-Aug-2024.pdf#page=6)",
+      "source_ref_ids": [
+        "v3-bonds-court",
+        "v3-bonds-allegations"
+      ],
+      "scope": "Passage-to-source association. Interpretive and hypothetical sentences are distinguished in the article; this is not automated proof of every claim.",
+      "checked_at": "2026-10-14"
+    },
+    {
+      "id": "v3-in-money-political-money-and-conflicts-p8",
+      "article_id": "in-money-political-money-and-conflicts",
+      "paragraph_index": 8,
+      "statement": "ECI’s disclosure notice also says that the SBI data was uploaded as received. Hosting a disclosure is not the same as independently proving the truth of every inference later drawn from it. [3](https://www.pib.gov.in/PressReleasePage.aspx?PRID=2015989)",
+      "source_ref_ids": [
+        "v3-bonds-disclosed"
+      ],
+      "scope": "Passage-to-source association. Interpretive and hypothetical sentences are distinguished in the article; this is not automated proof of every claim.",
+      "checked_at": "2026-10-14"
+    },
+    {
+      "id": "v3-in-money-political-money-and-conflicts-p11",
+      "article_id": "in-money-political-money-and-conflicts",
+      "paragraph_index": 11,
+      "statement": "For procurement, the central goods manual describes evaluation in terms of responsiveness, qualification and the lowest evaluated bid, and sets out award-publication requirements with exceptions. Those records can help test an allegation, but the applicable tender and jurisdiction still matter. [4](https://www.iitk.ac.in/centralstores/data/Manual_Goods_2024-17-09-24.pdf#page=201) [5](https://www.iitk.ac.in/centralstores/data/Manual_Goods_2024-17-09-24.pdf#page=203)",
+      "source_ref_ids": [
+        "v3-procurement-evaluation",
+        "v3-procurement-award"
+      ],
+      "scope": "Passage-to-source association. Interpretive and hypothetical sentences are distinguished in the article; this is not automated proof of every claim.",
+      "checked_at": "2026-10-14"
+    },
+    {
+      "id": "v3-in-money-where-money-comes-from-p2",
+      "article_id": "in-money-where-money-comes-from",
+      "paragraph_index": 2,
+      "statement": "The Union’s Budget at a Glance distinguishes tax and non-tax revenue within **revenue receipts**. Its capital-receipts section includes recovery of loans, other receipts, and borrowings and other liabilities. Borrowing is therefore a receipt in this table, but it is not tax revenue. [1](https://www.indiabudget.gov.in/doc/Budget_at_Glance/bag1.pdf#page=1) [2](https://www.indiabudget.gov.in/doc/Budget_at_Glance/bag1.pdf#page=3)",
+      "source_ref_ids": [
+        "v3-budget-definitions",
+        "v3-budget-table"
+      ],
+      "scope": "Passage-to-source association. Interpretive and hypothetical sentences are distinguished in the article; this is not automated proof of every claim.",
+      "checked_at": "2026-10-14"
+    },
+    {
+      "id": "v3-in-money-where-money-comes-from-p5",
+      "article_id": "in-money-where-money-comes-from",
+      "paragraph_index": 5,
+      "statement": "For **FY 2026–27 Budget Estimates**, the main table reports revenue receipts of **₹35,33,150 crore**: net tax revenue to the Centre of **₹28,66,922 crore**, plus non-tax revenue of **₹6,66,228 crore**. It separately lists **₹16,95,768 crore** under borrowings and other liabilities. These are estimates for that financial year, not collections already completed. [2](https://www.indiabudget.gov.in/doc/Budget_at_Glance/bag1.pdf#page=3)",
+      "source_ref_ids": [
+        "v3-budget-table"
+      ],
+      "scope": "Passage-to-source association. Interpretive and hypothetical sentences are distinguished in the article; this is not automated proof of every claim.",
+      "checked_at": "2026-10-14"
+    },
+    {
+      "id": "v3-in-money-where-money-comes-from-p7",
+      "article_id": "in-money-where-money-comes-from",
+      "paragraph_index": 7,
+      "statement": "The borrowing line’s note includes cash-balance drawdown. Relabelling the entire line “fresh market borrowing” would change its meaning. Keep the published category intact when exporting it to a chart. [2](https://www.indiabudget.gov.in/doc/Budget_at_Glance/bag1.pdf#page=3)",
+      "source_ref_ids": [
+        "v3-budget-table"
+      ],
+      "scope": "Passage-to-source association. Interpretive and hypothetical sentences are distinguished in the article; this is not automated proof of every claim.",
+      "checked_at": "2026-10-14"
+    },
+    {
+      "id": "v3-in-money-where-money-comes-from-p9",
+      "article_id": "in-money-where-money-comes-from",
+      "paragraph_index": 9,
+      "statement": "This table concerns the **Union**. It is not a combined statement of all state and local governments. “Tax revenue net to Centre” is also different from a gross collection figure that includes amounts shared with states. The Budget’s “Rupee Comes From” presentation includes states’ tax share, so it should not be spliced into the main net-receipts table without checking the denominator. [2](https://www.indiabudget.gov.in/doc/Budget_at_Glance/bag1.pdf#page=3) [3](https://www.indiabudget.gov.in/doc/Budget_at_Glance/bag1.pdf#page=4)",
+      "source_ref_ids": [
+        "v3-budget-table",
+        "v3-budget-rupee"
+      ],
+      "scope": "Passage-to-source association. Interpretive and hypothetical sentences are distinguished in the article; this is not automated proof of every claim.",
+      "checked_at": "2026-10-14"
+    },
+    {
+      "id": "v3-in-money-debt-deficit-and-interest-p3",
+      "article_id": "in-money-debt-deficit-and-interest",
+      "paragraph_index": 3,
+      "statement": "Budget at a Glance defines fiscal deficit using expenditure and receipts excluding debt-capital receipts. It distinguishes this from **revenue deficit**, the gap between revenue expenditure and revenue receipts, and **primary deficit**, fiscal deficit minus interest payments. The categories answer different questions. [1](https://www.indiabudget.gov.in/doc/Budget_at_Glance/bag1.pdf#page=1)",
+      "source_ref_ids": [
+        "v3-budget-definitions"
+      ],
+      "scope": "Passage-to-source association. Interpretive and hypothetical sentences are distinguished in the article; this is not automated proof of every claim.",
+      "checked_at": "2026-10-14"
+    },
+    {
+      "id": "v3-in-money-debt-deficit-and-interest-p5",
+      "article_id": "in-money-debt-deficit-and-interest",
+      "paragraph_index": 5,
+      "statement": "The Union Budget table shows **FY 2025–26 Revised Estimates** of fiscal deficit at **₹15,58,492 crore, or 4.4% of GDP**. For **FY 2026–27 Budget Estimates**, it shows **₹16,95,768 crore, or 4.3% of GDP**. The rupee estimate rises while the reported GDP ratio falls. These are different financial years and different estimate stages, not two completed actual outcomes. [2](https://www.indiabudget.gov.in/doc/Budget_at_Glance/bag1.pdf#page=3)",
+      "source_ref_ids": [
+        "v3-budget-table"
+      ],
+      "scope": "Passage-to-source association. Interpretive and hypothetical sentences are distinguished in the article; this is not automated proof of every claim.",
+      "checked_at": "2026-10-14"
+    },
+    {
+      "id": "v3-in-money-debt-deficit-and-interest-p6",
+      "article_id": "in-money-debt-deficit-and-interest",
+      "paragraph_index": 6,
+      "statement": "The table also gives a nominal GDP assumption for FY 2026–27. A ratio’s denominator can grow; the ratio cannot be interpreted by looking only at its numerator. Do not describe a nominal GDP assumption as real growth after inflation. [2](https://www.indiabudget.gov.in/doc/Budget_at_Glance/bag1.pdf#page=3)",
+      "source_ref_ids": [
+        "v3-budget-table"
+      ],
+      "scope": "Passage-to-source association. Interpretive and hypothetical sentences are distinguished in the article; this is not automated proof of every claim.",
+      "checked_at": "2026-10-14"
+    },
+    {
+      "id": "v3-in-money-debt-deficit-and-interest-p8",
+      "article_id": "in-money-debt-deficit-and-interest",
+      "paragraph_index": 8,
+      "statement": "For FY 2026–27 BE, the table lists interest payments of **₹14,03,972 crore**. Subtracting that from the fiscal deficit gives **₹2,91,796 crore**, the listed primary deficit. This calculation removes interest for this measure; it does not make interest disappear from the government’s obligations. [2](https://www.indiabudget.gov.in/doc/Budget_at_Glance/bag1.pdf#page=3)",
+      "source_ref_ids": [
+        "v3-budget-table"
+      ],
+      "scope": "Passage-to-source association. Interpretive and hypothetical sentences are distinguished in the article; this is not automated proof of every claim.",
+      "checked_at": "2026-10-14"
+    },
+    {
+      "id": "v3-in-money-procurement-and-contracts-p2",
+      "article_id": "in-money-procurement-and-contracts",
+      "paragraph_index": 2,
+      "statement": "The Department of Expenditure maintains separate manuals for goods, works, consultancy and non-consultancy services. Its current directory lists a **Works Second Edition 2025** entry dated **5 January 2026**, alongside the **Goods Second Edition 2024** and 2025 service manuals. A guide should not present the older works manual as the only current edition. [1](https://doe.gov.in/en/manuals)",
+      "source_ref_ids": [
+        "v3-procurement-editions"
+      ],
+      "scope": "Passage-to-source association. Interpretive and hypothetical sentences are distinguished in the article; this is not automated proof of every claim.",
+      "checked_at": "2026-10-14"
+    },
+    {
+      "id": "v3-in-money-procurement-and-contracts-p5",
+      "article_id": "in-money-procurement-and-contracts",
+      "paragraph_index": 5,
+      "statement": "The goods manual’s procurement cycle separates need assessment, bid invitation, evaluation and award, contract management and disposal. Its disclosure provisions concern tender notices, changes and award information. This provides a useful map of records to look for, rather than a promise that every file is publicly available without exception. [2](https://www.iitk.ac.in/centralstores/data/Manual_Goods_2024-17-09-24.pdf#page=66)",
+      "source_ref_ids": [
+        "v3-procurement-cycle"
+      ],
+      "scope": "Passage-to-source association. Interpretive and hypothetical sentences are distinguished in the article; this is not automated proof of every claim.",
+      "checked_at": "2026-10-14"
+    },
+    {
+      "id": "v3-in-money-procurement-and-contracts-p9",
+      "article_id": "in-money-procurement-and-contracts",
+      "paragraph_index": 9,
+      "statement": "The central goods manual describes recommendation of a qualified bidder with a substantially responsive, lowest evaluated bid. A low quoted number alone is not the whole test. Published specifications, eligibility and evaluation conditions matter. [3](https://www.iitk.ac.in/centralstores/data/Manual_Goods_2024-17-09-24.pdf#page=201)",
+      "source_ref_ids": [
+        "v3-procurement-evaluation"
+      ],
+      "scope": "Passage-to-source association. Interpretive and hypothetical sentences are distinguished in the article; this is not automated proof of every claim.",
+      "checked_at": "2026-10-14"
+    },
+    {
+      "id": "v3-in-money-procurement-and-contracts-p12",
+      "article_id": "in-money-procurement-and-contracts",
+      "paragraph_index": 12,
+      "statement": "The manual provides for publication of award details on relevant procurement platforms and departmental channels, with specified exceptions. An absent search result should not immediately become an allegation of concealment; first check the identifier, platform, dates and any applicable exception. [4](https://www.iitk.ac.in/centralstores/data/Manual_Goods_2024-17-09-24.pdf#page=203)",
+      "source_ref_ids": [
+        "v3-procurement-award"
+      ],
+      "scope": "Passage-to-source association. Interpretive and hypothetical sentences are distinguished in the article; this is not automated proof of every claim.",
+      "checked_at": "2026-10-14"
+    },
+    {
+      "id": "v3-in-money-from-allocation-to-outcome-p1",
+      "article_id": "in-money-from-allocation-to-outcome",
+      "paragraph_index": 1,
+      "statement": "The Union government’s Output Outcome Monitoring Framework distinguishes financial outlays, measurable outputs and the results those outputs are intended to produce. Its 2026–27 document sets targets for that financial year; it is not a record of targets already achieved. [1](https://www.indiabudget.gov.in/doc/OutcomeBudgetE2026_2027.pdf#page=5)",
+      "source_ref_ids": [
+        "v3-output-outcome"
+      ],
+      "scope": "Passage-to-source association. Interpretive and hypothetical sentences are distinguished in the article; this is not automated proof of every claim.",
+      "checked_at": "2026-10-14"
+    },
+    {
+      "id": "v3-in-money-from-allocation-to-outcome-p10",
+      "article_id": "in-money-from-allocation-to-outcome",
+      "paragraph_index": 10,
+      "statement": "The Budget distinguishes estimates, revised estimates and actuals. An outcome page should preserve those stages rather than displaying an estimated expenditure as money already spent. [2](https://www.indiabudget.gov.in/doc/Budget_at_Glance/bag1.pdf#page=3)",
+      "source_ref_ids": [
+        "v3-budget-table"
+      ],
+      "scope": "Passage-to-source association. Interpretive and hypothetical sentences are distinguished in the article; this is not automated proof of every claim.",
+      "checked_at": "2026-10-14"
+    },
+    {
+      "id": "v3-in-money-from-allocation-to-outcome-p12",
+      "article_id": "in-money-from-allocation-to-outcome",
+      "paragraph_index": 12,
+      "statement": "Suppose equipment arrived and test scores improved. That still leaves a causal question: would scores have improved without this programme? Changes in teaching, attendance or the test itself could matter. An impact evaluation needs a credible comparison with what would otherwise have happened, not just an after-the-event success story. [3](https://documents1.worldbank.org/curated/en/698441474029568469/pdf/108270-PUB-Box396299B-PUBLIC-PUBDATE-9-13-16.pdf#page=79)",
+      "source_ref_ids": [
+        "v3-counterfactual"
+      ],
+      "scope": "Passage-to-source association. Interpretive and hypothetical sentences are distinguished in the article; this is not automated proof of every claim.",
+      "checked_at": "2026-10-14"
+    },
+    {
+      "id": "v3-in-everyday-prices-and-food-p1",
+      "article_id": "in-everyday-prices-and-food",
+      "paragraph_index": 1,
+      "statement": "For September 2026, MoSPI reported combined rural-and-urban consumer inflation of **5.54% compared with September 2025**. Consumer food inflation was **7.74%**. These September figures were provisional in the release dated 12 October 2026. The revised final combined headline rate for August was 4.83%. [1](https://www.mospi.gov.in/uploads/latestReleases/latest_release_1791800601071_643518af-5320-4e52-b78c-75c92b83885b_Press_Release_for_the_month_of_September,_2026.pdf#page=1)",
+      "source_ref_ids": [
+        "v3-cpi-headline"
+      ],
+      "scope": "Passage-to-source association. Interpretive and hypothetical sentences are distinguished in the article; this is not automated proof of every claim.",
+      "checked_at": "2026-10-14"
+    },
+    {
+      "id": "v3-in-everyday-prices-and-food-p4",
+      "article_id": "in-everyday-prices-and-food",
+      "paragraph_index": 4,
+      "statement": "The release uses **2024 = 100** as its index base. An index level and an inflation rate answer different questions. The combined September CPI index was 109.49; its year-on-year inflation rate was 5.54%. Do not display the index level with a percent sign. [1](https://www.mospi.gov.in/uploads/latestReleases/latest_release_1791800601071_643518af-5320-4e52-b78c-75c92b83885b_Press_Release_for_the_month_of_September,_2026.pdf#page=1)",
+      "source_ref_ids": [
+        "v3-cpi-headline"
+      ],
+      "scope": "Passage-to-source association. Interpretive and hypothetical sentences are distinguished in the article; this is not automated proof of every claim.",
+      "checked_at": "2026-10-14"
+    },
+    {
+      "id": "v3-in-everyday-prices-and-food-p5",
+      "article_id": "in-everyday-prices-and-food",
+      "paragraph_index": 5,
+      "statement": "It also reports different baskets and geographies. September headline inflation was 6.08% for rural areas and 4.88% for urban areas. The combined rate is not obtained by giving those two rounded figures equal weight. [1](https://www.mospi.gov.in/uploads/latestReleases/latest_release_1791800601071_643518af-5320-4e52-b78c-75c92b83885b_Press_Release_for_the_month_of_September,_2026.pdf#page=1)",
+      "source_ref_ids": [
+        "v3-cpi-headline"
+      ],
+      "scope": "Passage-to-source association. Interpretive and hypothetical sentences are distinguished in the article; this is not automated proof of every claim.",
+      "checked_at": "2026-10-14"
+    },
+    {
+      "id": "v3-in-everyday-prices-and-food-p6",
+      "article_id": "in-everyday-prices-and-food",
+      "paragraph_index": 6,
+      "statement": "Even similar-looking food labels can differ. The division labelled “Food and beverages” recorded combined year-on-year inflation of 7.36%, while the separate Consumer Food Price Index recorded 7.74%. Preserve the source’s category rather than substituting one for the other. [2](https://www.mospi.gov.in/uploads/latestReleases/latest_release_1791800601071_643518af-5320-4e52-b78c-75c92b83885b_Press_Release_for_the_month_of_September,_2026.pdf#page=6) [1](https://www.mospi.gov.in/uploads/latestReleases/latest_release_1791800601071_643518af-5320-4e52-b78c-75c92b83885b_Press_Release_for_the_month_of_September,_2026.pdf#page=1)",
+      "source_ref_ids": [
+        "v3-cpi-divisions",
+        "v3-cpi-headline"
+      ],
+      "scope": "Passage-to-source association. Interpretive and hypothetical sentences are distinguished in the article; this is not automated proof of every claim.",
+      "checked_at": "2026-10-14"
+    },
+    {
+      "id": "v3-in-everyday-prices-and-food-p13",
+      "article_id": "in-everyday-prices-and-food",
+      "paragraph_index": 13,
+      "statement": "CPI measures prices; it is not itself an evaluation assigning responsibility among governments, traders, weather or international developments. MoSPI’s release describes its collection coverage and precision, which should travel with any chart built from it. [3](https://www.mospi.gov.in/uploads/latestReleases/latest_release_1791800601071_643518af-5320-4e52-b78c-75c92b83885b_Press_Release_for_the_month_of_September,_2026.pdf#page=4)",
+      "source_ref_ids": [
+        "v3-cpi-method"
+      ],
+      "scope": "Passage-to-source association. Interpretive and hypothetical sentences are distinguished in the article; this is not automated proof of every claim.",
+      "checked_at": "2026-10-14"
+    },
+    {
+      "id": "v3-in-everyday-schools-and-exams-p1",
+      "article_id": "in-everyday-schools-and-exams",
+      "paragraph_index": 1,
+      "statement": "Identify who runs the school or examination, who employs the staff and which authority issued the relevant rule or notice. India’s constitutional allocation of legislative subjects is a starting point, not a substitute for finding the actual operating authority. [1](https://www.legislative.gov.in/static/uploads/2025/07/c9fe9c9b6840524844316f74bb1c556c.pdf#page=176)",
+      "source_ref_ids": [
+        "v3-public-services-powers"
+      ],
+      "scope": "Passage-to-source association. Interpretive and hypothetical sentences are distinguished in the article; this is not automated proof of every claim.",
+      "checked_at": "2026-10-14"
+    },
+    {
+      "id": "v3-in-everyday-schools-and-exams-p3",
+      "article_id": "in-everyday-schools-and-exams",
+      "paragraph_index": 3,
+      "statement": "The Ministry of Education’s release of **7 July 2026**, covering **UDISE+ 2025–26**, reports **10,273,020 teachers** and **100,843 single-teacher schools**. These are different kinds of totals: a larger national workforce does not establish that each school has the staff it needs. [2](https://www.pib.gov.in/PressReleasePage.aspx?PRID=2282141&lang=1&reg=48)",
+      "source_ref_ids": [
+        "v3-schools-counts"
+      ],
+      "scope": "Passage-to-source association. Interpretive and hypothetical sentences are distinguished in the article; this is not automated proof of every claim.",
+      "checked_at": "2026-10-14"
+    },
+    {
+      "id": "v3-in-everyday-schools-and-exams-p4",
+      "article_id": "in-everyday-schools-and-exams",
+      "paragraph_index": 4,
+      "statement": "The same release reports computer access in 69.9% of schools and internet access in 67.4%. A reported facility is not, by itself, evidence of reliable connectivity, functioning equipment or regular classroom use. Those require more specific checks. [3](https://www.pib.gov.in/PressReleasePage.aspx?PRID=2282141&lang=1&reg=48)",
+      "source_ref_ids": [
+        "v3-schools-facilities"
+      ],
+      "scope": "Passage-to-source association. Interpretive and hypothetical sentences are distinguished in the article; this is not automated proof of every claim.",
+      "checked_at": "2026-10-14"
+    },
+    {
+      "id": "v3-in-everyday-schools-and-exams-p7",
+      "article_id": "in-everyday-schools-and-exams",
+      "paragraph_index": 7,
+      "statement": "One paragraph in the release describes a consistent decline in dropout across all levels. Its table is more specific: secondary-stage dropout fell from **8.2% in 2024–25 to 7.0% in 2025–26**, while middle-stage dropout rose from **3.5% to 3.6%**. Those changes are minus 1.2 and plus 0.1 percentage points respectively. [4](https://www.pib.gov.in/PressReleasePage.aspx?PRID=2282141&lang=1&reg=48)",
+      "source_ref_ids": [
+        "v3-schools-progression"
+      ],
+      "scope": "Passage-to-source association. Interpretive and hypothetical sentences are distinguished in the article; this is not automated proof of every claim.",
+      "checked_at": "2026-10-14"
+    },
+    {
+      "id": "v3-in-everyday-schools-and-exams-p11",
+      "article_id": "in-everyday-schools-and-exams",
+      "paragraph_index": 11,
+      "statement": "School administrative records and household learning surveys have different coverage. ASER’s basic design is a rural household survey: it records enrolment for children aged 3–16 and assesses basic reading and arithmetic for ages 5–16. It can include children outside school; it is not an urban-and-rural census of every pupil. [5](https://asercentre.org/aser-survey/)",
+      "source_ref_ids": [
+        "v3-aser-method"
+      ],
+      "scope": "Passage-to-source association. Interpretive and hypothetical sentences are distinguished in the article; this is not automated proof of every claim.",
+      "checked_at": "2026-10-14"
+    },
+    {
+      "id": "v3-in-everyday-healthcare-p1",
+      "article_id": "in-everyday-healthcare",
+      "paragraph_index": 1,
+      "statement": "The Ministry of Health’s **27 May 2026** release presents National Health Accounts estimates for **2022–23**. That is the period being measured, not a description of all healthcare services in 2026. The figures below come from that official release; the full underlying report was not successfully retrieved for this collection. [1](https://www.pib.gov.in/PressReleasePage.aspx?PRID=2265816&lang=1&reg=3)",
+      "source_ref_ids": [
+        "v3-health-spending"
+      ],
+      "scope": "Passage-to-source association. Interpretive and hypothetical sentences are distinguished in the article; this is not automated proof of every claim.",
+      "checked_at": "2026-10-14"
+    },
+    {
+      "id": "v3-in-everyday-healthcare-p3",
+      "article_id": "in-everyday-healthcare",
+      "paragraph_index": 3,
+      "statement": "The release reports government health expenditure of roughly **₹3.85 lakh crore in 2022–23**, compared with **₹1.30 lakh crore in 2013–14**. These are rounded nominal amounts. They do not, without further adjustment, establish the increase in purchasing power or the amount reaching each facility. [1](https://www.pib.gov.in/PressReleasePage.aspx?PRID=2265816&lang=1&reg=3)",
+      "source_ref_ids": [
+        "v3-health-spending"
+      ],
+      "scope": "Passage-to-source association. Interpretive and hypothetical sentences are distinguished in the article; this is not automated proof of every claim.",
+      "checked_at": "2026-10-14"
+    },
+    {
+      "id": "v3-in-everyday-healthcare-p4",
+      "article_id": "in-everyday-healthcare",
+      "paragraph_index": 4,
+      "statement": "Government spending’s share of total health expenditure increased from 28.6% to 43.7% across those years. That denominator is **all health expenditure**, not GDP and not the government’s whole budget. A chart must keep those distinctions visible. [1](https://www.pib.gov.in/PressReleasePage.aspx?PRID=2265816&lang=1&reg=3)",
+      "source_ref_ids": [
+        "v3-health-spending"
+      ],
+      "scope": "Passage-to-source association. Interpretive and hypothetical sentences are distinguished in the article; this is not automated proof of every claim.",
+      "checked_at": "2026-10-14"
+    },
+    {
+      "id": "v3-in-everyday-healthcare-p6",
+      "article_id": "in-everyday-healthcare",
+      "paragraph_index": 6,
+      "statement": "The release gives 2022–23 government health expenditure as **1.43% of GDP**, and also says it is **1.48% using the new GDP series with base year 2022–23**. These are alternative presentations of the same year using different GDP denominators. They are not two consecutive years or evidence of an additional spending increase. [2](https://www.pib.gov.in/PressReleasePage.aspx?PRID=2265816&lang=1&reg=3)",
+      "source_ref_ids": [
+        "v3-health-gdp"
+      ],
+      "scope": "Passage-to-source association. Interpretive and hypothetical sentences are distinguished in the article; this is not automated proof of every claim.",
+      "checked_at": "2026-10-14"
+    },
+    {
+      "id": "v3-in-everyday-healthcare-p9",
+      "article_id": "in-everyday-healthcare",
+      "paragraph_index": 9,
+      "statement": "Out-of-pocket expenditure means spending directly borne by households within the health-accounts measure. The release reports its share of total health expenditure as **64.2% in 2013–14**, **39.4% in 2021–22**, and **43.4% in 2022–23**. [1](https://www.pib.gov.in/PressReleasePage.aspx?PRID=2265816&lang=1&reg=3)",
+      "source_ref_ids": [
+        "v3-health-spending"
+      ],
+      "scope": "Passage-to-source association. Interpretive and hypothetical sentences are distinguished in the article; this is not automated proof of every claim.",
+      "checked_at": "2026-10-14"
+    },
+    {
+      "id": "v3-in-everyday-air-and-environment-p1",
+      "article_id": "in-everyday-air-and-environment",
+      "paragraph_index": 1,
+      "statement": "India’s National Air Quality Index converts pollutant measurements into a common index and category. The published framework includes eight pollutants and uses the worst available qualifying pollutant sub-index to represent overall AQI. It is not a simple average of pollutant concentrations. [1](https://www.pib.gov.in/newsite/printrelease.aspx?relid=110654)",
+      "source_ref_ids": [
+        "v3-aqi-method"
+      ],
+      "scope": "Passage-to-source association. Interpretive and hypothetical sentences are distinguished in the article; this is not automated proof of every claim.",
+      "checked_at": "2026-10-14"
+    },
+    {
+      "id": "v3-in-everyday-air-and-environment-p4",
+      "article_id": "in-everyday-air-and-environment",
+      "paragraph_index": 4,
+      "statement": "These are the published Indian category ranges, corroborated by the government’s explanatory concept note. They are a reference classification, not a set of live readings. [1](https://www.pib.gov.in/newsite/printrelease.aspx?relid=110654) [2](https://ies.gov.in/arthapedia/concept/national-air-quality-index)",
+      "source_ref_ids": [
+        "v3-aqi-method",
+        "v3-aqi-interpret"
+      ],
+      "scope": "Passage-to-source association. Interpretive and hypothetical sentences are distinguished in the article; this is not automated proof of every claim.",
+      "checked_at": "2026-10-14"
+    },
+    {
+      "id": "v3-in-everyday-air-and-environment-p5",
+      "article_id": "in-everyday-air-and-environment",
+      "paragraph_index": 5,
+      "statement": "AQI is an index, not a concentration expressed in micrograms per cubic metre. Different pollutants also use different averaging conventions. Do not compare a short-lived reading, a daily average and an AQI value as though they were the same unit and time period. [1](https://www.pib.gov.in/newsite/printrelease.aspx?relid=110654)",
+      "source_ref_ids": [
+        "v3-aqi-method"
+      ],
+      "scope": "Passage-to-source association. Interpretive and hypothetical sentences are distinguished in the article; this is not automated proof of every claim.",
+      "checked_at": "2026-10-14"
+    },
+    {
+      "id": "v3-in-everyday-air-and-environment-p11",
+      "article_id": "in-everyday-air-and-environment",
+      "paragraph_index": 11,
+      "statement": "The Central Pollution Control Board’s stated functions include national coordination, technical assistance and pollution-control advice. That does not mean one national dashboard is the office responsible for every local source or enforcement action. [3](https://www.pib.gov.in/newsite/erelcontent.aspx?relid=39318)",
+      "source_ref_ids": [
+        "v3-air-responsibility"
+      ],
+      "scope": "Passage-to-source association. Interpretive and hypothetical sentences are distinguished in the article; this is not automated proof of every claim.",
+      "checked_at": "2026-10-14"
+    },
+    {
+      "id": "v3-in-evidence-nominal-real-per-person-p9",
+      "article_id": "in-evidence-nominal-real-per-person",
+      "paragraph_index": 9,
+      "statement": "MoSPI’s September 2026 release distinguishes the overall consumer basket, food measures and detailed divisions, and specifies a 2024 index base. That is a reminder to state the price series and base you actually used, rather than attaching an unexplained “inflation adjusted” label. [1](https://www.mospi.gov.in/uploads/latestReleases/latest_release_1791800601071_643518af-5320-4e52-b78c-75c92b83885b_Press_Release_for_the_month_of_September,_2026.pdf#page=1) [2](https://www.mospi.gov.in/uploads/latestReleases/latest_release_1791800601071_643518af-5320-4e52-b78c-75c92b83885b_Press_Release_for_the_month_of_September,_2026.pdf#page=6)",
+      "source_ref_ids": [
+        "v3-cpi-headline",
+        "v3-cpi-divisions"
+      ],
+      "scope": "Passage-to-source association. Interpretive and hypothetical sentences are distinguished in the article; this is not automated proof of every claim.",
+      "checked_at": "2026-10-14"
+    },
+    {
+      "id": "v3-in-evidence-nominal-real-per-person-p13",
+      "article_id": "in-evidence-nominal-real-per-person",
+      "paragraph_index": 13,
+      "statement": "The National Health Accounts release illustrates a denominator change: the same 2022–23 government health expenditure is presented as 1.43% of GDP and as 1.48% with the new GDP series. Those figures must not be plotted as successive spending increases. [3](https://www.pib.gov.in/PressReleasePage.aspx?PRID=2265816&lang=1&reg=3)",
+      "source_ref_ids": [
+        "v3-health-gdp"
+      ],
+      "scope": "Passage-to-source association. Interpretive and hypothetical sentences are distinguished in the article; this is not automated proof of every claim.",
+      "checked_at": "2026-10-14"
+    },
+    {
+      "id": "v3-in-evidence-nominal-real-per-person-p15",
+      "article_id": "in-evidence-nominal-real-per-person",
+      "paragraph_index": 15,
+      "statement": "Before doing any price adjustment, check the accounting stage. The Union Budget’s table distinguishes actuals, budget estimates and revised estimates. A real-terms comparison still misleads if an article calls a proposed allocation an achieved expenditure. [4](https://www.indiabudget.gov.in/doc/Budget_at_Glance/bag1.pdf#page=3)",
+      "source_ref_ids": [
+        "v3-budget-table"
+      ],
+      "scope": "Passage-to-source association. Interpretive and hypothetical sentences are distinguished in the article; this is not automated proof of every claim.",
+      "checked_at": "2026-10-14"
+    },
+    {
+      "id": "v3-in-evidence-survey-vs-administrative-data-p7",
+      "article_id": "in-evidence-survey-vs-administrative-data",
+      "paragraph_index": 7,
+      "statement": "The Education Ministry’s UDISE+ 2025–26 release reports teacher and school-facility indicators. Its tables can support a statement about the reported count or percentage in that system. They do not directly establish that every listed facility worked each day or that pupils mastered a particular skill. [1](https://www.pib.gov.in/PressReleasePage.aspx?PRID=2282141&lang=1&reg=48) [2](https://www.pib.gov.in/PressReleasePage.aspx?PRID=2282141&lang=1&reg=48)",
+      "source_ref_ids": [
+        "v3-schools-counts",
+        "v3-schools-facilities"
+      ],
+      "scope": "Passage-to-source association. Interpretive and hypothetical sentences are distinguished in the article; this is not automated proof of every claim.",
+      "checked_at": "2026-10-14"
+    },
+    {
+      "id": "v3-in-evidence-survey-vs-administrative-data-p8",
+      "article_id": "in-evidence-survey-vs-administrative-data",
+      "paragraph_index": 8,
+      "statement": "ASER’s basic survey instead visits rural households and assesses basic reading and arithmetic among children aged 5–16, alongside enrolment information for ages 3–16. Its household approach can reach children outside school, but this basic rural design does not represent all urban children. [3](https://asercentre.org/aser-survey/)",
+      "source_ref_ids": [
+        "v3-aser-method"
+      ],
+      "scope": "Passage-to-source association. Interpretive and hypothetical sentences are distinguished in the article; this is not automated proof of every claim.",
+      "checked_at": "2026-10-14"
+    },
+    {
+      "id": "v3-in-evidence-survey-vs-administrative-data-p13",
+      "article_id": "in-evidence-survey-vs-administrative-data",
+      "paragraph_index": 13,
+      "statement": "For prices, MoSPI explains its market and village coverage and collection procedure. Knowing that procedure is part of interpreting the resulting national index; a handful of receipts follows a different selection process. [4](https://www.mospi.gov.in/uploads/latestReleases/latest_release_1791800601071_643518af-5320-4e52-b78c-75c92b83885b_Press_Release_for_the_month_of_September,_2026.pdf#page=4)",
+      "source_ref_ids": [
+        "v3-cpi-method"
+      ],
+      "scope": "Passage-to-source association. Interpretive and hypothetical sentences are distinguished in the article; this is not automated proof of every claim.",
+      "checked_at": "2026-10-14"
+    },
+    {
+      "id": "v3-in-evidence-correlation-and-causation-p1",
+      "article_id": "in-evidence-correlation-and-causation",
+      "paragraph_index": 1,
+      "statement": "The missing comparison is the **counterfactual**: what would have happened to the same outcome without the intervention. The World Bank’s impact-evaluation guide explains why a simple before-and-after comparison can confuse a programme’s effect with other changes over time. [1](https://documents1.worldbank.org/curated/en/698441474029568469/pdf/108270-PUB-Box396299B-PUBLIC-PUBDATE-9-13-16.pdf#page=79)",
+      "source_ref_ids": [
+        "v3-counterfactual"
+      ],
+      "scope": "Passage-to-source association. Interpretive and hypothetical sentences are distinguished in the article; this is not automated proof of every claim.",
+      "checked_at": "2026-10-14"
+    },
+    {
+      "id": "v3-in-evidence-correlation-and-causation-p6",
+      "article_id": "in-evidence-correlation-and-causation",
+      "paragraph_index": 6,
+      "statement": "That interpretation depends on assumptions. In particular, absent the programme, the groups’ outcomes must have followed sufficiently comparable trends, and other changes must not differentially explain the result. The World Bank guide discusses examining earlier trends while warning that such checks cannot conclusively prove the assumption. [2](https://documents1.worldbank.org/curated/en/698441474029568469/pdf/108270-PUB-Box396299B-PUBLIC-PUBDATE-9-13-16.pdf#page=167)",
+      "source_ref_ids": [
+        "v3-equal-trends"
+      ],
+      "scope": "Passage-to-source association. Interpretive and hypothetical sentences are distinguished in the article; this is not automated proof of every claim.",
+      "checked_at": "2026-10-14"
+    },
+    {
+      "id": "v3-in-evidence-correlation-and-causation-p12",
+      "article_id": "in-evidence-correlation-and-causation",
+      "paragraph_index": 12,
+      "statement": "A department can accurately report that it built facilities or paid benefits without establishing the size of their effect on health, education or income. The government’s output-outcome framework itself distinguishes direct outputs from intended results. [3](https://www.indiabudget.gov.in/doc/OutcomeBudgetE2026_2027.pdf#page=5)",
+      "source_ref_ids": [
+        "v3-output-outcome"
+      ],
+      "scope": "Passage-to-source association. Interpretive and hypothetical sentences are distinguished in the article; this is not automated proof of every claim.",
+      "checked_at": "2026-10-14"
+    },
+    {
+      "id": "v3-in-media-headlines-and-clips-p1",
+      "article_id": "in-media-headlines-and-clips",
+      "paragraph_index": 1,
+      "statement": "Mike Caulfield’s SIFT method includes tracing claims, quotations and media to their original context. That is more useful than deciding whether a post feels convincing because it has a familiar logo or many shares. [1](https://hapgood.us/2019/06/19/sift-the-four-moves/)",
+      "source_ref_ids": [
+        "v3-trace-context"
+      ],
+      "scope": "Passage-to-source association. Interpretive and hypothetical sentences are distinguished in the article; this is not automated proof of every claim.",
+      "checked_at": "2026-10-14"
+    },
+    {
+      "id": "v3-in-media-headlines-and-clips-p12",
+      "article_id": "in-media-headlines-and-clips",
+      "paragraph_index": 12,
+      "statement": "A real example comes from the Education Ministry’s UDISE+ 2025–26 release. Its broad narrative describes dropout declining across all levels, but the table reports a middle-stage rise from 3.5% to 3.6% between the final two years. The table supports a more specific account than the broad sentence. [2](https://www.pib.gov.in/PressReleasePage.aspx?PRID=2282141&lang=1&reg=48)",
+      "source_ref_ids": [
+        "v3-schools-progression"
+      ],
+      "scope": "Passage-to-source association. Interpretive and hypothetical sentences are distinguished in the article; this is not automated proof of every claim.",
+      "checked_at": "2026-10-14"
+    },
+    {
+      "id": "v3-in-media-news-opinion-advertising-p5",
+      "article_id": "in-media-news-opinion-advertising",
+      "paragraph_index": 5,
+      "statement": "Tracing a statement to its origin is part of the SIFT verification method. Counting several articles repeating one press release is not a substitute for examining that origin. [1](https://hapgood.us/2019/06/19/sift-the-four-moves/)",
+      "source_ref_ids": [
+        "v3-trace-context"
+      ],
+      "scope": "Passage-to-source association. Interpretive and hypothetical sentences are distinguished in the article; this is not automated proof of every claim.",
+      "checked_at": "2026-10-14"
+    },
+    {
+      "id": "v3-in-media-news-opinion-advertising-p11",
+      "article_id": "in-media-news-opinion-advertising",
+      "paragraph_index": 11,
+      "statement": "ECI’s release of **20 March 2026**, issued in the context of specified assembly elections and by-elections, describes pre-certification through Media Certification and Monitoring Committees for political advertisements in electronic media, including social media. It also describes district and state arrangements. [2](https://www.pib.gov.in/PressReleasePage.aspx?PRID=2242903&lang=1&reg=3)",
+      "source_ref_ids": [
+        "v3-advertising"
+      ],
+      "scope": "Passage-to-source association. Interpretive and hypothetical sentences are distinguished in the article; this is not automated proof of every claim.",
+      "checked_at": "2026-10-14"
+    },
+    {
+      "id": "v3-in-action-read-an-evasive-reply-p3",
+      "article_id": "in-action-read-an-evasive-reply",
+      "paragraph_index": 3,
+      "statement": "Lok Sabha Unstarred Question **2110**, answered on **12 December 2025**, asked about the Pre-Legislative Consultation Policy, including review, compliance and whether consultation would be made mandatory. The Law Ministry’s reply said it had not evaluated the policy’s effectiveness, did not maintain the requested compliance records, and had no proposal under consideration to make consultation mandatory for all major legislation. [1](https://sansad.in/getFile/loksabhaquestions/annex/186/AU2110_008KJB.pdf?source=pqals#page=1)",
+      "source_ref_ids": [
+        "v3-plcp-reply"
+      ],
+      "scope": "Passage-to-source association. Interpretive and hypothetical sentences are distinguished in the article; this is not automated proof of every claim.",
+      "checked_at": "2026-10-14"
+    },
+    {
+      "id": "v3-in-action-consultations-and-hearings-p3",
+      "article_id": "in-action-consultations-and-hearings",
+      "paragraph_index": 3,
+      "statement": "The Pre-Legislative Consultation Policy decisions describe proactive publication of proposed legislation or information about it, an explanation of its purpose and impacts, and a minimum 30-day period in the policy’s consultation language. They also describe a plain-language explanation and publication of a summary of feedback. [1](https://regulatoryreform.com/wp-content/uploads/2015/03/India-Pre-legislative-consultation-policy-2014.pdf#page=2)",
+      "source_ref_ids": [
+        "v3-consultation-policy"
+      ],
+      "scope": "Passage-to-source association. Interpretive and hypothetical sentences are distinguished in the article; this is not automated proof of every claim.",
+      "checked_at": "2026-10-14"
+    },
+    {
+      "id": "v3-in-action-consultations-and-hearings-p4",
+      "article_id": "in-action-consultations-and-hearings",
+      "paragraph_index": 4,
+      "statement": "The same document allows a department to record reasons where following the process is considered infeasible or undesirable. These policy provisions should not be presented as an unconditional statutory deadline applying to every public decision. The inspected copy is an original government policy document hosted on a disclosed third-party mirror. [2](https://regulatoryreform.com/wp-content/uploads/2015/03/India-Pre-legislative-consultation-policy-2014.pdf#page=3)",
+      "source_ref_ids": [
+        "v3-consultation-exceptions"
+      ],
+      "scope": "Passage-to-source association. Interpretive and hypothetical sentences are distinguished in the article; this is not automated proof of every claim.",
+      "checked_at": "2026-10-14"
+    },
+    {
+      "id": "v3-in-action-consultations-and-hearings-p5",
+      "article_id": "in-action-consultations-and-hearings",
+      "paragraph_index": 5,
+      "statement": "A Lok Sabha reply on **12 December 2025** said the Law Ministry had not evaluated the policy’s effectiveness and did not maintain the requested compliance records. That is evidence about the ministry’s answer at that time, not proof that consultations never occurred. [3](https://sansad.in/getFile/loksabhaquestions/annex/186/AU2110_008KJB.pdf?source=pqals#page=1)",
+      "source_ref_ids": [
+        "v3-plcp-reply"
+      ],
+      "scope": "Passage-to-source association. Interpretive and hypothetical sentences are distinguished in the article; this is not automated proof of every claim.",
+      "checked_at": "2026-10-14"
+    },
+    {
+      "id": "v3-in-action-consultations-and-hearings-p7",
+      "article_id": "in-action-consultations-and-hearings",
+      "paragraph_index": 7,
+      "statement": "A draft Bill consultation, a committee’s invitation for written views and a local statutory hearing are not interchangeable. Parliamentary committees may gather written and oral evidence in the course of their work; that does not mean every person has a guaranteed speaking slot for every inquiry. Follow the relevant committee’s invitation. [4](https://sansad.in/uploads/Chapter3_5166a53cf4_a948264f07.pdf?updated_at=2022-09-14T11%3A59%3A57.151Z#page=29)",
+      "source_ref_ids": [
+        "v3-committee-work"
+      ],
+      "scope": "Passage-to-source association. Interpretive and hypothetical sentences are distinguished in the article; this is not automated proof of every claim.",
+      "checked_at": "2026-10-14"
     }
-  ]
+  ],
+  "passage_count": 210,
+  "latest_release_checked_at": "2026-10-14"
 }

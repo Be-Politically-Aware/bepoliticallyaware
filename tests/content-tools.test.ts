@@ -23,6 +23,10 @@ function fixture(run: (directory: string) => void) {
       new URL("src/lib/article-schema.ts", root),
       join(directory, "src/lib/article-schema.ts"),
     );
+    cpSync(
+      new URL("src/lib/data-schema.ts", root),
+      join(directory, "src/lib/data-schema.ts"),
+    );
     symlinkSync(
       new URL("node_modules", root).pathname,
       join(directory, "node_modules"),

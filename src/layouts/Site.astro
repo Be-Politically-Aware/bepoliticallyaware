@@ -1,19 +1,35 @@
 ---
 import "../styles/global.css";
+import { createHash } from "node:crypto";
 import { articles, copy } from "../lib/content";
+import { ogImagePath, seoPages, structuredData } from "../lib/seo";
 import SearchDialog from "../components/SearchDialog.astro";
 import Sidebar from "../components/Sidebar.astro";
 interface Props {
-  title?: string;
-  description?: string;
   noindex?: boolean;
 }
-const {
-  title,
-  description = copy.hero.description,
-  noindex = false,
-} = Astro.props;
+const { noindex = false } = Astro.props;
 const pathname = Astro.url.pathname.replace(/\/$/, "") || "/";
+const page = seoPages.find((page) => page.route === pathname);
+const title =
+  page?.title ?? (pathname === "/search" ? "Search" : "Page not found");
+const description =
+  page?.description ??
+  (pathname === "/search"
+    ? `Search all ${articles.length} published guides by question, institution or issue.`
+    : "The link may be incorrect, or the topic may not be part of the published collection.");
+const documentTitle = pathname === "/" ? title : `${title} | ${copy.site_name}`;
+const canonical = new URL(pathname, Astro.site!);
+const image = new URL(ogImagePath(page?.route ?? "/"), Astro.site!);
+const isArticle = articles.some((article) => article.route === pathname);
+const jsonLd =
+  page && !noindex
+    ? JSON.stringify(structuredData(page, Astro.site!)).replace(/</g, "\\u003c")
+    : undefined;
+if (jsonLd)
+  Astro.csp?.insertScriptHash(
+    `sha256-${createHash("sha256").update(jsonLd).digest("base64")}`,
+  );
 const links = [
   { label: "Guides", route: "/in" },
   { label: "Reading paths", route: "/in/paths" },
@@ -23,12 +39,37 @@ const links = [
 ---
 
 <!doctype html>
-<html lang="en">
+<html lang="en-IN">
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>{title ? `${title} | ${copy.site_name}` : copy.site_name}</title>
+    <title>{documentTitle}</title>
     <meta name="description" content={description} />
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={description} />
+    <meta property="og:type" content={isArticle ? "article" : "website"} />
+    <meta property="og:url" content={canonical} />
+    <meta property="og:site_name" content={copy.site_name} />
+    <meta property="og:locale" content="en_IN" />
+    <meta property="og:image" content={image} />
+    <meta property="og:image:type" content="image/png" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta
+      property="og:image:alt"
+      content={`${page?.title ?? copy.site_name} — ${copy.site_name}`}
+    />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content={title} />
+    <meta name="twitter:description" content={description} />
+    <meta name="twitter:image" content={image} />
+    <meta
+      name="twitter:image:alt"
+      content={`${page?.title ?? copy.site_name} — ${copy.site_name}`}
+    />
+    {jsonLd && (
+      <script is:inline type="application/ld+json" set:html={jsonLd} />
+    )}
     <meta name="color-scheme" content="light dark" />
     <meta
       name="theme-color"
@@ -42,7 +83,7 @@ const links = [
     />
     <meta name="referrer" content="strict-origin-when-cross-origin" />
     {noindex && <meta name="robots" content="noindex" />}
-    <link rel="canonical" href={new URL(pathname, Astro.site)} />
+    <link rel="canonical" href={canonical} />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <script is:inline src="/theme.js"></script>
   </head>

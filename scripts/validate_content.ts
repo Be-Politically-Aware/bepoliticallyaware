@@ -2,6 +2,8 @@
 import { mkdirSync, readdirSync, readFileSync, writeFileSync } from "node:fs";
 import { parseFrontmatter } from "astro/markdown";
 import { articleSchema } from "../src/lib/article-schema";
+import { dataSchema } from "../src/lib/data-schema";
+import { createHash } from "node:crypto";
 
 const root = new URL("../", import.meta.url);
 const errors: string[] = [];
@@ -56,7 +58,51 @@ function validate() {
   const refs = new Map(sources.references.map((r) => [r.id, r]));
   const ids = new Set(articles.map((a) => a.id));
   const routes = new Set(articles.map((a) => a.route));
-  require(articles.length === 40, "Expected 40 ready articles.");
+  require(articles.length === 64, "Expected 64 ready articles.");
+  const assets = load<typeof import("../content/data-index.json")>(
+    "content/data-index.json",
+  ).map((item) => dataSchema.parse(load(item.path)));
+  const dataIds = new Set(assets.map((asset) => asset.id));
+  require(dataIds.size === 7, "Expected seven unique expansion data assets.");
+  require(assets
+    .filter((asset) => asset.asset_type === "official_statistics")
+    .reduce(
+      (sum, asset) =>
+        sum +
+        asset.tables.reduce((count, table) => count + table.rows.length, 0),
+      0,
+    ) === 327, "Expected 327 official statistical observations.");
+  for (const asset of assets) {
+    require(asset.synthetic ===
+      (asset.asset_type ===
+        "synthetic_teaching_example"), `${asset.id}: incorrect synthetic classification.`);
+    require(asset.source_ref_ids.every((id) =>
+      refs.has(id),
+    ), `${asset.id}: unresolved data source.`);
+    for (const table of asset.tables) {
+      require(table.row_count ===
+        table.rows.length, `${asset.id}/${table.id}: incorrect row count.`);
+      require(!table.csv_path.includes("..") &&
+        readFileSync(new URL(table.csv_path, root), "utf8").length >
+          0, `${asset.id}/${table.id}: missing CSV.`);
+      for (const row of table.rows) {
+        const ref = refs.get(String(row.source_ref_id));
+        require((asset.synthetic && row.source_ref_id === null) ||
+          Boolean(
+            ref && ref.url === row.source_url,
+          ), `${asset.id}/${table.id}: invalid row source.`);
+        require(table.columns.every(
+          (column) => column in row,
+        ), `${asset.id}/${table.id}: missing row field.`);
+        if (asset.asset_type === "official_statistics")
+          require(typeof row.value === "number" &&
+            Number.isFinite(row.value) &&
+            Boolean(
+              row.unit,
+            ), `${asset.id}/${table.id}: missing numeric value/unit.`);
+      }
+    }
+  }
   require(ids.size === routes.size &&
     ids.size === articles.length, "Duplicate article ID or route.");
   require(sameSet(
@@ -72,6 +118,12 @@ function validate() {
   for (const a of articles) {
     const label = a.id;
     const body = a.body_markdown;
+    require((a.data_ids ?? []).every((id) =>
+      dataIds.has(id),
+    ), `${label}: unknown data asset.`);
+    if (a.content_sha256)
+      require(createHash("sha256").update(body.trim()).digest("hex") ===
+        a.content_sha256, `${label}: body hash mismatch.`);
     require(a.status === "ready" &&
       a.publish === true, `${label}: not publishable.`);
     require(a.country === "IN" &&
@@ -153,7 +205,7 @@ function validate() {
     "roadmap/backlog.json",
   ).pages;
   require(backlog.length ===
-    141, "Expected 141 still-unwritten original briefs.");
+    117, "Expected 117 still-unwritten original briefs.");
   require(!backlog.some((b) =>
     ids.has(b.id),
   ), "Published and planned sets overlap.");

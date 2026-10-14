@@ -394,5 +394,240 @@
     "source_ref_ids": [],
     "article_id": "in-media-assess-a-news-report",
     "route": "/in/media/assess-a-news-report"
+  },
+  {
+    "term": "Directive Principles",
+    "definition": "Constitutional directions for State policy in Part IV; Article 37 distinguishes their governance importance from direct court enforceability.",
+    "source_ref_ids": [
+      "v3-directive-principles"
+    ],
+    "article_id": "in-constitution-duties-directive-principles",
+    "route": "/in/constitution/duties-directive-principles"
+  },
+  {
+    "term": "Fundamental Duties",
+    "definition": "Duties of citizens listed in Article 51A, including inquiry, harmony, environmental protection and safeguarding public property.",
+    "source_ref_ids": [
+      "v3-duties"
+    ],
+    "article_id": "in-constitution-duties-directive-principles",
+    "route": "/in/constitution/duties-directive-principles"
+  },
+  {
+    "term": "Starred question",
+    "definition": "A parliamentary question listed for an oral answer, subject to the House’s procedure; listing does not establish that it was reached.",
+    "source_ref_ids": [
+      "v3-questions"
+    ],
+    "article_id": "in-parliament-questions-and-debates",
+    "route": "/in/parliament/questions-and-debates"
+  },
+  {
+    "term": "Unstarred question",
+    "definition": "A parliamentary question answered in writing rather than through the starred-question oral format.",
+    "source_ref_ids": [
+      "v3-questions"
+    ],
+    "article_id": "in-parliament-questions-and-debates",
+    "route": "/in/parliament/questions-and-debates"
+  },
+  {
+    "term": "Departmentally Related Standing Committee",
+    "definition": "A parliamentary committee examining matters such as departmental grants, reports and Bills referred to it, within its remit.",
+    "source_ref_ids": [
+      "v3-committee-work"
+    ],
+    "article_id": "in-parliament-committees",
+    "route": "/in/parliament/committees"
+  },
+  {
+    "term": "Action Taken Report",
+    "definition": "A committee follow-up examining government responses to earlier recommendations; distinguish a response from verified implementation.",
+    "source_ref_ids": [
+      "v3-committee-followup"
+    ],
+    "article_id": "in-parliament-committees",
+    "route": "/in/parliament/committees"
+  },
+  {
+    "term": "Whip",
+    "definition": "In a voting context, an authorised party direction; the word can also refer to the person performing that party-management role.",
+    "source_ref_ids": [
+      "v3-whips"
+    ],
+    "article_id": "in-parliament-whips-and-anti-defection",
+    "route": "/in/parliament/whips-and-anti-defection"
+  },
+  {
+    "term": "Anti-defection provisions",
+    "definition": "Tenth Schedule rules concerning specified grounds of legislative disqualification and exceptions; not a generic label for every political disagreement.",
+    "source_ref_ids": [
+      "v3-defection"
+    ],
+    "article_id": "in-parliament-whips-and-anti-defection",
+    "route": "/in/parliament/whips-and-anti-defection"
+  },
+  {
+    "term": "State Election Commission",
+    "definition": "The state constitutional election authority for panchayat and municipal elections under the applicable provisions, distinct from ECI.",
+    "source_ref_ids": [
+      "v3-sec-scope"
+    ],
+    "article_id": "in-elections-eci-and-state-election-commissions",
+    "route": "/in/elections/eci-and-state-election-commissions"
+  },
+  {
+    "term": "Contribution Report",
+    "definition": "One category of political-party financial disclosure; do not equate it automatically with all party income or campaign expenditure.",
+    "source_ref_ids": [
+      "v3-finance-records"
+    ],
+    "article_id": "in-elections-funding-and-spending",
+    "route": "/in/elections/funding-and-spending"
+  },
+  {
+    "term": "Revenue receipts",
+    "definition": "Budget receipts in the revenue category, including tax revenue net to the Centre and non-tax revenue in the Union table used here.",
+    "source_ref_ids": [
+      "v3-budget-table"
+    ],
+    "article_id": "in-money-where-money-comes-from",
+    "route": "/in/money/where-money-comes-from"
+  },
+  {
+    "term": "Non-tax revenue",
+    "definition": "Revenue receipts classified separately from tax receipts; read the actual budget categories instead of calling all incoming money taxes.",
+    "source_ref_ids": [
+      "v3-budget-table"
+    ],
+    "article_id": "in-money-where-money-comes-from",
+    "route": "/in/money/where-money-comes-from"
+  },
+  {
+    "term": "Primary deficit",
+    "definition": "Fiscal deficit minus interest payments for the same period and accounting scope.",
+    "source_ref_ids": [
+      "v3-budget-definitions"
+    ],
+    "article_id": "in-money-debt-deficit-and-interest",
+    "route": "/in/money/debt-deficit-and-interest"
+  },
+  {
+    "term": "Debt stock",
+    "definition": "An amount of debt outstanding at a specified date, distinct from a deficit measured over a period.",
+    "source_ref_ids": [],
+    "article_id": "in-money-debt-deficit-and-interest",
+    "route": "/in/money/debt-deficit-and-interest"
+  },
+  {
+    "term": "Outlay",
+    "definition": "Financial resources budgeted for a programme; not evidence that its targets have already been achieved.",
+    "source_ref_ids": [
+      "v3-output-outcome"
+    ],
+    "article_id": "in-money-from-allocation-to-outcome",
+    "route": "/in/money/from-allocation-to-outcome"
+  },
+  {
+    "term": "Output",
+    "definition": "A direct, measurable product of programme activity, distinguished from the intended public result.",
+    "source_ref_ids": [
+      "v3-output-outcome"
+    ],
+    "article_id": "in-money-from-allocation-to-outcome",
+    "route": "/in/money/from-allocation-to-outcome"
+  },
+  {
+    "term": "Outcome",
+    "definition": "A result an intervention is intended to achieve; a target is not an observed achievement or an isolated causal effect.",
+    "source_ref_ids": [
+      "v3-output-outcome"
+    ],
+    "article_id": "in-money-from-allocation-to-outcome",
+    "route": "/in/money/from-allocation-to-outcome"
+  },
+  {
+    "term": "Nominal amount",
+    "definition": "An amount expressed in the money values of its period, before a price adjustment.",
+    "source_ref_ids": [],
+    "article_id": "in-evidence-nominal-real-per-person",
+    "route": "/in/evidence/nominal-real-per-person"
+  },
+  {
+    "term": "Real amount",
+    "definition": "An amount adjusted using a specified price measure to support a purchasing-power comparison.",
+    "source_ref_ids": [],
+    "article_id": "in-evidence-nominal-real-per-person",
+    "route": "/in/evidence/nominal-real-per-person"
+  },
+  {
+    "term": "Per-capita measure",
+    "definition": "A quantity divided by a specified population; define the population and period.",
+    "source_ref_ids": [],
+    "article_id": "in-evidence-nominal-real-per-person",
+    "route": "/in/evidence/nominal-real-per-person"
+  },
+  {
+    "term": "Consumer Food Price Index",
+    "definition": "The food price index reported separately from general CPI; it is not identical to the Food and beverages division.",
+    "source_ref_ids": [
+      "v3-cpi-headline",
+      "v3-cpi-divisions"
+    ],
+    "article_id": "in-everyday-prices-and-food",
+    "route": "/in/everyday/prices-and-food"
+  },
+  {
+    "term": "Out-of-pocket expenditure share",
+    "definition": "Household out-of-pocket health spending as a share of total health expenditure in the cited NHA comparison; not a share of household income.",
+    "source_ref_ids": [
+      "v3-health-spending"
+    ],
+    "article_id": "in-everyday-healthcare",
+    "route": "/in/everyday/healthcare"
+  },
+  {
+    "term": "Air Quality Index",
+    "definition": "An index summarising qualifying monitored pollutant sub-indices under the Indian framework; not a pollutant concentration or source-attribution result.",
+    "source_ref_ids": [
+      "v3-aqi-method"
+    ],
+    "article_id": "in-everyday-air-and-environment",
+    "route": "/in/everyday/air-and-environment"
+  },
+  {
+    "term": "Administrative data",
+    "definition": "Information generated through operational or reporting systems; assess coverage, definitions and recording quality.",
+    "source_ref_ids": [],
+    "article_id": "in-evidence-survey-vs-administrative-data",
+    "route": "/in/evidence/survey-vs-administrative-data"
+  },
+  {
+    "term": "Counterfactual",
+    "definition": "The outcome that would have occurred without an intervention; the missing comparison in a causal evaluation.",
+    "source_ref_ids": [
+      "v3-counterfactual"
+    ],
+    "article_id": "in-evidence-correlation-and-causation",
+    "route": "/in/evidence/correlation-and-causation"
+  },
+  {
+    "term": "Difference-in-differences",
+    "definition": "A comparison of changes between groups; causal interpretation requires assumptions such as comparable untreated trends.",
+    "source_ref_ids": [
+      "v3-equal-trends"
+    ],
+    "article_id": "in-evidence-correlation-and-causation",
+    "route": "/in/evidence/correlation-and-causation"
+  },
+  {
+    "term": "Public consultation",
+    "definition": "A process inviting views or evidence before a decision; its actual notice and applicable rules determine the procedure.",
+    "source_ref_ids": [
+      "v3-consultation-policy",
+      "v3-consultation-exceptions"
+    ],
+    "article_id": "in-action-consultations-and-hearings",
+    "route": "/in/action/consultations-and-hearings"
   }
 ]

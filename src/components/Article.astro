@@ -1,9 +1,10 @@
 ---
 import { render } from "astro:content";
 import type { Article } from "../lib/content";
-import { copy, dateLabel } from "../lib/content";
+import { copy, dateLabel, glossary, sourceDirectory } from "../lib/content";
 import { getNavigation } from "../lib/nav";
 import Pager from "./Pager.astro";
+import DataPanels from "./DataPanels.astro";
 import { evidence, evidenceTable } from "../lib/evidence";
 interface Props {
   article: Article;
@@ -13,10 +14,27 @@ const { section, hub } = getNavigation(article.route);
 const card = evidence.find((c) => c.articleId === article.id);
 const { Content, headings } = await render(article.entry);
 const isGlossary = article.id === "in-reference-glossary";
+const extraTerms = isGlossary
+  ? glossary
+      .filter(
+        (term) =>
+          !headings.some(
+            (heading) => heading.depth === 2 && heading.text === term.term,
+          ),
+      )
+      .map((term) => ({
+        ...term,
+        slug: `section-${term.term
+          .toLowerCase()
+          .replace(/[^a-z0-9]+/g, "-")
+          .replace(/-$/, "")}`,
+      }))
+  : [];
 const indexHeadings = isGlossary
-  ? headings
-      .filter((h) => h.depth === 2)
-      .sort((a, b) => a.text.localeCompare(b.text))
+  ? [
+      ...headings.filter((h) => h.depth === 2),
+      ...extraTerms.map((term) => ({ text: term.term, slug: term.slug })),
+    ].sort((a, b) => a.text.localeCompare(b.text))
   : [];
 const correction = `Article: ${article.title}\nArticle ID: ${article.id}\nRoute: ${article.route}\nVersion: ${article.version}\nResearch checked: ${article.research_checked_at}\n\nOriginal claim:\n\nSource URL and exact locator:\n\nProposed correction:\n\nReason and supporting evidence:\n`;
 ---
@@ -66,7 +84,39 @@ const correction = `Article: ${article.title}\nArticle ID: ${article.id}\nRoute:
   )}
   <div class="prose">
     <Content />
+    {extraTerms.length > 0 && (
+      <>
+        <p class="source-note">
+          Additional terms from expansion v3. Sources checked 14 October 2026;
+          the original definitions retain their earlier research date.
+        </p>
+        {extraTerms.map((term) => (
+          <>
+            <h2 id={term.slug}>{term.term}</h2>
+            <p>
+              {term.definition}{" "}
+              <a href={term.route}>
+                Read the explanation<span aria-hidden="true"> →</span>
+              </a>
+            </p>
+            <p class="source-note">
+              {term.source_ref_ids.map((id) => {
+                const ref = sourceDirectory.references.find(
+                  (ref) => ref.id === id,
+                )!;
+                return (
+                  <>
+                    <a href={ref.url}>Source</a>: {ref.locator}.{" "}
+                  </>
+                );
+              })}
+            </p>
+          </>
+        ))}
+      </>
+    )}
   </div>
+  <DataPanels ids={article.data_ids ?? []} />
   {card && (
     <section id="evidence-data" class="article-extra">
       <h2>The data behind this example</h2>
@@ -116,6 +166,9 @@ const correction = `Article: ${article.title}\nArticle ID: ${article.id}\nRoute:
           <p>
             {source.publisher} · {source.locator}
           </p>
+          {source.kind === "official_primary_mirror" && (
+            <p>Official-origin document on a third-party mirror.</p>
+          )}
           {(source.version ||
             source.published_at ||
             source.reference_period) && (

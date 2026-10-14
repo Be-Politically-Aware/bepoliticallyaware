@@ -23,7 +23,8 @@
       "hubs": [
         "parliament",
         "states",
-        "parties"
+        "parties",
+        "constitution"
       ]
     },
     {
@@ -88,7 +89,11 @@
       "article_ids": [
         "in-parliament-lok-sabha-rajya-sabha",
         "in-parliament-mp-role",
-        "in-parliament-bill-to-law"
+        "in-parliament-bill-to-law",
+        "in-parliament-questions-and-debates",
+        "in-parliament-committees",
+        "in-parliament-confidence-coalitions-and-dissolution",
+        "in-parliament-whips-and-anti-defection"
       ]
     },
     {
@@ -114,7 +119,11 @@
       "article_ids": [
         "in-everyday-roads-and-transport",
         "in-everyday-water-and-sanitation",
-        "in-everyday-jobs-and-wages"
+        "in-everyday-jobs-and-wages",
+        "in-everyday-prices-and-food",
+        "in-everyday-schools-and-exams",
+        "in-everyday-healthcare",
+        "in-everyday-air-and-environment"
       ]
     },
     {
@@ -125,7 +134,9 @@
         "in-elections-voter-registration",
         "in-elections-candidate-affidavits",
         "in-elections-how-seats-are-won",
-        "in-elections-compare-candidates"
+        "in-elections-compare-candidates",
+        "in-elections-eci-and-state-election-commissions",
+        "in-elections-funding-and-spending"
       ]
     },
     {
@@ -135,7 +146,12 @@
       "article_ids": [
         "in-money-read-a-budget",
         "in-money-estimates-revised-actuals",
-        "in-money-audits-and-cag"
+        "in-money-audits-and-cag",
+        "in-money-political-money-and-conflicts",
+        "in-money-where-money-comes-from",
+        "in-money-debt-deficit-and-interest",
+        "in-money-procurement-and-contracts",
+        "in-money-from-allocation-to-outcome"
       ]
     },
     {
@@ -147,7 +163,9 @@
         "in-action-write-a-complaint",
         "in-action-rti-basics",
         "in-action-rti-central-or-state",
-        "in-action-ask-a-representative"
+        "in-action-ask-a-representative",
+        "in-action-read-an-evasive-reply",
+        "in-action-consultations-and-hearings"
       ]
     },
     {
@@ -158,7 +176,10 @@
         "in-evidence-check-before-sharing",
         "in-evidence-percentages-and-denominators",
         "in-evidence-question-official-data",
-        "in-evidence-observe-and-verify"
+        "in-evidence-observe-and-verify",
+        "in-evidence-nominal-real-per-person",
+        "in-evidence-survey-vs-administrative-data",
+        "in-evidence-correlation-and-causation"
       ]
     },
     {
@@ -167,7 +188,9 @@
       "route": "/in/media",
       "article_ids": [
         "in-media-whatsapp-forward",
-        "in-media-assess-a-news-report"
+        "in-media-assess-a-news-report",
+        "in-media-headlines-and-clips",
+        "in-media-news-opinion-advertising"
       ]
     },
     {
@@ -196,6 +219,15 @@
       "article_ids": [
         "in-dossiers-road-deaths-2024",
         "in-dossiers-union-budget-2026"
+      ]
+    },
+    {
+      "id": "constitution",
+      "label": "Constitution, rights and duties",
+      "route": "/in/constitution",
+      "article_ids": [
+        "in-constitution-rights-and-who-has-them",
+        "in-constitution-duties-directive-principles"
       ]
     }
   ],
@@ -267,6 +299,50 @@
         "in-crime-crime-statistics"
       ],
       "outcome": "Check definitions, denominators and coverage before interpreting a discrepancy."
+    },
+    {
+      "id": "v3-follow-a-public-rupee",
+      "title": "Follow a public rupee",
+      "article_ids": [
+        "in-money-where-money-comes-from",
+        "in-money-procurement-and-contracts",
+        "in-money-from-allocation-to-outcome",
+        "in-evidence-correlation-and-causation"
+      ],
+      "outcome": "Can separate financing, procurement, delivery and evidence of impact."
+    },
+    {
+      "id": "v3-read-the-number",
+      "title": "Read the number behind the headline",
+      "article_ids": [
+        "in-everyday-prices-and-food",
+        "in-evidence-nominal-real-per-person",
+        "in-evidence-survey-vs-administrative-data",
+        "in-everyday-healthcare"
+      ],
+      "outcome": "Can identify the period, denominator, price basis and measurement limits."
+    },
+    {
+      "id": "v3-follow-scrutiny",
+      "title": "Follow parliamentary scrutiny",
+      "article_ids": [
+        "in-parliament-questions-and-debates",
+        "in-parliament-committees",
+        "in-action-read-an-evasive-reply",
+        "in-action-consultations-and-hearings"
+      ],
+      "outcome": "Can read an official answer and follow up on an identifiable evidence gap."
+    },
+    {
+      "id": "v3-follow-political-money",
+      "title": "Follow political money without inventing guilt",
+      "article_ids": [
+        "in-elections-funding-and-spending",
+        "in-money-political-money-and-conflicts",
+        "in-media-news-opinion-advertising",
+        "in-media-headlines-and-clips"
+      ],
+      "outcome": "Can distinguish a financial record, a conflict question and a proven finding."
     }
   ]
 }

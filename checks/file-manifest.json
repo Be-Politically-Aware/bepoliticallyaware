@@ -31,18 +31,18 @@
   },
   {
     "path": "AGENTS.md",
-    "bytes": 7419,
-    "sha256": "2a210036d7a78b5628b4f613c4aa626ab8eabda4c9d5879baa79101028107c08"
+    "bytes": 7645,
+    "sha256": "3b437aa965aa2d266a0cfa6654cbf9d6df391eebdacc012d7b910c04d8cbde9c"
   },
   {
     "path": "CHANGELOG.md",
-    "bytes": 1397,
-    "sha256": "89ee4c99c48826f40e6bedb867838f5783ae750bc3275d333d7502f8463b5449"
+    "bytes": 2284,
+    "sha256": "ec8861111e6b9be9c3399bb0ad9199b75d690c1d2f204df93a2f1d639cee4a50"
   },
   {
     "path": "README.md",
-    "bytes": 10046,
-    "sha256": "732bfcd84bbf4b9f1066221298c0decd48a644d454589d824c90ada770a6e04c"
+    "bytes": 12740,
+    "sha256": "3e8ed569144c5e69d722115c9027c45863ec9307bbaa86713f9b4b0d106f37c8"
   },
   {
     "path": "RESEARCH_NOTES.md",
@@ -51,8 +51,8 @@
   },
   {
     "path": "checks/validation.json",
-    "bytes": 504,
-    "sha256": "72f9147239d982cf47ed6ce4771a139f24e3dc25a324a5895a028e753e76b419"
+    "bytes": 505,
+    "sha256": "776a3f06133ed5b2e489c560d9d95229886c5417703c52babf202473f63d3449"
   },
   {
     "path": "content/articles/in-action-ask-a-representative.md",
@@ -63,6 +63,16 @@
     "path": "content/articles/in-action-choose-a-route.md",
     "bytes": 6688,
     "sha256": "c5d92bc14b2196c8cc024b0e8bc7bde8212cdccdd5f8adb7ccfdce4916304a5c"
+  },
+  {
+    "path": "content/articles/in-action-consultations-and-hearings.md",
+    "bytes": 8856,
+    "sha256": "551ab5bcb7e2eb69f03a58a6a01faf49354ef692d490b2ec6e8cc77f5c4ef1b5"
+  },
+  {
+    "path": "content/articles/in-action-read-an-evasive-reply.md",
+    "bytes": 5749,
+    "sha256": "c80b0a89454092cd900386950112bd04187f4db59005158b8ff1c3816a22fa15"
   },
   {
     "path": "content/articles/in-action-rti-basics.md",
@@ -78,6 +88,16 @@
     "path": "content/articles/in-action-write-a-complaint.md",
     "bytes": 4912,
     "sha256": "4cce5cc51093e0433146c64275e0a748199fdd1aec4732b8920110e4b3b82a58"
+  },
+  {
+    "path": "content/articles/in-constitution-duties-directive-principles.md",
+    "bytes": 7627,
+    "sha256": "7d021f8b880d45b4c43d846a53aad35b2ba478edce14b4027bc04fed0aedd769"
+  },
+  {
+    "path": "content/articles/in-constitution-rights-and-who-has-them.md",
+    "bytes": 8353,
+    "sha256": "0bfb96360e20a5c7ecc346b0e51fbb1559eed5d0a3579591ce4a97aea36eb06d"
   },
   {
     "path": "content/articles/in-crime-case-status-terms.md",
@@ -110,6 +130,16 @@
     "sha256": "241993b77efeb6956d87ae585f8f5cfaed900eb3093317d02346cd66921409a4"
   },
   {
+    "path": "content/articles/in-elections-eci-and-state-election-commissions.md",
+    "bytes": 6606,
+    "sha256": "560e480e387a3e48cc682798811a6e52f204b9f84b5c74b315051c685a2f5135"
+  },
+  {
+    "path": "content/articles/in-elections-funding-and-spending.md",
+    "bytes": 8811,
+    "sha256": "92a07b48d0adca2879b17827ceccb43fe44e2e6d2a8574612553fb7af92d1695"
+  },
+  {
     "path": "content/articles/in-elections-how-seats-are-won.md",
     "bytes": 5075,
     "sha256": "c7d0481571e20a63b9b74987302833e775ef95b4ae44723712390b4f17910063"
@@ -120,14 +150,34 @@
     "sha256": "e6abc8be88ab9db1e6108dff0089024be054459a291d68e955163601ed62c83a"
   },
   {
+    "path": "content/articles/in-everyday-air-and-environment.md",
+    "bytes": 7175,
+    "sha256": "72fe26e4f21e02e09a3216bea5742d6110dfdf5389df7653e7987fa06f175fef"
+  },
+  {
+    "path": "content/articles/in-everyday-healthcare.md",
+    "bytes": 6937,
+    "sha256": "89bac2a3c6e65a7f6b4a8a3b2eacf3c250e305ce3db1f1a827d0e99c646cb923"
+  },
+  {
     "path": "content/articles/in-everyday-jobs-and-wages.md",
     "bytes": 6255,
     "sha256": "3dce0488daaeff56639d118fc243a37dbd5a5bb14da32bfb9587e45a70b62e6e"
   },
   {
+    "path": "content/articles/in-everyday-prices-and-food.md",
+    "bytes": 8422,
+    "sha256": "dd1c7cd8b714ed4af7f3fc82f86deb78473304ad0277b901b902ab41a81e63e3"
+  },
+  {
     "path": "content/articles/in-everyday-roads-and-transport.md",
     "bytes": 5925,
     "sha256": "dc6d1b59e9592b02b25757092696b03677b06c510d0624a8664683e51ab93d8b"
+  },
+  {
+    "path": "content/articles/in-everyday-schools-and-exams.md",
+    "bytes": 9304,
+    "sha256": "b05ed53e777e077a1efbf9222f21f5eae29e69f2e84843063f4ab9635e48beb7"
   },
   {
     "path": "content/articles/in-everyday-water-and-sanitation.md",
@@ -138,6 +188,16 @@
     "path": "content/articles/in-evidence-check-before-sharing.md",
     "bytes": 4616,
     "sha256": "b014f73fba949009b502bdbe1433659e588b0c65db00c381b27433198d56ab1b"
+  },
+  {
+    "path": "content/articles/in-evidence-correlation-and-causation.md",
+    "bytes": 7492,
+    "sha256": "9d2dd357f5f2f6dbfaf4f9ef625cfe3af7dcdda5f983b515ba14a81bcbb3a268"
+  },
+  {
+    "path": "content/articles/in-evidence-nominal-real-per-person.md",
+    "bytes": 8694,
+    "sha256": "688eeed011fd08f69c3b228ca44eb42bac596e223213ac13bde542eccb71d1fe"
   },
   {
     "path": "content/articles/in-evidence-observe-and-verify.md",
@@ -155,6 +215,11 @@
     "sha256": "445e4539d99feca7431b9c92a564d289247284c83cef011edfefef86bb77088e"
   },
   {
+    "path": "content/articles/in-evidence-survey-vs-administrative-data.md",
+    "bytes": 8633,
+    "sha256": "c94a88caf03f77ae0a15d51daa36997942285012268de8c70e3ad4e928e8a697"
+  },
+  {
     "path": "content/articles/in-local-find-responsible-authority.md",
     "bytes": 5959,
     "sha256": "918156972599d4b193ad2d2ac032a0b1854b5830f2cb5eb084d18674341d4944"
@@ -163,6 +228,16 @@
     "path": "content/articles/in-media-assess-a-news-report.md",
     "bytes": 4467,
     "sha256": "2b9286205218504c6a261f4f0d9619aa9066564353f3090325e947f51639481a"
+  },
+  {
+    "path": "content/articles/in-media-headlines-and-clips.md",
+    "bytes": 6146,
+    "sha256": "c9d7940caeed192c8aedd78b4c308263fcbef773fa1719bfe5c151a6d65187f6"
+  },
+  {
+    "path": "content/articles/in-media-news-opinion-advertising.md",
+    "bytes": 6341,
+    "sha256": "268080f1a8b19b55a2eae97d6527c977989c6e9700d667c2e8a86cf2e533204d"
   },
   {
     "path": "content/articles/in-media-whatsapp-forward.md",
@@ -175,9 +250,29 @@
     "sha256": "492938900765d9af4d47ac57ad85ea0c2dc5f45ff996ce9282538d035dff3cc3"
   },
   {
+    "path": "content/articles/in-money-debt-deficit-and-interest.md",
+    "bytes": 6646,
+    "sha256": "64afa58d23c3915dc4832053c08fea0c19ea93ceb6358e847fa6c83042c5a905"
+  },
+  {
     "path": "content/articles/in-money-estimates-revised-actuals.md",
     "bytes": 4931,
     "sha256": "0a12c70aef8624938dd7ef82963abda6505de8726de170f16f2e58c890e84f93"
+  },
+  {
+    "path": "content/articles/in-money-from-allocation-to-outcome.md",
+    "bytes": 7529,
+    "sha256": "7224f8741534805e7e3f3bb98fe393b8af1f4c809728a2aea1ad99a499293215"
+  },
+  {
+    "path": "content/articles/in-money-political-money-and-conflicts.md",
+    "bytes": 9570,
+    "sha256": "634e9b3a7c214a157e14c42a5559bd6163271b07dca0bb3b3ffa7c7f099d043b"
+  },
+  {
+    "path": "content/articles/in-money-procurement-and-contracts.md",
+    "bytes": 8482,
+    "sha256": "6174df8df20bacb6269344618b8e3059a42a02a9e46e85ee0ff84655cd51d0e4"
   },
   {
     "path": "content/articles/in-money-read-a-budget.md",
@@ -185,9 +280,24 @@
     "sha256": "f961b44e08d8f329b3744a1d94fd8df034fcafbc8ff50c2fed448b05bd18f4a4"
   },
   {
+    "path": "content/articles/in-money-where-money-comes-from.md",
+    "bytes": 7446,
+    "sha256": "d0c6b4ff01ce0bf2458e66915da64f3c19bf6dfb9f05788035554667d73e0557"
+  },
+  {
     "path": "content/articles/in-parliament-bill-to-law.md",
     "bytes": 7860,
     "sha256": "a4d3e791812711279e96edffd6b4aeec9168d3875ae3f5447187b4f34d226bb6"
+  },
+  {
+    "path": "content/articles/in-parliament-committees.md",
+    "bytes": 7269,
+    "sha256": "90f65b7b93bf89e529db8d89a8dffd67c3c9e23e904a8ab1728ac72c426725f9"
+  },
+  {
+    "path": "content/articles/in-parliament-confidence-coalitions-and-dissolution.md",
+    "bytes": 8499,
+    "sha256": "bd1c4c8e23d97a3193ead4aee4c68b6f1b080eced76aefe4ea9cff99b121ad46"
   },
   {
     "path": "content/articles/in-parliament-lok-sabha-rajya-sabha.md",
@@ -198,6 +308,16 @@
     "path": "content/articles/in-parliament-mp-role.md",
     "bytes": 6309,
     "sha256": "d3d5f58609872220d78e8b0ce2c0d459b807b1289a0782199fb1300e9fe9c146"
+  },
+  {
+    "path": "content/articles/in-parliament-questions-and-debates.md",
+    "bytes": 6347,
+    "sha256": "1bf06f7d6d969a7ecb9e4873152204f722c3009e2d931a7aa762a8944b632491"
+  },
+  {
+    "path": "content/articles/in-parliament-whips-and-anti-defection.md",
+    "bytes": 6771,
+    "sha256": "4876981985d8f02e05b880c60327a5000737b75232ed683facf35d524bba744e"
   },
   {
     "path": "content/articles/in-parties-opposition-role.md",
@@ -255,6 +375,66 @@
     "sha256": "0187cb4c618886f6b3f3f989f93bc9cbdfdf14aeda8a36e67d66e33b4400b3d3"
   },
   {
+    "path": "content/csv/v3-cpi-september-2026--divisions.csv",
+    "bytes": 30361,
+    "sha256": "03737836ef94f10d18643b9340e935e8751bd694e5c18a3764893ad7ccea7c14"
+  },
+  {
+    "path": "content/csv/v3-cpi-september-2026--headline.csv",
+    "bytes": 8671,
+    "sha256": "cf88c5ec182ce4fb6e08db5e271fe96de883915e4b6e3bd0ef1c754b148b477b"
+  },
+  {
+    "path": "content/csv/v3-india-aqi-reference--categories.csv",
+    "bytes": 1716,
+    "sha256": "22f8583dc221f41c55d58ce1f89bca0c648fbe36ffd0cf07be88d2508a537c26"
+  },
+  {
+    "path": "content/csv/v3-nha-2022-23--observations.csv",
+    "bytes": 5087,
+    "sha256": "01b9533c558766e2d3ec11201133d1c85f058823ab0a30e097f5732081ef2b5f"
+  },
+  {
+    "path": "content/csv/v3-political-finance-records--events.csv",
+    "bytes": 1326,
+    "sha256": "bbdac351c3e22c7a575c926d0a3519cf15f5acf791a8d6a1918a5be39c1351cf"
+  },
+  {
+    "path": "content/csv/v3-political-finance-records--record-types.csv",
+    "bytes": 2603,
+    "sha256": "04b219edc03494f9324abeb40d93efe26193f5375042e15475d5907709abc526"
+  },
+  {
+    "path": "content/csv/v3-teaching-calculations--causal-inputs.csv",
+    "bytes": 1612,
+    "sha256": "5da29d3c3661a30e1942128a41e5674c95b7e51d31cbebae497f1f2b3b6454a6"
+  },
+  {
+    "path": "content/csv/v3-teaching-calculations--spending-inputs.csv",
+    "bytes": 379,
+    "sha256": "aea5e09b000b32587f4693f6b155b2d42fbb940f4eb1fcf081292b67ad31b517"
+  },
+  {
+    "path": "content/csv/v3-udise-2025-26--indicators.csv",
+    "bytes": 53680,
+    "sha256": "5ebd3922c667c7742ae9ea1b19ad4adef9080ddf44796c100208b57ccfc27ce5"
+  },
+  {
+    "path": "content/csv/v3-union-budget-receipts-deficits--amounts.csv",
+    "bytes": 20400,
+    "sha256": "f4cbdc97a4edc7fe6c154a54e6df5c1f19b9443393aaa4f65b9793eba07d6057"
+  },
+  {
+    "path": "content/csv/v3-union-budget-receipts-deficits--gdp-ratios.csv",
+    "bytes": 4627,
+    "sha256": "06b5b89d529aee364f9517e2b00d67ec8c2c96454ce36fcf03f8827c4e248b53"
+  },
+  {
+    "path": "content/data-index.json",
+    "bytes": 1911,
+    "sha256": "7c4b75a1d81efee85a00380ca07e5405af703f2b4e9143b88155bb817e19218a"
+  },
+  {
     "path": "content/data/adr-2024-winning-candidate-disclosures.json",
     "bytes": 829,
     "sha256": "2528f4d818fe0a83c5f7ff32a73c88440bfe9e3681f8489266c2145026226c20"
@@ -275,19 +455,59 @@
     "sha256": "3026b5fb2ceaf3e979114432968ec959a2d4e39dbd26ee74caf4d5af7df2ec28"
   },
   {
+    "path": "content/data/v3-cpi-september-2026.json",
+    "bytes": 79971,
+    "sha256": "1bd025096548e573fe0b1602d78889737f860e6704d216f0d98e73443f0488d4"
+  },
+  {
+    "path": "content/data/v3-india-aqi-reference.json",
+    "bytes": 5463,
+    "sha256": "4412d910511d0b250d40f7b0e6bc3ec0f3fed08ed2e5a33ebf5c687041a82cc6"
+  },
+  {
+    "path": "content/data/v3-nha-2022-23.json",
+    "bytes": 13737,
+    "sha256": "a24aa213cbacb5a8ce1379105583c27dde349b2b15371339c4e835acdf5b3918"
+  },
+  {
+    "path": "content/data/v3-political-finance-records.json",
+    "bytes": 8178,
+    "sha256": "f4436cc1f8b343df15c49d8c142a40c701a0a419da473899b49cbab61c7c314c"
+  },
+  {
+    "path": "content/data/v3-teaching-calculations.json",
+    "bytes": 6760,
+    "sha256": "ce268a7a1113b3d3683c5829fb6b368142f137e130b3c216a70051740aefbdb8"
+  },
+  {
+    "path": "content/data/v3-udise-2025-26.json",
+    "bytes": 109791,
+    "sha256": "e9c2d34100110e0ba78081240a32f925e98cc7545cd4a44581fd17c742bb6bff"
+  },
+  {
+    "path": "content/data/v3-union-budget-receipts-deficits.json",
+    "bytes": 62440,
+    "sha256": "95f59adae51f999f57dbd5c91ee266a900c59a999fe5b642f86de6ce76bf10f6"
+  },
+  {
     "path": "content/glossary.json",
-    "bytes": 15177,
-    "sha256": "4bc48cc5f28618fd1b59a5bcc3026418829118cbad9209cca0188c5e6ec2e3b7"
+    "bytes": 24435,
+    "sha256": "82ffbc877f80b5bd68cebfac3a8dc16ad6209ebe4a08d17616647b7732464471"
   },
   {
     "path": "content/navigation.json",
-    "bytes": 6907,
-    "sha256": "e79cb68750afffd2ef3b6fe0d63cb6daf2bbbd651e933bbe65f933f2c31d9cf9"
+    "bytes": 9824,
+    "sha256": "1738eca9d0755619a10fb8b5269a8ad19a487562d2b4f304b05fc2a765d65fda"
   },
   {
     "path": "content/release.json",
-    "bytes": 503,
-    "sha256": "4c4f7118f3b936386171bf913e6aaed0636a32212fd8d78f437f45632242274c"
+    "bytes": 662,
+    "sha256": "64a9316ce092244a327d68b2bcae556f0832a751008ecbbb973a609e6da771d6"
+  },
+  {
+    "path": "content/releases/expansion-v3.json",
+    "bytes": 904,
+    "sha256": "bfe1cb98feefa4c450b49b84f8a385dc6249abfd40352c09da3448e6eb56d57f"
   },
   {
     "path": "content/site-copy.json",
@@ -296,13 +516,18 @@
   },
   {
     "path": "content/sources.json",
-    "bytes": 28993,
-    "sha256": "669a54d65a3ad29764e6af10c47630624bb84ae84bc950dd9712a5b926964456"
+    "bytes": 66215,
+    "sha256": "d03d79d5c87ae5fabed2b7c2d61a7660b2cc20317fac7cae0457a5b2558ac560"
+  },
+  {
+    "path": "evidence/expansion-v3-research-notes.md",
+    "bytes": 7025,
+    "sha256": "e7282250dce3953e3d6cbe74649b25441aa2f996615a36ff026707dddb0c04d4"
   },
   {
     "path": "evidence/passage-ledger.json",
-    "bytes": 84237,
-    "sha256": "c92ff6dc460347462a4e7bf0abef35e9713f0e4941dd168e6db0e4aaa3013f1d"
+    "bytes": 154419,
+    "sha256": "393c32169ea4113330509ed8e4965a96623bbb568f53b5aa9ee41525393e6fe8"
   },
   {
     "path": "evidence/service-links.json",
@@ -311,18 +536,23 @@
   },
   {
     "path": "implementation/BUILD_SPEC.md",
-    "bytes": 6393,
-    "sha256": "57743b0cd83d3affc66f90d26ae4bb92c4c03bf8f777b140dd4a662af247e3ee"
+    "bytes": 6926,
+    "sha256": "bbafaf2ad47acce4573cf96bf327ccddd2d87c51d4f97974f0ab3adbb9baeb82"
+  },
+  {
+    "path": "implementation/EXPANSION_V3_DATA_DICTIONARY.md",
+    "bytes": 12212,
+    "sha256": "c6481c72dffaddaed1f12e754d06dc23f3dd3b4e42eae1811c1779be09018b0b"
   },
   {
     "path": "package.json",
-    "bytes": 1078,
-    "sha256": "dc8a3bf6e53f696f2784f28a53b0b08944608550b04884228d07a3789390e6e4"
+    "bytes": 1124,
+    "sha256": "3fe486e713aa13c53d69fba6f470d7f05c7299bd50a24c728017f479c05daf60"
   },
   {
     "path": "roadmap/backlog.json",
-    "bytes": 203954,
-    "sha256": "0d5764c30b632a009bf32bb865450a57c1dd4a29c606bf194524a12c70e7d205"
+    "bytes": 169421,
+    "sha256": "ca5312aa7047ff25842da66e56e98b7d670beea5c0b810bcee7b93792fd0deba"
   },
   {
     "path": "roadmap/original-source-leads.json",
@@ -331,8 +561,13 @@
   },
   {
     "path": "scripts/validate_content.ts",
-    "bytes": 9613,
-    "sha256": "537de0900580996adc5abc54532c7c23a5ffd373ff6c3a513c1bd6bbad689b20"
+    "bytes": 11883,
+    "sha256": "c570564bdaf91babbd65991784658ac5fefe83d8660c406c10df2681092d661e"
+  },
+  {
+    "path": "src/components/DataPanels.astro",
+    "bytes": 5671,
+    "sha256": "deb7fe0748ab508db7cfd95dc3ce8e2c1c677a7916f93f90385ac1e739a53288"
   },
   {
     "path": "src/content.config.ts",
@@ -341,12 +576,27 @@
   },
   {
     "path": "src/lib/article-schema.ts",
-    "bytes": 1741,
-    "sha256": "94f4781fd2eacf073c1bf4580d446b91d5506b72791f42b08e83e9fff6f09381"
+    "bytes": 1951,
+    "sha256": "c82802bcec2719fd51dd3dc20df3468e4ee73840238d098ab349955ada5058ce"
+  },
+  {
+    "path": "src/lib/data-schema.ts",
+    "bytes": 885,
+    "sha256": "0c51b925b8299fb7615a36514a4cf7c2ed09633166df5ad624922d8dad1ae65a"
+  },
+  {
+    "path": "src/lib/data.ts",
+    "bytes": 569,
+    "sha256": "e9556d0f1f8f4bdefcf393a055a66f3b198f1595f5e6d5c31e503c51dfb1cbe8"
+  },
+  {
+    "path": "src/pages/csv/[file].ts",
+    "bytes": 644,
+    "sha256": "c9286ad2bc9f5ea20f08b1fe02809cb5a9b88e591aadb81087486f48e7d72818"
   },
   {
     "path": "tests/content-tools.test.ts",
-    "bytes": 3443,
-    "sha256": "ac2ac756e7291239849d52d0937cb0655b5043b82eaf535042833e7f7f1d5861"
+    "bytes": 3558,
+    "sha256": "f967180cabb44a9489d026124d7ed44d4622eda07d960ebecacc62d0a0054924"
   }
 ]

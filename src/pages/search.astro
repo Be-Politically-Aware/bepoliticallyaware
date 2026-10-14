@@ -1,8 +1,9 @@
 ---
 import Site from "../layouts/Site.astro";
+import { articles } from "../lib/content";
 ---
 
-<Site title="Search" noindex>
+<Site noindex>
   <div class="article">
     <nav class="context" aria-label="Breadcrumb">
       <ol>
@@ -13,7 +14,8 @@ import Site from "../layouts/Site.astro";
     </nav>
     <h1>Search</h1>
     <p class="summary">
-      Search all 40 published guides by question, institution or issue.
+      Search all {articles.length} published guides by question, institution or
+      issue.
     </p>
     <form id="search-form" class="search-form" action="/search">
       <label for="search-query">Search articles</label>
