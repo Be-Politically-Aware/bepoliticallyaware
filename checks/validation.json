@@ -1,10 +1,10 @@
 {
   "passed": true,
-  "checks": 3085,
+  "checks": 3098,
   "articles": 64,
   "original_launch_articles": 32,
-  "source_documents": 48,
-  "exact_source_locators": 102,
+  "source_documents": 50,
+  "exact_source_locators": 105,
   "errors": [],
   "scope": "Markdown frontmatter schema, local structure, internal links, citation-reference consistency and selected arithmetic checks.",
   "not_tested": [

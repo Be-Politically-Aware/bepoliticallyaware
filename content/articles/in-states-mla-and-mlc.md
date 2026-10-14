@@ -21,11 +21,12 @@ human_reviewed: false
 review_method: "Assistant retrieval, source comparison and numerical checks; not independent human review"
 jurisdiction: "India; local administrative responsibility must be checked for the actual location"
 legal_scope: "General civic education, not individual legal advice"
-version: "2.0.0"
+version: "2.0.1"
 source_ref_ids:
   - "c-state-houses"
   - "c-state-executive"
   - "c-council-bills"
+  - "audit-council-creation"
 sources:
   - number: 1
     ref_id: "c-state-houses"
@@ -69,6 +70,20 @@ sources:
     limitations:
       - "This compilation has a stated cutoff. No assertion that every post-cutoff notification or judgment was exhaustively checked. Article explanations concern the provisions cited, not personalised legal advice."
     kind: "official_primary"
+  - number: 4
+    ref_id: "audit-council-creation"
+    document_id: "constitution"
+    title: "Constitution of India, official English compilation"
+    publisher: "Legislative Department, Ministry of Law and Justice"
+    url: "https://www.legislative.gov.in/static/uploads/2025/07/c9fe9c9b6840524844316f74bb1c556c.pdf#page=107"
+    locator: "Article 169(1)–(3): Assembly resolution, parliamentary law, and distinction from Article 368; physical PDF page 107"
+    version: "As on 1 May 2026"
+    published_at: null
+    reference_period: null
+    checked_at: "2026-10-14"
+    limitations:
+      - "This compilation has a stated cutoff. No assertion that every post-cutoff notification or judgment was exhaustively checked. Article explanations concern the provisions cited, not personalised legal advice."
+    kind: "official_primary"
 maintenance:
   trigger: "Change to a cited provision, source correction or substantiated reader correction"
   suggested_recheck_days: 365
@@ -97,6 +112,6 @@ Ask the representative about action taken with the government. Ask the service a
 
 ## Check your state's actual arrangements
 
-Use the official legislature website for current membership, constituency information and available proceedings. Do not copy a list of Council states from an old textbook or assume a constitutional amendment has necessarily produced an operating Council without checking its legal commencement and the present institution.
+Use the official legislature website for current membership, constituency information and available proceedings. Under Article 169, Parliament may create or abolish a Legislative Council by law after the State Assembly passes a resolution supported by a majority of its total membership and at least two-thirds of members present and voting. The resolution alone does not create or abolish the Council. Such a law is not treated as an Article 368 constitutional amendment. Check the legislation’s commencement and the currently operating institution. [4](https://www.legislative.gov.in/static/uploads/2025/07/c9fe9c9b6840524844316f74bb1c556c.pdf#page=107)
 
 For readers in Union Territories, use the legislature and administrative arrangements that actually apply there. A state explainer is not automatically a guide to every Union Territory.

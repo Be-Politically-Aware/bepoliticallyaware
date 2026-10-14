@@ -18,12 +18,28 @@ human_reviewed: false
 review_method: "Assistant retrieval, source comparison, source-table inspection and reproducible numerical checks; not independent human review"
 jurisdiction: "India; national civic explanation with jurisdiction-specific limits stated in the article"
 legal_scope: "General civic education, not individual legal, medical or investment advice"
-version: "3.0.0"
-source_ref_ids: ["v3-whips","v3-defection"]
-sources: [{"number":1,"ref_id":"v3-whips","document_id":"v3-defection-handbook","title":"Handbook chapter V: anti-defection provisions","publisher":"Lok Sabha Secretariat","url":"https://sansad.in/uploads/Chapter5_bcef32a522_57941e8421.pdf?updated_at=2022-09-14T12%3A00%3A45.541Z#page=1","locator":"Printed pages 176–178: directions, disqualification and merger provisions","version":"Parliament-hosted handbook chapter","published_at":null,"reference_period":null,"checked_at":"2026-10-14","limitations":["Simplified parliamentary explanation. The full Tenth Schedule and case-specific orders control; no named current dispute is adjudicated here."],"kind":"official_primary"},{"number":2,"ref_id":"v3-defection","document_id":"v3-constitution","title":"Constitution of India: official English compilation","publisher":"Legislative Department, Ministry of Law and Justice","url":"https://www.legislative.gov.in/static/uploads/2025/07/c9fe9c9b6840524844316f74bb1c556c.pdf#page=376","locator":"Tenth Schedule paragraphs 2, 4 and 6; paragraph 7 invalidity footnote","version":"As on 1 May 2026","published_at":null,"reference_period":null,"checked_at":"2026-10-14","limitations":["The compilation has a 1 May 2026 cutoff. These are explanations of cited provisions, not a claim that every later case or notification has been reviewed. No current office-holder or live majority is inferred."],"kind":"official_primary"}]
-word_count: 498
+version: "3.0.1"
+source_ref_ids: ["v3-whips","v3-defection","audit-whip-official"]
+sources:
+  - {"number":1,"ref_id":"v3-whips","document_id":"v3-defection-handbook","title":"Handbook chapter V: anti-defection provisions","publisher":"Lok Sabha Secretariat","url":"https://sansad.in/uploads/Chapter5_bcef32a522_57941e8421.pdf?updated_at=2022-09-14T12%3A00%3A45.541Z#page=1","locator":"Printed pages 176–178: directions, disqualification and merger provisions","version":"Parliament-hosted handbook chapter","published_at":null,"reference_period":null,"checked_at":"2026-10-14","limitations":["Simplified parliamentary explanation. The full Tenth Schedule and case-specific orders control; no named current dispute is adjudicated here."],"kind":"official_primary"}
+  - {"number":2,"ref_id":"v3-defection","document_id":"v3-constitution","title":"Constitution of India: official English compilation","publisher":"Legislative Department, Ministry of Law and Justice","url":"https://www.legislative.gov.in/static/uploads/2025/07/c9fe9c9b6840524844316f74bb1c556c.pdf#page=376","locator":"Tenth Schedule paragraphs 2, 4 and 6; paragraph 7 invalidity footnote","version":"As on 1 May 2026","published_at":null,"reference_period":null,"checked_at":"2026-10-14","limitations":["The compilation has a 1 May 2026 cutoff. These are explanations of cited provisions, not a claim that every later case or notification has been reviewed. No current office-holder or live majority is inferred."],"kind":"official_primary"}
+  - number: 3
+    ref_id: "audit-whip-official"
+    document_id: "audit-mpa-youth-parliament"
+    title: "Conducting Youth Parliament: glossary entry for Whip"
+    publisher: "Ministry of Parliamentary Affairs"
+    url: "https://nyps.mpa.gov.in/2024/images/pdf/Conducting%20Youth%20Parliament.pdf#page=41"
+    locator: "Appendix I glossary, “Whip”, physical PDF page 41"
+    version: "Publicly hosted training manual; publication date not established"
+    published_at: null
+    reference_period: null
+    checked_at: "2026-10-14"
+    limitations:
+      - "Used only for the party-official definition. Do not infer that historical rules, examples or membership references elsewhere in this manual are current."
+    kind: "official_primary"
+word_count: 499
 estimated_reading_minutes: 3
-content_sha256: "06394680cc7e6d35b2afd42dec39e71e09e0aeb76e36c4d190caaf1a0ab3c920"
+content_sha256: "5d164114b798421d37e8e1570a64ff628b2b62eb25ad06c5f3299ca57c723194"
 maintenance: {"trigger":"Material change to a cited provision or method; revised statistical release; substantiated correction","suggested_recheck_days":365,"automation_created":false}
 data_ids: []
 release_batch: "expansion-v3"
@@ -33,7 +49,7 @@ Representatives are elected as individuals, often on a party ticket. What happen
 
 ## What a whip does
 
-In parliamentary usage, “whip” can mean a party official organising its members or an instruction concerning parliamentary business and voting. A party’s instruction is not itself the Speaker’s decision that a member has lost their seat. Keep the instruction, alleged breach and formal decision separate. [1](https://sansad.in/uploads/Chapter5_bcef32a522_57941e8421.pdf?updated_at=2022-09-14T12%3A00%3A45.541Z#page=1)
+In parliamentary usage, “whip” can mean a party official organising its members or an instruction concerning parliamentary business and voting. [3](https://nyps.mpa.gov.in/2024/images/pdf/Conducting%20Youth%20Parliament.pdf#page=41) A party’s instruction is not itself the Speaker’s decision that a member has lost their seat. Keep the instruction, alleged breach and formal decision separate. [1](https://sansad.in/uploads/Chapter5_bcef32a522_57941e8421.pdf?updated_at=2022-09-14T12%3A00%3A45.541Z#page=1)
 
 The Tenth Schedule includes disqualification grounds involving voluntarily giving up party membership and voting or abstaining contrary to an authorised party direction, subject to the stated permission and condonation provisions. [2](https://www.legislative.gov.in/static/uploads/2025/07/c9fe9c9b6840524844316f74bb1c556c.pdf#page=376)
 

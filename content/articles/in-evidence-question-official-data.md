@@ -21,7 +21,7 @@ human_reviewed: false
 review_method: "Assistant retrieval, source comparison and numerical checks; not independent human review"
 jurisdiction: "India; local administrative responsibility must be checked for the actual location"
 legal_scope: "General civic education, not individual legal advice"
-version: "2.0.0"
+version: "2.0.1"
 source_ref_ids:
   - "plfs-comparability"
   - "road-numbers"
@@ -60,8 +60,8 @@ sources:
     document_id: "road-reply"
     title: "Road accident death data: Rajya Sabha Unstarred Question 2820"
     publisher: "Ministry of Road Transport and Highways / Rajya Sabha"
-    url: "https://sansad.in/getFile/annex/271/AU2820_vMN9Gb.pdf?source=pqars#page=2"
-    locator: "Pages 1–2, answer explaining reporting channels and difference between accidental deaths and offences registered under penal law"
+    url: "https://sansad.in/getFile/annex/271/AU2820_vMN9Gb.pdf?source=pqars#page=1"
+    locator: "Page 1, answer to parts (a) and (b): reporting channels and the narrower scope of deaths registered under penal law"
     version: null
     published_at: "2026-08-12"
     reference_period: "2024 road fatalities"
@@ -93,7 +93,7 @@ The useful response is not “therefore the data is fake”. It is to make the m
 
 ## Do not average incompatible official numbers
 
-A 2026 parliamentary answer gives three different 2024 road-death figures and explains differences in reporting channels and categories. It distinguishes total road fatalities from deaths in a penal-law negligence category. These are not automatically three interchangeable estimates of precisely the same measure. [2](https://sansad.in/getFile/annex/271/AU2820_vMN9Gb.pdf?source=pqars#page=1) [3](https://sansad.in/getFile/annex/271/AU2820_vMN9Gb.pdf?source=pqars#page=2)
+A 2026 parliamentary answer gives three different 2024 road-death figures and explains differences in reporting channels and categories. It distinguishes total road fatalities from deaths in a penal-law negligence category. These are not automatically three interchangeable estimates of precisely the same measure. [2](https://sansad.in/getFile/annex/271/AU2820_vMN9Gb.pdf?source=pqars#page=1) [3](https://sansad.in/getFile/annex/271/AU2820_vMN9Gb.pdf?source=pqars#page=1)
 
 First determine what each series counts. If the explanation leaves a gap, name that gap instead of picking the number that suits your argument.
 

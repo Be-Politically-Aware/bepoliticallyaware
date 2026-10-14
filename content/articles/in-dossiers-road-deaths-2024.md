@@ -21,7 +21,7 @@ human_reviewed: false
 review_method: "Assistant retrieval, source comparison and numerical checks; not independent human review"
 jurisdiction: "India; local administrative responsibility must be checked for the actual location"
 legal_scope: "General civic education, not individual legal advice"
-version: "2.0.0"
+version: "2.0.1"
 source_ref_ids:
   - "road-numbers"
   - "road-method"
@@ -45,8 +45,8 @@ sources:
     document_id: "road-reply"
     title: "Road accident death data: Rajya Sabha Unstarred Question 2820"
     publisher: "Ministry of Road Transport and Highways / Rajya Sabha"
-    url: "https://sansad.in/getFile/annex/271/AU2820_vMN9Gb.pdf?source=pqars#page=2"
-    locator: "Pages 1–2, answer explaining reporting channels and difference between accidental deaths and offences registered under penal law"
+    url: "https://sansad.in/getFile/annex/271/AU2820_vMN9Gb.pdf?source=pqars#page=1"
+    locator: "Page 1, answer to parts (a) and (b): reporting channels and the narrower scope of deaths registered under penal law"
     version: null
     published_at: "2026-08-12"
     reference_period: "2024 road fatalities"
@@ -62,7 +62,7 @@ maintenance:
 
 A difference between official figures deserves examination. Start by checking whether the sources actually count the same thing.
 
-This example comes from **Rajya Sabha Unstarred Question 2820, answered on 12 August 2026** by the Ministry of Road Transport and Highways. The reference year is **2024**, not 2026. Both pages of the answer were inspected for this article. [1](https://sansad.in/getFile/annex/271/AU2820_vMN9Gb.pdf?source=pqars#page=1) [2](https://sansad.in/getFile/annex/271/AU2820_vMN9Gb.pdf?source=pqars#page=2)
+This example comes from **Rajya Sabha Unstarred Question 2820, answered on 12 August 2026** by the Ministry of Road Transport and Highways. The reference year is **2024**, not 2026. Both pages of the answer were inspected for this article. [1](https://sansad.in/getFile/annex/271/AU2820_vMN9Gb.pdf?source=pqars#page=1) [2](https://sansad.in/getFile/annex/271/AU2820_vMN9Gb.pdf?source=pqars#page=1)
 
 ## The figures given in the answer
 
@@ -76,7 +76,7 @@ These numbers are attributed to the Ministry's parliamentary answer. This articl
 
 ## What the Ministry says explains the differences
 
-The answer describes differences in state reporting channels and distinguishes accidental-death records from deaths recorded as penal-law offences. It also notes the accidental-death series' treatment of self-caused road accidents. These are the government's stated explanations, not a reason to stop asking methodological questions. [2](https://sansad.in/getFile/annex/271/AU2820_vMN9Gb.pdf?source=pqars#page=2)
+The answer describes differences in state reporting channels and distinguishes accidental-death records from deaths recorded as penal-law offences. It also notes the accidental-death series' treatment of self-caused road accidents. These are the government's stated explanations, not a reason to stop asking methodological questions. [2](https://sansad.in/getFile/annex/271/AU2820_vMN9Gb.pdf?source=pqars#page=1)
 
 The criminal negligence category should not be relabelled as an alternative count of every road fatality. A scope difference is not repaired by averaging the numbers.
 

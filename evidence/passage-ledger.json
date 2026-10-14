@@ -255,6 +255,17 @@
       "checked_at": "2026-10-13"
     },
     {
+      "id": "in-states-mla-and-mlc-p12",
+      "article_id": "in-states-mla-and-mlc",
+      "paragraph_index": 12,
+      "statement": "Use the official legislature website for current membership, constituency information and available proceedings. Under Article 169, Parliament may create or abolish a Legislative Council by law after the State Assembly passes a resolution supported by a majority of its total membership and at least two-thirds of members present and voting. The resolution alone does not create or abolish the Council. Such a law is not treated as an Article 368 constitutional amendment. Check the legislation’s commencement and the currently operating institution.",
+      "source_ref_ids": [
+        "audit-council-creation"
+      ],
+      "scope": "Passage-level evidence mapping; original advice and hypothetical examples are distinguished in the article, not claimed to be verbatim from sources.",
+      "checked_at": "2026-10-14"
+    },
+    {
       "id": "in-parties-opposition-role-p5",
       "article_id": "in-parties-opposition-role",
       "paragraph_index": 5,
@@ -831,18 +842,29 @@
       "id": "in-crime-case-status-terms-p6",
       "article_id": "in-crime-case-status-terms",
       "paragraph_index": 6,
-      "statement": "A **police report or chargesheet** follows investigation in the relevant procedural setting. Do not confuse it with a court's decision to frame a charge. The BNSS separately provides for a police report on completion of investigation and for court procedures concerning discharge and framing charges.",
+      "statement": "A **chargesheet** is a police report setting out the investigation’s case for prosecuting an accused person. An investigation may instead result in a **closure report**. Do not use “police report” and “chargesheet” as interchangeable labels for every investigation outcome.",
       "source_ref_ids": [
         "bnss-report",
+        "audit-chargesheet-closure"
+      ],
+      "scope": "Passage-level evidence mapping; original advice and hypothetical examples are distinguished in the article, not claimed to be verbatim from sources.",
+      "checked_at": "2026-10-14"
+    },
+    {
+      "id": "in-crime-case-status-terms-p7",
+      "article_id": "in-crime-case-status-terms",
+      "paragraph_index": 7,
+      "statement": "Filing a chargesheet is not the same as a court framing charges or finding someone guilty. The BNSS separately provides for discharge and framing charges.",
+      "source_ref_ids": [
         "bnss-charge"
       ],
       "scope": "Passage-level evidence mapping; original advice and hypothetical examples are distinguished in the article, not claimed to be verbatim from sources.",
-      "checked_at": "2026-10-13"
+      "checked_at": "2026-10-14"
     },
     {
       "id": "in-crime-case-status-terms-p9",
       "article_id": "in-crime-case-status-terms",
-      "paragraph_index": 9,
+      "paragraph_index": 10,
       "statement": "**Bail** concerns release from custody subject to the applicable conditions and bond arrangement. A bail order is not an acquittal. Read the actual order rather than assuming that release proves either innocence or political favour.",
       "source_ref_ids": [
         "bnss-bail"
@@ -853,7 +875,7 @@
     {
       "id": "in-crime-case-status-terms-p11",
       "article_id": "in-crime-case-status-terms",
-      "paragraph_index": 11,
+      "paragraph_index": 12,
       "statement": "A **conviction** is a judicial finding of guilt. An **acquittal** is a judgment finding the accused not guilty in the proceeding. A **discharge** is a different procedural outcome, illustrated by the BNSS provisions dealing with whether sufficient grounds exist to proceed before framing a charge.",
       "source_ref_ids": [
         "bnss-judgment",
@@ -1179,13 +1201,14 @@
       "id": "in-reference-glossary-p99",
       "article_id": "in-reference-glossary",
       "paragraph_index": 99,
-      "statement": "Common terminology for a police report following investigation in the relevant procedural setting. It is distinct from a court-framed charge.",
+      "statement": "A police report setting out the investigation’s case for prosecuting an accused person. It is distinct from a closure report, a court-framed charge and a conviction.",
       "source_ref_ids": [
         "bnss-report",
-        "bnss-charge"
+        "bnss-charge",
+        "audit-chargesheet-closure"
       ],
       "scope": "Passage-level evidence mapping; original advice and hypothetical examples are distinguished in the article, not claimed to be verbatim from sources.",
-      "checked_at": "2026-10-13"
+      "checked_at": "2026-10-14"
     },
     {
       "id": "in-reference-glossary-p102",
@@ -1629,9 +1652,10 @@
       "id": "v3-in-parliament-whips-and-anti-defection-p2",
       "article_id": "in-parliament-whips-and-anti-defection",
       "paragraph_index": 2,
-      "statement": "In parliamentary usage, “whip” can mean a party official organising its members or an instruction concerning parliamentary business and voting. A party’s instruction is not itself the Speaker’s decision that a member has lost their seat. Keep the instruction, alleged breach and formal decision separate. [1](https://sansad.in/uploads/Chapter5_bcef32a522_57941e8421.pdf?updated_at=2022-09-14T12%3A00%3A45.541Z#page=1)",
+      "statement": "In parliamentary usage, “whip” can mean a party official organising its members or an instruction concerning parliamentary business and voting. [3](https://nyps.mpa.gov.in/2024/images/pdf/Conducting%20Youth%20Parliament.pdf#page=41) A party’s instruction is not itself the Speaker’s decision that a member has lost their seat. Keep the instruction, alleged breach and formal decision separate. [1](https://sansad.in/uploads/Chapter5_bcef32a522_57941e8421.pdf?updated_at=2022-09-14T12%3A00%3A45.541Z#page=1)",
       "source_ref_ids": [
-        "v3-whips"
+        "v3-whips",
+        "audit-whip-official"
       ],
       "scope": "Passage-to-source association. Interpretive and hypothetical sentences are distinguished in the article; this is not automated proof of every claim.",
       "checked_at": "2026-10-14"
@@ -2361,6 +2385,6 @@
       "checked_at": "2026-10-14"
     }
   ],
-  "passage_count": 210,
+  "passage_count": 212,
   "latest_release_checked_at": "2026-10-14"
 }

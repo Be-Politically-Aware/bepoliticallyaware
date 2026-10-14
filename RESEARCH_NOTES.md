@@ -1,5 +1,15 @@
 # Research notes and evidence boundaries
 
+## Targeted audit corrections — 14 October 2026
+
+Release 3.0.1 applies the six supplied v2/v3 audit findings; see `CHANGELOG.md` for the nine affected article IDs and versions. The combined registry now contains 50 document records and 105 locators, with 212 passage associations. The original article research-check dates remain unchanged.
+
+For this patch, the Constitution's Article 169(1)–(3) (physical PDF page 107), BNSS sections 193 and 250–251, paragraph 10.3 of _State of Uttar Pradesh v. Brij Pal Singh_, 2026 INSC 901 (page 49), the Ministry of Parliamentary Affairs “Whip” glossary entry (page 41), and both pages of the road-death parliamentary reply were inspected. The judgment is used only for the chargesheet/closure-report distinction, not as a universal police-power rule. The training manual's publication date is not established, and unrelated historical material is not treated as current.
+
+This was targeted assistant source verification, not independent human/legal approval or a repetition of the supplied audit's 348 numerical comparisons. All data assets and statistical values were preserved. Local checks verify consistency and rendering, not factual truth or continuous currency.
+
+## Original v2 research scope
+
 Research check date: **13 October 2026**.
 
 This release contains completed prose, not blank research briefs. Its source registry has 22 documents, including 18 official primary documents and four explicitly labelled independent/method sources. The 49 locators identify the actual provisions, passages or tables used. A source URL is not treated as evidence for every imaginable claim about the topic.

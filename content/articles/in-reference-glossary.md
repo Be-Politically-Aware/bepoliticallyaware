@@ -21,7 +21,7 @@ human_reviewed: false
 review_method: "Assistant retrieval, source comparison and numerical checks; not independent human review"
 jurisdiction: "India; local administrative responsibility must be checked for the actual location"
 legal_scope: "General civic education, not individual legal advice"
-version: "2.0.0"
+version: "2.0.1"
 source_ref_ids:
   - "c-state"
   - "c-executive"
@@ -50,6 +50,7 @@ source_ref_ids:
   - "bnss-charge"
   - "bnss-bail"
   - "plfs-definitions"
+  - "audit-chargesheet-closure"
 sources:
   - number: 1
     ref_id: "c-state"
@@ -423,6 +424,20 @@ sources:
     limitations:
       - "This release, not the full underlying report, is the inspected numerical source. Annual usual-status estimates are not current-month unemployment or a job-quality measure."
     kind: "official_primary"
+  - number: 28
+    ref_id: "audit-chargesheet-closure"
+    document_id: "audit-sc-chargesheet-closure"
+    title: "State of Uttar Pradesh & Anr. v. Brij Pal Singh & Anr., 2026 INSC 901"
+    publisher: "Supreme Court of India"
+    url: "https://api.sci.gov.in/supremecourt/2025/22340/22340_2025_8_1501_73745_Judgement_20-Aug-2026.pdf#page=49"
+    locator: "Paragraph 10.3, physical PDF page 49: chargesheet and closure report as distinct investigation outcomes"
+    version: "Judgment dated 20 August 2026"
+    published_at: "2026-08-20"
+    reference_period: null
+    checked_at: "2026-10-14"
+    limitations:
+      - "Used only to distinguish a chargesheet from a closure report. The judgment concerns a special statute; its procedural holding is not presented as a universal police-power rule."
+    kind: "official_primary"
 maintenance:
   trigger: "Change to a cited provision, source correction or substantiated reader correction"
   suggested_recheck_days: 365
@@ -625,7 +640,7 @@ A claim that something happened or someone did something. The word alone establi
 
 ## Chargesheet
 
-Common terminology for a police report following investigation in the relevant procedural setting. It is distinct from a court-framed charge. [24](https://www.mha.gov.in/sites/default/files/2024-04/250884_2_english_01042024.pdf#page=62) [25](https://www.mha.gov.in/sites/default/files/2024-04/250884_2_english_01042024.pdf#page=82)
+A police report setting out the investigation’s case for prosecuting an accused person. It is distinct from a closure report, a court-framed charge and a conviction. [24](https://www.mha.gov.in/sites/default/files/2024-04/250884_2_english_01042024.pdf#page=62) [25](https://www.mha.gov.in/sites/default/files/2024-04/250884_2_english_01042024.pdf#page=82) [28](https://api.sci.gov.in/supremecourt/2025/22340/22340_2025_8_1501_73745_Judgement_20-Aug-2026.pdf#page=49)
 
 [Read the explanation](/in/crime/case-status-terms).
 

@@ -1,5 +1,14 @@
 # Change history
 
+## 3.0.1 — 14 October 2026
+
+- Applied audit A01 to `in-states-mla-and-mlc` (2.0.0 → 2.0.1): clarified the Article 169 Assembly-resolution and parliamentary-law procedure, distinct from Article 368, with a new page-107 Constitution locator.
+- Applied A02 to `in-crime-case-status-terms` and `in-reference-glossary` (2.0.0 → 2.0.1): distinguished chargesheets from closure reports, court-framed charges and convictions. Added paragraph 10.3 of _State of Uttar Pradesh v. Brij Pal Singh_, 2026 INSC 901, page 49; retained the BNSS references and original-edition limits. Updated the structured glossary and passage ledger together.
+- Applied A03 to `in-evidence-question-official-data`, `in-crime-crime-statistics` and `in-dossiers-road-deaths-2024` (2.0.0 → 2.0.1): corrected `road-method` to page 1 of Rajya Sabha Question 2820, including inline citations and source panels. No statistical values changed.
+- Applied A04 to `in-parliament-whips-and-anti-defection` (3.0.0 → 3.0.1): added the Ministry of Parliamentary Affairs glossary, physical page 41, for the party-official meaning of “whip”; retained the legal citations and definition. Updated glossary source associations.
+- Applied A05/A06 to `in-elections-voter-registration` and `in-reference-corrections` (2.0.0 → 2.0.1): removed an implementation instruction and replaced pre-build packaging language with reader-facing correction guidance.
+- Preserved all 55 unaffected articles, all datasets and original article research-check dates. The targeted assistant source checks do not constitute independent human/legal review, a fresh statistical audit or ongoing monitoring.
+
 ## 3.0.0 — 14 October 2026
 
 - Appended the 24 supplied expansion articles through native Markdown/frontmatter without changing the original 40 files or their research dates.

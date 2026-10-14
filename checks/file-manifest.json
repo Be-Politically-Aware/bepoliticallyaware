@@ -36,8 +36,8 @@
   },
   {
     "path": "CHANGELOG.md",
-    "bytes": 2284,
-    "sha256": "ec8861111e6b9be9c3399bb0ad9199b75d690c1d2f204df93a2f1d639cee4a50"
+    "bytes": 3933,
+    "sha256": "ac2dac8bbc12f3abac5b3097f7c7f969a380ff6d17e889d91fabca45a3e4f495"
   },
   {
     "path": "README.md",
@@ -46,13 +46,13 @@
   },
   {
     "path": "RESEARCH_NOTES.md",
-    "bytes": 5345,
-    "sha256": "535fb0c87dbb79363aa1584456d368f8cfe32314d286092aa49d4ddb181dcdfc"
+    "bytes": 6596,
+    "sha256": "15f02aea849394a411174e49be8b131ef8c74302954f4325c41c775431eff19b"
   },
   {
     "path": "checks/validation.json",
     "bytes": 505,
-    "sha256": "776a3f06133ed5b2e489c560d9d95229886c5417703c52babf202473f63d3449"
+    "sha256": "294602643f4115995909d4890e8704edbdcc403b19bfc31140f2c73f7f4a7f46"
   },
   {
     "path": "content/articles/in-action-ask-a-representative.md",
@@ -101,18 +101,18 @@
   },
   {
     "path": "content/articles/in-crime-case-status-terms.md",
-    "bytes": 9619,
-    "sha256": "54f6eb99a7f12bd756a2040407a2de2da3f59970a3231b057aa58347fcef2120"
+    "bytes": 10725,
+    "sha256": "d1df14a971c7fe2360778c7ca87ed093a1648a8aef9a9a4d189ca6ed1b91777f"
   },
   {
     "path": "content/articles/in-crime-crime-statistics.md",
-    "bytes": 5583,
-    "sha256": "05e2e243c9c4c21f4ea16f1f08305a9b57175c0975ab5c3c157e54e33e013fe3"
+    "bytes": 5568,
+    "sha256": "8a1da2345d74e8e6651ae0e0d53d49af3a72db0537c5919eb59789db41a2724c"
   },
   {
     "path": "content/articles/in-dossiers-road-deaths-2024.md",
-    "bytes": 5629,
-    "sha256": "184778783f37e4865af52664d29fb53d76d6855d35a211aebde0401d8925d068"
+    "bytes": 5614,
+    "sha256": "31b46c9b7c7f355d19252a4132421a07aeada1d000845bdb9e929bf718840c73"
   },
   {
     "path": "content/articles/in-dossiers-union-budget-2026.md",
@@ -146,8 +146,8 @@
   },
   {
     "path": "content/articles/in-elections-voter-registration.md",
-    "bytes": 4511,
-    "sha256": "e6abc8be88ab9db1e6108dff0089024be054459a291d68e955163601ed62c83a"
+    "bytes": 4359,
+    "sha256": "db7a22a7191250db64d4467acc7ef2cbb6e36878c8fc4eff1eb34a833dad24a6"
   },
   {
     "path": "content/articles/in-everyday-air-and-environment.md",
@@ -211,8 +211,8 @@
   },
   {
     "path": "content/articles/in-evidence-question-official-data.md",
-    "bytes": 6392,
-    "sha256": "445e4539d99feca7431b9c92a564d289247284c83cef011edfefef86bb77088e"
+    "bytes": 6377,
+    "sha256": "72308f0fe536c67776b9231e7fed3ad93d2b91d04098fd2178dbdd8a2c6131c2"
   },
   {
     "path": "content/articles/in-evidence-survey-vs-administrative-data.md",
@@ -316,8 +316,8 @@
   },
   {
     "path": "content/articles/in-parliament-whips-and-anti-defection.md",
-    "bytes": 6771,
-    "sha256": "4876981985d8f02e05b880c60327a5000737b75232ed683facf35d524bba744e"
+    "bytes": 7632,
+    "sha256": "fafb9324bb5fe99a53fd56bfadccea5007db2db97a33bd2164217b73dfcb48a5"
   },
   {
     "path": "content/articles/in-parties-opposition-role.md",
@@ -326,13 +326,13 @@
   },
   {
     "path": "content/articles/in-reference-corrections.md",
-    "bytes": 3721,
-    "sha256": "d973db081411381d428956d2de601db9a20ee4bdcaafb4d50295fdb4f3a2fa72"
+    "bytes": 3611,
+    "sha256": "19ebfca6c029f249cb26518fe13245376b0a407ab5bae3b9859933065a6fbdf6"
   },
   {
     "path": "content/articles/in-reference-glossary.md",
-    "bytes": 33626,
-    "sha256": "4089397bf35b5364249f6d1c4ad6ed3ed6db907998a0cbef03355d466ae0f722"
+    "bytes": 34621,
+    "sha256": "03038810895a850534135c1276137a776cae76f848cca891b0f7fd0e41314e56"
   },
   {
     "path": "content/articles/in-reference-how-we-know.md",
@@ -366,8 +366,8 @@
   },
   {
     "path": "content/articles/in-states-mla-and-mlc.md",
-    "bytes": 6461,
-    "sha256": "4e58a744e1520261ef8ca16d9df0b4f521fa859c92e003c3d319658514e91948"
+    "bytes": 7660,
+    "sha256": "0a63483c144b6e77d5b1751d3c12366f8e1e70502f197a131db3ff9946ecd962"
   },
   {
     "path": "content/articles/in-states-union-state-local-powers.md",
@@ -491,8 +491,8 @@
   },
   {
     "path": "content/glossary.json",
-    "bytes": 24435,
-    "sha256": "82ffbc877f80b5bd68cebfac3a8dc16ad6209ebe4a08d17616647b7732464471"
+    "bytes": 24525,
+    "sha256": "918fc90b3a0a761847f0321fabc7d6a51b5c9028646723a8ebedbddc23f5eb66"
   },
   {
     "path": "content/navigation.json",
@@ -502,7 +502,7 @@
   {
     "path": "content/release.json",
     "bytes": 662,
-    "sha256": "64a9316ce092244a327d68b2bcae556f0832a751008ecbbb973a609e6da771d6"
+    "sha256": "f33fd0e5a2c39762f8bff4df4a9311129e233871f49e2df59e0349b9e938779b"
   },
   {
     "path": "content/releases/expansion-v3.json",
@@ -516,8 +516,8 @@
   },
   {
     "path": "content/sources.json",
-    "bytes": 66215,
-    "sha256": "d03d79d5c87ae5fabed2b7c2d61a7660b2cc20317fac7cae0457a5b2558ac560"
+    "bytes": 69083,
+    "sha256": "0427046fa9c047d0f553f5599a6e243b7520e4e70882e12e508b60147d36ce94"
   },
   {
     "path": "evidence/expansion-v3-research-notes.md",
@@ -526,8 +526,8 @@
   },
   {
     "path": "evidence/passage-ledger.json",
-    "bytes": 154419,
-    "sha256": "393c32169ea4113330509ed8e4965a96623bbb568f53b5aa9ee41525393e6fe8"
+    "bytes": 156141,
+    "sha256": "302a707b60ff9551dc07621c17c0df689470bc8a2c1374556f662098be8591a2"
   },
   {
     "path": "evidence/service-links.json",

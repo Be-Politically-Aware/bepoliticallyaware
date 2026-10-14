@@ -21,7 +21,7 @@ human_reviewed: false
 review_method: "Assistant retrieval, source comparison and numerical checks; not independent human review"
 jurisdiction: "India; local administrative responsibility must be checked for the actual location"
 legal_scope: "General civic education, not individual legal advice"
-version: "2.0.0"
+version: "2.0.1"
 source_ref_ids: []
 sources: []
 maintenance:
@@ -68,4 +68,4 @@ Preserve the earlier article version and the reason for the change in the site's
 
 A new report does not necessarily make a correctly dated historical figure false. The correction may instead be to label the reference period more clearly, add a newer edition or remove an unsupported claim that the old figure was “current”.
 
-This content edition includes article versions and source references so a correction can be traced. The website's chosen submission channel and actual response history must be configured by its maintainer; this page does not promise that an unbuilt reporting system is already operating.
+For a correction, identify the article, quote the disputed sentence, and include the source and date supporting your proposed change. Leave out unnecessary personal information.

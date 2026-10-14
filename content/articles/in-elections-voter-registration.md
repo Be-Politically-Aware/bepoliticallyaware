@@ -21,7 +21,7 @@ human_reviewed: false
 review_method: "Assistant retrieval, source comparison and numerical checks; not independent human review"
 jurisdiction: "India; local administrative responsibility must be checked for the actual location"
 legal_scope: "General civic education, not individual legal advice"
-version: "2.0.0"
+version: "2.0.1"
 source_ref_ids:
   - "eci-roll"
 sources:
@@ -68,5 +68,3 @@ The cited Election Commission notice concerns specified elections in 2025. Its g
 ## Be careful with forwarded “official” links
 
 A message may imitate election branding while sending you to an unrelated site. Open the official service independently rather than entering identity information through a forwarded form. Do not pay an unknown intermediary or share an OTP merely because a message claims your registration is at risk.
-
-An agent building this website should link out to official registration services, not collect voter IDs or attempt to register people on their behalf.

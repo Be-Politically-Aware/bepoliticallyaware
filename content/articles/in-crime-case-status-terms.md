@@ -21,7 +21,7 @@ human_reviewed: false
 review_method: "Assistant retrieval, source comparison and numerical checks; not independent human review"
 jurisdiction: "India; local administrative responsibility must be checked for the actual location"
 legal_scope: "General civic education, not individual legal advice"
-version: "2.0.0"
+version: "2.0.1"
 source_ref_ids:
   - "bnss-saving"
   - "bnss-fir"
@@ -29,6 +29,7 @@ source_ref_ids:
   - "bnss-charge"
   - "bnss-bail"
   - "bnss-judgment"
+  - "audit-chargesheet-closure"
 sources:
   - number: 1
     ref_id: "bnss-saving"
@@ -114,6 +115,20 @@ sources:
     limitations:
       - "Original enacted text, not a guaranteed current consolidation. Used for general legal vocabulary, not eligibility, deadline or advice for a specific proceeding. Older proceedings may continue under the former code under the savings provision."
     kind: "official_primary"
+  - number: 7
+    ref_id: "audit-chargesheet-closure"
+    document_id: "audit-sc-chargesheet-closure"
+    title: "State of Uttar Pradesh & Anr. v. Brij Pal Singh & Anr., 2026 INSC 901"
+    publisher: "Supreme Court of India"
+    url: "https://api.sci.gov.in/supremecourt/2025/22340/22340_2025_8_1501_73745_Judgement_20-Aug-2026.pdf#page=49"
+    locator: "Paragraph 10.3, physical PDF page 49: chargesheet and closure report as distinct investigation outcomes"
+    version: "Judgment dated 20 August 2026"
+    published_at: "2026-08-20"
+    reference_period: null
+    checked_at: "2026-10-14"
+    limitations:
+      - "Used only to distinguish a chargesheet from a closure report. The judgment concerns a special statute; its procedural holding is not presented as a universal police-power rule."
+    kind: "official_primary"
 maintenance:
   trigger: "Change to a cited provision, source correction or substantiated reader correction"
   suggested_recheck_days: 365
@@ -130,7 +145,9 @@ An **allegation** is a claim that someone did something. Calling it an allegatio
 
 An **FIR**, or First Information Report, records information in the criminal-law process concerning a cognizable offence. It is not a judgment of guilt. **Arrest** concerns taking a person into custody; it does not itself decide the accusation. [2](https://www.mha.gov.in/sites/default/files/2024-04/250884_2_english_01042024.pdf#page=52)
 
-A **police report or chargesheet** follows investigation in the relevant procedural setting. Do not confuse it with a court's decision to frame a charge. The BNSS separately provides for a police report on completion of investigation and for court procedures concerning discharge and framing charges. [3](https://www.mha.gov.in/sites/default/files/2024-04/250884_2_english_01042024.pdf#page=62) [4](https://www.mha.gov.in/sites/default/files/2024-04/250884_2_english_01042024.pdf#page=82)
+A **chargesheet** is a police report setting out the investigation’s case for prosecuting an accused person. An investigation may instead result in a **closure report**. Do not use “police report” and “chargesheet” as interchangeable labels for every investigation outcome. [3](https://www.mha.gov.in/sites/default/files/2024-04/250884_2_english_01042024.pdf#page=62) [7](https://api.sci.gov.in/supremecourt/2025/22340/22340_2025_8_1501_73745_Judgement_20-Aug-2026.pdf#page=49)
+
+Filing a chargesheet is not the same as a court framing charges or finding someone guilty. The BNSS separately provides for discharge and framing charges. [4](https://www.mha.gov.in/sites/default/files/2024-04/250884_2_english_01042024.pdf#page=82)
 
 A **court-framed charge** identifies the accusation to be tried at that stage. It is not a conviction.
 

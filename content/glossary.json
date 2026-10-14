@@ -286,10 +286,11 @@
   },
   {
     "term": "Chargesheet",
-    "definition": "Common terminology for a police report following investigation in the relevant procedural setting. It is distinct from a court-framed charge.",
+    "definition": "A police report setting out the investigation’s case for prosecuting an accused person. It is distinct from a closure report, a court-framed charge and a conviction.",
     "source_ref_ids": [
       "bnss-report",
-      "bnss-charge"
+      "bnss-charge",
+      "audit-chargesheet-closure"
     ],
     "article_id": "in-crime-case-status-terms",
     "route": "/in/crime/case-status-terms"
@@ -453,7 +454,8 @@
     "term": "Whip",
     "definition": "In a voting context, an authorised party direction; the word can also refer to the person performing that party-management role.",
     "source_ref_ids": [
-      "v3-whips"
+      "v3-whips",
+      "audit-whip-official"
     ],
     "article_id": "in-parliament-whips-and-anti-defection",
     "route": "/in/parliament/whips-and-anti-defection"

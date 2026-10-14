@@ -21,7 +21,7 @@ human_reviewed: false
 review_method: "Assistant retrieval, source comparison and numerical checks; not independent human review"
 jurisdiction: "India; local administrative responsibility must be checked for the actual location"
 legal_scope: "General civic education, not individual legal advice"
-version: "2.0.0"
+version: "2.0.1"
 source_ref_ids:
   - "road-numbers"
   - "road-method"
@@ -45,8 +45,8 @@ sources:
     document_id: "road-reply"
     title: "Road accident death data: Rajya Sabha Unstarred Question 2820"
     publisher: "Ministry of Road Transport and Highways / Rajya Sabha"
-    url: "https://sansad.in/getFile/annex/271/AU2820_vMN9Gb.pdf?source=pqars#page=2"
-    locator: "Pages 1–2, answer explaining reporting channels and difference between accidental deaths and offences registered under penal law"
+    url: "https://sansad.in/getFile/annex/271/AU2820_vMN9Gb.pdf?source=pqars#page=1"
+    locator: "Page 1, answer to parts (a) and (b): reporting channels and the narrower scope of deaths registered under penal law"
     version: null
     published_at: "2026-08-12"
     reference_period: "2024 road fatalities"
@@ -68,7 +68,7 @@ Ask whether the source counts registered cases, victims, accused people, arrests
 
 In an answer dated 12 August 2026, the Ministry of Road Transport and Highways distinguished 2024 road fatalities from deaths in a criminal negligence category. It reported 177,175 fatalities in the MoRTH series, 175,142 road-accident deaths in NCRB's accidental-death series and 162,500 deaths in the Crime in India negligence category. [1](https://sansad.in/getFile/annex/271/AU2820_vMN9Gb.pdf?source=pqars#page=1)
 
-The answer explains differences in reporting channels and the scope of accidents versus offences recorded under penal law. The explanation is the Ministry's account; it is not an independent audit of the three full datasets. The figures nevertheless illustrate why a series title and definition matter. [2](https://sansad.in/getFile/annex/271/AU2820_vMN9Gb.pdf?source=pqars#page=2)
+The answer explains differences in reporting channels and the scope of accidents versus offences recorded under penal law. The explanation is the Ministry's account; it is not an independent audit of the three full datasets. The figures nevertheless illustrate why a series title and definition matter. [2](https://sansad.in/getFile/annex/271/AU2820_vMN9Gb.pdf?source=pqars#page=1)
 
 ## A larger recorded count needs interpretation
 
