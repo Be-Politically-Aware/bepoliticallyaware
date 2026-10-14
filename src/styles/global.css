@@ -297,6 +297,10 @@ li {
   overflow-y: auto;
   overscroll-behavior: contain;
 }
+.desktop-sidebar .sidebar {
+  scrollbar-width: thin;
+  scrollbar-color: var(--muted) var(--paper);
+}
 .mobile-index {
   display: none;
 }
